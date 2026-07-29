@@ -280,7 +280,7 @@ collections:
                   - { name: caption, label: Підпис, widget: string, required: false }
 
       # Тіло сторінки у старому форматі — до переходу на блоки. У свіжому
-      # вмісті порожнє. Поле лишається оголошеним із двох причин: щоб текст
+      # ��місті порожнє. Поле лишається оголошеним із двох причин: щоб текст
       # такої сторінки було видно й можна було перенести в блоки, і щоб
       # Decap не відкинув його при збереженні. Сайт показує це тіло лише
       # тоді, коли блоків немає (app/[slug]/page.tsx).
@@ -332,20 +332,15 @@ collections:
           - { name: site_short_name, label: Коротка назва, widget: string, hint: Показується у футері }
           - { name: site_description, label: Опис сайту, widget: text, hint: Показується у футері та в результатах пошуку Google }
           - name: logo
-            label: Знак для шапки
+            label: Знак у шапці
             widget: image
             required: false
-            hint: Лише символ логотипа, без тексту — у шапці він показується розміром 44 px
+            hint: Герб міста. Показується розміром 44 px, тому дрібні деталі буде погано видно
           - name: logo_emblem
-            label: Повна емблема
+            label: Емблема Центру
             widget: image
             required: false
             hint: Емблема з назвою та гаслом. Показується на головній сторінці та у футері
-          - name: coat_of_arms
-            label: Герб міста
-            widget: image
-            required: false
-            hint: Нижня смуга футера
           - name: tagline
             label: Гасло
             widget: list

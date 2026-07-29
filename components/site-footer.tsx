@@ -77,18 +77,7 @@ export function SiteFooter({
       </div>
 
       <div className="border-t border-surface-border">
-        <div className="mx-auto max-w-6xl px-4 py-4 text-xs opacity-70 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
-          {settings.coat_of_arms && (
-            <span className="flex items-center gap-2 order-1 sm:order-none">
-              <img
-                src={settings.coat_of_arms || '/placeholder.svg'}
-                alt=""
-                loading="lazy"
-                className="size-6 object-contain shrink-0"
-              />
-              Лубенська міська рада
-            </span>
-          )}
+        <div className="mx-auto max-w-6xl px-4 py-4 text-xs opacity-70 flex flex-wrap justify-between gap-2">
           <p>
             {/*
               Без року: футер рендериться статично, тож new Date() зафіксував би

@@ -122,15 +122,14 @@ export interface SiteSettings {
   site_name: string
   site_short_name: string
   site_description: string
-  /** Знак для шапки: лише символ логотипа, без тексту — його видно й на 44 px */
+  /** Знак у шапці — герб Лубен */
   logo?: string
   /**
-   * Повна емблема з назвою та гаслом. Її текст темно-синій, тож на темних
-   * поверхнях сайту вона стоїть на світлій плашці (див. components/brand.tsx).
+   * Повна емблема Центру з назвою та гаслом. Її текст темно-синій, тож на
+   * темних поверхнях сайту вона стоїть на світлій плашці
+   * (див. components/brand.tsx).
    */
   logo_emblem?: string
-  /** Герб Лубен — знак приналежності до громади, у нижній смузі футера */
-  coat_of_arms?: string
   /** Гасло з логотипа, по слову на елемент: «Натхнення», «Мудрість», «Успіх» */
   tagline: string[]
   address?: string
@@ -189,7 +188,7 @@ function deriveDescription(explicit: unknown, body: string, title: string): stri
   const given = explicit ? String(explicit).trim() : ""
   if (given) return given
 
-  // Опис, що лише переказує заголовок, нічого не додає: у картці той самий
+  // Опис, що ли��е переказує заголовок, нічого не додає: у картці той самий
   // текст стояв би двічі, а пошуковики такий сніпет ігнорують
   const norm = (s: string) =>
     s
@@ -340,7 +339,6 @@ export function getSiteSettings(): SiteSettings {
     site_description: raw.site_description || "",
     logo: raw.logo,
     logo_emblem: raw.logo_emblem,
-    coat_of_arms: raw.coat_of_arms,
     tagline: raw.tagline || [],
     address: raw.address,
     map_url: raw.map_url,
