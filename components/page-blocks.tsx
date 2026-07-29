@@ -377,7 +377,12 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
               <Section key={i} view={view} title={block.title} fallbackTitle="Таблиця">
                 {/* Таблиці контактів широкі, тож на телефоні гортаються збоку */}
                 <div className="overflow-x-auto">
-                  <table className="w-full text-sm border-collapse">
+                  {/*
+                    min-w тут обов'язковий: з одним лише w-full таблиця
+                    стискається до ширини екрана, назви закладів ламаються на
+                    два-три символи, а overflow-x-auto не спрацьовує ніколи.
+                  */}
+                  <table className="w-full min-w-[36rem] text-sm border-collapse">
                     {columns.length > 0 && (
                       <thead>
                         <tr className="border-b border-border">
@@ -408,6 +413,36 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
 
           case 'gallery':
             return <PhotoGallery key={i} items={block.images ?? []} title={block.title} />
+
+          case 'partners': {
+            const partners = (block.items ?? []).filter((p) => p?.image || p?.name)
+            if (partners.length === 0) return null
+            return (
+              <section key={i} aria-label={block.title || 'Партнери'}>
+                {block.title && <h2 className="font-heading font-bold text-xl mb-4">{block.title}</h2>}
+                {/* Ті самі класи, що були в сирому HTML — вигляд плитки не змінюється */}
+                <div className="article-content">
+                  <div className="partners-grid">
+                    {partners.map((p, k) => {
+                      const logo = p.image ? (
+                        // eslint-disable-next-line @next/next/no-img-element -- логотипи різних пропорцій, next/image тут обрізав би їх
+                        <img src={p.image} alt={p.name || ''} loading="lazy" />
+                      ) : (
+                        <span className="text-sm text-center">{p.name}</span>
+                      )
+                      return p.url ? (
+                        <a key={k} href={p.url} target="_blank" rel="noopener noreferrer" title={p.name}>
+                          {logo}
+                        </a>
+                      ) : (
+                        <div key={k}>{logo}</div>
+                      )
+                    })}
+                  </div>
+                </div>
+              </section>
+            )
+          }
 
           default:
             return null

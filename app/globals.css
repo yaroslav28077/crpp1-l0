@@ -313,7 +313,9 @@ html {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
-.article-content .partners-grid a {
+/* Плитка партнера. div — коли редактор не вказав посилання на сайт установи */
+.article-content .partners-grid a,
+.article-content .partners-grid > div {
   display: flex;
   align-items: center;
   justify-content: center;

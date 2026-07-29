@@ -35,12 +35,18 @@ blocks:
             url: https://www.youtube.com/watch?v=WV-AhreYRaE
       - label: Відеоуроки переможців Фестивалю «Освітяни Лубенщини презентують…»
         children:
-          - label: '[Левченко Інна Григорівна, вчитель основ здоров’я (спеціалізована школа №6)](https://youtu.be/5HcTgCq1Tgk);'
-          - label: '[Ярошенко Оксана Василівна, вчитель фізики (спеціалізована школа №6)](https://youtu.be/yW1pDq5b0gA);'
-          - label: '[Сімонькіна Галина Павлівна, вчитель математики (спеціалізована школа №6)](https://youtu.be/pNhms1WWYtQ);'
-          - label: '[Волошина Ірина Василівна, вчитель хімії (ЗОШ №2)](https://youtu.be/wRZoXqC2PsE);'
-          - label: '[Рєпнікова Алла Миколаївна, вчитель біології (ЗОШ №3)](https://youtu.be/GdwlUIzXl2Y);'
-          - label: '[Біланенко Алла Олексіївна, вчитель математики (ЗОШ №1)](https://youtu.be/oxOzoOmPlC4).'
+          - label: Левченко Інна Григорівна, вчитель основ здоров’я (спеціалізована школа №6)
+            url: https://youtu.be/5HcTgCq1Tgk
+          - label: Ярошенко Оксана Василівна, вчитель фізики (спеціалізована школа №6)
+            url: https://youtu.be/yW1pDq5b0gA
+          - label: Сімонькіна Галина Павлівна, вчитель математики (спеціалізована школа №6)
+            url: https://youtu.be/pNhms1WWYtQ
+          - label: Волошина Ірина Василівна, вчитель хімії (ЗОШ №2)
+            url: https://youtu.be/wRZoXqC2PsE
+          - label: Рєпнікова Алла Миколаївна, вчитель біології (ЗОШ №3)
+            url: https://youtu.be/GdwlUIzXl2Y
+          - label: Біланенко Алла Олексіївна, вчитель математики (ЗОШ №1)
+            url: https://youtu.be/oxOzoOmPlC4
       - label: Підсумки Обласного ярмарку методичних матеріалів
         news: 2021-12-30-pidsumky-oblasnoho-iarmarku-metodychnykh-materialiv
       - label: Кращі практики НУШ
@@ -54,4 +60,3 @@ blocks:
       - label: Учитель року-2021
       - label: Учитель року...
 ---
-

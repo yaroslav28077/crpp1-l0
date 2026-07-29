@@ -99,6 +99,13 @@ export type PageBlock =
     }
   /** Фотогалерея */
   | { type: "gallery"; title?: string; images: GalleryItem[] }
+  /**
+   * Логотипи партнерів плиткою. Досі це був єдиний на сайті блок сирого
+   * HTML: п'ятнадцять <a><img></a> усередині <div class="partners-grid">.
+   * Щоб додати партнера, секретарю довелося б копіювати теги й не
+   * помилитися в лапках — тепер це назва, логотип і посилання полями.
+   */
+  | { type: "partners"; title?: string; items: PartnerItem[] }
 
 /**
  * Як показувати розділ. Раніше вибір був двійковий (згорнутий чи ні), але
@@ -132,6 +139,14 @@ export interface DocumentItem {
    * підпорядковані посилання робилися відступом у Markdown-списку.
    */
   children?: DocumentItem[]
+}
+
+/** Партнер: логотип із посиланням на його сайт */
+export interface PartnerItem {
+  /** Назва установи. Йде в alt — без неї логотип не читає озвучувач екрана */
+  name: string
+  image?: string
+  url?: string
 }
 
 export interface PageItem {
@@ -221,7 +236,7 @@ function parseDate(value: unknown, file: string): string {
   if (value) {
     const d = new Date(value as string)
     if (!Number.isNaN(d.getTime())) return d.toISOString()
-    console.warn(`[content] Нечитна дата у content/news/${file}: ${JSON.stringify(value)}`)
+    console.warn(`[content] Нечитн�� дата у content/news/${file}: ${JSON.stringify(value)}`)
   }
   const fromName = file.match(/^(\d{4}-\d{2}-\d{2})/)
   if (fromName) {

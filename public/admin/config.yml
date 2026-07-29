@@ -357,6 +357,30 @@ collections:
                   - { name: image, label: Зображення, widget: image }
                   - { name: caption, label: Підпис, widget: string, required: false }
 
+          - name: partners
+            label: Логотипи партнерів
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, label: Заголовок, widget: string, required: false }
+              - name: items
+                label: Партнери
+                label_singular: Партнер
+                widget: list
+                summary: '{{fields.name}}'
+                hint: Логотипи стануть плиткою — по чотири в рядок на комп'ютері, по два на телефоні.
+                fields:
+                  - name: name
+                    label: Назва установи
+                    widget: string
+                    hint: Потрібна, навіть якщо є логотип: її читають незрячим відвідувачам і показують, коли малюнок не завантажився.
+                  - name: image
+                    label: Логотип
+                    widget: image
+                    required: false
+                    media_folder: /public/images/pict/coop
+                    public_folder: /images/pict/coop
+                  - { name: url, label: Посилання на сайт установи, widget: string, required: false }
+
       # Тіло сторінки у старому форматі — до переходу на блоки. У свіжому
       # ��м��сті порожнє. Поле лишається оголошеним із двох причин: щоб текст
       # такої сторінки було видно й можна було перенести в блоки, і щоб
