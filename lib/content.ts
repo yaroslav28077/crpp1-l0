@@ -122,7 +122,17 @@ export interface SiteSettings {
   site_name: string
   site_short_name: string
   site_description: string
+  /** Знак для шапки: лише символ логотипа, без тексту — його видно й на 44 px */
   logo?: string
+  /**
+   * Повна емблема з назвою та гаслом. Її текст темно-синій, тож на темних
+   * поверхнях сайту вона стоїть на світлій плашці (див. components/brand.tsx).
+   */
+  logo_emblem?: string
+  /** Герб Лубен — знак приналежності до громади, у нижній смузі футера */
+  coat_of_arms?: string
+  /** Гасло з логотипа, по слову на елемент: «Натхнення», «Мудрість», «Успіх» */
+  tagline: string[]
   address?: string
   map_url?: string
   phones: string[]
@@ -329,6 +339,9 @@ export function getSiteSettings(): SiteSettings {
     site_short_name: raw.site_short_name || "ЦПРПП м. Лубни",
     site_description: raw.site_description || "",
     logo: raw.logo,
+    logo_emblem: raw.logo_emblem,
+    coat_of_arms: raw.coat_of_arms,
+    tagline: raw.tagline || [],
     address: raw.address,
     map_url: raw.map_url,
     phones: raw.phones || [],

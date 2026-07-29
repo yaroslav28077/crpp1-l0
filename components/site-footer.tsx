@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 import type { NavSection, SiteSettings } from '@/lib/content'
+import { BrandEmblem, BrandTagline } from '@/components/brand'
 
 export function SiteFooter({
   settings,
@@ -12,8 +13,13 @@ export function SiteFooter({
   return (
     <footer className="bg-surface text-surface-foreground mt-16">
       <div className="mx-auto max-w-6xl px-4 py-12 grid gap-10 md:grid-cols-3">
-        <div className="flex flex-col gap-4">
-          <p className="font-heading font-bold text-lg text-balance">{settings.site_short_name}</p>
+        <div className="flex flex-col gap-4 items-start">
+          {settings.logo_emblem ? (
+            <BrandEmblem src={settings.logo_emblem} className="w-48 p-3" />
+          ) : (
+            <p className="font-heading font-bold text-lg text-balance">{settings.site_short_name}</p>
+          )}
+          <BrandTagline words={settings.tagline} className="text-xs opacity-90" />
           <p className="text-sm opacity-80 leading-relaxed">{settings.site_description}</p>
         </div>
 
@@ -71,7 +77,18 @@ export function SiteFooter({
       </div>
 
       <div className="border-t border-surface-border">
-        <div className="mx-auto max-w-6xl px-4 py-4 text-xs opacity-70 flex flex-wrap justify-between gap-2">
+        <div className="mx-auto max-w-6xl px-4 py-4 text-xs opacity-70 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+          {settings.coat_of_arms && (
+            <span className="flex items-center gap-2 order-1 sm:order-none">
+              <img
+                src={settings.coat_of_arms || '/placeholder.svg'}
+                alt=""
+                loading="lazy"
+                className="size-6 object-contain shrink-0"
+              />
+              Лубенська міська рада
+            </span>
+          )}
           <p>
             {/*
               Без року: футер рендериться статично, тож new Date() зафіксував би

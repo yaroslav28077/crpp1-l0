@@ -1,7 +1,13 @@
 site_name: Центр професійного розвитку педагогічних працівників
 site_short_name: ЦПРПП м. Лубни
 site_description: Комунальна установа «Центр професійного розвитку педагогічних працівників Лубенської міської ради» Лубенського району Полтавської області
-logo: /images/pict/logo-emblem.png
+logo: /brand/logo-mark.png
+logo_emblem: /brand/logo-emblem.png
+coat_of_arms: /brand/coat-of-arms.png
+tagline:
+  - Натхнення
+  - Мудрість
+  - Успіх
 address: 37500 м. Лубни Полтавської області, вул. Григора Тютюнника 19А
 map_url: https://www.google.com/maps/@50.0119334,33.0010027,18z
 phones:

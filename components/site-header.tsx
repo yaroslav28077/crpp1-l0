@@ -88,11 +88,18 @@ export function SiteHeader({
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3 min-w-0">
           {settings.logo && (
-            <img
-              src={settings.logo || '/placeholder.svg'}
-              alt=""
-              className="size-11 object-contain shrink-0"
-            />
+            /*
+              Світла кругла плашка: у символі є темно-синя стрічка того ж
+              кольору, що й шапка, тож просто на синьому він виглядав би
+              обрізаним.
+            */
+            <span className="size-11 rounded-full bg-background flex items-center justify-center shrink-0">
+              <img
+                src={settings.logo || '/placeholder.svg'}
+                alt=""
+                className="size-8 object-contain"
+              />
+            </span>
           )}
           <div className="min-w-0">
             <p className="font-heading font-bold leading-tight text-sm sm:text-base text-balance">

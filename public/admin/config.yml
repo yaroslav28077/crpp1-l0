@@ -205,7 +205,7 @@ collections:
                   - { label: Початкова школа, value: pochatkova-shkola }
                   - { label: Сертифікація педагогічних працівників, value: sertyfikatsiia-pedahohichnykh-pratsivnykiv }
                   - { label: Шкільна бібліотека, value: shkilna-biblioteka }
-                  - { label: Соціально-психологічна служба, value: sotsialno-psykholohichna-sluzhba }
+                  - { label: С��ціально-психологічна служба, value: sotsialno-psykholohichna-sluzhba }
                   - { label: Сторінка психолога, value: storinka-psykholoha }
                   - { label: Супервізія, value: superviziia }
                   - { label: Творчі групи, value: tvorchi-hrupy }
@@ -331,7 +331,28 @@ collections:
           - { name: site_name, label: Повна назва установи, widget: string }
           - { name: site_short_name, label: Коротка назва, widget: string, hint: Показується у футері }
           - { name: site_description, label: Опис сайту, widget: text, hint: Показується у футері та в результатах пошуку Google }
-          - { name: logo, label: Логотип, widget: image, required: false }
+          - name: logo
+            label: Знак для шапки
+            widget: image
+            required: false
+            hint: Лише символ логотипа, без тексту — у шапці він показується розміром 44 px
+          - name: logo_emblem
+            label: Повна емблема
+            widget: image
+            required: false
+            hint: Емблема з назвою та гаслом. Показується на головній сторінці та у футері
+          - name: coat_of_arms
+            label: Герб міста
+            widget: image
+            required: false
+            hint: Нижня смуга футера
+          - name: tagline
+            label: Гасло
+            widget: list
+            required: false
+            label_singular: Слово
+            hint: По одному слову в рядку — між ними сайт сам поставить ромби
+            field: { name: word, label: Слово, widget: string }
           - { name: address, label: Адреса, widget: string, required: false }
           - { name: map_url, label: Посилання на мапу, widget: string, required: false }
           - name: phones

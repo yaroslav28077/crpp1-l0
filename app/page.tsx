@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ArrowRight, Users, Newspaper, GraduationCap, HeartHandshake } from 'lucide-react'
 import { getAllNews, getNavigation, getSiteSettings, getTeam } from '@/lib/content'
 import { NewsCard } from '@/components/news-card'
+import { BrandEmblem, BrandTagline } from '@/components/brand'
 
 export default function HomePage() {
   const settings = getSiteSettings()
@@ -15,37 +16,49 @@ export default function HomePage() {
     <main>
       {/* Герой */}
       <section className="bg-surface text-surface-foreground">
-        <div className="mx-auto max-w-6xl px-4 py-16 md:py-24 flex flex-col gap-6 items-start">
-          <p className="rounded-full bg-accent text-accent-foreground text-xs font-semibold px-3 py-1 uppercase tracking-wide">
-            м. Лубни, Полтавська область
-          </p>
-          <h1 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance max-w-3xl">
-            Центр професійного розвитку педагогічних працівників
-          </h1>
-          <p className="text-surface-foreground/80 leading-relaxed max-w-2xl text-pretty">
-            Супроводжуємо професійне зростання педагогів Лубенської громади: консультації, атестація,
-            сертифікація, супервізія та підтримка освітян в умовах сьогодення.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="/novyny"
-              className="inline-flex items-center gap-2 rounded-lg bg-accent text-accent-foreground font-semibold px-5 py-2.5 hover:opacity-90"
-            >
-              <Newspaper className="size-4" aria-hidden="true" />
-              Останні новини
-            </Link>
-            {settings.consultation_url && (
-              <a
-                href={settings.consultation_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg border border-surface-border px-5 py-2.5 font-semibold hover:bg-surface-muted"
+        <div className="mx-auto max-w-6xl px-4 py-16 md:py-24 flex flex-col-reverse gap-10 md:flex-row md:items-center md:gap-12">
+          <div className="flex flex-col gap-6 items-start md:flex-1">
+            <p className="rounded-full bg-accent text-accent-foreground text-xs font-semibold px-3 py-1 uppercase tracking-wide">
+              м. Лубни, Полтавська область
+            </p>
+            <h1 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance">
+              Центр професійного розвитку педагогічних працівників
+            </h1>
+            <BrandTagline
+              words={settings.tagline}
+              className="text-sm text-surface-foreground/85"
+            />
+            <p className="text-surface-foreground/80 leading-relaxed max-w-2xl text-pretty">
+              Супроводжуємо професійне зростання педагогів Лубенської громади: консультації, атестація,
+              сертифікація, супервізія та підтримка освітян в умовах сьогодення.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/novyny"
+                className="inline-flex items-center gap-2 rounded-lg bg-accent text-accent-foreground font-semibold px-5 py-2.5 hover:opacity-90"
               >
-                <HeartHandshake className="size-4" aria-hidden="true" />
-                Запис на консультацію
-              </a>
-            )}
+                <Newspaper className="size-4" aria-hidden="true" />
+                Останні новини
+              </Link>
+              {settings.consultation_url && (
+                <a
+                  href={settings.consultation_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg border border-surface-border px-5 py-2.5 font-semibold hover:bg-surface-muted"
+                >
+                  <HeartHandshake className="size-4" aria-hidden="true" />
+                  Запис на консультацію
+                </a>
+              )}
+            </div>
           </div>
+          {settings.logo_emblem && (
+            <BrandEmblem
+              src={settings.logo_emblem}
+              className="w-56 self-center shrink-0 sm:w-72 md:w-80"
+            />
+          )}
         </div>
       </section>
 
