@@ -236,7 +236,7 @@ function parseDate(value: unknown, file: string): string {
   if (value) {
     const d = new Date(value as string)
     if (!Number.isNaN(d.getTime())) return d.toISOString()
-    console.warn(`[content] Нечитн�� дата у content/news/${file}: ${JSON.stringify(value)}`)
+    console.warn(`[content] Нечитна дата у content/news/${file}: ${JSON.stringify(value)}`)
   }
   const fromName = file.match(/^(\d{4}-\d{2}-\d{2})/)
   if (fromName) {
@@ -257,7 +257,7 @@ function deriveDescription(explicit: unknown, body: string, title: string): stri
   const given = explicit ? String(explicit).trim() : ""
   if (given) return given
 
-  // Опис, що ли��е переказує заголовок, нічого не додає: у картці той самий
+  // Опис, що лише переказує заголовок, нічого не додає: у картці той самий
   // текст стояв би двічі, а пошуковики такий сніпет ігнорують
   const norm = (s: string) =>
     s

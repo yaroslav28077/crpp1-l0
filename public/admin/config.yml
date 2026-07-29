@@ -3,9 +3,7 @@ backend:
   branch: main
 
 # Для локальної розробки: запустіть `npx decap-server` і розкоментуйте рядок нижче
-local_backend:
-  url: https://sb-2wg0fzzjlwrc.vercel.run/api/decap-proxy
-  allowed_hosts: ['sb-2wg0fzzjlwrc.vercel.run']
+# local_backend: true
 
 # Чернетки. Без цього кожне збереження одразу публікувалося на сайт —
 # не було як підготувати матеріал заздалегідь чи показати комусь перед виходом.
@@ -222,7 +220,7 @@ collections:
                   - { label: Початкова школа, value: pochatkova-shkola }
                   - { label: Сертифікація педагогічних працівників, value: sertyfikatsiia-pedahohichnykh-pratsivnykiv }
                   - { label: Шкільна бібліотека, value: shkilna-biblioteka }
-                  - { label: С��ціально-психологічна служба, value: sotsialno-psykholohichna-sluzhba }
+                  - { label: Соціально-психологічна служба, value: sotsialno-psykholohichna-sluzhba }
                   - { label: Сторінка психолога, value: storinka-psykholoha }
                   - { label: Супервізія, value: superviziia }
                   - { label: Творчі групи, value: tvorchi-hrupy }
@@ -392,17 +390,21 @@ collections:
                     public_folder: /images/pict/coop
                   - { name: url, label: Посилання на сайт установи, widget: string, required: false }
 
-      # Тіло сторінки у старому форматі — до переходу на блоки. У свіжому
-      # ��м��сті порожнє. Поле лишається оголошеним із двох причин: щоб текст
-      # такої сторінки було видно й можна було перенести в блоки, і щоб
-      # Decap не відкинув його при збереженні. Сайт показує це тіло лише
-      # тоді, коли блоків немає (app/[slug]/page.tsx).
+      # Тіло сторінки у старому форматі, до переходу на блоки. Перевірено:
+      # порожнє в усіх 32 сторінках, бо весь вміст переїхав у блоки.
+      #
+      # Приховане навмисно. Раніше воно показувалося великим редактором
+      # Markdown просто під блоками — секретар природно почав би писати в цю
+      # знайому рамку, а не в блоки, і повернувся б до тієї самої розмітки,
+      # від якої ми відходили. Двох місць для тексту бути не повинно.
+      #
+      # Поле не видаляємо: `body` у Decap — це тіло md-файлу, і без нього
+      # текст старої сторінки зникнув би при першому ж збереженні.
+      # Сайт показує це тіло лише тоді, коли блоків немає (app/[slug]/page.tsx).
       - name: body
-        label: Текст (старий формат, до переходу на блоки)
-        widget: markdown
+        label: Текст (старий формат)
+        widget: hidden
         required: false
-        collapsed: true
-        hint: Якщо тут є текст, а блоків немає — перенесіть його у блоки вище, і це поле можна очистити.
       - name: seo_title
         label: Заголовок для Google
         widget: string
@@ -453,7 +455,7 @@ collections:
             label: Емблема Центру
             widget: image
             required: false
-            hint: Емблема з назвою та г��слом. Показується на головній сторінці та у футері
+            hint: Емблема з назвою та гаслом. Показується на головній сторінці та у футері
           - name: tagline
             label: Гасло
             widget: list

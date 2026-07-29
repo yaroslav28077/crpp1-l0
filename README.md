@@ -155,7 +155,7 @@ scripts/            допоміжні скрипти (див. нижче)
 
 ```bash
 node scripts/generate-redirects.mjs    # оновити карту переходів зі старого сайту
-node scripts/fix-descriptions.mjs      # перевірити описи новин (--apply щоб зап��сати)
+node scripts/fix-descriptions.mjs      # перевірити описи новин (--apply щоб записати)
 node scripts/fix-tiddly-leftovers.mjs  # прибрати залишки розмітки TiddlyWiki
 node scripts/compress-images.mjs       # стиснути зображення
 ```
