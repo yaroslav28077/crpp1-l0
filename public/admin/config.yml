@@ -1,0 +1,390 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Для локальної розробки: запустіть `npx decap-server` і розкоментуйте рядок нижче
+# local_backend: true
+
+# Чернетки. Без цього кожне збереження одразу публікувалося на сайт —
+# не було як підготувати матеріал заздалегідь чи показати комусь перед виходом.
+publish_mode: editorial_workflow
+
+locale: uk
+
+# Медіатека Decap плоска — показує лише файли безпосередньо в цій теці.
+# Ширший корінь (public/images) дав би порожній список, бо всі 1937 фото
+# лежать у вкладених теках, а нові завантаження засмічували б корінь.
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  # ─────────────── НОВИНИ ───────────────
+  - name: news
+    label: Новини
+    label_singular: Новина
+    description: Публікації Центру. Найновіші показуються на головній сторінці.
+    folder: content/news
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    sortable_fields: [date, title]
+    summary: '{{date | date("DD.MM.YYYY")}} — {{title}}'
+    fields:
+      # Порядок полів — це порядок, у якому їх заповнюють: спочатку про що
+      # новина, потім сам текст, потім фото. Службове — наприкінці, згорнуте.
+      - { name: title, label: Заголовок, widget: string }
+      - name: date
+        label: Дата публікації
+        widget: datetime
+        # format задає, ЯК дата лягає у файл, а date_format/time_format —
+        # лише як вона виглядає в календарику. Без format Decap може
+        # записати «26.07.2026T10:00», а сайт читає дату через new Date():
+        # на такому значенні збірка падає з RangeError і деплой не проходить.
+        format: YYYY-MM-DDTHH:mm:ss.SSSZ
+        date_format: DD.MM.YYYY
+        time_format: HH:mm
+        hint: Від неї залежить порядок у стрічці та рік в архіві
+      - name: body
+        label: Текст новини
+        widget: markdown
+      - name: author
+        label: Підпис
+        widget: text
+        required: false
+        hint: 'Хто підготував: наприклад «Консультант ЦПРПП Світлана ЛІСНА». Показується під текстом.'
+      - name: gallery
+        label: Фотогалерея
+        widget: list
+        required: false
+        label_singular: Фото
+        summary: '{{fields.image}}'
+        hint: Порядок фото можна змінювати перетягуванням. Підпис не обов'язковий.
+        fields:
+          - { name: image, label: Зображення, widget: image }
+          - { name: caption, label: Підпис, widget: string, required: false }
+      - name: cover
+        label: Головне зображення
+        widget: image
+        required: false
+        hint: Показується на картці новини. Якщо не вибрати — візьметься перше фото з галереї.
+      - name: topics
+        label: Теми
+        widget: select
+        multiple: true
+        required: false
+        hint: 'Публікація сама з''явиться в списку «Події» на відповідній сторінці — заходити на ту сторінку й додавати посилання не треба.'
+        options:
+          - { label: Атестація, value: atestatsiia }
+          - { label: Дошкілля, value: doshkillia }
+          - { label: Інклюзивна освіта, value: inkliuzyvna-osvita }
+          - { label: Початкова школа, value: pochatkova-shkola }
+          - { label: Сертифікація педагогічних працівників, value: sertyfikatsiia-pedahohichnykh-pratsivnykiv }
+          - { label: Шкільна бібліотека, value: shkilna-biblioteka }
+          - { label: Соціально-психологічна служба, value: sotsialno-psykholohichna-sluzhba }
+          - { label: Сторінка психолога, value: storinka-psykholoha }
+          - { label: Супервізія, value: superviziia }
+          - { label: Творчі групи, value: tvorchi-hrupy }
+      - name: description
+        label: Короткий опис
+        widget: text
+        required: false
+        collapsed: true
+        hint: Показується на картці новини і в Google. Якщо лишити порожнім — візьмемо перший абзац тексту.
+      - name: attachments
+        label: Прикріплені файли
+        widget: list
+        required: false
+        collapsed: true
+        label_singular: Файл
+        summary: '{{fields.label}}'
+        hint: Для файлів, які кладете на сам сайт. Посилання на Google Диск зручніше вставляти прямо в текст.
+        fields:
+          - { name: label, label: Назва для показу, widget: string }
+          - { name: file, label: Файл, widget: file, media_folder: /public/documents, public_folder: /documents }
+      - name: seo_title
+        label: Заголовок для Google
+        widget: string
+        required: false
+        collapsed: true
+        hint: Якщо порожньо — використовується звичайний заголовок. Заповнюйте лише за потреби.
+      - name: seo_description
+        label: Опис для Google
+        widget: text
+        required: false
+        collapsed: true
+        hint: Якщо порожньо — використовується короткий опис вище.
+      # Службові мітки зі старого сайту (Березень2024 тощо). Ніде не
+      # показуються, але лишаються у файлі, щоб не зникли при збереженні.
+      - { name: tags, label: Теги, widget: hidden }
+
+  # ─────────────── СТОРІНКИ ───────────────
+  - name: pages
+    label: Сторінки
+    label_singular: Сторінка
+    description: Постійні сторінки сайту. Складаються з блоків, які можна додавати й переставляти.
+    folder: content/pages
+    create: true
+    slug: '{{slug}}'
+    identifier_field: title
+    sortable_fields: [title, section]
+    summary: '{{title}} — {{section}}'
+    # Убудований перегляд не вміє показувати блоки так, як вони виглядають
+    # на сайті, тож радше вводив би в оману.
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Назва сторінки
+        widget: string
+        hint: Показується заголовком на самій сторінці. Підпис у меню задається окремо, у «Налаштуваннях сайту» → «Головне меню».
+      # Адреса сторінки. Не показуємо (складається сама з назви), але поле
+      # мусить бути оголошене: інакше Decap відкине його при збереженні
+      # й адреси наявних сторінок могли б змінитися.
+      - { name: slug, label: Адреса, widget: hidden }
+      - name: section
+        label: Розділ меню
+        widget: select
+        required: false
+        hint: Підпис над заголовком сторінки. Саме меню налаштовується окремо, у «Налаштуваннях сайту».
+        options:
+          - Про Центр
+          - Головна сторінка
+          - Освіта Лубенщини в умовах воєнного стану
+          - Діяльність Центру
+          - Педагогічні спільноти
+          - Професійний розвиток
+          - Консалтингові послуги
+      - name: full_title
+        label: Повна офіційна назва
+        widget: string
+        required: false
+        collapsed: true
+        hint: Якщо офіційна назва задовга для меню. У меню лишиться коротка, а на сторінці буде ця.
+
+      - name: blocks
+        label: Вміст сторінки
+        label_singular: Блок
+        widget: list
+        # Не обов'язкове: сторінки, які ще не перевели на блоки, мають
+        # зберігатися без помилки валідації
+        required: false
+        hint: Додавайте блоки кнопкою нижче. Порядок можна змінювати перетягуванням.
+        types:
+          - name: text
+            label: Текст
+            summary: Текст
+            fields:
+              - { name: text, label: Текст, widget: markdown }
+
+          - name: notice
+            label: Оголошення
+            summary: '{{fields.heading}}'
+            fields:
+              - { name: heading, label: Заголовок, widget: string, default: ОГОЛОШЕННЯ }
+              - { name: text, label: Текст оголошення, widget: markdown }
+
+          - name: accordion
+            label: Розгортуваний розділ
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, label: Заголовок розділу, widget: string, hint: 'Наприклад: Події, Документи' }
+              - { name: text, label: Вміст розділу, widget: markdown }
+
+          - name: news_by_topic
+            label: Список новин за темою (оновлюється сам)
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, label: Заголовок, widget: string, required: false, default: Події }
+              - name: topic
+                label: Тема
+                widget: select
+                hint: 'Список збирається сам. Щоб додати сюди новину — відкрийте її в розділі «Новини» і поставте цю ж тему в полі «Теми». Тут вручну нічого додавати не треба.'
+                options:
+                  - { label: Атестація, value: atestatsiia }
+                  - { label: Дошкілля, value: doshkillia }
+                  - { label: Інклюзивна освіта, value: inkliuzyvna-osvita }
+                  - { label: Початкова школа, value: pochatkova-shkola }
+                  - { label: Сертифікація педагогічних працівників, value: sertyfikatsiia-pedahohichnykh-pratsivnykiv }
+                  - { label: Шкільна бібліотека, value: shkilna-biblioteka }
+                  - { label: Соціально-психологічна служба, value: sotsialno-psykholohichna-sluzhba }
+                  - { label: Сторінка психолога, value: storinka-psykholoha }
+                  - { label: Супервізія, value: superviziia }
+                  - { label: Творчі групи, value: tvorchi-hrupy }
+              - name: extra
+                label: Додатковий текст під списком
+                widget: markdown
+                required: false
+                hint: Заходи, у яких немає окремої публікації на сайті. Здебільшого це сліди матеріалів, які не перенеслися зі старого сайту.
+
+          - name: news_list
+            label: Список новин (обираються вручну)
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, label: Заголовок, widget: string, required: false, default: Події }
+              - name: items
+                label: Новини
+                label_singular: Новина
+                widget: list
+                hint: Оберіть публікації зі списку — назва й дата підтягнуться самі й не розійдуться з новиною.
+                field:
+                  name: item
+                  label: Новина
+                  widget: relation
+                  collection: news
+                  search_fields: [title]
+                  value_field: '{{slug}}'
+                  display_fields: ['{{title}}']
+
+          - name: documents
+            label: Документи й посилання
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, label: Заголовок, widget: string, required: false, default: Документи }
+              - name: collapsed
+                label: Показувати згорнутим
+                widget: boolean
+                default: true
+                hint: Розділ буде закритий, доки відвідувач не клацне по заголовку
+              - name: items
+                label: Перелік
+                label_singular: Документ
+                widget: list
+                summary: '{{fields.label}}'
+                hint: Кожен рядок — назва й посилання. Порядок можна змінювати перетягуванням.
+                fields:
+                  - { name: label, label: Назва, widget: string, hint: Те, що побачить відвідувач }
+                  - name: url
+                    label: Посилання
+                    widget: string
+                    required: false
+                    hint: Адреса на Google Диску або будь-яка інша. Якщо натомість завантажуєте файл — лишіть порожнім.
+                  - name: file
+                    label: Або завантажити файл
+                    widget: file
+                    required: false
+                    media_folder: /public/documents
+                    public_folder: /documents
+                    hint: Для файлів, які зберігаються на самому сайті. Має перевагу над посиланням вище.
+
+          - name: gallery
+            label: Фотогалерея
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, label: Заголовок, widget: string, required: false }
+              - name: images
+                label: Фотографії
+                label_singular: Фото
+                widget: list
+                summary: '{{fields.caption}}'
+                fields:
+                  - { name: image, label: Зображення, widget: image }
+                  - { name: caption, label: Підпис, widget: string, required: false }
+
+      # Тіло сторінки у старому форматі — до переходу на блоки. У свіжому
+      # вмісті порожнє. Поле лишається оголошеним із двох причин: щоб текст
+      # такої сторінки було видно й можна було перенести в блоки, і щоб
+      # Decap не відкинув його при збереженні. Сайт показує це тіло лише
+      # тоді, коли блоків немає (app/[slug]/page.tsx).
+      - name: body
+        label: Текст (старий формат, до переходу на блоки)
+        widget: markdown
+        required: false
+        collapsed: true
+        hint: Якщо тут є текст, а блоків немає — перенесіть його у блоки вище, і це поле можна очистити.
+      - name: seo_title
+        label: Заголовок для Google
+        widget: string
+        required: false
+        collapsed: true
+      - name: seo_description
+        label: Опис для Google
+        widget: text
+        required: false
+        collapsed: true
+
+  # ─────────────── КОМАНДА ───────────────
+  - name: team
+    label: Команда
+    label_singular: Працівник
+    description: Показується на головній сторінці та на сторінці «Наша команда».
+    folder: content/team
+    create: true
+    slug: '{{slug}}'
+    identifier_field: name
+    sortable_fields: [order, name]
+    summary: '{{order}}. {{name}} — {{position}}'
+    fields:
+      - { name: name, label: 'Прізвище, ім’я, по батькові', widget: string }
+      - { name: position, label: Посада, widget: string }
+      - { name: photo, label: Фото, widget: image, required: false }
+      - { name: order, label: Порядок у списку, widget: number, default: 10, value_type: int, hint: 'Менше число — вище у списку' }
+      - { name: body, label: Про працівника, widget: markdown, required: false }
+
+  # ─────────────── НАЛАШТУВАННЯ ───────────────
+  - name: settings
+    label: Налаштування сайту
+    description: Контакти, графік роботи, партнери та меню.
+    files:
+      - name: site
+        label: Контакти й загальне
+        file: content/settings/site.yml
+        fields:
+          - { name: site_name, label: Повна назва установи, widget: string }
+          - { name: site_short_name, label: Коротка назва, widget: string, hint: Показується у футері }
+          - { name: site_description, label: Опис сайту, widget: text, hint: Показується у футері та в результатах пошуку Google }
+          - { name: logo, label: Логотип, widget: image, required: false }
+          - { name: address, label: Адреса, widget: string, required: false }
+          - { name: map_url, label: Посилання на мапу, widget: string, required: false }
+          - name: phones
+            label: Телефони
+            widget: list
+            required: false
+            label_singular: Телефон
+            field: { name: phone, label: Телефон, widget: string }
+          - { name: email, label: Електронна пошта, widget: string, required: false }
+          - name: consultation_url
+            label: Посилання на запис на консультацію
+            widget: string
+            required: false
+            hint: Кнопка у шапці сайту. Якщо лишити порожнім — кнопки не буде.
+          - name: schedule
+            label: Графік роботи
+            widget: list
+            required: false
+            summary: '{{fields.days}} {{fields.hours}}'
+            fields:
+              - { name: days, label: Дні, widget: string, hint: 'Наприклад: Пн–Чт' }
+              - { name: hours, label: Години, widget: string, hint: 'Наприклад: 8:00 – 17:00' }
+          - name: partners
+            label: Партнери
+            widget: list
+            required: false
+            label_singular: Партнер
+            summary: '{{fields.name}}'
+            hint: Блок «Ми співпрацюємо» на головній сторінці
+            fields:
+              - { name: name, label: Назва організації, widget: string }
+              - { name: image, label: Логотип, widget: image, required: false }
+              - { name: url, label: Сайт організації, widget: string, required: false }
+      - name: navigation
+        label: Головне меню
+        file: content/settings/navigation.yml
+        fields:
+          - name: sections
+            label: Розділи меню
+            label_singular: Розділ
+            widget: list
+            summary: '{{fields.title}}'
+            hint: Порядок розділів тут — це порядок у меню сайту
+            fields:
+              - { name: title, label: Назва розділу, widget: string }
+              - name: items
+                label: Пункти
+                label_singular: Пункт
+                widget: list
+                summary: '{{fields.label}}'
+                fields:
+                  - { name: label, label: Назва пункту, widget: string }
+                  - name: url
+                    label: Куди веде
+                    widget: string
+                    hint: Адреса сторінки, наприклад /atestatsiia. Її видно в рядку браузера, коли відкрити цю сторінку на сайті.

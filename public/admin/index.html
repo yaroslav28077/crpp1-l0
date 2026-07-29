@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Керування сайтом — ЦПРПП м. Лубни</title>
+    <!--
+      Абсолютний шлях до конфігу обов'язковий: Decap за замовчуванням шукає
+      config.yml відносно поточного URL, а сторінка відкривається і як
+      /admin, і як /admin/ — у першому випадку він шукав би /config.yml.
+    -->
+    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+    <!--
+      Скрипти лежать локально в public/admin/vendor/, а не тягнуться з CDN.
+      Раніше тут був unpkg із плаваючим діапазоном decap-cms@^3.0.0 без
+      integrity — тобто будь-яке оновлення пакета або компрометація CDN
+      автоматично отримували б повний доступ до репозиторію сайту.
+
+      Як оновити версію: див. розділ «Оновлення адмінки» в README.md
+    -->
+    <script src="/admin/vendor/netlify-identity-widget-2.0.3.js"></script>
+  </head>
+  <body>
+    <script src="/admin/vendor/decap-cms-3.15.1.js"></script>
+    <script>
+      // Після виходу з CMS повертаємо на сторінку логіну
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/'
+            })
+          }
+        })
+      }
+    </script>
+  </body>
+</html>

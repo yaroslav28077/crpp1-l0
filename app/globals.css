@@ -1,0 +1,335 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-foreground: var(--surface-foreground);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-border: var(--surface-border);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-heading: var(--font-manrope), var(--font-inter), system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+  /* Палітра: глибокий синій (довіра, державність), жовтий акцент, нейтральні відтінки */
+  --background: oklch(0.985 0.003 250);
+  --foreground: oklch(0.22 0.03 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.03 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.03 260);
+  --primary: oklch(0.42 0.13 258);
+  --primary-foreground: oklch(0.985 0.003 250);
+  --secondary: oklch(0.94 0.015 255);
+  --secondary-foreground: oklch(0.32 0.08 258);
+  --muted: oklch(0.955 0.006 250);
+  --muted-foreground: oklch(0.5 0.02 258);
+  --accent: oklch(0.85 0.15 90);
+  --accent-foreground: oklch(0.28 0.05 80);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.91 0.01 255);
+  --input: oklch(0.91 0.01 255);
+  --ring: oklch(0.42 0.13 258);
+  --radius: 0.625rem;
+  /* Темні поверхні для шапки, герой-блоку та футера */
+  --surface: oklch(0.22 0.035 262);
+  --surface-foreground: oklch(0.96 0.005 250);
+  --surface-muted: oklch(0.27 0.04 260);
+  --surface-border: oklch(0.34 0.04 260);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Кастомний скролбар у кольорах сайту — без фону, лише смужка */
+html {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: oklch(0.72 0.05 258) transparent;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.72 0.05 258);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Скролбар на темних поверхнях (шапка, мобільне меню, футер) */
+.bg-surface ::-webkit-scrollbar-thumb,
+.bg-surface::-webkit-scrollbar-thumb {
+  background: var(--surface-border);
+}
+.bg-surface ::-webkit-scrollbar-thumb:hover,
+.bg-surface::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+.bg-surface,
+.bg-surface * {
+  scrollbar-color: var(--surface-border) transparent;
+}
+
+/* Горизонтальне прокручування таблиць */
+.article-content table {
+  scrollbar-width: thin;
+  scrollbar-color: oklch(0.72 0.05 258) transparent;
+}
+
+/* Не смикати шапку через появу/зникнення скролбара */
+@supports (scrollbar-gutter: stable) {
+  html {
+    scrollbar-gutter: stable;
+  }
+}
+
+/* Стилі для контенту, згенерованого з Markdown.
+   Чистий CSS без @apply: Tailwind v4 мовчки відкидає правила з @apply поза @layer. */
+.article-content {
+  color: var(--foreground);
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+.article-content > * + * {
+  margin-top: 1rem;
+}
+.article-content h1,
+.article-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  text-wrap: balance;
+  font-family: var(--font-heading);
+}
+.article-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  font-family: var(--font-heading);
+}
+.article-content h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  font-family: var(--font-heading);
+}
+.article-content a {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in oklab, var(--primary) 40%, transparent);
+  transition: opacity 0.15s ease;
+}
+.article-content a:hover {
+  opacity: 0.75;
+  text-decoration-color: var(--primary);
+}
+.article-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.article-content ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.article-content li::marker {
+  color: var(--primary);
+}
+.article-content img {
+  border-radius: var(--radius);
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-content blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--muted-foreground);
+}
+.article-content hr {
+  margin: 2rem 0;
+  border-color: var(--border);
+}
+.article-content table {
+  width: 100%;
+  font-size: 0.875rem;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+}
+.article-content table th {
+  background: var(--secondary);
+  color: var(--secondary-foreground);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+}
+.article-content table td {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  vertical-align: top;
+}
+.article-content iframe {
+  max-width: 100%;
+  border-radius: var(--radius);
+}
+
+/* Розгортувані блоки (акордеони) */
+.article-content details {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  overflow: hidden;
+}
+.article-content details + details {
+  margin-top: 0.5rem;
+}
+.article-content details > summary {
+  cursor: pointer;
+  padding: 0.875rem 1rem 0.875rem 2.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  user-select: none;
+  font-family: var(--font-heading);
+  list-style: none;
+  position: relative;
+  transition: background-color 0.15s ease;
+}
+.article-content details > summary::-webkit-details-marker {
+  display: none;
+}
+.article-content details > summary::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  translate: 0 -50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+  rotate: -45deg;
+  transition: rotate 0.2s ease;
+}
+.article-content details[open] > summary::before {
+  rotate: 45deg;
+}
+.article-content details > summary:hover {
+  background: var(--secondary);
+}
+.article-content details[open] > summary {
+  border-bottom: 1px solid var(--border);
+  background: var(--secondary);
+}
+.article-content details > *:not(summary) {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.article-content details > *:nth-child(2) {
+  padding-top: 1rem;
+}
+.article-content details > *:last-child {
+  padding-bottom: 1rem;
+}
+.article-content .tab-body {
+  padding: 1rem;
+}
+.article-content .tab-body > * + * {
+  margin-top: 0.75rem;
+}
+
+/* Сітка логотипів партнерів */
+.article-content .partners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 640px) {
+  .article-content .partners-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .article-content .partners-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.article-content .partners-grid a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.article-content .partners-grid a:hover {
+  opacity: 1;
+  border-color: var(--primary);
+  box-shadow: 0 2px 12px color-mix(in oklab, var(--primary) 12%, transparent);
+}
+.article-content .partners-grid img {
+  width: 100%;
+  max-width: 10rem;
+  height: auto;
+}

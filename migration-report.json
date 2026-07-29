@@ -1,0 +1,172 @@
+{
+  "newsMigrated": 273,
+  "pagesMigrated": 31,
+  "teamMigrated": 4,
+  "emptyBodies": [
+    "Cемінар-практикум для заступників директорів закладів освіти Лубенської громади — «ДЖУРА: КЕЙСИ КРАЩИХ ПРАКТИК»",
+    "Освітній апгрейд «НУШ:нова якість — спільна відповідальність»"
+  ],
+  "failedNotes": [
+    {
+      "title": "Cемінар-практикум для заступників директорів закладів освіти Лубенської громади — «ДЖУРА: КЕЙСИ КРАЩИХ ПРАКТИК»",
+      "url": "https://lubny-cprpp.ho.ua/notes/Ceminar-praktikum%20dlya%20zastupnikiv%20direktoriv%20zakladiv%20osviti%20Lubenskoyi%20gromadi%20%E2%80%94%20((DZhURA..%20KEYSI%20KRASchIH%20PRAKTIK)).html",
+      "error": "HTTP 404"
+    },
+    {
+      "title": "Освітній апгрейд «НУШ:нова якість — спільна відповідальність»",
+      "url": "https://lubny-cprpp.ho.ua/notes/Osvitniy%20apgreyd%20((NUSh..nova%20yakist%20%E2%80%94%20spilna%20vidpovidalnist)).html",
+      "error": "HTTP 404"
+    }
+  ],
+  "failedAssets": [
+    {
+      "file": "notes/2025/11/MOD/01.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2025/11/MOD/03.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2025/11/MOD/04.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2025/11/MOD/02.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2025/11/MOD/05.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2026/05/bf/01.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2022/10/zdor/01.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2022/10/zdor/03.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2022/12/lug/09.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2022/12/lug/08.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/10/diy/09.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/10/diy/10.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2022/10/zdor/02.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/10/zas/02.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/10/zas/01.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/10/zas/03.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/10/diy/11.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/12/jar/01.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/10/diy/12.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/12/jar/07.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2025/03/roik/04.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2023/08/SkillsCamp/15.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2023/08/SkillsCamp/14.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2025/03/ves/03.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/12/krv/08.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/10/diy/13.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2025/03/roik/03.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/09/bib/01.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2025/03/ves/04.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2025/03/roik/05.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2026/05/gen/01.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2025/03/roik/07.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2023/08/SkillsCamp/13.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2025/03/roik/02.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/01/hist/12.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2026/02/nar/01.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "file": "notes/2024/09/gog/05.jpg",
+      "error": "HTTP 404"
+    }
+  ],
+  "skipped": []
+}

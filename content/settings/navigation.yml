@@ -1,0 +1,81 @@
+sections:
+  - title: Про Центр
+    items:
+      - label: Наша команда
+        url: /komanda
+      - label: Ми співпрацюємо
+        url: /my-spivpratsiuiemo
+      - label: Пріоритетні завдання Центру
+        url: /priorytetni-zavdannia-tsentru
+  - title: Новини Центру
+    items:
+      - label: Новини
+        url: /novyny
+  - title: Освіта Лубенщини в умовах воєнного стану
+    items:
+      - label: Важливо знати кожному!
+        url: /vazhlyvo-znaty-kozhnomu
+      - label: Нормативно-правова база
+        url: /normatyvno-pravova-baza
+      - label: Освітній процес в умовах воєнного стану
+        url: /osvitnii-protses-v-umovakh-voiennoho-stanu
+      - label: Поради психолога
+        url: /porady-psykholoha
+      - label: Волонтерська діяльність освітян Лубенщини
+        url: /volonterska-diialnist-osvitian-lubenshchyny
+  - title: Діяльність Центру
+    items:
+      - label: Нормативні документи
+        url: /normatyvni-dokumenty
+      - label: Стратегія розвитку
+        url: /stratehiia-rozvytku-komunalnoi-ustanovy-tsentr-profesiinoho-rozvytku-pedahohichn
+      - label: Публічна інформація
+        url: /publichna-informatsiia
+      - label: Атестація
+        url: /atestatsiia
+      - label: Плани роботи
+        url: /plany-roboty
+      - label: Проєкти, інновації, сучасні практики
+        url: /proiekty-innovatsii-suchasni-praktyky
+      - label: Програми
+        url: /prohramy
+      - label: Сторінка психолога
+        url: /storinka-psykholoha
+  - title: Педагогічні спільноти
+    items:
+      - label: Керівний склад
+        url: /kerivnyi-sklad
+      - label: Дошкілля
+        url: /doshkillia
+      - label: Початкова школа
+        url: /pochatkova-shkola
+      - label: Загальна середня освіта
+        url: /zahalna-serednia-osvita
+      - label: Творчі групи
+        url: /tvorchi-hrupy
+      - label: Шкільна бібліотека
+        url: /shkilna-biblioteka
+      - label: Позашкільна освіта
+        url: /pozashkilna-osvita
+      - label: Соціально-психологічна служба
+        url: /sotsialno-psykholohichna-sluzhba
+      - label: '#Тияк'
+        url: /tyiak
+      - label: Інклюзивна освіта
+        url: /inkliuzyvna-osvita
+  - title: Професійний розвиток
+    items:
+      - label: Суб’єкти підвищення кваліфікації
+        url: /subiekty-pidvyshchennia-kvalifikatsii
+      - label: Простір творчих ідей
+        url: /prostir-tvorchykh-idei
+      - label: Облік сертифікатів
+        url: /oblik-sertyfikativ
+  - title: Консалтингові послуги
+    items:
+      - label: Сертифікація педагогічних працівників
+        url: /sertyfikatsiia-pedahohichnykh-pratsivnykiv
+      - label: Супервізія
+        url: /superviziia
+      - label: Траєкторія професійного розвитку педагога
+        url: /traiektoriia-profesiinoho-rozvytku-pedahoha

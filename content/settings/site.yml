@@ -1,0 +1,28 @@
+site_name: Центр професійного розвитку педагогічних працівників
+site_short_name: ЦПРПП м. Лубни
+site_description: Комунальна установа «Центр професійного розвитку педагогічних працівників Лубенської міської ради» Лубенського району Полтавської області
+logo: /images/pict/logo-emblem.png
+address: 37500 м. Лубни Полтавської області, вул. Григора Тютюнника 19А
+map_url: https://www.google.com/maps/@50.0119334,33.0010027,18z
+phones:
+  - (05361)-77-416
+  - (05361)-77-421
+email: lubny.cprpp@ukr.net
+consultation_url: https://forms.gle/FmyWyvGzqoBEPBwq6
+schedule:
+  - days: Пн–Чт
+    hours: 8:00 – 17:00
+  - days: Пт
+    hours: 8:00 – 16:00
+  - days: Обід
+    hours: 12:00 – 12:45
+partners:
+  - name: Міністерство юстиції України
+    image: /images/pict/coop/minjust2.png
+    url: https://pravo.minjust.gov.ua/
+  - name: Ла Страда – Україна
+    image: /images/pict/coop/lastrada2.png
+    url: https://la-strada.org.ua/
+  - name: Державна служба якості освіти
+    image: /images/pict/coop/dsyau2.png
+    url: https://sqe.gov.ua/index.php/uk-ua/

@@ -1,0 +1,1225 @@
+{
+  "_comment": "Згенеровано scripts/generate-redirects.mjs — не редагувати вручну.",
+  "rules": [
+    {
+      "from": "/notes/Chergove%20zasidannya%20tvorchoyi%20grupi.html",
+      "to": "/novyny/2021-12-16-cherhove-zasidannia-tvorchoi-hrupy"
+    },
+    {
+      "from": "/notes/Konsultativno-metodichna%20narada.html",
+      "to": "/novyny/2021-12-17-konsultatyvno-metodychna-narada"
+    },
+    {
+      "from": "/notes/Uspishne%20zavershennya%20sertifikaciyi.html",
+      "to": "/novyny/2021-12-22-uspishne-zavershennia-sertyfikatsii"
+    },
+    {
+      "from": "/notes/Profesiyna%20pidtrimka%20pedagoga.html",
+      "to": "/novyny/2021-12-23-profesiina-pidtrymka-pedahoha"
+    },
+    {
+      "from": "/notes/Pidsumki%20Oblasnogo%20yarmarku%20metodichnih%20materialiv.html",
+      "to": "/novyny/2021-12-30-pidsumky-oblasnoho-iarmarku-metodychnykh-materialiv"
+    },
+    {
+      "from": "/notes/Pedagogi%20Lubenschini%20obgovoryuyut%20aktualni%20pitannya.html",
+      "to": "/novyny/2022-01-06-pedahohy-lubenshchyny-obhovoriuiut-aktualni-pytannia"
+    },
+    {
+      "from": "/notes/Vseukrayinska%20rizdvyana%20pedagogichna%20konferenciya.html",
+      "to": "/novyny/2022-01-20-vseukrainska-rizdviana-pedahohichna-konferentsiia"
+    },
+    {
+      "from": "/notes/Pidsumki%20festivalyu%20videourokiv%20((Osvityani%20Lubenschini%20prezentuyut...)).html",
+      "to": "/novyny/2022-01-22-pidsumky-festyvaliu-videourokiv-osvitiany-lubenshchyny-prezentuiut"
+    },
+    {
+      "from": "/notes/Navchannya%20praktichnih%20psihologiv.html",
+      "to": "/novyny/2022-01-27-navchannia-praktychnykh-psykholohiv"
+    },
+    {
+      "from": "/notes/Prizeri%20z%20nastilnogo%20tenisu%20Lubenskoyi%20teritorialnoyi%20gromadi.html",
+      "to": "/novyny/2022-01-27-pryzery-z-nastilnoho-tenisu-lubenskoi-terytorialnoi-hromady"
+    },
+    {
+      "from": "/notes/Kaskad%20onlayn-narad%20ZZSO%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2022-02-11-kaskad-onlain-narad-zzso-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20zastupnikiv%20direktoriv%20shkil%20%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2022-02-11-seminar-praktykum-zastupnykiv-dyrektoriv-shkil-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Konkurs%20((Uchitel%20roku))%20-%20krok%20do%20profesiynogo%20zrostannya%20pedagoga.html",
+      "to": "/novyny/2022-02-16-konkurs-uchytel-roku-krok-do-profesiinoho-zrostannia-pedahoha"
+    },
+    {
+      "from": "/notes/Monitoring%20organizaciyi%20distanciynogo%20navchannya.html",
+      "to": "/novyny/2022-02-16-monitorynh-orhanizatsii-dystantsiinoho-navchannia"
+    },
+    {
+      "from": "/notes/Yak%20organizuvati%20osvitniy%20proces%20v%20umovah%20viyni..%20poradi%20Derzhavnoyi%20sluzhbi%20yakosti%20osviti.html",
+      "to": "/novyny/2022-03-15-iak-orhanizuvaty-osvitnii-protses-v-umovakh-viiny-porady-derzhavnoi-sluzhby-iako"
+    },
+    {
+      "from": "/notes/Shanovni%20vchiteli%20matematiki!.html",
+      "to": "/novyny/2022-03-15-shanovni-vchyteli-matematyky"
+    },
+    {
+      "from": "/notes/Yak%20diyati%20pid%20chas%20onlayn%20urokiv%2C%20yakscho%20vmikaetsya%20signal%20%60Uvaga%20vsim!%20Povitryana%20trivoga!%60.html",
+      "to": "/novyny/2022-03-21-iak-diiaty-pid-chas-onlain-urokiv-iakshcho-vmykaietsia-syhnal-uvaha-vsim-povitri"
+    },
+    {
+      "from": "/notes/Pro%20provedennya%20atestaciyi%20pedagogichnih%20pracivnikiv.html",
+      "to": "/novyny/2022-03-21-pro-provedennia-atestatsii-pedahohichnykh-pratsivnykiv"
+    },
+    {
+      "from": "/notes/Roz'yasnennya%20MON%20Ukrayini%20pro%20pravoviy%20rezhim%20v%20umovah%20voennogo%20stanu.html",
+      "to": "/novyny/2022-03-21-roziasnennia-mon-ukrainy-pro-pravovyi-rezhym-v-umovakh-voiennoho-stanu"
+    },
+    {
+      "from": "/notes/Rekomendaciyi%20dlya%20doshkilnyat.html",
+      "to": "/novyny/2022-04-08-rekomendatsii-dlia-doshkilniat"
+    },
+    {
+      "from": "/notes/Rubrika%20%60Zakladi%20osviti%20v%20umovah%20voennogo%20stanu%60.html",
+      "to": "/novyny/2022-04-08-rubryka-zaklady-osvity-v-umovakh-voiennoho-stanu"
+    },
+    {
+      "from": "/notes/Zaversheno%20atestaciyu%20pedagogichnih%20pracivnikiv%20zakladiv%20osviti%20Lubenskoyi%20teritorialnoyi%20gromadi%20u%202021-2022%20navchalnomu%20roci.html",
+      "to": "/novyny/2022-05-04-zaversheno-atestatsiiu-pedahohichnykh-pratsivnykiv-zakladiv-osvity-lubenskoi-ter"
+    },
+    {
+      "from": "/notes/Vebinar%20dlya%20pracivnikiv%20psihologichnoyi%20sluzhbi.html",
+      "to": "/novyny/2022-05-12-vebinar-dlia-pratsivnykiv-psykholohichnoi-sluzhby"
+    },
+    {
+      "from": "/notes/Narada%20bibliotekariv%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2022-05-13-narada-bibliotekariv-zakladiv-zahalnoi-serednoi-osvity-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Narada%20%20zastupnikiv%20direktoriv%20shkil.html",
+      "to": "/novyny/2022-05-17-narada-zastupnykiv-dyrektoriv-shkil"
+    },
+    {
+      "from": "/notes/Nova%20ukrayinska%20shkola..%20%20vidpovidaemo%20na%20vikliki.html",
+      "to": "/novyny/2022-05-17-nova-ukrainska-shkola-vidpovidaiemo-na-vyklyky"
+    },
+    {
+      "from": "/notes/Pidsumki%20II%20Mizhnarodnogo%20konkursu%20dlya%20vchiteliv.html",
+      "to": "/novyny/2022-05-24-pidsumky-ii-mizhnarodnoho-konkursu-dlia-vchyteliv"
+    },
+    {
+      "from": "/notes/Navchannya%20vchiteliv%20fizichnoyi%20kulturi.html",
+      "to": "/novyny/2022-05-26-navchannia-vchyteliv-fizychnoi-kultury"
+    },
+    {
+      "from": "/notes/Onlayn-zustrich%20uchiteliv%20fizichnoyi%20kulturi%20z%20Andriem%20Bolyakom.html",
+      "to": "/novyny/2022-05-26-onlain-zustrich-uchyteliv-fizychnoi-kultury-z-andriiem-boliakom"
+    },
+    {
+      "from": "/notes/Diti%20Lubenskoyi%20teritorialnoyi%20gromadi%20-%20za%20mir%20v%20Ukrayini!.html",
+      "to": "/novyny/2022-06-02-dity-lubenskoi-terytorialnoi-hromady-za-myr-v-ukraini"
+    },
+    {
+      "from": "/notes/635%20vchiteliv%20tehnologiy%20Poltavskoyi%20oblasti%20pidgotovleno%20do%20roboti%20v%20NUSh.html",
+      "to": "/novyny/2022-06-10-635-vchyteliv-tekhnolohii-poltavskoi-oblasti-pidhotovleno-do-roboty-v-nush"
+    },
+    {
+      "from": "/notes/Konkurs%20innovaciy%20dlya%20vihovateliv%2C%20vihovateliv-metodistiv%20zakladiv%20doshkilnoyi%20osviti%20Lubenskoyi%20teritorialnoyi%20gromadi.html",
+      "to": "/novyny/2022-06-13-konkurs-innovatsii-dlia-vykhovateliv-vykhovateliv-metodystiv-zakladiv-doshkilnoi"
+    },
+    {
+      "from": "/notes/Pidvedennya%20pidsumkiv%20konkursu%20((Innovaciyi%20v%20roboti%20vihovatelya%2C%20vihovatelya-metodista)).html",
+      "to": "/novyny/2022-06-22-pidvedennia-pidsumkiv-konkursu-innovatsii-v-roboti-vykhovatelia-vykhovatelia-met"
+    },
+    {
+      "from": "/notes/Pro%20pidsumki%20navchannya%20vchiteliv%2C%20yaki%20zabezpechuvatimut%20realizaciyu%20novogo%20Derzhavnogo%20standartu%20bazovoyi%20serednoyi%20osviti%20u%202022-2023%20n.r.%20v%20Lubenskiy%20teritorialniy%20gromadi.html",
+      "to": "/novyny/2022-07-09-pro-pidsumky-navchannia-vchyteliv-iaki-zabezpechuvatymut-realizatsiiu-novoho-der"
+    },
+    {
+      "from": "/notes/RodovidUchitel2022.html",
+      "to": "/novyny/2022-07-09-rodoviduchytel2022"
+    },
+    {
+      "from": "/notes/Sertifikaciya%20vchiteliv%20pochatkovoyi%20shkoli.html",
+      "to": "/novyny/2022-08-01-sertyfikatsiia-vchyteliv-pochatkovoi-shkoly"
+    },
+    {
+      "from": "/notes/Uvaga!%20Rozpochato%20reestraciyu%20vchiteliv%20dlya%20prohodzhennya%20sertifikaciyi%202022%20roku.html",
+      "to": "/novyny/2022-08-01-uvaha-rozpochato-reiestratsiiu-vchyteliv-dlia-prokhodzhennia-sertyfikatsii-2022"
+    },
+    {
+      "from": "/notes/Onovleno%20zmist%20navchalnih%20program%20ZSO.html",
+      "to": "/novyny/2022-08-18-onovleno-zmist-navchalnykh-prohram-zso"
+    },
+    {
+      "from": "/notes/Osvityani%20Lubenschini%20gotuyutsya%20do%20novogo%202022-2023%20navchalnogo%20roku.html",
+      "to": "/novyny/2022-08-29-osvitiany-lubenshchyny-hotuiutsia-do-novoho-2022-2023-navchalnoho-roku"
+    },
+    {
+      "from": "/notes/Mi%20-%20uchasniki%20Evropeyskogo%20marafonu.html",
+      "to": "/novyny/2022-09-26-my-uchasnyky-ievropeiskoho-marafonu"
+    },
+    {
+      "from": "/notes/Naperedodni%20Vseukrayinskogo%20dnya%20bibliotek....html",
+      "to": "/novyny/2022-09-29-naperedodni-vseukrainskoho-dnia-bibliotek"
+    },
+    {
+      "from": "/notes/Vseukrayinska%20shkola%20onlayn.html",
+      "to": "/novyny/2022-10-05-vseukrainska-shkola-onlain"
+    },
+    {
+      "from": "/notes/Lubenska%20publichna%20biblioteka%20imeni%20Volodimira%20Malika%20proponue%20pedagogam%20ta%20batkam%20oznayomitisya%20z%20dobirkoyu%20knig%20((Inklyuzivne%20navchannya%20ditey)).html",
+      "to": "/novyny/2022-10-07-lubenska-publichna-biblioteka-imeni-volodymyra-malyka-proponuie-pedahoham-ta-bat"
+    },
+    {
+      "from": "/notes/Pedagogichniy%20ivent%20((Navchati%20i%20navchatisya..%20yak%20zrostati%20vchitelyu)).html",
+      "to": "/novyny/2022-10-07-pedahohichnyi-ivent-navchaty-i-navchatysia-iak-zrostaty-vchyteliu"
+    },
+    {
+      "from": "/notes/((Spilno%20dlya%20vchiteliv))%20-%20proekt%20dopomogi%20vchitelyam.html",
+      "to": "/novyny/2022-10-07-spilno-dlia-vchyteliv-proiekt-dopomohy-vchyteliam"
+    },
+    {
+      "from": "/notes/Zaklad%20osviti%20-%20teritoriya%20zdorov_ya.html",
+      "to": "/novyny/2022-10-24-zaklad-osvity-terytoriia-zdorovia"
+    },
+    {
+      "from": "/notes/Vidbirkoviy%20etap%20V%20Gimnaziadi%20Poltavskoi%20oblasti%20zakladiv%20zagalnoyi%20serednoyi%20osviti.html",
+      "to": "/novyny/2022-11-01-vidbirkovyi-etap-v-himnaziady-poltavskoi-oblasti-zakladiv-zahalnoi-serednoi-osvi"
+    },
+    {
+      "from": "/notes/Zasidannya%20pedagogichnoyi%20spilnoti%20vihovateliv%20starshih%20grup%20ZDO.html",
+      "to": "/novyny/2022-11-02-zasidannia-pedahohichnoi-spilnoty-vykhovateliv-starshykh-hrup-zdo"
+    },
+    {
+      "from": "/notes/Novi%20peremogi%20nashih%20sportsmeniv.html",
+      "to": "/novyny/2022-11-03-novi-peremohy-nashykh-sportsmeniv"
+    },
+    {
+      "from": "/notes/Vseukrayinskiy%20misyachnik%20shkilnih%20bibliotek%20u%20zakladah%20osviti%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2022-11-07-vseukrainskyi-misiachnyk-shkilnykh-bibliotek-u-zakladakh-osvity-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Diyalnisniy%20pidhid%20-%20odin%20iz%20sposobiv%20realizaciyi%20idey%20Novoyi%20ukrayinskoyi%20shkoli.html",
+      "to": "/novyny/2022-11-10-diialnisnyi-pidkhid-odyn-iz-sposobiv-realizatsii-idei-novoi-ukrainskoi-shkoly"
+    },
+    {
+      "from": "/notes/Zonalni%20zmagannya%20z%20shahiv%20v%20m.Piryatini.html",
+      "to": "/novyny/2022-11-10-zonalni-zmahannia-z-shakhiv-v-m-pyriatyni"
+    },
+    {
+      "from": "/notes/Cikl%20vebinariv%20((Mediagramotnist%20dlya%20osvityan..%20praktichni%20navichki)).html",
+      "to": "/novyny/2022-11-14-tsykl-vebinariv-mediahramotnist-dlia-osvitian-praktychni-navychky"
+    },
+    {
+      "from": "/notes/Prodovzhuemo%20znayomitisya%20z%20dosvidom%20roboti.html",
+      "to": "/novyny/2022-11-16-prodovzhuiemo-znaiomytysia-z-dosvidom-roboty"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20shkilnih%20bibliotekariv%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2022-11-16-seminar-praktykum-shkilnykh-bibliotekariv-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Suchasniy%20uchitel%20ukrayinskoyi%20rozshiryue%20tradiciyni%20osvitni%20kordoni.html",
+      "to": "/novyny/2022-11-16-suchasnyi-uchytel-ukrainskoi-rozshyriuie-tradytsiini-osvitni-kordony"
+    },
+    {
+      "from": "/notes/Formuvannya%20u%20molodshih%20doshkilnikiv%20navichok%2C%20orientovanih%20na%20staliy%20rozvitok.html",
+      "to": "/novyny/2022-11-21-formuvannia-u-molodshykh-doshkilnykiv-navychok-oriientovanykh-na-stalyi-rozvytok"
+    },
+    {
+      "from": "/notes/Mizhnarodna%20naukovo-praktichna%20konferenciya.html",
+      "to": "/novyny/2022-12-01-mizhnarodna-naukovo-praktychna-konferentsiia"
+    },
+    {
+      "from": "/notes/Pidsumki%20festivalyu%20((Kaleydoskop%20pedagogichnih%20idey%20uchiteliv%20pochatkovih%20klasiv)).html",
+      "to": "/novyny/2022-12-05-pidsumky-festyvaliu-kaleidoskop-pedahohichnykh-idei-uchyteliv-pochatkovykh-klasi"
+    },
+    {
+      "from": "/notes/Metodologichniy%20seminar%20osvityan.html",
+      "to": "/novyny/2022-12-06-metodolohichnyi-seminar-osvitian"
+    },
+    {
+      "from": "/notes/Zmagannya%20zi%20strilbi%20z%20pnevmatichnoyi%20zbroyi.html",
+      "to": "/novyny/2022-12-06-zmahannia-zi-strilby-z-pnevmatychnoi-zbroi"
+    },
+    {
+      "from": "/notes/Peremoga%20v%20konkursi%20%20ese.html",
+      "to": "/novyny/2022-12-14-peremoha-v-konkursi-ese"
+    },
+    {
+      "from": "/notes/Vitaemo%20peremozhciv%20ta%20yih%20nastavnikiv.html",
+      "to": "/novyny/2022-12-14-vitaiemo-peremozhtsiv-ta-ikh-nastavnykiv"
+    },
+    {
+      "from": "/notes/Navchalniy%20trening%20dlya%20pedagogiv%20gromadi.html",
+      "to": "/novyny/2022-12-15-navchalnyi-treninh-dlia-pedahohiv-hromady"
+    },
+    {
+      "from": "/notes/Vitaemo%20z%20uspishnim%20prohodzhennyam%20sertifikaciyi%20-%202022!.html",
+      "to": "/novyny/2022-12-15-vitaiemo-z-uspishnym-prokhodzhenniam-sertyfikatsii-2022"
+    },
+    {
+      "from": "/notes/Metodichni%20praktikumi%20osvityan%20Lubenschini.html",
+      "to": "/novyny/2023-01-04-metodychni-praktykumy-osvitian-lubenshchyny"
+    },
+    {
+      "from": "/notes/Osvityani%20navchayutsya%20mediagramotnosti.html",
+      "to": "/novyny/2023-01-05-osvitiany-navchaiutsia-mediahramotnosti"
+    },
+    {
+      "from": "/notes/Pidsumki%20sertifikaciyi-2022.html",
+      "to": "/novyny/2023-01-20-pidsumky-sertyfikatsii-2022"
+    },
+    {
+      "from": "/notes/Narada%20zastupnikiv%20%20direktoriv%20shkil.html",
+      "to": "/novyny/2023-02-02-narada-zastupnykiv-dyrektoriv-shkil"
+    },
+    {
+      "from": "/notes/((Kruti%20igri)).html",
+      "to": "/novyny/2023-02-03-kruti-ihry"
+    },
+    {
+      "from": "/notes/Zasidannya%20tvorchoyi%20grupi%20vihovateliv-metodistiv%20zakladiv%20doshkilnoyi%20osviti.html",
+      "to": "/novyny/2023-02-03-zasidannia-tvorchoi-hrupy-vykhovateliv-metodystiv-zakladiv-doshkilnoi-osvity"
+    },
+    {
+      "from": "/notes/Vernisazh%20rozrobok%20navchalnih%20materialiv%20((Suchasniy%20cifroviy%20urok)).html",
+      "to": "/novyny/2023-02-13-vernisazh-rozrobok-navchalnykh-materialiv-suchasnyi-tsyfrovyi-urok"
+    },
+    {
+      "from": "/notes/Final%20((Krutih%20igor)).html",
+      "to": "/novyny/2023-02-16-final-krutykh-ihor"
+    },
+    {
+      "from": "/notes/((Cool%20Games)).html",
+      "to": "/novyny/2023-02-20-cool-games"
+    },
+    {
+      "from": "/notes/Poetichniy%20ukrayinskiy%20svit%20Natali%20Baklay.html",
+      "to": "/novyny/2023-02-22-poetychnyi-ukrainskyi-svit-natali-baklai"
+    },
+    {
+      "from": "/notes/Instruktivno-metodichna%20narada%20shkilnih%20bibliotekariv.html",
+      "to": "/novyny/2023-03-14-instruktyvno-metodychna-narada-shkilnykh-bibliotekariv"
+    },
+    {
+      "from": "/notes/Urochistosti%20z%20nagodi%20vidannya%20naukovo-metodichnogo%20almanahu%20((Plekaemo%20osobistist)).html",
+      "to": "/novyny/2023-03-14-urochystosti-z-nahody-vydannia-naukovo-metodychnoho-almanakhu-plekaiemo-osobysti"
+    },
+    {
+      "from": "/notes/Zasidannya%20pedagogichnoyi%20spilnoti%20praktichnih%20psihologiv.html",
+      "to": "/novyny/2023-03-20-zasidannia-pedahohichnoi-spilnoty-praktychnykh-psykholohiv"
+    },
+    {
+      "from": "/notes/Narada%20vchiteliv%20predmetu%20((Zahist%20Ukrayini)).html",
+      "to": "/novyny/2023-03-22-narada-vchyteliv-predmetu-zakhyst-ukrainy"
+    },
+    {
+      "from": "/notes/Igrovi%20formi%20roboti%20klasnogo%20kerivnika.html",
+      "to": "/novyny/2023-03-30-ihrovi-formy-roboty-klasnoho-kerivnyka"
+    },
+    {
+      "from": "/notes/Cikavi%20layfhaki%20dlya%20pedagogiv-organizatoriv.html",
+      "to": "/novyny/2023-03-30-tsikavi-laifkhaky-dlia-pedahohiv-orhanizatoriv"
+    },
+    {
+      "from": "/notes/Zustrich%20pedagogiv%20iz%20Antonom%20Baderom.html",
+      "to": "/novyny/2023-03-30-zustrich-pedahohiv-iz-antonom-baderom"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20zastupnikiv%20direktoriv%20shkil.html",
+      "to": "/novyny/2023-03-31-seminar-praktykum-zastupnykiv-dyrektoriv-shkil"
+    },
+    {
+      "from": "/notes/Pedagogika%20v%20osobistostyah.html",
+      "to": "/novyny/2023-04-06-pedahohika-v-osobystostiakh"
+    },
+    {
+      "from": "/notes/Pidsumkove%20zasidannya%20atestaciynoyi%20komisiyi%20II%20rivnya.html",
+      "to": "/novyny/2023-04-07-pidsumkove-zasidannia-atestatsiinoi-komisii-ii-rivnia"
+    },
+    {
+      "from": "/notes/Chergovi%20dosyagnennya%20nashih%20uchiteliv.html",
+      "to": "/novyny/2023-04-10-cherhovi-dosiahnennia-nashykh-uchyteliv"
+    },
+    {
+      "from": "/notes/Psihosocialna%20pidtrimka%20ditey.html",
+      "to": "/novyny/2023-04-11-psykhosotsialna-pidtrymka-ditei"
+    },
+    {
+      "from": "/notes/Integrovana%20diyalnist%20u%20zakladi%20doshkilnoyi%20osviti.html",
+      "to": "/novyny/2023-04-24-intehrovana-diialnist-u-zakladi-doshkilnoi-osvity"
+    },
+    {
+      "from": "/notes/Pidsumki%20provedennya%20konkursu%20fahovoyi%20maysternosti%20((Prioriteti%20nacionalno-patriotichnogo%20vihovannya%20v%20osvitnomu%20ta%20vihovnomu%20procesi)).html",
+      "to": "/novyny/2023-04-26-pidsumky-provedennia-konkursu-fakhovoi-maisternosti-priorytety-natsionalno-patri"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20uchiteliv%20matematiki.html",
+      "to": "/novyny/2023-04-27-seminar-praktykum-uchyteliv-matematyky"
+    },
+    {
+      "from": "/notes/Navchalno-polovi%20zbori-2023%20uchniv%2011-h%20klasiv%20zakladiv%20osviti%20Lubenskoyi%20teritorialnoyi%20gromadi.html",
+      "to": "/novyny/2023-05-06-navchalno-polovi-zbory-2023-uchniv-11-kh-klasiv-zakladiv-osvity-lubenskoi-teryto"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20dlya%20vchiteliv%20fizichnoyi%20kulturi.html",
+      "to": "/novyny/2023-05-15-seminar-praktykum-dlia-vchyteliv-fizychnoi-kultury"
+    },
+    {
+      "from": "/notes/Navchannya%20pracivnikiv%20psihologichnoyi%20sluzhbi.html",
+      "to": "/novyny/2023-05-25-navchannia-pratsivnykiv-psykholohichnoi-sluzhby"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20direktoriv%20shkil.html",
+      "to": "/novyny/2023-05-31-seminar-praktykum-dyrektoriv-shkil"
+    },
+    {
+      "from": "/notes/Mizhnarodniy%20den%20zahistu%20ditey%20u%20Lubenskiy%20gromadi.html",
+      "to": "/novyny/2023-06-01-mizhnarodnyi-den-zakhystu-ditei-u-lubenskii-hromadi"
+    },
+    {
+      "from": "/notes/Vseukrayinskiy%20proekt%20((Edina%20Ukrayina))%20za%20koncepcieyu%20((Sport%20zaradi%20rozvitku))%20krokue%20po%20Lubenskiy%20gromadi.html",
+      "to": "/novyny/2023-06-08-vseukrainskyi-proiekt-iedyna-ukraina-za-kontseptsiieiu-sport-zarady-rozvytku-kro"
+    },
+    {
+      "from": "/notes/Vchimosya%20navchati%20usih%20ditey%20u%20rivnih%20umovah.html",
+      "to": "/novyny/2023-06-14-vchymosia-navchaty-usikh-ditei-u-rivnykh-umovakh"
+    },
+    {
+      "from": "/notes/Vitaemo%20z%20uspishnim%20prohodzhennyam%20sertifikaciyi%20-%202023!.html",
+      "to": "/novyny/2023-08-21-vitaiemo-z-uspishnym-prokhodzhenniam-sertyfikatsii-2023"
+    },
+    {
+      "from": "/notes/Pedagogi%20Lubenskoyi%20gromadi%20na%20Vseukrayinskomu%20seminari-praktikumi%20((Skills%20camp)).html",
+      "to": "/novyny/2023-08-22-pedahohy-lubenskoi-hromady-na-vseukrainskomu-seminari-praktykumi-skills-camp"
+    },
+    {
+      "from": "/notes/Navchalniy%20trening%20dlya%20vchiteliv%20fizichnoyi%20kulturi%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2023-08-23-navchalnyi-treninh-dlia-vchyteliv-fizychnoi-kultury-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Instruktivno-metodichni%20naradi%20osvityan%20Lubenschini.html",
+      "to": "/novyny/2023-08-29-instruktyvno-metodychni-narady-osvitian-lubenshchyny"
+    },
+    {
+      "from": "/notes/Navchalni%20treningi%20dlya%20vchiteliv%20matematiki.html",
+      "to": "/novyny/2023-08-31-navchalni-treninhy-dlia-vchyteliv-matematyky"
+    },
+    {
+      "from": "/notes/Noviy%20masshtabniy%20proekt%20((Zupinka..%20Ya)).html",
+      "to": "/novyny/2023-09-06-novyi-masshtabnyi-proiekt-zupynka-ia"
+    },
+    {
+      "from": "/notes/Instruktivno-metodichna%20narada%20kerivnikiv%20zakladiv%20osviti.html",
+      "to": "/novyny/2023-09-12-instruktyvno-metodychna-narada-kerivnykiv-zakladiv-osvity"
+    },
+    {
+      "from": "/notes/Navchalno-metodichni%20zbori%20vchiteliv%20predmetu%20((Zahist%20Ukrayini))%20zakladiv%20osviti%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2023-09-13-navchalno-metodychni-zbory-vchyteliv-predmetu-zakhyst-ukrainy-zakladiv-osvity-lu"
+    },
+    {
+      "from": "/notes/Knizhkova%20vistavka-yarmarka.html",
+      "to": "/novyny/2023-09-21-knyzhkova-vystavka-iarmarka"
+    },
+    {
+      "from": "/notes/Biblioteka%20-%20ce%20toy%20hram%2C%20de%20zavzhdi%20narodzhuetsya%20i%20zberigaetsya%20duhovnist.html",
+      "to": "/novyny/2023-09-27-biblioteka-tse-toi-khram-de-zavzhdy-narodzhuietsia-i-zberihaietsia-dukhovnist"
+    },
+    {
+      "from": "/notes/Dizayn%20suchasnogo%20uroku%20osnov%20zdorov_ya%20v%20zakladah%20osviti.html",
+      "to": "/novyny/2023-09-28-dyzain-suchasnoho-uroku-osnov-zdorovia-v-zakladakh-osvity"
+    },
+    {
+      "from": "/notes/Evropeyskiy%20tizhden%20sportu.html",
+      "to": "/novyny/2023-09-28-ievropeiskyi-tyzhden-sportu"
+    },
+    {
+      "from": "/notes/Osoblivosti%20nadannya%20pershoyi%20psihologichnoyi%20dopomogi.html",
+      "to": "/novyny/2023-10-12-osoblyvosti-nadannia-pershoi-psykholohichnoi-dopomohy"
+    },
+    {
+      "from": "/notes/Reforma%20NUSh%20prodovzhue%20vpevneno%20krokuvati....html",
+      "to": "/novyny/2023-10-13-reforma-nush-prodovzhuie-vpevneno-krokuvaty"
+    },
+    {
+      "from": "/notes/Gimnaziada%20Poltavschini%20z%20tenisu%20nastilnogo%20v%20Lubenskiy%20teritorialniy%20gromadi.html",
+      "to": "/novyny/2023-10-17-himnaziada-poltavshchyny-z-tenisu-nastilnoho-v-lubenskii-terytorialnii-hromadi"
+    },
+    {
+      "from": "/notes/Spivpracya%20z%20gromadskimi%20organizaciyami.html",
+      "to": "/novyny/2023-10-18-spivpratsia-z-hromadskymy-orhanizatsiiamy"
+    },
+    {
+      "from": "/notes/Rozpochato%20cikl%20praktichnih%20ta%20teoretichnih%20zanyat%20z%20uchnyami%2011-h%20klasiv%20ZZSO%20Lubenskoyi%20gromadi%20z%20predmetu%20((Zahist%20Ukrayini)).html",
+      "to": "/novyny/2023-10-20-rozpochato-tsykl-praktychnykh-ta-teoretychnykh-zaniat-z-uchniamy-11-kh-klasiv-zz"
+    },
+    {
+      "from": "/notes/Dosyagnennya%20yunih%20biologiv.html",
+      "to": "/novyny/2023-10-26-dosiahnennia-iunykh-biolohiv"
+    },
+    {
+      "from": "/notes/OlympicLab%20u%20Vischebulateckiy%20gimnaziyi%20ta%20Kalaydincivskomu%20liceyi.html",
+      "to": "/novyny/2023-10-26-olympiclab-u-vyshchebulatetskii-himnazii-ta-kalaidyntsivskomu-litsei"
+    },
+    {
+      "from": "/notes/Narada%20shkilnih%20bibliotekariv%20zakladiv%20osviti%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2023-11-01-narada-shkilnykh-bibliotekariv-zakladiv-osvity-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Vikoristannya%20mnemotehniki%20v%20osvitnomu%20procesi%20zakladiv%20doshkilnoyi%20osviti.html",
+      "to": "/novyny/2023-11-02-vykorystannia-mnemotekhniky-v-osvitnomu-protsesi-zakladiv-doshkilnoi-osvity"
+    },
+    {
+      "from": "/notes/Krugliy%20stil%20((Viroblennya%20rekomendaciy%20schodo%20ocinyuvannya%20rezultativ%20navchalnoyi%20diyalnosti%20uchniv%20z%20osoblivimi%20osvitnimi%20potrebami)).html",
+      "to": "/novyny/2023-11-03-kruhlyi-stil-vyroblennia-rekomendatsii-shchodo-otsiniuvannia-rezultativ-navchaln"
+    },
+    {
+      "from": "/notes/Pedagogichniy%20vorkshop.html",
+      "to": "/novyny/2023-11-03-pedahohichnyi-vorkshop"
+    },
+    {
+      "from": "/notes/Vseukrayinskiy%20misyachnik%20shkilnih%20bibliotek-2023.html",
+      "to": "/novyny/2023-11-07-vseukrainskyi-misiachnyk-shkilnykh-bibliotek-2023"
+    },
+    {
+      "from": "/notes/Novi%20peremogi%20nashih%20osvityan.html",
+      "to": "/novyny/2023-11-08-novi-peremohy-nashykh-osvitian"
+    },
+    {
+      "from": "/notes/Diyalnisniy%20pidhid%20v%20osviti.html",
+      "to": "/novyny/2023-11-10-diialnisnyi-pidkhid-v-osviti"
+    },
+    {
+      "from": "/notes/Naukovo-praktichna%20konferenciya%20naukovciv%20i%20osvityan%20Lubenschini.html",
+      "to": "/novyny/2023-11-20-naukovo-praktychna-konferentsiia-naukovtsiv-i-osvitian-lubenshchyny"
+    },
+    {
+      "from": "/notes/Proekt%20u%20diyi.html",
+      "to": "/novyny/2023-11-20-proiekt-u-dii"
+    },
+    {
+      "from": "/notes/Profilaktika%20emociynogo%20vigorannya.html",
+      "to": "/novyny/2023-11-23-profilaktyka-emotsiinoho-vyhorannia"
+    },
+    {
+      "from": "/notes/Osvityani%20Lubenschini%20prezentuyut%20kraschiy%20dosvid.html",
+      "to": "/novyny/2023-11-29-osvitiany-lubenshchyny-prezentuiut-krashchyi-dosvid"
+    },
+    {
+      "from": "/notes/Osvitni%20vtrati..%20vikliki%20ta%20shlyahi%20podolannya.html",
+      "to": "/novyny/2023-12-07-osvitni-vtraty-vyklyky-ta-shliakhy-podolannia"
+    },
+    {
+      "from": "/notes/Uchni%2011-h%20klasiv%20nabuvayut%20praktichni%20ta%20teoretichni%20znannya%20z%20predmetu%20((Zahist%20Ukrayini)).html",
+      "to": "/novyny/2023-12-15-uchni-11-kh-klasiv-nabuvaiut-praktychni-ta-teoretychni-znannia-z-predmetu-zakhys"
+    },
+    {
+      "from": "/notes/Sertifikovaniy%20uchitel%20-%20ce%20znak%20yakosti%20osviti.html",
+      "to": "/novyny/2023-12-19-sertyfikovanyi-uchytel-tse-znak-iakosti-osvity"
+    },
+    {
+      "from": "/notes/Osvityani%20Lubenschini%20na%20vseukrayinskomu%20rivni.html",
+      "to": "/novyny/2023-12-29-osvitiany-lubenshchyny-na-vseukrainskomu-rivni"
+    },
+    {
+      "from": "/notes/Praktichniy%20seminar%20vchiteliv%20matematiki.html",
+      "to": "/novyny/2024-01-04-praktychnyi-seminar-vchyteliv-matematyky"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20uchiteliv%20istoriyi%20ta%20gromadyanskoyi%20osviti.html",
+      "to": "/novyny/2024-01-04-seminar-praktykum-uchyteliv-istorii-ta-hromadianskoi-osvity"
+    },
+    {
+      "from": "/notes/Sichnevi%20metodichni%20praktikumi%20osvityan%20zakladiv%20osviti%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2024-01-10-sichnevi-metodychni-praktykumy-osvitian-zakladiv-osvity-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Treningi%20vid%20tvorchih%20filologin%20Lubenschini.html",
+      "to": "/novyny/2024-01-25-treninhy-vid-tvorchykh-filolohyn-lubenshchyny"
+    },
+    {
+      "from": "/notes/Narada%20shkilnih%20bibliotekariv%20zakladiv%20osviti%20Lubenskoyi%20teritorialnoyi%20gromadi.html",
+      "to": "/novyny/2024-02-08-narada-shkilnykh-bibliotekariv-zakladiv-osvity-lubenskoi-terytorialnoi-hromady"
+    },
+    {
+      "from": "/notes/Do%20100-richchya%20vid%20dnya%20narodzhennya%20Sergiya%20Paradzhanova.html",
+      "to": "/novyny/2024-02-12-do-100-richchia-vid-dnia-narodzhennia-serhiia-paradzhanova"
+    },
+    {
+      "from": "/notes/Onlayn%20zustrich%20vchiteliv%20predmetu%20((Zahist%20Ukrayini)).html",
+      "to": "/novyny/2024-02-15-onlain-zustrich-vchyteliv-predmetu-zakhyst-ukrainy"
+    },
+    {
+      "from": "/notes/Diyalnisniy%20pidhid%20yak%20osnova%20organizaciyi%20osvitnogo%20procesu.html",
+      "to": "/novyny/2024-02-16-diialnisnyi-pidkhid-iak-osnova-orhanizatsii-osvitnoho-protsesu"
+    },
+    {
+      "from": "/notes/Uchitel%20roku%20-%202024.html",
+      "to": "/novyny/2024-02-19-uchytel-roku-2024"
+    },
+    {
+      "from": "/notes/Novi%20zdobutki%20nashih%20osvityan.html",
+      "to": "/novyny/2024-02-21-novi-zdobutky-nashykh-osvitian"
+    },
+    {
+      "from": "/notes/Innovaciyi%20ta%20osvita%20Lubenschini.html",
+      "to": "/novyny/2024-02-26-innovatsii-ta-osvita-lubenshchyny"
+    },
+    {
+      "from": "/notes/Ukrayinoznavchi%20prioriteti%20osvitnogo%20procesu.html",
+      "to": "/novyny/2024-02-27-ukrainoznavchi-priorytety-osvitnoho-protsesu"
+    },
+    {
+      "from": "/notes/Cikl%20zanyat%20z%20uchnyami%2011-h%20klasiv%20z%20predmetu%20((Zahist%20Ukrayini))%20zaversheno.html",
+      "to": "/novyny/2024-03-05-tsykl-zaniat-z-uchniamy-11-kh-klasiv-z-predmetu-zakhyst-ukrainy-zaversheno"
+    },
+    {
+      "from": "/notes/Udoskonalyuemosya%20razom.html",
+      "to": "/novyny/2024-03-06-udoskonaliuiemosia-razom"
+    },
+    {
+      "from": "/notes/Instruktivno-metodichna%20narada%20zastupnikiv%20direktoriv.html",
+      "to": "/novyny/2024-03-13-instruktyvno-metodychna-narada-zastupnykiv-dyrektoriv"
+    },
+    {
+      "from": "/notes/Lubenskomu%20inklyuzivno-resursnomu%20centru%20-%205%20rokiv.html",
+      "to": "/novyny/2024-03-13-lubenskomu-inkliuzyvno-resursnomu-tsentru-5-rokiv"
+    },
+    {
+      "from": "/notes/Komanda%20%60LUBNI%60%20-%20peremozhci%20kraeznavchih%20zmagan.html",
+      "to": "/novyny/2024-03-14-komanda-lubny-peremozhtsi-kraieznavchykh-zmahan"
+    },
+    {
+      "from": "/notes/Tehniki%20shvidkoyi%20stabilizaciyi.html",
+      "to": "/novyny/2024-03-14-tekhniky-shvydkoi-stabilizatsii"
+    },
+    {
+      "from": "/notes/Navchannya%20vchiteliv%20geografiyi.html",
+      "to": "/novyny/2024-03-18-navchannia-vchyteliv-heohrafii"
+    },
+    {
+      "from": "/notes/Vseukrayinska%20programa%20mentalnogo%20zdorov'ya%20((Ti%20yak%5E))%20v%20diyi.html",
+      "to": "/novyny/2024-03-19-vseukrainska-prohrama-mentalnoho-zdorovia-ty-iak-v-dii"
+    },
+    {
+      "from": "/notes/Chergoviy%20seminar-praktikum%20direktoriv%20shkil.html",
+      "to": "/novyny/2024-03-25-cherhovyi-seminar-praktykum-dyrektoriv-shkil"
+    },
+    {
+      "from": "/notes/Tri%20kroki%20do%20uspishnoyi%20sertifikaciyi.html",
+      "to": "/novyny/2024-03-26-try-kroky-do-uspishnoi-sertyfikatsii"
+    },
+    {
+      "from": "/notes/Bibliotechna%20innovatika%20dlya%20shkilnih%20bibliotekariv.html",
+      "to": "/novyny/2024-03-28-bibliotechna-innovatyka-dlia-shkilnykh-bibliotekariv"
+    },
+    {
+      "from": "/notes/Vikoristannya%20psihologichnih%20hvilinok%20u%20Vovchickomu%20ZDO%20%60Dzvinochok%60.html",
+      "to": "/novyny/2024-03-28-vykorystannia-psykholohichnykh-khvylynok-u-vovchytskomu-zdo-dzvinochok"
+    },
+    {
+      "from": "/notes/Zasidannya%20tvorchoyi%20grupi%20vchiteliv%20pochatkovih%20klasiv.html",
+      "to": "/novyny/2024-03-28-zasidannia-tvorchoi-hrupy-vchyteliv-pochatkovykh-klasiv"
+    },
+    {
+      "from": "/notes/Zberezhennya%20mentalnogo%20zdorov_ya%20uchasnikiv%20osvitnogo%20procesu.html",
+      "to": "/novyny/2024-03-28-zberezhennia-mentalnoho-zdorovia-uchasnykiv-osvitnoho-protsesu"
+    },
+    {
+      "from": "/notes/Diyalnisniy%20pidhid%20u%20diyi.html",
+      "to": "/novyny/2024-04-01-diialnisnyi-pidkhid-u-dii"
+    },
+    {
+      "from": "/notes/Viyskovo-patriotichni%20navchannya%20dlya%20uchniv%2010%20klasiv%20Lubenskoyi%20gromadi.html",
+      "to": "/novyny/2024-04-08-viiskovo-patriotychni-navchannia-dlia-uchniv-10-klasiv-lubenskoi-hromady"
+    },
+    {
+      "from": "/notes/Formuvannya%20psihologichnoyi%20kompetentnosti%20pedagogiv.html",
+      "to": "/novyny/2024-04-09-formuvannia-psykholohichnoi-kompetentnosti-pedahohiv"
+    },
+    {
+      "from": "/notes/Navchannya%20pedagogiv.html",
+      "to": "/novyny/2024-04-09-navchannia-pedahohiv"
+    },
+    {
+      "from": "/notes/Navchayutsya%20vchiteli%20matematiki%20Lubenskoyi%20gromadi.html",
+      "to": "/novyny/2024-04-11-navchaiutsia-vchyteli-matematyky-lubenskoi-hromady"
+    },
+    {
+      "from": "/notes/Atestaciya-2024%20na%20zavershalnomu%20etapi.html",
+      "to": "/novyny/2024-04-16-atestatsiia-2024-na-zavershalnomu-etapi"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20%20zastupnikiv%20direktoriv%20shkil.html",
+      "to": "/novyny/2024-04-24-seminar-praktykum-zastupnykiv-dyrektoriv-shkil"
+    },
+    {
+      "from": "/notes/Praktichniy%20psiholog%20i%20doshkilnyata.html",
+      "to": "/novyny/2024-04-26-praktychnyi-psykholoh-i-doshkilniata"
+    },
+    {
+      "from": "/notes/Innovaciyni%20metodiki%20v%20roboti%20vihovateliv.html",
+      "to": "/novyny/2024-04-30-innovatsiini-metodyky-v-roboti-vykhovateliv"
+    },
+    {
+      "from": "/notes/Navchalno-polovi%20zbori-2024%20uchniv%2011-h%20klasiv%20Lubenskoyi%20gromadi.html",
+      "to": "/novyny/2024-05-03-navchalno-polovi-zbory-2024-uchniv-11-kh-klasiv-lubenskoi-hromady"
+    },
+    {
+      "from": "/notes/Pedagogi%20Lubenschini%20-%20osvitni%20eksterti.html",
+      "to": "/novyny/2024-05-06-pedahohy-lubenshchyny-osvitni-eksterty"
+    },
+    {
+      "from": "/notes/Inklyuzivna%20osvita%20sogodni.html",
+      "to": "/novyny/2024-05-10-inkliuzyvna-osvita-sohodni"
+    },
+    {
+      "from": "/notes/Pidsumki%20provedennya%20teritorialnogo%20konkursu%20((Innovaciyniy%20svit%20pedagoga)).html",
+      "to": "/novyny/2024-05-10-pidsumky-provedennia-terytorialnoho-konkursu-innovatsiinyi-svit-pedahoha"
+    },
+    {
+      "from": "/notes/16%20kvitnya%20-%20Den%20obiznanosti%20pro%20stres.html",
+      "to": "/novyny/2024-05-20-16-kvitnia-den-obiznanosti-pro-stres"
+    },
+    {
+      "from": "/notes/Navchalniy%20trening%20zi%20zberezhennya%20mentalnogo%20zdorov'ya.html",
+      "to": "/novyny/2024-05-20-navchalnyi-treninh-zi-zberezhennia-mentalnoho-zdorovia"
+    },
+    {
+      "from": "/notes/Psihologichna%20pidtrimka%20uchasnikiv%20osvitnogo%20procesu.html",
+      "to": "/novyny/2024-05-20-psykholohichna-pidtrymka-uchasnykiv-osvitnoho-protsesu"
+    },
+    {
+      "from": "/notes/Psihologichne%20zdorov'ya%20zdobuvachiv%20osviti.html",
+      "to": "/novyny/2024-05-20-psykholohichne-zdorovia-zdobuvachiv-osvity"
+    },
+    {
+      "from": "/notes/Sila%20v%20tobi.html",
+      "to": "/novyny/2024-05-20-syla-v-tobi"
+    },
+    {
+      "from": "/notes/Peremozhci%20oblasnogo%20etapu%20zmagan%20((Plich-o-plich%20vseukrayinski%20shkilni%20ligi)).html",
+      "to": "/novyny/2024-05-25-peremozhtsi-oblasnoho-etapu-zmahan-plich-o-plich-vseukrainski-shkilni-lihy"
+    },
+    {
+      "from": "/notes/Misyac%20obiznanosti%20pro%20mentalne%20zdorov_ya.html",
+      "to": "/novyny/2024-05-31-misiats-obiznanosti-pro-mentalne-zdorovia"
+    },
+    {
+      "from": "/notes/Navchayutsya%20vihovateli%20zakladiv%20doshkilnoyi%20osviti.html",
+      "to": "/novyny/2024-06-28-navchaiutsia-vykhovateli-zakladiv-doshkilnoi-osvity"
+    },
+    {
+      "from": "/notes/Gostya%20z%20Ukrayinskogo%20institutu%20nacionalnoyi%20pam'yati.html",
+      "to": "/novyny/2024-09-04-hostia-z-ukrainskoho-instytutu-natsionalnoi-pamiati"
+    },
+    {
+      "from": "/notes/Serpnevi%20naradi%20osvityan%20%20Lubenschini.html",
+      "to": "/novyny/2024-09-04-serpnevi-narady-osvitian-lubenshchyny"
+    },
+    {
+      "from": "/notes/Zahist%20prav%20ditey.%20Pidtrimka%20i%20dopomoga.html",
+      "to": "/novyny/2024-09-16-zakhyst-prav-ditei-pidtrymka-i-dopomoha"
+    },
+    {
+      "from": "/notes/Navchannya%20%20vchiteliv%20matematiki%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2024-09-23-navchannia-vchyteliv-matematyky-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Narada%20shkilnih%20bibliotekariv%20naperedodni%20%20Vseukrayinskogo%20dnya%20bibliotek%20-%202024.html",
+      "to": "/novyny/2024-09-30-narada-shkilnykh-bibliotekariv-naperedodni-vseukrainskoho-dnia-bibliotek-2024"
+    },
+    {
+      "from": "/notes/Rozvitok%20kreativnogo%20potencialu%20pedagoga.html",
+      "to": "/novyny/2024-09-30-rozvytok-kreatyvnoho-potentsialu-pedahoha"
+    },
+    {
+      "from": "/notes/Yak%20rozmovlyati%20z%20ditmi%20pro%20viynu%5E.html",
+      "to": "/novyny/2024-10-03-iak-rozmovliaty-z-ditmy-pro-viinu"
+    },
+    {
+      "from": "/notes/Udoskonalyuemo%20profesiyni%20kompetentnosti.html",
+      "to": "/novyny/2024-10-03-udoskonaliuiemo-profesiini-kompetentnosti"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20uchiteliv%20misteckoyi%20osvitnoyi%20galuzi.html",
+      "to": "/novyny/2024-10-11-seminar-praktykum-uchyteliv-mystetskoi-osvitnoi-haluzi"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20vchiteliv%20osnov%20zdorov%CA%BCya.html",
+      "to": "/novyny/2024-10-21-seminar-praktykum-vchyteliv-osnov-zdorov-ia"
+    },
+    {
+      "from": "/notes/Narada%20zastupnikiv%20%20direktoriv%20ZZSO.html",
+      "to": "/novyny/2024-10-24-narada-zastupnykiv-dyrektoriv-zzso"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20pedagogiv%20-%20organizatoriv%20ZZSO%20Lubenskoyi%20gromadi.html",
+      "to": "/novyny/2024-10-24-seminar-praktykum-pedahohiv-orhanizatoriv-zzso-lubenskoi-hromady"
+    },
+    {
+      "from": "/notes/Novostvorena%20spilnota.html",
+      "to": "/novyny/2024-10-29-novostvorena-spilnota"
+    },
+    {
+      "from": "/notes/((Cool%20Games))%20u%20Lubenskiy%20gromadi.html",
+      "to": "/novyny/2024-10-31-cool-games-u-lubenskii-hromadi"
+    },
+    {
+      "from": "/notes/Navchayutsya%20kerivniki%20zakladiv%20osviti.html",
+      "to": "/novyny/2024-10-31-navchaiutsia-kerivnyky-zakladiv-osvity"
+    },
+    {
+      "from": "/notes/Vseukrayinskiy%20misyachnik%20shkilnih%20bibliotek%20%20-%202024.html",
+      "to": "/novyny/2024-11-04-vseukrainskyi-misiachnyk-shkilnykh-bibliotek-2024"
+    },
+    {
+      "from": "/notes/Pidsumki%20Evropeyskogo%20dnya%20shkilnogo%20sportu.html",
+      "to": "/novyny/2024-11-07-pidsumky-ievropeiskoho-dnia-shkilnoho-sportu"
+    },
+    {
+      "from": "/notes/Pidsumki%20konkursu%20ese.html",
+      "to": "/novyny/2024-11-22-pidsumky-konkursu-ese"
+    },
+    {
+      "from": "/notes/Pravova%20osvita%20v%20doshkilnomu%20zakladi.html",
+      "to": "/novyny/2024-12-02-pravova-osvita-v-doshkilnomu-zakladi"
+    },
+    {
+      "from": "/notes/Vihovateli%20doshkillya%20dilyatsya%20dosvidom.html",
+      "to": "/novyny/2024-12-02-vykhovateli-doshkillia-diliatsia-dosvidom"
+    },
+    {
+      "from": "/notes/Nashi%20osvityani%20-%20peremozhci%20Oblasnogo%20yarmarku.html",
+      "to": "/novyny/2024-12-16-nashi-osvitiany-peremozhtsi-oblasnoho-iarmarku"
+    },
+    {
+      "from": "/notes/Sertifikaciya%20-%202024.html",
+      "to": "/novyny/2024-12-16-sertyfikatsiia-2024"
+    },
+    {
+      "from": "/notes/Navchannya%20pedagogiv%20gimnaziyi%20((PROSVIT)).html",
+      "to": "/novyny/2024-12-24-navchannia-pedahohiv-himnazii-prosvit"
+    },
+    {
+      "from": "/notes/Sichneve%20zasidannya%20profesiynoyi%20spilnoti%20shkilnih%20bibliotekariv.html",
+      "to": "/novyny/2025-01-03-sichneve-zasidannia-profesiinoi-spilnoty-shkilnykh-bibliotekariv"
+    },
+    {
+      "from": "/notes/Aksonometrichni%20pobudovi%20-%20pershiy%20krok%20v%20opanuvanni%20SAD-program.html",
+      "to": "/novyny/2025-01-16-aksonometrychni-pobudovy-pershyi-krok-v-opanuvanni-sad-prohram"
+    },
+    {
+      "from": "/notes/Pidsumki%20Vseukrayinskogo%20konkursu%20avtorskih%20program.html",
+      "to": "/novyny/2025-01-27-pidsumky-vseukrainskoho-konkursu-avtorskykh-prohram"
+    },
+    {
+      "from": "/notes/Uchitel%20roku%20-%202025!.html",
+      "to": "/novyny/2025-02-14-uchytel-roku-2025"
+    },
+    {
+      "from": "/notes/Novitni%20tehnologiyi%20u%20roboti%20shkilnih%20bibliotek%20zakladiv%20osviti.html",
+      "to": "/novyny/2025-02-24-novitni-tekhnolohii-u-roboti-shkilnykh-bibliotek-zakladiv-osvity"
+    },
+    {
+      "from": "/notes/Instruktivno%20-%20metodichna%20narada%20shkilnih%20bibliotekariv%20zakladiv%20osviti%20Lubenskoyi%20teritorialnoyi%20gromadi.html",
+      "to": "/novyny/2025-03-05-instruktyvno-metodychna-narada-shkilnykh-bibliotekariv-zakladiv-osvity-lubenskoi"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20%20direktoriv%20shkil%20gromadi.html",
+      "to": "/novyny/2025-03-05-seminar-praktykum-dyrektoriv-shkil-hromady"
+    },
+    {
+      "from": "/notes/Traektoriya%20uspihu..%20yak%20Lubenschina%20vprovadzhue%20suchasni%20osvitni%20praktiki.html",
+      "to": "/novyny/2025-03-05-traiektoriia-uspikhu-iak-lubenshchyna-vprovadzhuie-suchasni-osvitni-praktyky"
+    },
+    {
+      "from": "/notes/Instruktivno-%20metodichna%20narada%20zastupnikiv%20direktoriv%20%20zakladiv%20osviti.html",
+      "to": "/novyny/2025-03-18-instruktyvno-metodychna-narada-zastupnykiv-dyrektoriv-zakladiv-osvity"
+    },
+    {
+      "from": "/notes/Zasidannya%20profesiynoyi%20spilnoti%20vihovateliv%20doshkillya.html",
+      "to": "/novyny/2025-03-19-zasidannia-profesiinoi-spilnoty-vykhovateliv-doshkillia"
+    },
+    {
+      "from": "/notes/Vihovateli%20-%20u%20proekti.html",
+      "to": "/novyny/2025-03-24-vykhovateli-u-proiekti"
+    },
+    {
+      "from": "/notes/Metodichni%20praktikumi%20osvityan%20%20Lubenschini.html",
+      "to": "/novyny/2025-03-28-metodychni-praktykumy-osvitian-lubenshchyny"
+    },
+    {
+      "from": "/notes/Pedrada-osnovna%20forma%20metodichnoyi%20roboti%20z%20kolektivom.html",
+      "to": "/novyny/2025-03-28-pedrada-osnovna-forma-metodychnoi-roboty-z-kolektyvom"
+    },
+    {
+      "from": "/notes/Suchasniy%20osvitniy%20prostir%20Lubenschini.html",
+      "to": "/novyny/2025-03-28-suchasnyi-osvitnii-prostir-lubenshchyny"
+    },
+    {
+      "from": "/notes/Vesnyaniy%20osvityanskiy%20marafon.html",
+      "to": "/novyny/2025-04-08-vesnianyi-osvitianskyi-marafon"
+    },
+    {
+      "from": "/notes/Pidsumki%20teritorialnogo%20konkursu%20((Situaciya%20uspihu%20-%20shlyah%20do%20samorealizaciyi%20pedagoga)).html",
+      "to": "/novyny/2025-04-14-pidsumky-terytorialnoho-konkursu-sytuatsiia-uspikhu-shliakh-do-samorealizatsii-p"
+    },
+    {
+      "from": "/notes/Seminar%20%20direktoriv%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20teritorialnoyi%20gromadi.html",
+      "to": "/novyny/2025-04-23-seminar-dyrektoriv-zakladiv-zahalnoi-serednoi-osvity-lubenskoi-terytorialnoi-hro"
+    },
+    {
+      "from": "/notes/Navchalno-polovi%20zbori-2025%20uchniv%2010-11%20-%20h%20klasiv%20%20ZZSO%20Lubenskoyi%20teritorialnoyi%20gromadi.html",
+      "to": "/novyny/2025-05-06-navchalno-polovi-zbory-2025-uchniv-10-11-kh-klasiv-zzso-lubenskoi-terytorialnoi"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20zastupnikiv%20direktoriv%20z%20navchalno-vihovnoyi%20roboti%20ZZSO%20Lubenskoyi%20gromadi.html",
+      "to": "/novyny/2025-05-06-seminar-praktykum-zastupnykiv-dyrektoriv-z-navchalno-vykhovnoi-roboty-zzso-luben"
+    },
+    {
+      "from": "/notes/Osvita%20dlya%20stalogo%20rozvitku%20doshkilnyat.html",
+      "to": "/novyny/2025-05-16-osvita-dlia-staloho-rozvytku-doshkilniat"
+    },
+    {
+      "from": "/notes/Navchannya%20vchiteliv%20z%20domedichnoyi%20dopomogi.html",
+      "to": "/novyny/2025-05-19-navchannia-vchyteliv-z-domedychnoi-dopomohy"
+    },
+    {
+      "from": "/notes/Peremogi%20nashih%20matematikiv.html",
+      "to": "/novyny/2025-05-22-peremohy-nashykh-matematykiv"
+    },
+    {
+      "from": "/notes/Zustrich%20kerivnikiv%20profesiynih%20pedagogichnih%20spilnot%20%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2025-08-13-zustrich-kerivnykiv-profesiinykh-pedahohichnykh-spilnot-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Onlayn%20-%20zustrich%20uchiteliv%20predmeta%20((Zahist%20Ukrayini)).html",
+      "to": "/novyny/2025-08-14-onlain-zustrich-uchyteliv-predmeta-zakhyst-ukrainy"
+    },
+    {
+      "from": "/notes/Zasidannya%20profesiynoyi%20spilnoti%20shkilnih%20bibliotekariv%20ZZSO%20Lubenskoyi%20gromadi.html",
+      "to": "/novyny/2025-08-18-zasidannia-profesiinoi-spilnoty-shkilnykh-bibliotekariv-zzso-lubenskoi-hromady"
+    },
+    {
+      "from": "/notes/Maybutne%20vzhe%20tut..%20Chomu%20serpneva%20konferenciya%20-%20ce%20ne%20nudno%2C%20a%20drayvovo%5E.html",
+      "to": "/novyny/2025-09-01-maibutnie-vzhe-tut-chomu-serpneva-konferentsiia-tse-ne-nudno-a-draivovo"
+    },
+    {
+      "from": "/notes/Osvitniy%20kovorking%20((Lubenski%20Ideyi%20ta%20Praktiki)).html",
+      "to": "/novyny/2025-09-01-osvitnii-kovorkinh-lubenski-idei-ta-praktyky"
+    },
+    {
+      "from": "/notes/Obmin%20dosvidom%20ta%20profesiyne%20zrostannya..%20Seminar-praktikum%20dlya%20vchiteliv%20OZ%20%60Vovchickiy%20licey%20V.F.Micika%60.html",
+      "to": "/novyny/2025-09-05-obmin-dosvidom-ta-profesiine-zrostannia-seminar-praktykum-dlia-vchyteliv-oz-vovc"
+    },
+    {
+      "from": "/notes/Fokus%20na%20osviti..%20Narada%20dlya%20zastupnikiv%20direktoriv%20Lubenskoyi%20gromadi.html",
+      "to": "/novyny/2025-09-12-fokus-na-osviti-narada-dlia-zastupnykiv-dyrektoriv-lubenskoi-hromady"
+    },
+    {
+      "from": "/notes/Instruktivno-metodichna%20onlayn%20-%20narada%20dlya%20kerivnikiv%20ZDO%20gromadi.html",
+      "to": "/novyny/2025-09-17-instruktyvno-metodychna-onlain-narada-dlia-kerivnykiv-zdo-hromady"
+    },
+    {
+      "from": "/notes/Inklyuziya%20v%20diyi..%20koli%20znannya%20stayut%20krilami.html",
+      "to": "/novyny/2025-09-18-inkliuziia-v-dii-koly-znannia-staiut-krylamy"
+    },
+    {
+      "from": "/notes/Reforma%20starshoyi%20shkoli..%20vid%20usvidomlennya%20do%20realizaciyi.html",
+      "to": "/novyny/2025-09-18-reforma-starshoi-shkoly-vid-usvidomlennia-do-realizatsii"
+    },
+    {
+      "from": "/notes/Zustriv%20kerivnikiv%20pedagogichnih%20spilnot%20%20ZDO%20gromadi.html",
+      "to": "/novyny/2025-09-19-zustriv-kerivnykiv-pedahohichnykh-spilnot-zdo-hromady"
+    },
+    {
+      "from": "/notes/Bezpechne%20osvitne%20seredovische%20-%20prostir%20doviri%20ta%20pidtrimki.html",
+      "to": "/novyny/2025-09-23-bezpechne-osvitnie-seredovyshche-prostir-doviry-ta-pidtrymky"
+    },
+    {
+      "from": "/notes/%60Innovatika%20v%20biblioteci%60..%20Kovorking%20prodemonstruvav%20novu%20rol%20bibliotekariv%20u%20promociyi%20zdorov'ya.html",
+      "to": "/novyny/2025-09-26-innovatyka-v-bibliotetsi-kovorkinh-prodemonstruvav-novu-rol-bibliotekariv-u-prom"
+    },
+    {
+      "from": "/notes/Psihologichna%20kav_yarnya.html",
+      "to": "/novyny/2025-10-03-psykholohichna-kaviarnia"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20((Formuvannya%20osnov%20patriotichnih%20pochuttiv%20doshkilnikiv)).html",
+      "to": "/novyny/2025-10-03-seminar-praktykum-formuvannia-osnov-patriotychnykh-pochuttiv-doshkilnykiv"
+    },
+    {
+      "from": "/notes/Profesiyne%20zrostannya%20kerivnikiv%20ZDO..%20praktika%20Gorishnih%20Plavniv.html",
+      "to": "/novyny/2025-10-20-profesiine-zrostannia-kerivnykiv-zdo-praktyka-horishnikh-plavniv"
+    },
+    {
+      "from": "/notes/OSVITNIY%20RESTART.html",
+      "to": "/novyny/2025-10-31-osvitnii-restart"
+    },
+    {
+      "from": "/notes/Mistecka%20podiya%20((Vsesvit%20Lyubovi)).html",
+      "to": "/novyny/2025-11-04-mystetska-podiia-vsesvit-liubovi"
+    },
+    {
+      "from": "/notes/Vseukrayinskiy%20misyachnik%20shkilnih%20bibliotek%20-%202025.html",
+      "to": "/novyny/2025-11-05-vseukrainskyi-misiachnyk-shkilnykh-bibliotek-2025"
+    },
+    {
+      "from": "/notes/((Yakisna%20osvita%20i%20efektivna%20gromada))..%20Predstavniki%20Lubenskoyi%20gromadi%20doluchilisya%20do%20Nacionalnoyi%20konferenciyi%20Programi%20Polaris!.html",
+      "to": "/novyny/2025-11-26-iakisna-osvita-i-efektyvna-hromada-predstavnyky-lubenskoi-hromady-doluchylysia-d"
+    },
+    {
+      "from": "/notes/((Podbay%20pro%20sebe))%20-%20trening-retrit%20dlya%20pedagogichnoyi%20spilnoti%20vchiteliv%203%20klasiv%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2025-12-02-podbai-pro-sebe-treninh-retryt-dlia-pedahohichnoi-spilnoty-vchyteliv-3-klasiv-lu"
+    },
+    {
+      "from": "/notes/Konkurs%20%60Rodzinka%20mogo%20uroku%20-%202025%60.html",
+      "to": "/novyny/2025-12-11-konkurs-rodzynka-moho-uroku-2025"
+    },
+    {
+      "from": "/notes/Sertifikaciya-2025..%20Profesiyniy%20triumf%20pedagogiv%20Lubenskoyi%20gromadi.html",
+      "to": "/novyny/2025-12-18-sertyfikatsiia-2025-profesiinyi-triumf-pedahohiv-lubenskoi-hromady"
+    },
+    {
+      "from": "/notes/Pidvischuemo%20cifrovu%20kompetentnist%20osvityan%20razom!.html",
+      "to": "/novyny/2026-01-07-pidvyshchuiemo-tsyfrovu-kompetentnist-osvitian-razom"
+    },
+    {
+      "from": "/notes/Trening-retrit%20dlya%20pedagogichnoyi%20spilnoti%20asistentiv%20vchiteliv%20zakladiv%20osviti%20gromadi.html",
+      "to": "/novyny/2026-01-07-treninh-retryt-dlia-pedahohichnoi-spilnoty-asystentiv-vchyteliv-zakladiv-osvity"
+    },
+    {
+      "from": "/notes/Spilniy%20zahid%20osvityan%20Lubenskoyi%2C%20Novoorzhickoyi%20ta%20Orzhickoyi%20gromad.html",
+      "to": "/novyny/2026-01-23-spilnyi-zakhid-osvitian-lubenskoi-novoorzhytskoi-ta-orzhytskoi-hromad"
+    },
+    {
+      "from": "/notes/Travmopedagogika%20na%20urokah%20istoriyi.html",
+      "to": "/novyny/2026-01-23-travmopedahohika-na-urokakh-istorii"
+    },
+    {
+      "from": "/notes/Den%20vidkritih%20dverey%20v%20Akademichnih%20liceyah%20Lubenskoyi%20gromadi.html",
+      "to": "/novyny/2026-03-16-den-vidkrytykh-dverei-v-akademichnykh-litseiakh-lubenskoi-hromady"
+    },
+    {
+      "from": "/notes/Shkilna%20biblioteka..%20Formuemo%20osvitniy%20prostir%20razom.html",
+      "to": "/novyny/2026-03-16-shkilna-biblioteka-formuiemo-osvitnii-prostir-razom"
+    },
+    {
+      "from": "/notes/Sinergiya%20ta%20novi%20mozhlivosti!.html",
+      "to": "/novyny/2026-03-16-synerhiia-ta-novi-mozhlyvosti"
+    },
+    {
+      "from": "/notes/Ceminar-praktikum%20dlya%20zastupnikiv%20direktoriv%20zakladiv%20osviti%20Lubenskoyi%20gromadi%20%E2%80%94%20((DZhURA..%20KEYSI%20KRASchIH%20PRAKTIK)).html",
+      "to": "/novyny/2026-03-26-ceminar-praktykum-dlia-zastupnykiv-dyrektoriv-zakladiv-osvity-lubenskoi-hromady"
+    },
+    {
+      "from": "/notes/Koli%20ideya%20stae%20realnistyu..%20uspih%20Pershoyi%20gimnaziyi%20ta%20pidtrimka%20GO%20((SOLO)).html",
+      "to": "/novyny/2026-03-26-koly-ideia-staie-realnistiu-uspikh-pershoi-himnazii-ta-pidtrymka-ho-solo"
+    },
+    {
+      "from": "/notes/Osvitniy%20apgreyd%20((NUSh..nova%20yakist%20%E2%80%94%20spilna%20vidpovidalnist)).html",
+      "to": "/novyny/2026-03-26-osvitnii-aphreid-nush-nova-iakist-spilna-vidpovidalnist"
+    },
+    {
+      "from": "/notes/Gimnaziyniy%20retrit%20-%20((Kryvbas%20spirit)).html",
+      "to": "/novyny/2026-04-03-himnaziinyi-retryt-kryvbas-spirit"
+    },
+    {
+      "from": "/notes/Cikl%20treningiv%20((Mental%20Trek))%20dlya%20pedagogiv%20Lubenskoyi%20gromadi.html",
+      "to": "/novyny/2026-04-15-tsykl-treninhiv-mental-trek-dlia-pedahohiv-lubenskoi-hromady"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20dlya%20vchiteliv%20pochatkovoyi%20shkoli%20ZZSO%20gromadi%20%20((Kod%20naciyi%20v%20osvitnomu%20prostori)).html",
+      "to": "/novyny/2026-04-16-seminar-praktykum-dlia-vchyteliv-pochatkovoi-shkoly-zzso-hromady-kod-natsii-v-os"
+    },
+    {
+      "from": "/notes/Vihovannya%20%20doshkilnikiv%20na%20osnovi%20cinnostey%20ukrayinskogo%20narodu.html",
+      "to": "/novyny/2026-04-16-vykhovannia-doshkilnykiv-na-osnovi-tsinnostei-ukrainskoho-narodu"
+    },
+    {
+      "from": "/notes/Osvitnya%20sistema%20v%20realiyah%20sogodennya..%20vid%20strategiyi%20do%20uspihu%20kozhnoyi%20ditini!.html",
+      "to": "/novyny/2026-04-22-osvitnia-systema-v-realiiakh-sohodennia-vid-stratehii-do-uspikhu-kozhnoi-dytyny"
+    },
+    {
+      "from": "/notes/Osvitniy%20intensiv%20dlya%20zastupnikiv%20direktoriv%20ZZSO%20gromadi.html",
+      "to": "/novyny/2026-04-30-osvitnii-intensyv-dlia-zastupnykiv-dyrektoriv-zzso-hromady"
+    },
+    {
+      "from": "/notes/Navchalno-polovi%20zbori-2026.html",
+      "to": "/novyny/2026-05-04-navchalno-polovi-zbory-2026"
+    },
+    {
+      "from": "/notes/Inklyuziya%20v%20diyi..%20skladaemo%20((Inklyuzivniy%20konstruktor))%20razom!.html",
+      "to": "/novyny/2026-05-18-inkliuziia-v-dii-skladaiemo-inkliuzyvnyi-konstruktor-razom"
+    },
+    {
+      "from": "/notes/Osvitniy%20intensiv%20stezhkami%20Ternopilschini!.html",
+      "to": "/novyny/2026-05-20-osvitnii-intensyv-stezhkamy-ternopilshchyny"
+    },
+    {
+      "from": "/notes/Shkola%20bez%20stereotipiv..%20u%20Lubenskiy%20gromadi%20vidbulisya%20treningi%20dlya%20pedagogiv.html",
+      "to": "/novyny/2026-05-20-shkola-bez-stereotypiv-u-lubenskii-hromadi-vidbulysia-treninhy-dlia-pedahohiv"
+    },
+    {
+      "from": "/notes/Informaciyniy%20prostir%20shkilnoyi%20biblioteki..%20vzaemodiya%2C%20logistika%20pidruchnikiv%20ta%20profesiyne%20zrostannya.html",
+      "to": "/novyny/2026-06-02-informatsiinyi-prostir-shkilnoi-biblioteky-vzaiemodiia-lohistyka-pidruchnykiv-ta"
+    },
+    {
+      "from": "/notes/Navchaemosya%2C%20schob%20pidtrimuvati%20inshih!.html",
+      "to": "/novyny/2026-06-02-navchaiemosia-shchob-pidtrymuvaty-inshykh"
+    },
+    {
+      "from": "/notes/Novi%20znannya%20zadlya%20bezpeki%20ditey..%20fahivci%20CPRPP%20na%20treningu%20z%20protidiyi%20nasilstvu.html",
+      "to": "/novyny/2026-06-18-novi-znannia-zadlia-bezpeky-ditei-fakhivtsi-tsprpp-na-treninhu-z-protydii-nasyls"
+    },
+    {
+      "from": "/notes/Zavershennya%20proektu%20((Perezavantazhennya%20NUSh%201-4%20klasi)).html",
+      "to": "/novyny/2026-06-18-zavershennia-proiektu-perezavantazhennia-nush-1-4-klasy"
+    },
+    {
+      "from": "/notes/Pidsumki%20konkursnogo%20vidboru%20na%20zamischennya%20posad%20direktoriv%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20miskoyi%20teritorialnoyi%20gromadi.html",
+      "to": "/novyny/2026-06-25-pidsumky-konkursnoho-vidboru-na-zamishchennia-posad-dyrektoriv-zakladiv-zahalnoi"
+    },
+    {
+      "from": "/notes/Intensiv%20z%20pidgotovki%20nastavnikiv.html",
+      "to": "/novyny/2026-06-26-intensyv-z-pidhotovky-nastavnykiv"
+    },
+    {
+      "from": "/notes/Atestaciya.html",
+      "to": "/atestatsiia"
+    },
+    {
+      "from": "/notes/Doshkillya.html",
+      "to": "/doshkillia"
+    },
+    {
+      "from": "/notes/Inklyuzivna%20osvita.html",
+      "to": "/inkliuzyvna-osvita"
+    },
+    {
+      "from": "/notes/Kerivniy%20sklad.html",
+      "to": "/kerivnyi-sklad"
+    },
+    {
+      "from": "/notes/Mi%20-%20komanda%20odnodumciv.html",
+      "to": "/my-komanda-odnodumtsiv"
+    },
+    {
+      "from": "/notes/Mi%20spivpracyuemo.html",
+      "to": "/my-spivpratsiuiemo"
+    },
+    {
+      "from": "/notes/Normativni%20dokumenti.html",
+      "to": "/normatyvni-dokumenty"
+    },
+    {
+      "from": "/notes/Normativno-pravova%20baza.html",
+      "to": "/normatyvno-pravova-baza"
+    },
+    {
+      "from": "/notes/Oblik%20sertifikativ.html",
+      "to": "/oblik-sertyfikativ"
+    },
+    {
+      "from": "/notes/Osvitniy%20proces%20v%20umovah%20voennogo%20stanu.html",
+      "to": "/osvitnii-protses-v-umovakh-voiennoho-stanu"
+    },
+    {
+      "from": "/notes/Plani%20roboti.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Pochatkova%20shkola.html",
+      "to": "/pochatkova-shkola"
+    },
+    {
+      "from": "/notes/Poradi%20psihologa.html",
+      "to": "/porady-psykholoha"
+    },
+    {
+      "from": "/notes/Pozashkilna%20osvita.html",
+      "to": "/pozashkilna-osvita"
+    },
+    {
+      "from": "/notes/Prioritetni%20zavdannya%20Centru.html",
+      "to": "/priorytetni-zavdannia-tsentru"
+    },
+    {
+      "from": "/notes/Programi.html",
+      "to": "/prohramy"
+    },
+    {
+      "from": "/notes/Proekti%2C%20innovaciyi%2C%20suchasni%20praktiki.html",
+      "to": "/proiekty-innovatsii-suchasni-praktyky"
+    },
+    {
+      "from": "/notes/Prostir%20tvorchih%20idey.html",
+      "to": "/prostir-tvorchykh-idei"
+    },
+    {
+      "from": "/notes/Publichna%20informaciya.html",
+      "to": "/publichna-informatsiia"
+    },
+    {
+      "from": "/notes/Sertifikaciya%20pedagogichnih%20pracivnikiv.html",
+      "to": "/sertyfikatsiia-pedahohichnykh-pratsivnykiv"
+    },
+    {
+      "from": "/notes/Shkilna%20biblioteka.html",
+      "to": "/shkilna-biblioteka"
+    },
+    {
+      "from": "/notes/Socialno-psihologichna%20sluzhba.html",
+      "to": "/sotsialno-psykholohichna-sluzhba"
+    },
+    {
+      "from": "/notes/Storinka%20psihologa.html",
+      "to": "/storinka-psykholoha"
+    },
+    {
+      "from": "/notes/Strategiya%20rozvitku%20Komunalnoyi%20ustanovi%20((Centr%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20Lubenskoyi%20miskoyi%20radi))%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20na%202021-2025%20roki.html",
+      "to": "/stratehiia-rozvytku-komunalnoi-ustanovy-tsentr-profesiinoho-rozvytku-pedahohichn"
+    },
+    {
+      "from": "/notes/Sub_ekti%20pidvischennya%20kvalifikaciyi.html",
+      "to": "/subiekty-pidvyshchennia-kvalifikatsii"
+    },
+    {
+      "from": "/notes/Superviziya.html",
+      "to": "/superviziia"
+    },
+    {
+      "from": "/notes/Traektoriya%20profesiynogo%20rozvitku%20pedagoga.html",
+      "to": "/traiektoriia-profesiinoho-rozvytku-pedahoha"
+    },
+    {
+      "from": "/notes/Tvorchi%20grupi.html",
+      "to": "/tvorchi-hrupy"
+    },
+    {
+      "from": "/notes/%23Tiyak.html",
+      "to": "/tyiak"
+    },
+    {
+      "from": "/notes/Vazhlivo%20znati%20kozhnomu!.html",
+      "to": "/vazhlyvo-znaty-kozhnomu"
+    },
+    {
+      "from": "/notes/Volonterska%20diyalnist%20osvityan%20Lubenschini.html",
+      "to": "/volonterska-diialnist-osvitian-lubenshchyny"
+    },
+    {
+      "from": "/notes/Zagalna%20serednya%20osvita.html",
+      "to": "/zahalna-serednia-osvita"
+    },
+    {
+      "from": "/notes/Narada%20zastupnikiv%20direktoriv%20ZZSO.html",
+      "to": "/novyny/2024-10-24-narada-zastupnykiv-dyrektoriv-zzso"
+    }
+  ]
+}

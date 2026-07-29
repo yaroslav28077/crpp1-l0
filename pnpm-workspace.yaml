@@ -1,0 +1,16 @@
+# Налаштування pnpm 11+. Раніше ці ключі жили в полі "pnpm" у package.json,
+# але pnpm 11 його більше не читає — і мовчки втрачав пін hono.
+
+# Які залежності мають право виконувати build-скрипти під час install.
+# Без явного рішення pnpm 11 завершується з ERR_PNPM_IGNORED_BUILDS (exit 1),
+# що ламало `pnpm build` — команду збірки з netlify.toml.
+allowBuilds:
+  # потрібен для scripts/compress-images.mjs (нативний бінарник)
+  sharp: true
+  # транзитивна залежність shadcn, у рантаймі сайту не використовується
+  msw: false
+  # нативний резолвер імпортів для ESLint — без збірки не працює
+  unrs-resolver: true
+
+overrides:
+  hono: 4.12.25
