@@ -5,41 +5,58 @@ slug: normatyvni-dokumenty
 blocks:
   - type: text
     text: '#### [Зведений перелік типових питань, що надходять від громадян з тимчасово окупованих територій України та внутрішньо переміщених осіб, а також відповіді на них (підготовлено на основі узагальнених даних від міністерств)](https://drive.google.com/file/d/1_JIBWLqYLhX3pl4NsWOJwPNHhJ06kDlC/view?usp=sharing)'
-  - type: accordion
+  - type: documents
     title: Нормативно-правова база
-    text: |-
-      1. [Конституція України](https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80#Text)
-      1. Закони України:
-      1. *[«Про освіту»](https://zakon.rada.gov.ua/go/2145-19);
-      1. *[«Про повну загальну середню освіту»](https://zakon.rada.gov.ua/go/463-20);
-      1. *[«Про дошкільну освіту»](https://zakon.rada.gov.ua/go/2628-14);
-      1. *[«Про позашкільну освіту»](https://zakon.rada.gov.ua/go/1841-14);
-      1. *[«Про інноваційну діяльність»](https://zakon.rada.gov.ua/go/40-15).
-      1. [Концепція Нової української школи](https://zakon.rada.gov.ua/go/988-2016-%D1%80)
-      1. Постанови Кабінету Міністрів України:
-      1. *[«Про затвердження Державного стандарту початкової освіти» від 21.02.2018р. №87](https://zakon.rada.gov.ua/go/87-2018-%D0%BF);
-      1. *[«Про внесення змін до Державного стандарту початкової освіти» від 24.07.2019р. №688](https://zakon.rada.gov.ua/go/688-2019-%D0%BF);
-      1. *[«Деякі питання підвищення кваліфікації педагогічних і науково-педагогічних працівників» від 21.08.2021р. №800](https://zakon.rada.gov.ua/go/800-2019-%D0%BF);
-      1. *[«Про деякі питання державних стандартів повної загальної середньої освіти» від 30.09.2021р. №898](https://zakon.rada.gov.ua/go/898-2020-%D0%BF)
-      1. [Стратегія національно-патріотичного виховання на період до 2025 року](https://zakon.rada.gov.ua/go/286/2019)
-      1. [Про організацію роботи з професійного розвитку педагогічних працівників закладів освіти Лубенської ТГ у 2022-2023 навчальному році](https://drive.google.com/file/d/1ItUfO0QFZUZUeGUAwJoYT_V9pBqVUE7K/view?usp=sharing)
-      1. [Положення про професійні спільноти](https://drive.google.com/file/d/1S-Da794BGYeTsTRPW6XAGLhlhHiJgj7B/view?usp=sharing)
-      1. [Про організацію роботи з професійного розвитку педагогічних працівників закладів  освіти Лубенської ТГ у 2021–2022 навчальному році](https://drive.google.com/file/d/19UkjPzHczvJ_8OqPz2uG0Ewne-oq-WUQ/view?usp=sharing)
-  - type: accordion
+    view: collapsed
+    items:
+      - label: Конституція України
+        url: https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80#Text
+      - label: Закони України
+      - label: '*[«Про освіту»](https://zakon.rada.gov.ua/go/2145-19);'
+      - label: '*[«Про повну загальну середню освіту»](https://zakon.rada.gov.ua/go/463-20);'
+      - label: '*[«Про дошкільну освіту»](https://zakon.rada.gov.ua/go/2628-14);'
+      - label: '*[«Про позашкільну освіту»](https://zakon.rada.gov.ua/go/1841-14);'
+      - label: '*[«Про інноваційну діяльність»](https://zakon.rada.gov.ua/go/40-15).'
+      - label: Концепція Нової української школи
+        url: https://zakon.rada.gov.ua/go/988-2016-%D1%80
+      - label: Постанови Кабінету Міністрів України
+      - label: '*[«Про затвердження Державного стандарту початкової освіти» від 21.02.2018р. №87](https://zakon.rada.gov.ua/go/87-2018-%D0%BF);'
+      - label: '*[«Про внесення змін до Державного стандарту початкової освіти» від 24.07.2019р. №688](https://zakon.rada.gov.ua/go/688-2019-%D0%BF);'
+      - label: '*[«Деякі питання підвищення кваліфікації педагогічних і науково-педагогічних працівників» від 21.08.2021р. №800](https://zakon.rada.gov.ua/go/800-2019-%D0%BF);'
+      - label: '*[«Про деякі питання державних стандартів повної загальної середньої освіти» від 30.09.2021р. №898](https://zakon.rada.gov.ua/go/898-2020-%D0%BF)'
+      - label: Стратегія національно-патріотичного виховання на період до 2025 року
+        url: https://zakon.rada.gov.ua/go/286/2019
+      - label: Про організацію роботи з професійного розвитку педагогічних працівників закладів освіти Лубенської ТГ у 2022-2023 навчальному році
+        url: https://drive.google.com/file/d/1ItUfO0QFZUZUeGUAwJoYT_V9pBqVUE7K/view?usp=sharing
+      - label: Положення про професійні спільноти
+        url: https://drive.google.com/file/d/1S-Da794BGYeTsTRPW6XAGLhlhHiJgj7B/view?usp=sharing
+      - label: Про організацію роботи з професійного розвитку педагогічних працівників закладів  освіти Лубенської ТГ у 2021–2022 навчальному році
+        url: https://drive.google.com/file/d/19UkjPzHczvJ_8OqPz2uG0Ewne-oq-WUQ/view?usp=sharing
+  - type: documents
     title: Для ЗЗСО
-    text: |-
-      1. [Професійний стандарт за професіями...](https://drive.google.com/file/d/18PX8VaXi9E5z3xj0NQFv9pQ2Fo5ELPNJ/view?usp=sharing)
-      1. **[Оновлено зміст навчальних програм ЗСО](https://mon.gov.ua/ua/news/onovleno-zmist-navchalnih-program-zso)**
-      1. [Лист Міністерства освіти і науки України № 1/3872-22 від 04.04.2022 "Про методичні рекомендації “Перша психологічна допомога. Алгоритм дій”](https://drive.google.com/file/d/1WJ6nQK2_vnUIDg7Dfcd43M1KQ85i_XF0/view?usp=sharing)
-      1. [Деякі питання організації виховного процесу у 2021-2022 н.р. щодо формування в дітей та учнів ціннісних життєвих навичок](https://drive.google.com/file/d/16xmz3Ev6eRBPkfLvmZb7HwthzpCKVM6o/view?usp=sharing)
-      1. [Методичні рекомендації щодо організації виховної діяльності в закладах освіти у 2021-2022 навчальному році](https://docs.google.com/document/d/1fN4BC8grg-8sRB2RiYRgn6D1bCA53MAr/edit?usp=sharing&ouid=104895709143078317433&rtpof=true&sd=true)
-      1. [Методичні рекомендації Полтавського обласного інституту післядипломної педагогічної освіти ім. М.В.Остроградського щодо організації освітнього процесу у 2021-2022 навчальному році](https://docs.google.com/document/d/16NdlR_gVcXJme9EO4zphKJv1YiKq95zv/edit?usp=sharing&ouid=104895709143078317433&rtpof=true&sd=true)
-  - type: accordion
+    view: collapsed
+    items:
+      - label: Професійний стандарт за професіями...
+        url: https://drive.google.com/file/d/18PX8VaXi9E5z3xj0NQFv9pQ2Fo5ELPNJ/view?usp=sharing
+      - label: '**[Оновлено зміст навчальних програм ЗСО](https://mon.gov.ua/ua/news/onovleno-zmist-navchalnih-program-zso)**'
+      - label: Лист Міністерства освіти і науки України № 1/3872-22 від 04.04.2022 "Про методичні рекомендації “Перша психологічна допомога. Алгоритм дій”
+        url: https://drive.google.com/file/d/1WJ6nQK2_vnUIDg7Dfcd43M1KQ85i_XF0/view?usp=sharing
+      - label: Деякі питання організації виховного процесу у 2021-2022 н.р. щодо формування в дітей та учнів ціннісних життєвих навичок
+        url: https://drive.google.com/file/d/16xmz3Ev6eRBPkfLvmZb7HwthzpCKVM6o/view?usp=sharing
+      - label: Методичні рекомендації щодо організації виховної діяльності в закладах освіти у 2021-2022 навчальному році
+        url: https://docs.google.com/document/d/1fN4BC8grg-8sRB2RiYRgn6D1bCA53MAr/edit?usp=sharing&ouid=104895709143078317433&rtpof=true&sd=true
+      - label: Методичні рекомендації Полтавського обласного інституту післядипломної педагогічної освіти ім. М.В.Остроградського щодо організації освітнього процесу у 2021-2022 навчальному році
+        url: https://docs.google.com/document/d/16NdlR_gVcXJme9EO4zphKJv1YiKq95zv/edit?usp=sharing&ouid=104895709143078317433&rtpof=true&sd=true
+  - type: documents
     title: Для ЗДО
-    text: |-
-      1. [Методичні рекомендації щодо організації освітнього процесу в закладах дошкільної освіти Полтавської області у 2021-2022 навчальному році](https://docs.google.com/document/d/1DlniXcH4fe_epO8Ug2QI9XBk-R2PCw5D/edit?usp=sharing&ouid=104895709143078317433&rtpof=true&sd=true)
-      1. [Наказ МОН від 13.07.2021 року № 813 «Про затвердження методичних рекомендацій щодо оцінювання результатів навчання учнів 1 – 4 класів  закладів загальної середньої освіти»](https://mon.gov.ua/ua/npa/pro-zatverdzhennya-metodichnih-rekomendacij-shodo-ocinyuvannya-rezultativ-navchannya-uchniv-1-4-klasiv-zakladiv-zagalnoyi-serednoyi-osviti)
-      1. [Наказ МОЗ від  25.09.2020 року  № 2205 «Про затвердження Санітарного регламенту для закладів загальної середньої освіти»](https://moz.gov.ua/article/ministry-mandates/nakaz-moz-ukraini-vid-25092020--2205-pro-zatverdzhennja-sanitarnogo-reglamentu-dlja-zakladiv-zagalnoi-serednoi-osviti)
+    view: collapsed
+    items:
+      - label: Методичні рекомендації щодо організації освітнього процесу в закладах дошкільної освіти Полтавської області у 2021-2022 навчальному році
+        url: https://docs.google.com/document/d/1DlniXcH4fe_epO8Ug2QI9XBk-R2PCw5D/edit?usp=sharing&ouid=104895709143078317433&rtpof=true&sd=true
+      - label: Наказ МОН від 13.07.2021 року № 813 «Про затвердження методичних рекомендацій щодо оцінювання результатів навчання учнів 1 – 4 класів  закладів загальної середньої освіти»
+        url: https://mon.gov.ua/ua/npa/pro-zatverdzhennya-metodichnih-rekomendacij-shodo-ocinyuvannya-rezultativ-navchannya-uchniv-1-4-klasiv-zakladiv-zagalnoyi-serednoyi-osviti
+      - label: Наказ МОЗ від  25.09.2020 року  № 2205 «Про затвердження Санітарного регламенту для закладів загальної середньої освіти»
+        url: https://moz.gov.ua/article/ministry-mandates/nakaz-moz-ukraini-vid-25092020--2205-pro-zatverdzhennja-sanitarnogo-reglamentu-dlja-zakladiv-zagalnoi-serednoi-osviti
   - type: accordion
     title: Інклюзивна освіта
     text: |-

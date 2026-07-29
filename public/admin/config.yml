@@ -183,11 +183,17 @@ collections:
               - { name: text, label: Текст оголошення, widget: markdown }
 
           - name: accordion
-            label: Розгортуваний розділ
+            label: Розгортуваний розділ з текстом
             summary: '{{fields.title}}'
             fields:
-              - { name: title, label: Заголовок розділу, widget: string, hint: 'Наприклад: Події, Документи' }
-              - { name: text, label: Вміст розділу, widget: markdown }
+              - { name: title, label: Заголовок розділу, widget: string, hint: 'Наприклад: Пояснення, Роз’яснення' }
+              - name: text
+                label: Вміст розділу
+                widget: markdown
+                hint: >-
+                  Для суцільного тексту й пояснень. Якщо це перелік документів чи посилань —
+                  краще взяти блок «Перелік документів і посилань», а для таблиці з контактами —
+                  блок «Таблиця»: там кожна назва й адреса має власне поле.
 
           - name: news_by_topic
             label: Список новин за темою (оновлюється сам)
@@ -235,28 +241,41 @@ collections:
                   display_fields: ['{{title}}']
 
           - name: documents
-            label: Документи й посилання
+            label: Перелік документів і посилань
             summary: '{{fields.title}}'
             fields:
               - { name: title, label: Заголовок, widget: string, required: false, default: Документи }
-              - name: collapsed
-                label: Показувати згорнутим
+              - name: view
+                label: Як показувати
+                widget: select
+                default: collapsed
+                hint: Якщо не впевнені — лишіть «Згорнутий розділ».
+                options:
+                  - { label: Згорнутий розділ (відкривається клацанням), value: collapsed }
+                  - { label: Одразу розкритий список, value: open }
+                  - { label: Картка з рамкою (щоб привернути увагу), value: card }
+                  - { label: Плитки (для кількох бланків), value: grid }
+              - name: numbered
+                label: Нумерувати рядки
                 widget: boolean
-                default: true
-                hint: Розділ буде закритий, доки відвідувач не клацне по заголовку
+                default: false
+                required: false
+                hint: Для переліків на кшталт нормативних документів, де посилаються на номер.
               - name: items
                 label: Перелік
-                label_singular: Документ
+                label_singular: Рядок
                 widget: list
                 summary: '{{fields.label}}'
-                hint: Кожен рядок — назва й посилання. Порядок можна змінювати перетягуванням.
+                hint: >-
+                  Один рядок — один документ. Порядок змінюється перетягуванням.
+                  Посилання робити не треба: просто впишіть назву й вкладіть адресу або файл.
                 fields:
-                  - { name: label, label: Назва, widget: string, hint: Те, що побачить відвідувач }
+                  - { name: label, label: Назва, widget: string, required: false, hint: Те, що побачить відвідувач }
                   - name: url
                     label: Посилання
                     widget: string
                     required: false
-                    hint: Адреса на Google Диску або будь-яка інша. Якщо натомість завантажуєте файл — лишіть порожнім.
+                    hint: Адреса на Google Диску або будь-яка інша. Якщо завантажуєте файл чи обираєте новину — лишіть порожнім.
                   - name: file
                     label: Або завантажити файл
                     widget: file
@@ -264,6 +283,65 @@ collections:
                     media_folder: /public/documents
                     public_folder: /documents
                     hint: Для файлів, які зберігаються на самому сайті. Має перевагу над посиланням вище.
+                  - name: news
+                    label: Або новина з цього сайту
+                    widget: relation
+                    required: false
+                    collection: news
+                    search_fields: [title]
+                    value_field: '{{slug}}'
+                    display_fields: ['{{title}}']
+                    hint: Коли рядок веде на публікацію тут же. Оберіть її зі списку — адресу вписувати не треба.
+                  - name: children
+                    label: Вкладені накази й додатки
+                    label_singular: Вкладений документ
+                    widget: list
+                    required: false
+                    collapsed: true
+                    summary: '{{fields.label}}'
+                    hint: >-
+                      Заповнюйте, коли до заходу є свої накази й додатки — вони стануть
+                      підпорядкованим списком під назвою. Якщо їх немає, лишіть порожнім.
+                    fields:
+                      - { name: label, label: Назва, widget: string, hint: 'Наприклад: Наказ «Про проведення», Додаток 1' }
+                      - { name: url, label: Посилання, widget: string, required: false }
+                      - name: file
+                        label: Або завантажити файл
+                        widget: file
+                        required: false
+                        media_folder: /public/documents
+                        public_folder: /documents
+
+          - name: table
+            label: Таблиця (керівники, контакти)
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, label: Заголовок, widget: string, required: false, hint: 'Наприклад: Керівники ЗДО' }
+              - name: view
+                label: Як показувати
+                widget: select
+                default: collapsed
+                options:
+                  - { label: Згорнутий розділ (відкривається клацанням), value: collapsed }
+                  - { label: Одразу розкрита таблиця, value: open }
+              - name: columns
+                label: Назви стовпців
+                label_singular: Стовпець
+                widget: list
+                field: { name: column, label: Назва стовпця, widget: string }
+                hint: 'Наприклад: № з/п, Назва закладу, Керівник, Телефон, Електронна адреса'
+              - name: rows
+                label: Рядки
+                label_singular: Рядок
+                widget: list
+                summary: '{{fields.cells}}'
+                hint: Стільки клітинок, скільки стовпців вище. Пошту й телефон вписуйте звичайним текстом — посилання зробляться самі.
+                fields:
+                  - name: cells
+                    label: Клітинки
+                    label_singular: Клітинка
+                    widget: list
+                    field: { name: cell, label: Значення, widget: string }
 
           - name: gallery
             label: Фотогалерея
@@ -280,7 +358,7 @@ collections:
                   - { name: caption, label: Підпис, widget: string, required: false }
 
       # Тіло сторінки у старому форматі — до переходу на блоки. У свіжому
-      # ��місті порожнє. Поле лишається оголошеним із двох причин: щоб текст
+      # ��м��сті порожнє. Поле лишається оголошеним із двох причин: щоб текст
       # такої сторінки було видно й можна було перенести в блоки, і щоб
       # Decap не відкинув його при збереженні. Сайт показує це тіло лише
       # тоді, коли блоків немає (app/[slug]/page.tsx).
