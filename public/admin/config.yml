@@ -3,7 +3,9 @@ backend:
   branch: main
 
 # Для локальної розробки: запустіть `npx decap-server` і розкоментуйте рядок нижче
-# local_backend: true
+local_backend:
+  url: https://sb-2wg0fzzjlwrc.vercel.run/api/decap-proxy
+  allowed_hosts: ['sb-2wg0fzzjlwrc.vercel.run']
 
 # Чернетки. Без цього кожне збереження одразу публікувалося на сайт —
 # не було як підготувати матеріал заздалегідь чи показати комусь перед виходом.
@@ -26,8 +28,14 @@ collections:
     folder: content/news
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    # Тільки масив: об'єктна форма з default-сортуванням, яку показує
+    # документація Decap, у версії 3.15 валідацію не проходить —
+    # «'collections[0].sortable_fields' must be array», і адмінка не відкриється.
+    # Тож найновіші вгорі редактор ставить сам через «Сортувати за».
     sortable_fields: [date, title]
-    summary: '{{date | date("DD.MM.YYYY")}} — {{title}}'
+    # Лапки у фільтрі мусять бути одинарними: Decap шукає рівно date('...'),
+    # з подвійними фільтр не спрацьовує і в списку видно «2021-12-16T12:28:00.000Z».
+    summary: "{{date | date('DD.MM.YYYY')}} — {{title}}"
     fields:
       # Порядок полів — це порядок, у якому їх заповнюють: спочатку про що
       # новина, потім сам текст, потім фото. Службове — наприкінці, згорнуте.
@@ -161,7 +169,10 @@ collections:
         hint: Якщо офіційна назва задовга для меню. У меню лишиться коротка, а на сторінці буде ця.
 
       - name: blocks
-        label: Вміст сторінки
+        # Decap підставляє цю назву в рядок-лічильник у нижньому регістрі,
+        # тому «Вміст сторінки» читалося як «2 вміст сторінки».
+        # З «Блоки сторінки» виходить «2 блоки сторінки».
+        label: Блоки сторінки
         label_singular: Блок
         widget: list
         # Не обов'язкове: сторінки, які ще не перевели на блоки, мають
@@ -184,7 +195,7 @@ collections:
 
           - name: accordion
             label: Розгортуваний розділ з текстом
-            summary: '{{fields.title}}'
+            summary: "{{fields.title | default('Розгортуваний розділ')}}"
             fields:
               - { name: title, label: Заголовок розділу, widget: string, hint: 'Наприклад: Пояснення, Роз’яснення' }
               - name: text
@@ -197,7 +208,7 @@ collections:
 
           - name: news_by_topic
             label: Список новин за темою (оновлюється сам)
-            summary: '{{fields.title}}'
+            summary: "{{fields.title | default('Список новин за темою')}}"
             fields:
               - { name: title, label: Заголовок, widget: string, required: false, default: Події }
               - name: topic
@@ -223,7 +234,7 @@ collections:
 
           - name: news_list
             label: Список новин (обираються вручну)
-            summary: '{{fields.title}}'
+            summary: "{{fields.title | default('Список новин')}}"
             fields:
               - { name: title, label: Заголовок, widget: string, required: false, default: Події }
               - name: items
@@ -242,7 +253,7 @@ collections:
 
           - name: documents
             label: Перелік документів і посилань
-            summary: '{{fields.title}}'
+            summary: "{{fields.title | default('Перелік документів')}}"
             fields:
               - { name: title, label: Заголовок, widget: string, required: false, default: Документи }
               - name: view
@@ -314,7 +325,7 @@ collections:
 
           - name: table
             label: Таблиця (керівники, контакти)
-            summary: '{{fields.title}}'
+            summary: "{{fields.title | default('Таблиця')}}"
             fields:
               - { name: title, label: Заголовок, widget: string, required: false, hint: 'Наприклад: Керівники ЗДО' }
               - name: view
@@ -345,7 +356,7 @@ collections:
 
           - name: gallery
             label: Фотогалерея
-            summary: '{{fields.title}}'
+            summary: "{{fields.title | default('Фотогалерея')}}"
             fields:
               - { name: title, label: Заголовок, widget: string, required: false }
               - name: images
@@ -359,7 +370,7 @@ collections:
 
           - name: partners
             label: Логотипи партнерів
-            summary: '{{fields.title}}'
+            summary: "{{fields.title | default('Логотипи партнерів')}}"
             fields:
               - { name: title, label: Заголовок, widget: string, required: false }
               - name: items
