@@ -50,22 +50,86 @@ async function unbake(input) {
   return sharp(out, { raw: { width, height, channels: 4 } }).png()
 }
 
-// Межі самого логотипа на фотографії (без краю аркуша й водяного знака)
-const FULL = { left: 239, top: 92, width: 732, height: 529 }
+/**
+ * Зона пошуку логотипа на фотографії. Вужча за кадр навмисно: праворуч
+ * лишається край аркуша, а в правому нижньому куті — водяний знак, і те
+ * й те не має потрапити в межі малюнка.
+ */
+const SCAN = { x0: 130, x1: 1090, y0: 30, y1: 640 }
+
+/**
+ * Знаходить точні межі малюнка. Раніше вони були прописані числами
+ * "на око" — і кроп виходив упритул до чорнила: стрічка торкалася лівого
+ * й правого краю, а гасло — низу. На білій плашці це читалося як
+ * обрізаний і перекошений логотип.
+ */
+async function inkBounds(input, threshold = 22) {
+  const { data, info } = await sharp(input).raw().toBuffer({ resolveWithObject: true })
+  const { width, height, channels } = info
+
+  let minX = width
+  let maxX = -1
+  let minY = height
+  let maxY = -1
+
+  for (let y = Math.max(0, SCAN.y0); y < Math.min(height, SCAN.y1); y++) {
+    for (let x = Math.max(0, SCAN.x0); x < Math.min(width, SCAN.x1); x++) {
+      const i = (y * width + x) * channels
+      const d = Math.max(
+        Math.abs(data[i] - BG[0]),
+        Math.abs(data[i + 1] - BG[1]),
+        Math.abs(data[i + 2] - BG[2]),
+      )
+      if (d <= threshold) continue
+      if (x < minX) minX = x
+      if (x > maxX) maxX = x
+      if (y < minY) minY = y
+      if (y > maxY) maxY = y
+    }
+  }
+
+  return { left: minX, top: minY, width: maxX - minX + 1, height: maxY - minY + 1 }
+}
+
+/** Додає рівні прозорі поля навколо малюнка — «повітря» замість впритул. */
+async function withMargin(input, ratio) {
+  const buf = await sharp(input).toBuffer()
+  const { width, height } = await sharp(buf).metadata()
+  const pad = Math.round(Math.max(width, height) * ratio)
+
+  return sharp({
+    create: {
+      width: width + pad * 2,
+      height: height + pad * 2,
+      channels: 4,
+      background: { r: 0, g: 0, b: 0, alpha: 0 },
+    },
+  })
+    .composite([{ input: buf, left: pad, top: pad }])
+    .png()
+}
 
 // Центральний символ: постаті, пагін і стрілка
 const MARK = { left: 540, top: 112, width: 300, height: 236 }
 
 async function main() {
-  const cropped = await sharp(SRC).extract(FULL).png().toBuffer()
-  await (await unbake(cropped)).toFile(`${OUT}/logo-emblem.png`)
+  const full = await inkBounds(SRC)
+  console.log('межі малюнка', full)
+
+  const cropped = await sharp(SRC).extract(full).png().toBuffer()
+  const emblem = await unbake(cropped)
+  // 5% полів: досить, щоб стрічка не торкалася країв плашки
+  await (await withMargin(await emblem.toBuffer(), 0.05)).toFile(`${OUT}/logo-emblem.png`)
 
   const markRaw = await sharp(SRC).extract(MARK).png().toBuffer()
-  const mark = await unbake(markRaw)
-  await mark.toFile(`${OUT}/logo-mark.png`)
-
-  // Квадратне полотно: символ по центру з невеликими полями
-  const markBuf = await mark.toBuffer()
+  const markUnbaked = await unbake(markRaw)
+  // trim по прозорості: MARK задано з запасом, тож зрізаємо порожні краї,
+  // щоб символ сів по центру, а не з випадковим зсувом
+  const markBuf = await sharp(await markUnbaked.toBuffer())
+    .trim({ threshold: 1 })
+    .png()
+    .toBuffer()
+  await sharp(markBuf).toFile(`${OUT}/logo-mark.png`)
   const meta = await sharp(markBuf).metadata()
   const side = Math.max(meta.width, meta.height)
   // Щедрі поля: символ ширший за висоту, тож із малим відступом він

@@ -15,7 +15,7 @@ export function SiteFooter({
       <div className="mx-auto max-w-6xl px-4 py-12 grid gap-10 md:grid-cols-3">
         <div className="flex flex-col gap-4 items-start">
           {settings.logo_emblem ? (
-            <BrandEmblem src={settings.logo_emblem} className="w-48 p-3" />
+            <BrandEmblem src={settings.logo_emblem} className="w-52" />
           ) : (
             <p className="font-heading font-bold text-lg text-balance">{settings.site_short_name}</p>
           )}

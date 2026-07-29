@@ -17,7 +17,12 @@ export function BrandEmblem({
 }) {
   return (
     <span
-      className={`inline-flex items-center justify-center rounded-2xl bg-background p-4 shadow-lg ${className}`}
+      /*
+        Відступи навколо малюнка вже вбудовані у сам PNG (див.
+        scripts/extract-brand.mjs), тож плашці досить мінімального padding —
+        інакше поля подвоюються і емблема виглядає дрібною.
+      */
+      className={`inline-flex items-center justify-center rounded-2xl bg-background p-2 shadow-lg ${className}`}
     >
       {/*
         alt="" свідомо: назва установи є і в самій емблемі, і текстом поруч,
