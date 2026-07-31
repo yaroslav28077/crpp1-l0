@@ -20,6 +20,9 @@ function normalize(s: string): string {
     // щоб «мрія» знаходило «мрія» незалежно від набору
     .replace(/['’ʼ`]/g, '')
     .replace(/ё/g, 'е')
+    // Номер документа переписують разом зі знаком: «№CPRPP2022/16». В індексі
+    // він зберігається без нього, тож прибираємо — інакше збігу не буде
+    .replace(/[№#]/g, '')
     .replace(/\s+/g, ' ')
     .trim()
 }
@@ -92,7 +95,7 @@ export function SearchResults() {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Наприклад: сертифікація, бібліотека, НУШ"
+            placeholder="Наприклад: прізвище, CPRPP2022/16, НУШ"
             autoFocus
             className="w-full rounded-xl border border-border bg-card pl-11 pr-4 py-3 text-base outline-none focus-visible:border-primary focus-visible:ring-3 focus-visible:ring-ring/30"
           />
@@ -107,7 +110,8 @@ export function SearchResults() {
 
       {!failed && !trimmed && (
         <p className="text-muted-foreground py-8 text-center">
-          Введіть слово для пошуку — шукаємо серед новин і сторінок сайту.
+          Введіть слово для пошуку — шукаємо серед новин, сторінок і переліків виданих документів. Свій
+          документ про підвищення кваліфікації можна знайти за прізвищем або обліковим номером.
         </p>
       )}
 

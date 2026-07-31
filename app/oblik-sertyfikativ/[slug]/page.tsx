@@ -60,6 +60,13 @@ export default async function CertificatePage({ params }: { params: Promise<{ sl
         min-w обов'язковий: інакше вона стискається до ширини екрана й ПІБ
         ламається на два-три символи, а overflow-x-auto не спрацьовує ніколи.
       */}
+      {/*
+        Обрізаний край таблиці сам не підказує, що її можна гортати, а без
+        останніх стовпців (номер документа, дата) сторінка марна. На широких
+        екранах таблиця вміщається повністю, тож підказку там не показуємо.
+      */}
+      <p className="text-xs text-muted-foreground mb-2 lg:hidden">Таблиця гортається вбік</p>
+
       <div className="overflow-x-auto rounded-xl border border-border">
         <table className="w-full min-w-[48rem] text-sm border-collapse">
           <caption className="sr-only">{item.title}</caption>

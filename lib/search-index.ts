@@ -29,14 +29,18 @@ export interface SearchDoc {
  * третини ваги індексу без втрати жодного збігу.
  */
 function toSearchWords(text: string): string {
-  const words = new Set(
-    text
-      .toLowerCase()
-      .replace(/['’ʼ`]/g, "")
-      .replace(/ё/g, "е")
-      .split(/[^\p{L}\p{N}]+/u)
-      .filter((w) => w.length > 2),
-  )
+  const lower = text
+    .toLowerCase()
+    .replace(/['’ʼ`]/g, "")
+    .replace(/ё/g, "е")
+  const words = new Set(lower.split(/[^\p{L}\p{N}]+/u).filter((w) => w.length > 2))
+  /*
+    Облікові номери документів мають вигляд «№CPRPP2022/16». Розбивка по
+    небуквенних символах ділила б їх на «cprpp2022» і «16» — і педагог, який
+    вводить номер повністю, не знайшов би нічого, хоч саме за номером у
+    переліки й заходять. Тому додаємо номер ще й цілим словом.
+  */
+  for (const num of lower.match(/[\p{L}\p{N}]+(?:\/[\p{L}\p{N}]+)+/gu) ?? []) words.add(num)
   return [...words].join(" ")
 }
 
