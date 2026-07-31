@@ -78,19 +78,20 @@ function stripMarkup(s: string): string {
     .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
     .replace(/<[^>]+>/g, " ")
     .replace(/https?:\/\/\S+/g, " ")
-    .replace(/[|*_`#>-]+/g, " ")
+    .replace(/[#*_>`~|]/g, " ")
     .replace(/\s+/g, " ")
     .trim()
 }
 
+/** Збирає індекс із усього контенту сайту */
 export function buildSearchIndex(): SearchDoc[] {
   const news: SearchDoc[] = getAllNews().map((n) => ({
     t: "n",
     u: `/novyny/${n.slug}`,
     h: n.title,
     d: n.date,
-    s: n.description,
-    b: toSearchWords(stripMarkup(`${n.title} ${n.description || ""} ${n.body}`)),
+    s: n.summary,
+    b: toSearchWords(stripMarkup(`${n.title} ${n.summary || ""} ${n.body}`)),
   }))
 
   const pages: SearchDoc[] = getAllPages().map((p) => ({
@@ -104,7 +105,7 @@ export function buildSearchIndex(): SearchDoc[] {
   /*
     Переліки виданих документів. Саме тут пошук найпотрібніший: педагог шукає
     себе за прізвищем або за номером документа, а переліків п'ять десятків —
-    вручну він їх не переглядатиме. У слова йдуть усі клітинки таблиці, тож
+    вручну він їх не переглядатиме. У слова йдуть усі поля запису, тож
     знаходиться і прізвище, і обліковий номер.
   */
   const certificates: SearchDoc[] = getAllCertificates().map((c) => ({
@@ -113,7 +114,13 @@ export function buildSearchIndex(): SearchDoc[] {
     h: c.title,
     d: c.date,
     s: c.event ? `Захід: ${c.event}` : undefined,
-    b: toSearchWords(stripMarkup(`${c.title} ${c.rows.map((r) => r.cells.join(" ")).join(" ")}`)),
+    b: toSearchWords(
+      stripMarkup(
+        `${c.title} ${c.entries
+          .map((e) => [e.name, e.record, e.issued, e.form, e.volume, e.result].filter(Boolean).join(" "))
+          .join(" ")}`,
+      ),
+    ),
   }))
 
   return [...news, ...pages, ...certificates]
