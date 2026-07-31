@@ -399,12 +399,54 @@ collections:
                 widget: list
                 field: { name: column, label: Назва стовпця, widget: string }
                 hint: 'Наприклад: № з/п, Назва закладу, Керівник, Телефон, Електронна адреса'
-              - name: rows
+              - name: fields
+                label: Які дані в стовпцях
+                label_singular: Стовпець
+                widget: list
+                required: false
+                hint: 'Порядок — як у назвах стовпців вище, без «№ з/п»: його сайт нумерує сам.'
+                field:
+                  name: field
+                  label: Дані стовпця
+                  widget: select
+                  options:
+                    - { label: Заклад освіти, value: institution }
+                    - { label: "Прізвище, ім'я, по батькові", value: person }
+                    - { label: Посада / напрям роботи / спільнота, value: role }
+                    - { label: Телефон, value: phone }
+                    - { label: Електронна адреса, value: email }
+                    - { label: Назва заходу, value: event }
+                    - { label: Дата проведення, value: date }
+                    - { label: Відповідальний, value: responsible }
+              - name: entries
                 label: Рядки
                 label_singular: Рядок
                 widget: list
+                required: false
+                # Без summary Decap показує рядок сирим масивом ["1","Перша гімназія…"],
+                # а з ним у списку видно заклад і людину — рядок можна знайти очима.
+                summary: "{{fields.institution}} {{fields.person}}{{fields.event}} {{fields.note}}"
+                hint: Заповнюйте лише ті поля, які є в цій таблиці. Пошту й телефон пишіть звичайним текстом — посилання зробляться самі.
+                fields:
+                  - { name: institution, label: Заклад освіти, widget: string, required: false }
+                  - { name: person, label: "Прізвище, ім'я, по батькові", widget: string, required: false }
+                  - { name: role, label: Посада / напрям роботи / спільнота, widget: string, required: false }
+                  - { name: phone, label: Телефон, widget: string, required: false }
+                  - { name: email, label: Електронна адреса, widget: string, required: false }
+                  - { name: event, label: Назва заходу, widget: text, required: false }
+                  - { name: date, label: Дата проведення, widget: string, required: false }
+                  - { name: responsible, label: Відповідальний, widget: string, required: false }
+                  - { name: note, label: Рядок на всю ширину (підпис), widget: string, required: false }
+              # Старий формат безіменних клітинок. Лишається, поки не всі сторінки
+              # переведені на «Рядки»: якщо забрати це поле, адмінка стерла б
+              # рядки таких таблиць під час першого ж збереження сторінки.
+              - name: rows
+                label: Рядки (старий формат)
+                label_singular: Рядок
+                widget: list
+                required: false
                 summary: '{{fields.cells}}'
-                hint: Стільки клітинок, скільки стовпців вище. Пошту й телефон вписуйте звичайним текстом — посилання зробляться самі.
+                hint: Не заповнюйте вручну. Тут лишились таблиці, які ще не переведені на іменовані поля.
                 fields:
                   - name: cells
                     label: Клітинки
