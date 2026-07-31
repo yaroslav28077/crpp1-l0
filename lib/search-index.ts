@@ -78,20 +78,19 @@ function stripMarkup(s: string): string {
     .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
     .replace(/<[^>]+>/g, " ")
     .replace(/https?:\/\/\S+/g, " ")
-    .replace(/[#*_>`~|]/g, " ")
+    .replace(/[|*_`#>-]+/g, " ")
     .replace(/\s+/g, " ")
     .trim()
 }
 
-/** Збирає індекс із усього контенту сайту */
 export function buildSearchIndex(): SearchDoc[] {
   const news: SearchDoc[] = getAllNews().map((n) => ({
     t: "n",
     u: `/novyny/${n.slug}`,
     h: n.title,
     d: n.date,
-    s: n.summary,
-    b: toSearchWords(stripMarkup(`${n.title} ${n.summary || ""} ${n.body}`)),
+    s: n.description,
+    b: toSearchWords(stripMarkup(`${n.title} ${n.description || ""} ${n.body}`)),
   }))
 
   const pages: SearchDoc[] = getAllPages().map((p) => ({
