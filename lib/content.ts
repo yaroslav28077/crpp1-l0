@@ -155,7 +155,7 @@ export interface DocumentItem {
   news?: string
   /**
    * Вкладені файли: «Наказ про проведення», «Додаток 1»… Досі такі
-   * підпорядковані посилання робилися відступом у Markdown-списку.
+   * підпоря��ковані посилання робилися відступом у Markdown-списку.
    */
   children?: DocumentItem[]
 }
@@ -179,6 +179,13 @@ export interface PageItem {
    */
   full_title?: string
   section?: string
+  /**
+   * Адреса сторінки, підрозділом якої ця є. Дає посилання «назад»: напрямки
+   * ЗСО та подібні підсторінки відкривають і з пошуку, і за прямим
+   * посиланням, а тоді відвідувач не має як повернутися до свого розділу —
+   * у головному меню таких сторінок немає.
+   */
+  parent?: string
   /** Тіло старого формату. Лишається для сумісності; нові сторінки — у blocks */
   body: string
   blocks: PageBlock[]
@@ -406,6 +413,7 @@ export function getAllPages(): PageItem[] {
     title: String(data.title || file),
     full_title: data.full_title ? String(data.full_title) : undefined,
     section: data.section ? String(data.section) : undefined,
+    parent: data.parent ? slugify(String(data.parent)) : undefined,
     body: content,
     blocks: Array.isArray(data.blocks) ? (data.blocks as PageBlock[]).filter((b) => b?.type) : [],
     gallery: Array.isArray(data.gallery) ? data.gallery.filter((g: GalleryItem) => g?.image) : [],
