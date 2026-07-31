@@ -16,4 +16,3 @@ blocks:
       - label: Особливості позашкільної освіти у 2021-2022 навчальному році
         url: https://docs.google.com/document/d/1nX8mvFytlGgNk4eKaN89s0dLTxNhFWLK/edit?usp=sharing&ouid=104895709143078317433&rtpof=true&sd=true
 ---
-
