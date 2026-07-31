@@ -1,6 +1,13 @@
 import Link from 'next/link'
-import { FileText, Megaphone, Download } from 'lucide-react'
-import { getAllNews, type DocumentItem, type DocumentsView, type NewsItem, type PageBlock } from '@/lib/content'
+import { BadgeCheck, FileText, Megaphone, Download } from 'lucide-react'
+import {
+  getAllCertificates,
+  getAllNews,
+  type DocumentItem,
+  type DocumentsView,
+  type NewsItem,
+  type PageBlock,
+} from '@/lib/content'
 import { markdownToHtml } from '@/lib/markdown'
 import { slugify } from '@/lib/slug'
 import { PhotoGallery } from '@/components/photo-gallery'
@@ -21,10 +28,25 @@ async function renderMarkdown(blocks: PageBlock[]): Promise<Map<number, string>>
         html.set(i, await markdownToHtml(block.text ?? ''))
       } else if (block.type === 'news_by_topic' && block.extra) {
         html.set(i, await markdownToHtml(block.extra))
+      } else if (block.type === 'certificates' && block.intro) {
+        html.set(i, await markdownToHtml(block.intro))
       }
     }),
   )
   return html
+}
+
+/**
+ * Українська форма числа: 1 запис, 2 записи, 5 записів.
+ * Мова має три форми, тож звичайне «(s)» тут не годиться.
+ */
+export function plural(n: number, one: string, few: string, many: string): string {
+  const mod100 = n % 100
+  if (mod100 >= 11 && mod100 <= 14) return many
+  const mod10 = n % 10
+  if (mod10 === 1) return one
+  if (mod10 >= 2 && mod10 <= 4) return few
+  return many
 }
 
 function NewsLinks({ items }: { items: { slug: string; title: string; date: string }[] }) {
@@ -272,6 +294,8 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
   if (blocks.length === 0) return null
   const html = await renderMarkdown(blocks)
   const news = getAllNews()
+  // Читаємо лише коли на сторінці справді є такий блок: переліки важкі
+  const certificates = blocks.some((b) => b.type === 'certificates') ? getAllCertificates() : []
 
   return (
     <div className="flex flex-col gap-6">
@@ -408,6 +432,86 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
                   </table>
                 </div>
               </Section>
+            )
+          }
+
+          case 'certificates': {
+            if (certificates.length === 0 && !block.extra) return null
+            /*
+              Переліків п'ять десятків, тож групуємо за роком заходу: інакше
+              це суцільна стіна схожих назв, у якій нічого не знайти. Найновіші
+              роки вгорі — саме їх шукають найчастіше.
+            */
+            const byYear = new Map<string, typeof certificates>()
+            for (const c of certificates) {
+              const year = c.date ? c.date.slice(0, 4) : 'Без дати'
+              const list = byYear.get(year)
+              if (list) list.push(c)
+              else byYear.set(year, [c])
+            }
+            const years = [...byYear.keys()].sort((a, b) => {
+              if (a === 'Без дати') return 1
+              if (b === 'Без дати') return -1
+              return a < b ? 1 : -1
+            })
+            // Поле заповнюється як звичайний список: по назві заходу на рядок
+            const extraItems = (block.extra ?? '')
+              .split('\n')
+              .map((s) => s.replace(/^\s*[-*•]\s*/, '').trim())
+              .filter(Boolean)
+            return (
+              <section key={i} aria-label={block.title || 'Облік сертифікатів'}>
+                {block.title && <h2 className="font-heading text-xl font-bold mb-3">{block.title}</h2>}
+                {block.intro && (
+                  <div
+                    className="article-content mb-4"
+                    dangerouslySetInnerHTML={{ __html: html.get(i) ?? '' }}
+                  />
+                )}
+                <div className="flex flex-col gap-4">
+                  {years.map((year) => (
+                    <div key={year}>
+                      <h3 className="font-heading font-bold text-sm text-muted-foreground mb-2">{year}</h3>
+                      <ul className="flex flex-col gap-2">
+                        {byYear.get(year)!.map((c) => (
+                          <li key={c.slug}>
+                            <Link
+                              href={`/oblik-sertyfikativ/${c.slug}`}
+                              className="flex items-start gap-2 rounded-lg border border-border bg-card p-3 hover:border-primary transition-colors"
+                            >
+                              <BadgeCheck className="size-4 shrink-0 mt-0.5 text-primary" aria-hidden="true" />
+                              <span>
+                                <span className="block font-medium text-pretty leading-relaxed">{c.title}</span>
+                                <span className="block text-xs text-muted-foreground mt-0.5">
+                                  {c.event ? `${c.event} · ` : ''}
+                                  {c.rows.length} {plural(c.rows.length, 'запис', 'записи', 'записів')}
+                                </span>
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+                {/*
+                  Заходи без опублікованого переліку. Показуємо їх звичайним
+                  текстом, а не посиланнями: клац у нікуди гірший за його
+                  відсутність. Розділ згорнутий, щоб не забивати сторінку.
+                */}
+                {extraItems.length > 0 && (
+                  <div className="article-content mt-4">
+                    <details>
+                      <summary>Заходи, переліки яких ще не опубліковані ({extraItems.length})</summary>
+                      <ul>
+                        {extraItems.map((label, k) => (
+                          <li key={k}>{label}</li>
+                        ))}
+                      </ul>
+                    </details>
+                  </div>
+                )}
+              </section>
             )
           }
 

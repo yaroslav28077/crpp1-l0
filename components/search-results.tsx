@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { CalendarDays, FileText, Search as SearchIcon } from 'lucide-react'
+import { BadgeCheck, CalendarDays, FileText, Search as SearchIcon } from 'lucide-react'
 import type { SearchDoc } from '@/lib/search-index'
 import { formatDateUk } from '@/components/news-card'
 
@@ -138,6 +138,13 @@ export function SearchResults() {
                       <>
                         <CalendarDays className="size-3.5" aria-hidden="true" />
                         {doc.d ? formatDateUk(doc.d) : 'Новина'}
+                      </>
+                    ) : doc.t === 'c' ? (
+                      // Перелік знаходять за прізвищем, тож підпис має відразу
+                      // пояснювати, чому в результатах опинилася ця сторінка
+                      <>
+                        <BadgeCheck className="size-3.5" aria-hidden="true" />
+                        Облік сертифікатів{doc.d ? ` · ${formatDateUk(doc.d)}` : ''}
                       </>
                     ) : (
                       <>

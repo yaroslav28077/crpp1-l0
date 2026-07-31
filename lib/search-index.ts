@@ -1,4 +1,4 @@
-import { getAllNews, getAllPages, type PageBlock } from "@/lib/content"
+import { getAllCertificates, getAllNews, getAllPages, type PageBlock } from "@/lib/content"
 
 /**
  * Індекс для пошуку. Збирається під час збірки й віддається одним статичним
@@ -9,8 +9,8 @@ import { getAllNews, getAllPages, type PageBlock } from "@/lib/content"
  * кілька сотень кілобайт, що прийнятно для одноразового завантаження.
  */
 export interface SearchDoc {
-  /** t — тип: n новина, p сторінка */
-  t: "n" | "p"
+  /** t — тип: n новина, p сторінка, c перелік виданих документів */
+  t: "n" | "p" | "c"
   /** u — адреса */
   u: string
   /** h — заголовок */
@@ -97,5 +97,20 @@ export function buildSearchIndex(): SearchDoc[] {
     b: toSearchWords(stripMarkup(`${p.title} ${p.full_title || ""} ${blocksToText(p.blocks)} ${p.body}`)),
   }))
 
-  return [...news, ...pages]
+  /*
+    Переліки виданих документів. Саме тут пошук найпотрібніший: педагог шукає
+    себе за прізвищем або за номером документа, а переліків п'ять десятків —
+    вручну він їх не переглядатиме. У слова йдуть усі клітинки таблиці, тож
+    знаходиться і прізвище, і обліковий номер.
+  */
+  const certificates: SearchDoc[] = getAllCertificates().map((c) => ({
+    t: "c",
+    u: `/oblik-sertyfikativ/${c.slug}`,
+    h: c.title,
+    d: c.date,
+    s: c.event ? `Захід: ${c.event}` : undefined,
+    b: toSearchWords(stripMarkup(`${c.title} ${c.rows.map((r) => r.cells.join(" ")).join(" ")}`)),
+  }))
+
+  return [...news, ...pages, ...certificates]
 }
