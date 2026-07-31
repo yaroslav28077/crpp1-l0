@@ -40,8 +40,20 @@ const FIELD_BY_COLUMN = [
   [/відповідальн/i, "responsible"],
 ]
 
-/** Ключі, за якими рядок вважається підписом під таблицею, а не даними */
-const NOTE_RE = /^\s*(директор|в\.?\s*о\.?\s+директора)\b/i
+/**
+ * Рядок-підпис під таблицею визначаємо за структурою, а не за текстом:
+ * заповнена лише перша клітинка, решта порожні. У планах роботи таких рядків
+ * 58 і написані вони тринадцятьма способами — «Директор ЦПРПП Надія СІЧКАР»,
+ * «В.о. директора ЦПРПП   Оксана ПЕДОРЯКА», «В.о.директора Оксана ПЕДОРЯКА»
+ * тощо, тож будь-який перелік ключових слів рано чи пізно щось загубить.
+ */
+function isNoteRow(cells) {
+  const first = (cells[0] ?? "").trim()
+  if (!first) return false
+  if (cells.slice(1).some((c) => (c ?? "").trim())) return false
+  // Самотній номер без даних — це порожній рядок, а не підпис
+  return !/^\d+$/.test(first)
+}
 
 function fieldFor(column) {
   const name = String(column ?? "").trim()
@@ -76,7 +88,7 @@ function convertBlock(block) {
     if (cells.every((c) => !c.trim())) continue
     const values = numbered ? cells.slice(1) : cells
     // Підпис директора займав перший стовпець, решта клітинок була порожня
-    if (NOTE_RE.test(cells[0] ?? "") && values.every((v) => !v.trim())) {
+    if (isNoteRow(cells)) {
       entries.push({ note: cells[0].trim() })
       continue
     }
