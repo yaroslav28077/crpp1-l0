@@ -9,4 +9,3 @@ blocks:
     topic: predmety-khudozhno-estetychnoho-napriamku
     open: true
 ---
-

@@ -1,79 +1,31 @@
 ---
-title: >-
-  Вивчаємо
-  досвід
-  колег
-date: >-
-  2021-09-24T14:27:00.000Z
-description: >-
-  23
-  вересня
-  2021
-  року
-  до
-  Всеукраїнського
-  дня
-  дошкілля
-  Центр
-  професійного
-  розвитку
-  педагогічних
-  працівників
-  спільно
-  із
-  Управлінням
-  освіти
-  організували
-  виїзний
-  семінар
-  завідувачів,
-  директорів,…
+title: Вивчаємо досвід колег
+date: '2021-09-24T14:27:00.000Z'
+description: 23 вересня 2021 року до Всеукраїнського дня дошкілля Центр професійного розвитку педагогічних працівників спільно із Управлінням освіти організували виїзний семінар завідувачів, директорів,…
 tags:
-  - >-
-    Вересень2021
-  - >-
-    2021
+  - Вересень2021
+  - '2021'
 gallery:
-  - image: >-
-      /images/notes/2021/09/zdo/001.jpg
-  - image: >-
-      /images/notes/2021/09/zdo/002.jpg
-  - image: >-
-      /images/notes/2021/09/zdo/003.jpg
-  - image: >-
-      /images/notes/2021/09/zdo/004.jpg
-  - image: >-
-      /images/notes/2021/09/zdo/005.jpg
-  - image: >-
-      /images/notes/2021/09/zdo/006.jpg
-  - image: >-
-      /images/notes/2021/09/zdo/007.jpg
-  - image: >-
-      /images/notes/2021/09/zdo/008.jpg
-  - image: >-
-      /images/notes/2021/09/zdo/009.jpg
-  - image: >-
-      /images/notes/2021/09/zdo/010.jpg
-  - image: >-
-      /images/notes/2021/09/zdo/001.png
-  - image: >-
-      /images/notes/2021/09/zdo/002.png
-  - image: >-
-      /images/notes/2021/09/zdo/003.png
-  - image: >-
-      /images/notes/2021/09/zdo/004.png
-  - image: >-
-      /images/notes/2021/09/zdo/005.png
-  - image: >-
-      /images/notes/2021/09/zdo/006.png
-  - image: >-
-      /images/notes/2021/09/zdo/007.png
-  - image: >-
-      /images/notes/2021/09/zdo/008.png
-  - image: >-
-      /images/notes/2021/09/zdo/009.png
-  - image: >-
-      /images/notes/2021/09/zdo/010.png
+  - image: /images/notes/2021/09/zdo/001.jpg
+  - image: /images/notes/2021/09/zdo/002.jpg
+  - image: /images/notes/2021/09/zdo/003.jpg
+  - image: /images/notes/2021/09/zdo/004.jpg
+  - image: /images/notes/2021/09/zdo/005.jpg
+  - image: /images/notes/2021/09/zdo/006.jpg
+  - image: /images/notes/2021/09/zdo/007.jpg
+  - image: /images/notes/2021/09/zdo/008.jpg
+  - image: /images/notes/2021/09/zdo/009.jpg
+  - image: /images/notes/2021/09/zdo/010.jpg
+  - image: /images/notes/2021/09/zdo/001.png
+  - image: /images/notes/2021/09/zdo/002.png
+  - image: /images/notes/2021/09/zdo/003.png
+  - image: /images/notes/2021/09/zdo/004.png
+  - image: /images/notes/2021/09/zdo/005.png
+  - image: /images/notes/2021/09/zdo/006.png
+  - image: /images/notes/2021/09/zdo/007.png
+  - image: /images/notes/2021/09/zdo/008.png
+  - image: /images/notes/2021/09/zdo/009.png
+  - image: /images/notes/2021/09/zdo/010.png
 ---
 
 23 вересня 2021 року до Всеукраїнського дня дошкілля Центр професійного розвитку педагогічних працівників спільно із Управлінням освіти організували виїзний семінар завідувачів, директорів, вихователів-методистів закладів дошкільної освіти Лубенської територіальної громади в Глевахівську об’єднану територіальну громаду Київської області, в заклади дошкільної освіти «Золоті зернята» та «Ромашка». 

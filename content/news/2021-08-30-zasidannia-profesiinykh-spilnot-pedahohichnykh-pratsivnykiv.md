@@ -1,82 +1,31 @@
 ---
-title: >-
-  Засідання
-  професійних
-  спільнот
-  педагогічних
-  працівників
-date: >-
-  2021-08-30T17:46:00.000Z
-description: >-
-  25-26
-  серпня
-  2021
-  року
-  на
-  базі
-  загальноосвітньої
-  школи
-  №1
-  та
-  спеціалізованої
-  школи
-  №6
-  керівники
-  професійних
-  спільнот
-  педпрацівників
-  закладів
-  освіти
-  Лубенської
-  територіальної
-  громади
-  провели…
+title: Засідання професійних спільнот педагогічних працівників
+date: '2021-08-30T17:46:00.000Z'
+description: 25-26 серпня 2021 року на базі загальноосвітньої школи №1 та спеціалізованої школи №6 керівники професійних спільнот педпрацівників закладів освіти Лубенської територіальної громади провели…
 tags:
-  - >-
-    Серпень2021
-  - >-
-    2021
+  - Серпень2021
+  - '2021'
 gallery:
-  - image: >-
-      /images/notes/2021/08/spiln/001.jpg
-  - image: >-
-      /images/notes/2021/08/spiln/002.jpg
-  - image: >-
-      /images/notes/2021/08/spiln/003.jpg
-  - image: >-
-      /images/notes/2021/08/spiln/004.jpg
-  - image: >-
-      /images/notes/2021/08/spiln/005.jpg
-  - image: >-
-      /images/notes/2021/08/spiln/006.jpg
-  - image: >-
-      /images/notes/2021/08/spiln/007.jpg
-  - image: >-
-      /images/notes/2021/08/spiln/008.jpg
-  - image: >-
-      /images/notes/2021/08/spiln/009.jpg
-  - image: >-
-      /images/notes/2021/08/spiln/010.jpg
-  - image: >-
-      /images/notes/2021/08/spiln/001.png
-  - image: >-
-      /images/notes/2021/08/spiln/002.png
-  - image: >-
-      /images/notes/2021/08/spiln/003.png
-  - image: >-
-      /images/notes/2021/08/spiln/004.png
-  - image: >-
-      /images/notes/2021/08/spiln/005.png
-  - image: >-
-      /images/notes/2021/08/spiln/006.png
-  - image: >-
-      /images/notes/2021/08/spiln/007.png
-  - image: >-
-      /images/notes/2021/08/spiln/008.png
-  - image: >-
-      /images/notes/2021/08/spiln/009.png
-  - image: >-
-      /images/notes/2021/08/spiln/010.png
+  - image: /images/notes/2021/08/spiln/001.jpg
+  - image: /images/notes/2021/08/spiln/002.jpg
+  - image: /images/notes/2021/08/spiln/003.jpg
+  - image: /images/notes/2021/08/spiln/004.jpg
+  - image: /images/notes/2021/08/spiln/005.jpg
+  - image: /images/notes/2021/08/spiln/006.jpg
+  - image: /images/notes/2021/08/spiln/007.jpg
+  - image: /images/notes/2021/08/spiln/008.jpg
+  - image: /images/notes/2021/08/spiln/009.jpg
+  - image: /images/notes/2021/08/spiln/010.jpg
+  - image: /images/notes/2021/08/spiln/001.png
+  - image: /images/notes/2021/08/spiln/002.png
+  - image: /images/notes/2021/08/spiln/003.png
+  - image: /images/notes/2021/08/spiln/004.png
+  - image: /images/notes/2021/08/spiln/005.png
+  - image: /images/notes/2021/08/spiln/006.png
+  - image: /images/notes/2021/08/spiln/007.png
+  - image: /images/notes/2021/08/spiln/008.png
+  - image: /images/notes/2021/08/spiln/009.png
+  - image: /images/notes/2021/08/spiln/010.png
 ---
 
 25-26 серпня 2021 року на базі загальноосвітньої школи №1 та спеціалізованої школи №6 керівники професійних спільнот педпрацівників закладів освіти Лубенської територіальної громади провели серпневі засідання.

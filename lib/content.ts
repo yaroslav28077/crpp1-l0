@@ -216,6 +216,30 @@ export interface PageItem {
  * він на сторінку заходить. Тепер це власна колекція: один перелік — один
  * файл, тож секретар додає новий захід, не чіпаючи сторінку.
  */
+/**
+ * Один слухач у переліку виданих документів.
+ *
+ * Раніше перелік був безіменною таблицею (`columns` + `rows.cells`), і в адмінці
+ * це виглядало як сім однакових згорнутих рядків «Назва стовпця», а порядок
+ * клітинок редактор мусив тримати синхронним зі стовпцями вручну.
+ *
+ * Тепер поля названі, а номер у таблиці рахується з позиції — його ніхто не
+ * вписує. `form`, `volume` і `result` усередині заходу зазвичай однакові, тож
+ * порожнє поле успадковує значення переліку (`default_*`).
+ */
+export interface CertificateEntry {
+  name: string
+  /** Форма проходження: Офлайн / Онлайн / Змішана */
+  form?: string
+  /** Обсяг: «30 год. (1 кредит ЄКТС)» */
+  volume?: string
+  /** Обліковий запис документа — головне, що шукає педагог */
+  record?: string
+  /** Дата видачі так, як її пишуть у документі: «11.02.2022р.» */
+  issued?: string
+  result?: string
+}
+
 export interface CertificateItem {
   slug: string
   title: string
@@ -223,8 +247,8 @@ export interface CertificateItem {
   date?: string
   /** Підпис із таблиці старого сайту: «22 березня 2024 року» */
   event?: string
-  columns: string[]
-  rows: { cells: string[] }[]
+  /** Слухачі з уже підставленими значеннями переліку */
+  entries: CertificateEntry[]
 }
 
 export interface TeamMember {
@@ -446,11 +470,60 @@ let certificatesCache: CertificateItem[] | null = null
 export function getAllCertificates(): CertificateItem[] {
   if (isProd && certificatesCache) return certificatesCache
   const items = readMd("certificates").map(({ file, data }) => {
-    const rows = Array.isArray(data.rows)
-      ? data.rows
-          .map((r: { cells?: unknown[] }) => ({ cells: (r?.cells ?? []).map((c) => String(c ?? "")) }))
-          .filter((r: { cells: string[] }) => r.cells.some((c) => c.trim()))
-      : []
+    const str = (v: unknown) => String(v ?? "").trim()
+    /*
+      Значення на весь перелік. Порожнє поле в записі означає «як у заході»:
+      усередині одного семінару форма, обсяг і результат майже завжди спільні,
+      тож секретар заповнює їх один раз, а не в кожному рядку.
+    */
+    const fallback = {
+      form: str(data.default_form),
+      volume: str(data.default_volume),
+      result: str(data.default_result),
+    }
+
+    let entries: CertificateEntry[]
+    if (Array.isArray(data.entries)) {
+      entries = (data.entries as Record<string, unknown>[])
+        .map((e) => ({
+          name: str(e?.name),
+          form: str(e?.form) || fallback.form || undefined,
+          volume: str(e?.volume) || fallback.volume || undefined,
+          record: str(e?.record) || undefined,
+          issued: str(e?.issued) || undefined,
+          result: str(e?.result) || fallback.result || undefined,
+        }))
+        .filter((e) => e.name || e.record)
+    } else {
+      /*
+        Сумісність зі старим форматом: якщо десь лишився чернетковий файл із
+        `columns` + `rows`, читаємо його за назвами стовпців, а не за позицією —
+        формулювання в них різнилися («Прізвище, ім'я слухача» / «…, по батькові»).
+      */
+      const columns = Array.isArray(data.columns) ? data.columns.map(str) : []
+      const at = (re: RegExp) => columns.findIndex((c) => re.test(c))
+      const idx = {
+        name: at(/^Прізвище/i),
+        form: at(/^Форма/i),
+        volume: at(/^Обсяг/i),
+        record: at(/^Обліковий/i),
+        issued: at(/^Дата/i),
+        result: at(/^Результат/i),
+      }
+      const cell = (cells: string[], i: number) => (i >= 0 && i < cells.length ? cells[i] : "")
+      entries = (Array.isArray(data.rows) ? (data.rows as { cells?: unknown[] }[]) : [])
+        .map((r) => (r?.cells ?? []).map(str))
+        .filter((cells) => cells.some(Boolean))
+        .map((cells) => ({
+          name: cell(cells, idx.name),
+          form: cell(cells, idx.form) || undefined,
+          volume: cell(cells, idx.volume) || undefined,
+          record: cell(cells, idx.record) || undefined,
+          issued: cell(cells, idx.issued) || undefined,
+          result: cell(cells, idx.result) || undefined,
+        }))
+        .filter((e) => e.name || e.record)
+    }
     /*
       Дата тут необов'язкова, і саме тому не через parseDate: той у разі
       негодящого значення підставляє 1970 рік, і перелік стрибав би в кінець
@@ -467,8 +540,7 @@ export function getAllCertificates(): CertificateItem[] {
       title: String(data.title || file),
       date,
       event: data.event ? String(data.event) : undefined,
-      columns: Array.isArray(data.columns) ? data.columns.map(String) : [],
-      rows,
+      entries,
     }
   })
   items.sort((a, b) => {

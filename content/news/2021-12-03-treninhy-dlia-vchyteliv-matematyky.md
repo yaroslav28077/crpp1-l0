@@ -1,65 +1,23 @@
 ---
-title: >-
-  Тренінги
-  для
-  вчителів
-  математики
-date: >-
-  2021-12-03T16:16:00.000Z
-description: >-
-  На
-  виконання
-  програми
-  «Розвиток
-  освітнього
-  простору
-  Полтавщини
-  на
-  2021-2025
-  роки»,
-  затвердженої
-  рішенням
-  Полтавської
-  обласної
-  ради
-  №47
-  від
-  29.12.2020
-  ррку,
-  з
-  метою
-  вдосконалення
-  професійної…
+title: Тренінги для вчителів математики
+date: '2021-12-03T16:16:00.000Z'
+description: На виконання програми «Розвиток освітнього простору Полтавщини на 2021-2025 роки», затвердженої рішенням Полтавської обласної ради №47 від 29.12.2020 ррку, з метою вдосконалення професійної…
 tags:
-  - >-
-    Грудень2021
-  - >-
-    2021
+  - Грудень2021
+  - '2021'
 gallery:
-  - image: >-
-      /images/notes/2021/12/matem/01.jpg
-  - image: >-
-      /images/notes/2021/12/matem/02.jpg
-  - image: >-
-      /images/notes/2021/12/matem/03.jpg
-  - image: >-
-      /images/notes/2021/12/matem/04.jpg
-  - image: >-
-      /images/notes/2021/12/matem/05.jpg
-  - image: >-
-      /images/notes/2021/12/matem/06.jpg
-  - image: >-
-      /images/notes/2021/12/matem/01.png
-  - image: >-
-      /images/notes/2021/12/matem/02.png
-  - image: >-
-      /images/notes/2021/12/matem/03.png
-  - image: >-
-      /images/notes/2021/12/matem/04.png
-  - image: >-
-      /images/notes/2021/12/matem/05.png
-  - image: >-
-      /images/notes/2021/12/matem/06.png
+  - image: /images/notes/2021/12/matem/01.jpg
+  - image: /images/notes/2021/12/matem/02.jpg
+  - image: /images/notes/2021/12/matem/03.jpg
+  - image: /images/notes/2021/12/matem/04.jpg
+  - image: /images/notes/2021/12/matem/05.jpg
+  - image: /images/notes/2021/12/matem/06.jpg
+  - image: /images/notes/2021/12/matem/01.png
+  - image: /images/notes/2021/12/matem/02.png
+  - image: /images/notes/2021/12/matem/03.png
+  - image: /images/notes/2021/12/matem/04.png
+  - image: /images/notes/2021/12/matem/05.png
+  - image: /images/notes/2021/12/matem/06.png
 ---
 
 На виконання програми «Розвиток освітнього простору Полтавщини на 2021-2025 роки», затвердженої рішенням Полтавської обласної ради №47 від 29.12.2020 ррку, з метою вдосконалення професійної компетентності вчителів, забезпечення стійкого інноваційного розвитку математичної освіти і підвищення її якості 29-30 листопада та 1 грудня 2021 року проведено каскад тренінгів для вчителів математики закладів загальної середньої освіти Лубенської ТГ з використанням дистанційних технологій.

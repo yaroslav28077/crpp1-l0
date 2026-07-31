@@ -28,4 +28,3 @@ blocks:
       - label: Творча група шкільних бібліотекарів
         url: https://docs.google.com/document/d/1mxkK8OmGEY7TfCxUY-v98AF0sLTIDegP/edit?usp=sharing&ouid=116379051625942282643&rtpof=true&sd=true
 ---
-

@@ -512,7 +512,7 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
                                 <span className="block font-medium text-pretty leading-relaxed">{c.title}</span>
                                 <span className="block text-xs text-muted-foreground mt-0.5">
                                   {c.event ? `${c.event} · ` : ''}
-                                  {c.rows.length} {plural(c.rows.length, 'запис', 'записи', 'записів')}
+                                  {c.entries.length} {plural(c.entries.length, 'запис', 'записи', 'записів')}
                                 </span>
                               </span>
                             </Link>

@@ -108,6 +108,26 @@ if (fs.existsSync(aliasFile)) {
   for (const [title, to] of Object.entries(aliases)) addRule(oldNoteUrl(title), to)
 }
 
+/**
+ * Адреси, для яких немає власної сторінки: порожні тіддлери, вміст із «Кошика»
+ * та дублікати. Без явного правила їх ловив би catch-all /notes/:path* і
+ * віддавав 308 на /images/notes/<назва>.html — вічний редирект у 404.
+ */
+const FALLBACKS = [
+  { title: "05.11.2024", to: "/novyny" },
+  { title: "05.11.2024 (1)", to: "/novyny" },
+  { title: "08.07.2024", to: "/novyny" },
+  { title: "08.07.2024 (1)", to: "/novyny" },
+  { title: "Аксонометричні побудови - перший крок в опануванні CAD-програм", to: "/novyny" },
+  { title: "Радість пізнання для учнів 2-В класу", to: "/novyny" },
+  { title: "Сертифікація-2020", to: "/sertyfikatsiia-pedahohichnykh-pratsivnykiv" },
+  { title: 'Українська федерація "Спорт заради розвитку". Всеукраїнський проєкт "Єдина Україна"', to: "/novyny" },
+  { title: "Всеукраїнський місячник - 2025", to: "/novyny" },
+  { title: "Захист України", to: "/fizychna-kultura-zakhyst-ukrainy-trudove-navchannia" },
+  { title: "Захист України 2", to: "/fizychna-kultura-zakhyst-ukrainy-trudove-navchannia" },
+]
+for (const { title, to } of FALLBACKS) addRule(oldNoteUrl(title), to)
+
 const out = {
   _comment: "Згенеровано scripts/generate-redirects.mjs — не редагувати вручну.",
   rules,

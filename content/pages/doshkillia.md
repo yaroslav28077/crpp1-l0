@@ -29,4 +29,3 @@ blocks:
           - label: Додаток 2
             url: https://drive.google.com/file/d/1O0Ie-bhKNlYpcUqHyXnTCij7ScWsXp9U/view?usp=sharing
 ---
-

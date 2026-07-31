@@ -30,4 +30,3 @@ blocks:
       - label: Збереження ментального здоров’я учасників освітнього процесу
         url: /novyny/2024-03-28-zberezhennia-mentalnoho-zdorovia-uchasnykiv-osvitnoho-protsesu
 ---
-

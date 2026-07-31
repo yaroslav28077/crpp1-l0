@@ -67,4 +67,3 @@ blocks:
       - label: Строки проведення атестації педагогічних працівників закладів освіти Лубенської ТГ атестаційною комісією ІІ рівня у 2023-2024 навчальному році
         url: https://docs.google.com/document/d/1UhTXRXcr8lZo-8J9Z8thdw51Pjr8VlsU/edit?usp=sharing&ouid=105122741236082304027&rtpof=true&sd=true
 ---
-
