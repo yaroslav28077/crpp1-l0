@@ -89,7 +89,24 @@ for (const { file, data } of readDir("pages")) {
   addRule(oldNoteUrl(original), `/${slug}`)
 }
 
+// Переліки виданих документів: на старому сайті кожен був окремою нотаткою.
+for (const { file, data } of readDir("certificates")) {
+  const slug = file.replace(/\.md$/, "")
+  addRule(oldNoteUrl(String(data.title)), `/oblik-sertyfikativ/${slug}`)
+}
+
 for (const { title, to } of MERGED) addRule(oldNoteUrl(title), to)
+
+/**
+ * Назви, що не мають власної сторінки: місячні плани (тепер блоки на
+ * /plany-roboty) та дублікати заголовків, які відрізнялися лише пробілами.
+ * Карту готує scripts/restore-lost-content.mjs.
+ */
+const aliasFile = path.join(ROOT, "lib", "legacy-aliases.json")
+if (fs.existsSync(aliasFile)) {
+  const { aliases = {} } = JSON.parse(fs.readFileSync(aliasFile, "utf-8"))
+  for (const [title, to] of Object.entries(aliases)) addRule(oldNoteUrl(title), to)
+}
 
 const out = {
   _comment: "Згенеровано scripts/generate-redirects.mjs — не редагувати вручну.",
