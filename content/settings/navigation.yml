@@ -7,8 +7,6 @@ sections:
         url: /my-spivpratsiuiemo
       - label: Пріоритетні завдання Центру
         url: /priorytetni-zavdannia-tsentru
-      - url: /test
-        label: Тест
   - title: Новини Центру
     items:
       - label: Новини
