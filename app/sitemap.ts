@@ -1,11 +1,12 @@
 import type { MetadataRoute } from 'next'
-import { getAllNews, getAllPages } from '@/lib/content'
+import { getAllCertificates, getAllNews, getAllPages } from '@/lib/content'
 import { archiveHref, archiveYears, countPages } from '@/lib/news-archive'
 import { SITE_URL } from '@/lib/site-url'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const news = getAllNews()
   const pages = getAllPages()
+  const certificates = getAllCertificates()
 
   // Сторінки архіву: розрізи за роками плюс пагінація
   const archive = [
@@ -42,6 +43,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/${p.slug}`,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
+    })),
+    ...certificates.map((c) => ({
+      url: `${SITE_URL}/oblik-sertyfikativ/${c.slug}`,
+      // Дата в переліку необов'язкова, тож lastModified лишаємо порожнім,
+      // а не підставляємо «сьогодні» — інакше архівні переліки виглядали б
+      // щодня обновленими
+      lastModified: c.date ? new Date(c.date) : undefined,
+      changeFrequency: 'yearly' as const,
+      priority: 0.5,
     })),
     ...news.map((n) => ({
       url: `${SITE_URL}/novyny/${n.slug}`,

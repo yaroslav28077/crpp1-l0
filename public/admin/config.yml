@@ -89,6 +89,13 @@ collections:
           - { label: Сторінка психолога, value: storinka-psykholoha }
           - { label: Супервізія, value: superviziia }
           - { label: Творчі групи, value: tvorchi-hrupy }
+          # Напрямки загальної середньої освіти: у кожного власна підсторінка
+          - { label: 'ЗСО: предмети суспільно-гуманітарного напрямку', value: predmety-suspilno-humanitarnoho-napriamku }
+          - { label: 'ЗСО: предмети природничо-математичного напрямку', value: predmety-pryrodnycho-matematychnoho-napriamku }
+          - { label: 'ЗСО: предмети хіміко-біологічного напрямку', value: predmety-khimiko-biolohichnoho-napriamku }
+          - { label: 'ЗСО: предмети художньо-естетичного напрямку', value: predmety-khudozhno-estetychnoho-napriamku }
+          - { label: 'ЗСО: фізична культура, Захист України, трудове навчання', value: fizychna-kultura-zakhyst-ukrainy-trudove-navchannia }
+          - { label: 'ЗСО: позаурочна робота', value: pozaurochna-robota }
       - name: description
         label: Короткий опис
         widget: text
@@ -159,6 +166,18 @@ collections:
           - Педагогічні спільноти
           - Професійний розвиток
           - Консалтингові послуги
+      # Підсторінки (напрямки ЗСО тощо) не мають пункту в меню, тож на них
+      # ставимо посилання «назад» до батьківського розділу. Обираємо зі
+      # списку наявних сторінок, щоб не вписувати адресу руками.
+      - name: parent
+        label: Це підсторінка розділу
+        widget: relation
+        required: false
+        collection: pages
+        search_fields: [title]
+        value_field: title
+        display_fields: [title]
+        hint: Лишіть порожнім для звичайної сторінки. Якщо вказати розділ, угорі з’явиться посилання «назад» до нього.
       - name: full_title
         label: Повна офіційна назва
         widget: string
@@ -224,11 +243,52 @@ collections:
                   - { label: Сторінка психолога, value: storinka-psykholoha }
                   - { label: Супервізія, value: superviziia }
                   - { label: Творчі групи, value: tvorchi-hrupy }
+                  # Напрямки загальної середньої освіти. Кожен має власну
+                  # підсторінку, куди цей список і збирає свої заходи.
+                  - { label: 'ЗСО: предмети суспільно-гуманітарного напрямку', value: predmety-suspilno-humanitarnoho-napriamku }
+                  - { label: 'ЗСО: предмети природничо-математичного напрямку', value: predmety-pryrodnycho-matematychnoho-napriamku }
+                  - { label: 'ЗСО: предмети хіміко-біологічного напрямку', value: predmety-khimiko-biolohichnoho-napriamku }
+                  - { label: 'ЗСО: предмети художньо-естетичного напрямку', value: predmety-khudozhno-estetychnoho-napriamku }
+                  - { label: 'ЗСО: фізична культура, Захист України, трудове навчання', value: fizychna-kultura-zakhyst-ukrainy-trudove-navchannia }
+                  - { label: 'ЗСО: позаурочна робота', value: pozaurochna-robota }
+              - name: open
+                label: Показувати список одразу
+                widget: boolean
+                required: false
+                default: false
+                hint: Якщо не позначено, список буде згорнутий і відкриється клацанням по заголовку. Позначайте на сторінках, де цей список — головний вміст.
               - name: extra
-                label: Додатковий текст під списком
+                label: Заходи без публікації на сайті
                 widget: markdown
                 required: false
-                hint: Заходи, у яких немає окремої публікації на сайті. Здебільшого це сліди матеріалів, які не перенеслися зі старого сайту.
+                hint: >-
+                  Назви заходів, матеріалів яких на сайті немає (не перенеслися зі старого сайту).
+                  Показуються сірим списком під посиланнями з підписом «Заходи, матеріали яких не опубліковані»,
+                  щоб не здавалося, ніби посилання не працюють. Якщо публікацію створено — приберіть звідси
+                  рядок і поставте новині відповідну тему.
+
+          - name: certificates
+            label: Переліки виданих документів (оновлюється сам)
+            summary: "{{fields.title | default('Переліки виданих документів')}}"
+            fields:
+              - name: title
+                label: Заголовок
+                widget: string
+                required: false
+                default: Переліки виданих документів
+                hint: 'Список збирається сам із розділу «Облік сертифікатів» і групується за роками. Щоб додати перелік — створіть його там, а тут нічого вписувати не треба.'
+              - name: intro
+                label: Пояснення над списком
+                widget: markdown
+                required: false
+                hint: Коротка підказка відвідувачеві, як шукати себе у переліках.
+              - name: extra
+                label: Заходи, переліки яких ще не опубліковані
+                widget: text
+                required: false
+                hint: >-
+                  По назві заходу на рядок. Показуються звичайним текстом, без посилань.
+                  Коли створите перелік у розділі «Облік сертифікатів» — приберіть звідси цей рядок.
 
           - name: news_list
             label: Список новин (обираються вручну)
@@ -260,9 +320,9 @@ collections:
                 default: collapsed
                 hint: Якщо не впевнені — лишіть «Згорнутий розділ».
                 options:
-                  - { label: Згорнутий розділ (відкривається клацанням), value: collapsed }
+                  - { label: Згорнутий розділ (в��дкривається клацанням), value: collapsed }
                   - { label: Одразу розкритий список, value: open }
-                  - { label: Картка з рамкою (щоб привернути увагу), value: card }
+                  - { label: Картка з рамкою (щоб привер��ути увагу), value: card }
                   - { label: Плитки (для кількох бланків), value: grid }
               - name: numbered
                 label: Нумерувати рядки
@@ -395,7 +455,7 @@ collections:
       #
       # Приховане навмисно. Раніше воно показувалося великим редактором
       # Markdown просто під блоками — секретар природно почав би писати в цю
-      # знайому рамку, а не в блоки, і повернувся б до тієї самої розмітки,
+      # знайому р��мку, а не в блоки, і повернувся б до тієї самої розмітки,
       # від якої ми відходили. Двох місць для тексту бути не повинно.
       #
       # Поле не видаляємо: `body` у Decap — це тіло md-файлу, і без нього
@@ -415,6 +475,62 @@ collections:
         widget: text
         required: false
         collapsed: true
+
+  # ─────────────── ОБЛІК СЕРТИФІКАТІВ ───────────────
+  # Окрема колекція, а не блоки на сторінці: переліків уже понад п'ятдесят,
+  # і кожен має власну таблицю на два десятки рядків. Сторінка «Облік
+  # сертифікатів» збирає їх сама — там нічого правити не потрібно.
+  - name: certificates
+    label: Облік сертифікатів
+    label_singular: Перелік виданих документів
+    description: >-
+      Переліки документів про підвищення кваліфікації. Кожен захід — окремий перелік.
+      На сторінці «Облік сертифікатів» вони з’являються самі, згруповані за роками,
+      і знаходяться пошуком по сайту за прізвищем або обліковим номером.
+    folder: content/certificates
+    create: true
+    slug: '{{slug}}'
+    identifier_field: title
+    sortable_fields: [date, title]
+    summary: '{{title}}'
+    # Убудований перегляд не вміє показувати таблицю так, як вона виглядає на сайті
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Назва переліку
+        widget: string
+        hint: 'Наприклад: Перелік виданих документів педагогічним працівникам ЗДО Лубенської ТГ, учасникам семінару-практикуму «…»'
+      - name: date
+        label: Дата заходу
+        widget: date
+        required: false
+        date_format: DD.MM.YYYY
+        hint: За нею перелік потрапляє у свій рік на сторінці. Найновіші показуються вгорі.
+      - name: event
+        label: Підпис про захід
+        widget: string
+        required: false
+        hint: 'Як було на старому сайті: «22 березня 2024 року». Показується під назвою.'
+      - name: columns
+        label: Назви стовпців таблиці
+        label_singular: Стовпець
+        widget: list
+        field: { name: column, label: Назва стовпця, widget: string }
+        hint: Порядок стовпців має збігатися з порядком клітинок у рядках нижче.
+      - name: rows
+        label: Рядки таблиці
+        label_singular: Рядок
+        widget: list
+        summary: '{{fields.cells}}'
+        hint: Один рядок — один слухач. Порядок змінюється перетягуванням.
+        fields:
+          - name: cells
+            label: Клітинки рядка
+            label_singular: Клітинка
+            widget: list
+            field: { name: cell, label: Значення, widget: string }
+            hint: По клітинці на кожен стовпець, у тому самому порядку.
 
   # ─────────────── КОМАНДА ───────────────
   - name: team

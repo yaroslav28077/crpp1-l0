@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Paperclip } from 'lucide-react'
+import Link from 'next/link'
+import { ArrowLeft, Paperclip } from 'lucide-react'
 import { getAllPages, getPageBySlug } from '@/lib/content'
 import { markdownToHtml } from '@/lib/markdown'
 import { PhotoGallery } from '@/components/photo-gallery'
@@ -32,8 +33,24 @@ export default async function StaticPage({ params }: { params: Promise<{ slug: s
   // одразу втрачав із сайту весь її текст, нічого про це не знаючи.
   const legacyHtml = page.body.trim() ? await markdownToHtml(page.body) : null
 
+  /*
+    Підсторінки (напрямки ЗСО тощо) не мають пункту в головному меню, тож без
+    цього посилання відвідувач, який прийшов із пошуку, опинявся в тупику.
+  */
+  const parent = page.parent ? getPageBySlug(page.parent) : undefined
+
   return (
     <main className="mx-auto max-w-4xl px-4 py-10">
+      {parent && (
+        <Link
+          href={`/${parent.slug}`}
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-6"
+        >
+          <ArrowLeft className="size-4" aria-hidden="true" />
+          {parent.title}
+        </Link>
+      )}
+
       <header className="mb-8">
         {page.section && (
           <p className="text-sm font-medium text-accent-foreground bg-accent inline-block rounded-full px-3 py-1 mb-3">

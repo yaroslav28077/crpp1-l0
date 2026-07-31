@@ -65,7 +65,19 @@ export type PageBlock =
    * перенеслися зі старого сайту: вони лишилися без посилань, тож
    * зберігаються під списком як текст.
    */
-  | { type: "news_by_topic"; title?: string; topic: string; extra?: string }
+  | {
+      type: "news_by_topic"
+      title?: string
+      topic: string
+      extra?: string
+      /**
+       * Показувати список одразу, не згорнутим. Потрібно там, де цей блок —
+       * основний вміст сторінки (напрямки ЗСО): згорнутим він лишає сторінку
+       * візуально порожньою. На довгих сторінках, де таких розділів кілька,
+       * згорнутий зручніший, тож він і лишається типовим.
+       */
+      open?: boolean
+    }
   /**
    * Список документів. Редактор заповнює «Назву» і «Посилання» в окремих
    * полях, а не робить посилання руками в Markdown.
@@ -106,6 +118,25 @@ export type PageBlock =
    * помилитися в лапках — тепер це назва, логотип і посилання полями.
    */
   | { type: "partners"; title?: string; items: PartnerItem[] }
+  /**
+   * Переліки виданих документів. Список збирається сам із колекції
+   * «Облік сертифікатів», тож редактор ніде не вписує посилань: додав захід —
+   * він з'явився на сторінці. Раніше такі списки вели вручну, і саме тому
+   * шістдесят чотири підписи лишилися без адрес.
+   */
+  | {
+      type: "certificates"
+      title?: string
+      intro?: string
+      /**
+       * Заходи, переліки яких на сайті ще не опубліковані, — по назві на
+       * рядок. В архіві старого сайту таблиці є лише за 2021–2024 роки, а
+       * підписи були й за пізніші: викидати їх не можна, це слід проведеної
+       * роботи. Щойно секретар створить перелік у розділі «Облік
+       * сертифікатів», відповідний рядок звідси прибирається.
+       */
+      extra?: string
+    }
 
 /**
  * Як показувати розділ. Раніше вибір був двійковий (згорнутий чи ні), але
@@ -136,7 +167,7 @@ export interface DocumentItem {
   news?: string
   /**
    * Вкладені файли: «Наказ про проведення», «Додаток 1»… Досі такі
-   * підпорядковані посилання робилися відступом у Markdown-списку.
+   * підпоря����ковані посилання робилися відступом у Markdown-списку.
    */
   children?: DocumentItem[]
 }
@@ -160,6 +191,13 @@ export interface PageItem {
    */
   full_title?: string
   section?: string
+  /**
+   * Адреса сторінки, підрозділом якої ця є. Дає посилання «назад»: напрямки
+   * ЗСО та подібні підсторінки відкривають і з пошуку, і за прямим
+   * посиланням, а тоді відвідувач не має як повернутися до свого розділу —
+   * у головному меню таких сторінок немає.
+   */
+  parent?: string
   /** Тіло старого формату. Лишається для сумісності; нові сторінки — у blocks */
   body: string
   blocks: PageBlock[]
@@ -167,6 +205,26 @@ export interface PageItem {
   attachments: AttachmentItem[]
   seo_title?: string
   seo_description?: string
+}
+
+/**
+ * Перелік виданих документів про підвищення кваліфікації.
+ *
+ * На старому сайті кожен такий перелік був окремою підсторінкою з таблицею,
+ * і саме вони не перенеслися: на новому сайті лишилися тільки підписи без
+ * посилань. Педагог не міг знайти свій обліковий номер — а це головне, по що
+ * він на сторінку заходить. Тепер це власна колекція: один перелік — один
+ * файл, тож секретар додає новий захід, не чіпаючи сторінку.
+ */
+export interface CertificateItem {
+  slug: string
+  title: string
+  /** Дата заходу в ISO. За нею переліки сортуються, найновіші вгорі */
+  date?: string
+  /** Підпис із таблиці старого сайту: «22 березня 2024 року» */
+  event?: string
+  columns: string[]
+  rows: { cells: string[] }[]
 }
 
 export interface TeamMember {
@@ -367,6 +425,7 @@ export function getAllPages(): PageItem[] {
     title: String(data.title || file),
     full_title: data.full_title ? String(data.full_title) : undefined,
     section: data.section ? String(data.section) : undefined,
+    parent: data.parent ? slugify(String(data.parent)) : undefined,
     body: content,
     blocks: Array.isArray(data.blocks) ? (data.blocks as PageBlock[]).filter((b) => b?.type) : [],
     gallery: Array.isArray(data.gallery) ? data.gallery.filter((g: GalleryItem) => g?.image) : [],
@@ -380,6 +439,50 @@ export function getAllPages(): PageItem[] {
 
 export function getPageBySlug(slug: string): PageItem | undefined {
   return getAllPages().find((p) => p.slug === slug)
+}
+
+let certificatesCache: CertificateItem[] | null = null
+
+export function getAllCertificates(): CertificateItem[] {
+  if (isProd && certificatesCache) return certificatesCache
+  const items = readMd("certificates").map(({ file, data }) => {
+    const rows = Array.isArray(data.rows)
+      ? data.rows
+          .map((r: { cells?: unknown[] }) => ({ cells: (r?.cells ?? []).map((c) => String(c ?? "")) }))
+          .filter((r: { cells: string[] }) => r.cells.some((c) => c.trim()))
+      : []
+    /*
+      Дата тут необов'язкова, і саме тому не через parseDate: той у разі
+      негодящого значення підставляє 1970 рік, і перелік стрибав би в кінець
+      списку. Краще лишити його без дати — тоді він піде за назвою.
+    */
+    let date: string | undefined
+    if (data.date) {
+      const d = new Date(data.date as string)
+      if (!Number.isNaN(d.getTime())) date = d.toISOString()
+      else console.warn(`[content] Нечитна дата у content/certificates/${file}: ${JSON.stringify(data.date)}`)
+    }
+    return {
+      slug: slugify(file.replace(/\.md$/, "")),
+      title: String(data.title || file),
+      date,
+      event: data.event ? String(data.event) : undefined,
+      columns: Array.isArray(data.columns) ? data.columns.map(String) : [],
+      rows,
+    }
+  })
+  items.sort((a, b) => {
+    if (a.date && b.date) return a.date < b.date ? 1 : -1
+    if (a.date) return -1
+    if (b.date) return 1
+    return a.title.localeCompare(b.title, "uk")
+  })
+  certificatesCache = ensureUniqueSlugs(items, "content/certificates")
+  return certificatesCache
+}
+
+export function getCertificateBySlug(slug: string): CertificateItem | undefined {
+  return getAllCertificates().find((c) => c.slug === slug)
 }
 
 export function getTeam(): TeamMember[] {
