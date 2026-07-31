@@ -545,9 +545,15 @@ collections:
         hint: 'Наприклад: Перелік виданих документів педагогічним працівникам ЗДО Лубенської ТГ, учасникам семінару-практикуму «…»'
       - name: date
         label: Дата заходу
-        widget: date
+        # У Decap 3 віджета `date` більше немає — лишився тільки `datetime`,
+        # і на цьому полі адмінка писала «Відсутній модуль для 'date'».
+        # Тому datetime без часу: format кладе у файл рівно YYYY-MM-DD, як у
+        # наявних 75 переліках, а сторінка бере з нього рік через date.slice(0, 4).
+        widget: datetime
         required: false
+        format: YYYY-MM-DD
         date_format: DD.MM.YYYY
+        time_format: false
         hint: За нею перелік потрапляє у свій рік на сторінці. Найновіші показуються вгорі.
       - name: event
         label: Підпис про захід
