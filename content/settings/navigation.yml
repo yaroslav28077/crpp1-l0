@@ -7,6 +7,8 @@ sections:
         url: /my-spivpratsiuiemo
       - label: Пріоритетні завдання Центру
         url: /priorytetni-zavdannia-tsentru
+      - url: /test
+        label: Тест
   - title: Новини Центру
     items:
       - label: Новини
@@ -59,7 +61,7 @@ sections:
         url: /pozashkilna-osvita
       - label: Соціально-психологічна служба
         url: /sotsialno-psykholohichna-sluzhba
-      - label: '#Тияк'
+      - label: "#Тияк"
         url: /tyiak
       - label: Інклюзивна освіта
         url: /inkliuzyvna-osvita
