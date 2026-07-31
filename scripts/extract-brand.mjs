@@ -109,6 +109,57 @@ async function withMargin(input, ratio) {
     .png()
 }
 
+/**
+ * Оптичне центрування: рівні поля по рамці ще не означають рівновагу.
+ * Ліворуч у логотипі тягнеться тонкий хвіст стрічки — майже без заливки, —
+ * тому при однакових полях центр «ваги» малюнка стоїть на 40 px правіше
+ * за геометричний, і на плашці зліва видно порожнечу, а справа тісно.
+ *
+ * Рахуємо центр мас чорнила й дозуємо зсув: blend = 1 ставить масу рівно в
+ * центр, але тоді логотип помітно тікає ліворуч; 0.5 — компроміс, який
+ * прибирає перекіс і не виглядає перестараним.
+ */
+async function opticalMargin(input, ratio, blend = 0.5) {
+  const buf = await sharp(input).toBuffer()
+  const { data, info } = await sharp(buf).ensureAlpha().raw().toBuffer({ resolveWithObject: true })
+  const { width, height } = info
+
+  let sum = 0
+  let sumX = 0
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const i = (y * width + x) * 4
+      const alpha = data[i + 3] / 255
+      // Вага пікселя: наскільки він темний і наскільки непрозорий
+      const ink = (alpha * (255 - Math.min(data[i], data[i + 1], data[i + 2]))) / 255
+      sum += ink
+      sumX += ink * x
+    }
+  }
+
+  const massX = sum > 0 ? sumX / sum : (width - 1) / 2
+  const offset = massX - (width - 1) / 2
+  const shift = Math.round(2 * offset * blend)
+  const pad = Math.round(Math.max(width, height) * ratio)
+  const left = pad + Math.max(0, -shift)
+  const right = pad + Math.max(0, shift)
+
+  console.log(
+    `оптичний центр: маса зміщена на ${offset.toFixed(1)} px, поля ліворуч ${left}, праворуч ${right}`,
+  )
+
+  return sharp({
+    create: {
+      width: left + width + right,
+      height: height + pad * 2,
+      channels: 4,
+      background: { r: 0, g: 0, b: 0, alpha: 0 },
+    },
+  })
+    .composite([{ input: buf, left, top: pad }])
+    .png()
+}
+
 // Центральний символ: постаті, пагін і стрілка
 const MARK = { left: 540, top: 112, width: 300, height: 236 }
 
@@ -118,8 +169,10 @@ async function main() {
 
   const cropped = await sharp(SRC).extract(full).png().toBuffer()
   const emblem = await unbake(cropped)
-  // 5% полів: досить, щоб стрічка не торкалася країв плашки
-  await (await withMargin(await emblem.toBuffer(), 0.05)).toFile(`${OUT}/logo-emblem.png`)
+  // 5% полів: досить, щоб стрічка не торкалася країв плашки.
+  // Поля не рівні навмисно — див. opticalMargin: інакше логотип візуально
+  // притискається праворуч, а ліворуч зяє порожнеча.
+  await (await opticalMargin(await emblem.toBuffer(), 0.05, 0.5)).toFile(`${OUT}/logo-emblem.png`)
 
   const markRaw = await sharp(SRC).extract(MARK).png().toBuffer()
   const markUnbaked = await unbake(markRaw)
@@ -151,19 +204,11 @@ async function main() {
 
   await sharp(square).resize(512, 512).png().toFile(`${OUT}/logo-mark-square.png`)
 
-  // Іконки вкладок — на світлому тлі, як і плашки на сайті.
-  // На синьому темно-зелена постать і стрічка тонули у фоні, і на 32 px
-  // іконка перетворювалася на пляму.
-  for (const [size, file] of [
-    [512, 'app/icon.png'],
-    [180, 'app/apple-icon.png'],
-  ]) {
-    await sharp(square)
-      .resize(size, size)
-      .flatten({ background: { r: 253, g: 253, b: 252 } })
-      .png()
-      .toFile(file)
-  }
+  /*
+    Іконки вкладок тут більше не генеруються. Емблема на 16–32 px
+    перетворювалась на нерозбірливу пляму, тож іконкою сайту став герб Лубен
+    (public/brand/coat-of-arms.png) — див. app/icon.png і app/apple-icon.png.
+  */
 
   for (const f of ['logo-emblem.png', 'logo-mark.png', 'logo-mark-square.png']) {
     const m = await sharp(`${OUT}/${f}`).metadata()
