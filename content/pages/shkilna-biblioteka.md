@@ -19,4 +19,3 @@ blocks:
       >![](/images/notes/2022/09/meta.jpg)
       - [Методичні рекомендації, щодо проведення Всеукраїнського місячника шкільних бібліотек у 2021 році](https://drive.google.com/file/d/16f9yLUylzs8RGVDQ2kjjyeGMiYx_XHUJ/view?usp=sharing)
 ---
-

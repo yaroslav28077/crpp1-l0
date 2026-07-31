@@ -14,9 +14,8 @@ blocks:
         url: /predmety-khimiko-biolohichnoho-napriamku
       - label: Предмети художньо-естетичного напрямку
         url: /predmety-khudozhno-estetychnoho-napriamku
-      - label: 'Фізична культура, Захист України, трудове навчання, технології'
+      - label: Фізична культура, Захист України, трудове навчання, технології
         url: /fizychna-kultura-zakhyst-ukrainy-trudove-navchannia
-      - label: 'Позаурочна робота (класні керівники, педагоги-організатори)'
+      - label: Позаурочна робота (класні керівники, педагоги-організатори)
         url: /pozaurochna-robota
 ---
-

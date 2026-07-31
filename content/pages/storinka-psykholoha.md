@@ -17,4 +17,3 @@ blocks:
       - label: Про пріоритетні напрями роботи психологічної служби у системі освіти 2021-2022 н.р.
         url: https://drive.google.com/file/d/1hs5v1Rd_iAnKepSulixpJfBmSfGohF1b/view?usp=sharing
 ---
-

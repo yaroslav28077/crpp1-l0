@@ -16,4 +16,3 @@ blocks:
       - label: Положення про сайт Комунальної установи "Центр професійного розвитку педагогічних працівників Лубенської міської ради Лубенського району Полтавської області"
         url: https://drive.google.com/file/d/1xYiFjl1Wn2CHrnPO-ngaay7AGO2jOpLF/view?usp=sharing
 ---
-

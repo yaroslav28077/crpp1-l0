@@ -120,4 +120,3 @@ blocks:
       - label: Програма семінару-практикуму «Сучасні онлайн-сервіси в практичній роботі шкільних бібліотекарів закладів освіти Лубенської територіальної громади»
         url: https://drive.google.com/file/d/1_HiXK4Jorjy7FLldyta3psCn3FHf73If/view?usp=sharing
 ---
-

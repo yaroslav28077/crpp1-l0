@@ -19,4 +19,3 @@ blocks:
       - label: Список супервізорів Полтавської області
         url: https://docs.google.com/document/d/1yt7txc9HUtJqRGtCiJZbztlJFa4Rjz1R/edit?usp=sharing&ouid=105122741236082304027&rtpof=true&sd=true
 ---
-
