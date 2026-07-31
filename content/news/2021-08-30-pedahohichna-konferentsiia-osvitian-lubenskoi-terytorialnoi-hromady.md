@@ -1,72 +1,25 @@
 ---
-title: >-
-  Педагогічна
-  конференція
-  освітян
-  Лубенської
-  територіальної
-  громади
-date: >-
-  2021-08-30T14:04:00.000Z
-description: >-
-  img
-  30%,
-  notes/2021/08/conf/000.jpg
-  27
-  серпня
-  2021
-  року
-  в
-  кінотеатрі
-  «Київська
-  Русь»
-  проведено
-  педагогічну
-  конференцію,
-  у
-  якій
-  взяли
-  участь
-  керівники
-  закладів
-  загальної
-  середньої,
-  дошкільної
-  та…
+title: Педагогічна конференція освітян Лубенської територіальної громади
+date: '2021-08-30T14:04:00.000Z'
+description: img 30%, notes/2021/08/conf/000.jpg 27 серпня 2021 року в кінотеатрі «Київська Русь» проведено педагогічну конференцію, у якій взяли участь керівники закладів загальної середньої, дошкільної та…
 tags:
-  - >-
-    Серпень2021
-  - >-
-    2021
+  - Серпень2021
+  - '2021'
 gallery:
-  - image: >-
-      /images/notes/2021/08/conf/001.jpg
-  - image: >-
-      /images/notes/2021/08/conf/002.jpg
-  - image: >-
-      /images/notes/2021/08/conf/003.jpg
-  - image: >-
-      /images/notes/2021/08/conf/004.jpg
-  - image: >-
-      /images/notes/2021/08/conf/005.jpg
-  - image: >-
-      /images/notes/2021/08/conf/006.jpg
-  - image: >-
-      /images/notes/2021/08/conf/007.jpg
-  - image: >-
-      /images/notes/2021/08/conf/001.png
-  - image: >-
-      /images/notes/2021/08/conf/002.png
-  - image: >-
-      /images/notes/2021/08/conf/003.png
-  - image: >-
-      /images/notes/2021/08/conf/004.png
-  - image: >-
-      /images/notes/2021/08/conf/005.png
-  - image: >-
-      /images/notes/2021/08/conf/006.png
-  - image: >-
-      /images/notes/2021/08/conf/007.png
+  - image: /images/notes/2021/08/conf/001.jpg
+  - image: /images/notes/2021/08/conf/002.jpg
+  - image: /images/notes/2021/08/conf/003.jpg
+  - image: /images/notes/2021/08/conf/004.jpg
+  - image: /images/notes/2021/08/conf/005.jpg
+  - image: /images/notes/2021/08/conf/006.jpg
+  - image: /images/notes/2021/08/conf/007.jpg
+  - image: /images/notes/2021/08/conf/001.png
+  - image: /images/notes/2021/08/conf/002.png
+  - image: /images/notes/2021/08/conf/003.png
+  - image: /images/notes/2021/08/conf/004.png
+  - image: /images/notes/2021/08/conf/005.png
+  - image: /images/notes/2021/08/conf/006.png
+  - image: /images/notes/2021/08/conf/007.png
 ---
 
 [>img(30%,)[notes/2021/08/conf/000.jpg]] 27 серпня 2021 року в кінотеатрі «Київська Русь» проведено педагогічну конференцію, у якій взяли участь керівники закладів загальної середньої, дошкільної та позашкільної освіти, учителі, вихователі, керівники гуртків, тренери-викладачі, працівники Управління освіти, Центру професійного розвитку педагогічних працівників, запрошені гості.

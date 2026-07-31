@@ -10,4 +10,3 @@ blocks:
       - image: /images/pict/taranets.png
       - image: /images/pict/ivaschenko.png
 ---
-

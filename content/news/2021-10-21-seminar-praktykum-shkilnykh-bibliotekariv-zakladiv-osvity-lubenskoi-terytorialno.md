@@ -1,107 +1,41 @@
 ---
-title: >-
-  Семінар-практикум
-  шкільних
-  бібліотекарів
-  закладів
-  освіти
-  Лубенської
-  територіальної
-  громади
-date: >-
-  2021-10-21T11:58:00.000Z
-description: >-
-  20
-  жовтня
-  2021
-  року
-  на
-  базі
-  Лубенської
-  спеціалізованої
-  школи
-  І-ІІІ
-  ступенів
-  №6
-  проведено
-  семінар-практикум
-  для
-  завідуючих
-  бібліотек
-  із
-  питання
-  «Сучасні
-  онлайн-сервіси
-  в
-  практичній
-  роботі
-  шкільних…
+title: Семінар-практикум шкільних бібліотекарів закладів освіти Лубенської територіальної громади
+date: '2021-10-21T11:58:00.000Z'
+description: 20 жовтня 2021 року на базі Лубенської спеціалізованої школи І-ІІІ ступенів №6 проведено семінар-практикум для завідуючих бібліотек із питання «Сучасні онлайн-сервіси в практичній роботі шкільних…
 tags:
-  - >-
-    Жовтень2021
-  - >-
-    2021
+  - Жовтень2021
+  - '2021'
 gallery:
-  - image: >-
-      /images/notes/2021/10/bibl/001.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/002.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/003.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/004.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/005.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/006.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/007.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/008.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/009.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/010.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/011.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/012.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/013.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/014.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/015.jpg
-  - image: >-
-      /images/notes/2021/10/bibl/001.png
-  - image: >-
-      /images/notes/2021/10/bibl/002.png
-  - image: >-
-      /images/notes/2021/10/bibl/003.png
-  - image: >-
-      /images/notes/2021/10/bibl/004.png
-  - image: >-
-      /images/notes/2021/10/bibl/005.png
-  - image: >-
-      /images/notes/2021/10/bibl/006.png
-  - image: >-
-      /images/notes/2021/10/bibl/007.png
-  - image: >-
-      /images/notes/2021/10/bibl/008.png
-  - image: >-
-      /images/notes/2021/10/bibl/009.png
-  - image: >-
-      /images/notes/2021/10/bibl/010.png
-  - image: >-
-      /images/notes/2021/10/bibl/011.png
-  - image: >-
-      /images/notes/2021/10/bibl/012.png
-  - image: >-
-      /images/notes/2021/10/bibl/013.png
-  - image: >-
-      /images/notes/2021/10/bibl/014.png
-  - image: >-
-      /images/notes/2021/10/bibl/015.png
+  - image: /images/notes/2021/10/bibl/001.jpg
+  - image: /images/notes/2021/10/bibl/002.jpg
+  - image: /images/notes/2021/10/bibl/003.jpg
+  - image: /images/notes/2021/10/bibl/004.jpg
+  - image: /images/notes/2021/10/bibl/005.jpg
+  - image: /images/notes/2021/10/bibl/006.jpg
+  - image: /images/notes/2021/10/bibl/007.jpg
+  - image: /images/notes/2021/10/bibl/008.jpg
+  - image: /images/notes/2021/10/bibl/009.jpg
+  - image: /images/notes/2021/10/bibl/010.jpg
+  - image: /images/notes/2021/10/bibl/011.jpg
+  - image: /images/notes/2021/10/bibl/012.jpg
+  - image: /images/notes/2021/10/bibl/013.jpg
+  - image: /images/notes/2021/10/bibl/014.jpg
+  - image: /images/notes/2021/10/bibl/015.jpg
+  - image: /images/notes/2021/10/bibl/001.png
+  - image: /images/notes/2021/10/bibl/002.png
+  - image: /images/notes/2021/10/bibl/003.png
+  - image: /images/notes/2021/10/bibl/004.png
+  - image: /images/notes/2021/10/bibl/005.png
+  - image: /images/notes/2021/10/bibl/006.png
+  - image: /images/notes/2021/10/bibl/007.png
+  - image: /images/notes/2021/10/bibl/008.png
+  - image: /images/notes/2021/10/bibl/009.png
+  - image: /images/notes/2021/10/bibl/010.png
+  - image: /images/notes/2021/10/bibl/011.png
+  - image: /images/notes/2021/10/bibl/012.png
+  - image: /images/notes/2021/10/bibl/013.png
+  - image: /images/notes/2021/10/bibl/014.png
+  - image: /images/notes/2021/10/bibl/015.png
 ---
 
 20 жовтня 2021 року на базі Лубенської спеціалізованої школи І-ІІІ ступенів №6 проведено семінар-практикум для завідуючих бібліотек із питання «Сучасні онлайн-сервіси в практичній роботі шкільних бібліотек закладів освіти Лубенської територіальної громади». 

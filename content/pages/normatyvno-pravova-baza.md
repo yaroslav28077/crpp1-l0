@@ -28,4 +28,3 @@ blocks:
       - label: Методичні рекомендації щодо організації освітнього процесу у 2021-2022 навчальному році в початковій школі в умовах воєнного часу
         url: https://drive.google.com/file/d/1HLQSjuCaAT01NGRE1vpPH_jSiZlGaPS0/view?usp=sharing
 ---
-

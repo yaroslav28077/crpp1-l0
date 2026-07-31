@@ -1,226 +1,99 @@
 ---
-title: >-
-  Продовжуємо
-  реалізацію
-  Державного
-  стандарту
-  базової
-  середньої
-  освіти
-  "Нова
-  українська
-  школа
-  -
-  перехід
-  на
-  наступний
-  рівень"
-date: >-
-  2021-12-08T09:19:00.000Z
-description: >-
-  Протягом
-  листопада
-  2021
-  року
-  педагогічні
-  працівники
-  закладів
-  загальної
-  середньої
-  освіти
-  Лубенської
-  ТГ
-  проходили
-  тренінгові
-  заняття
-  за
-  програмою
-  підвищення
-  кваліфікації
-  учителів,
-  які…
+title: Продовжуємо реалізацію Державного стандарту базової середньої освіти "Нова українська школа - перехід на наступний рівень"
+date: '2021-12-08T09:19:00.000Z'
+description: Протягом листопада 2021 року педагогічні працівники закладів загальної середньої освіти Лубенської ТГ проходили тренінгові заняття за програмою підвищення кваліфікації учителів, які…
 tags:
-  - >-
-    Грудень2021
-  - >-
-    2021
+  - Грудень2021
+  - '2021'
 gallery:
-  - image: >-
-      /images/notes/2021/12/nush1/01.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/02.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/03.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/04.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/05.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/06.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/07.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/08.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/09.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/10.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/11.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/12.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/13.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/14.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/15.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/16.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/17.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/18.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/19.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/20.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/21.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/22.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/01.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/02.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/03.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/04.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/05.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/06.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/07.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/08.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/09.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/10.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/11.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/12.jpg
-  - image: >-
-      /images/notes/2021/12/nush2/13.jpg
-  - image: >-
-      /images/notes/2021/12/nush3/01.jpg
-  - image: >-
-      /images/notes/2021/12/nush3/02.jpg
-  - image: >-
-      /images/notes/2021/12/nush3/03.jpg
-  - image: >-
-      /images/notes/2021/12/nush3/04.jpg
-  - image: >-
-      /images/notes/2021/12/nush3/05.jpg
-  - image: >-
-      /images/notes/2021/12/nush3/06.jpg
-  - image: >-
-      /images/notes/2021/12/nush3/07.jpg
-  - image: >-
-      /images/notes/2021/12/nush3/08.jpg
-  - image: >-
-      /images/notes/2021/12/nush3/09.jpg
-  - image: >-
-      /images/notes/2021/12/nush1/01.png
-  - image: >-
-      /images/notes/2021/12/nush1/02.png
-  - image: >-
-      /images/notes/2021/12/nush1/03.png
-  - image: >-
-      /images/notes/2021/12/nush1/04.png
-  - image: >-
-      /images/notes/2021/12/nush1/05.png
-  - image: >-
-      /images/notes/2021/12/nush1/06.png
-  - image: >-
-      /images/notes/2021/12/nush1/07.png
-  - image: >-
-      /images/notes/2021/12/nush1/08.png
-  - image: >-
-      /images/notes/2021/12/nush1/09.png
-  - image: >-
-      /images/notes/2021/12/nush1/10.png
-  - image: >-
-      /images/notes/2021/12/nush1/11.png
-  - image: >-
-      /images/notes/2021/12/nush1/12.png
-  - image: >-
-      /images/notes/2021/12/nush1/13.png
-  - image: >-
-      /images/notes/2021/12/nush1/14.png
-  - image: >-
-      /images/notes/2021/12/nush1/15.png
-  - image: >-
-      /images/notes/2021/12/nush1/16.png
-  - image: >-
-      /images/notes/2021/12/nush1/17.png
-  - image: >-
-      /images/notes/2021/12/nush1/18.png
-  - image: >-
-      /images/notes/2021/12/nush1/19.png
-  - image: >-
-      /images/notes/2021/12/nush1/20.png
-  - image: >-
-      /images/notes/2021/12/nush1/21.png
-  - image: >-
-      /images/notes/2021/12/nush1/22.png
-  - image: >-
-      /images/notes/2021/12/nush2/01.png
-  - image: >-
-      /images/notes/2021/12/nush2/02.png
-  - image: >-
-      /images/notes/2021/12/nush2/03.png
-  - image: >-
-      /images/notes/2021/12/nush2/04.png
-  - image: >-
-      /images/notes/2021/12/nush2/05.png
-  - image: >-
-      /images/notes/2021/12/nush2/06.png
-  - image: >-
-      /images/notes/2021/12/nush2/07.png
-  - image: >-
-      /images/notes/2021/12/nush2/08.png
-  - image: >-
-      /images/notes/2021/12/nush2/09.png
-  - image: >-
-      /images/notes/2021/12/nush2/10.png
-  - image: >-
-      /images/notes/2021/12/nush2/11.png
-  - image: >-
-      /images/notes/2021/12/nush2/12.png
-  - image: >-
-      /images/notes/2021/12/nush2/13.png
-  - image: >-
-      /images/notes/2021/12/nush3/01.png
-  - image: >-
-      /images/notes/2021/12/nush3/02.png
-  - image: >-
-      /images/notes/2021/12/nush3/03.png
-  - image: >-
-      /images/notes/2021/12/nush3/04.png
-  - image: >-
-      /images/notes/2021/12/nush3/05.png
-  - image: >-
-      /images/notes/2021/12/nush3/06.png
-  - image: >-
-      /images/notes/2021/12/nush3/07.png
-  - image: >-
-      /images/notes/2021/12/nush3/08.png
-  - image: >-
-      /images/notes/2021/12/nush3/09.png
+  - image: /images/notes/2021/12/nush1/01.jpg
+  - image: /images/notes/2021/12/nush1/02.jpg
+  - image: /images/notes/2021/12/nush1/03.jpg
+  - image: /images/notes/2021/12/nush1/04.jpg
+  - image: /images/notes/2021/12/nush1/05.jpg
+  - image: /images/notes/2021/12/nush1/06.jpg
+  - image: /images/notes/2021/12/nush1/07.jpg
+  - image: /images/notes/2021/12/nush1/08.jpg
+  - image: /images/notes/2021/12/nush1/09.jpg
+  - image: /images/notes/2021/12/nush1/10.jpg
+  - image: /images/notes/2021/12/nush1/11.jpg
+  - image: /images/notes/2021/12/nush1/12.jpg
+  - image: /images/notes/2021/12/nush1/13.jpg
+  - image: /images/notes/2021/12/nush1/14.jpg
+  - image: /images/notes/2021/12/nush1/15.jpg
+  - image: /images/notes/2021/12/nush1/16.jpg
+  - image: /images/notes/2021/12/nush1/17.jpg
+  - image: /images/notes/2021/12/nush1/18.jpg
+  - image: /images/notes/2021/12/nush1/19.jpg
+  - image: /images/notes/2021/12/nush1/20.jpg
+  - image: /images/notes/2021/12/nush1/21.jpg
+  - image: /images/notes/2021/12/nush1/22.jpg
+  - image: /images/notes/2021/12/nush2/01.jpg
+  - image: /images/notes/2021/12/nush2/02.jpg
+  - image: /images/notes/2021/12/nush2/03.jpg
+  - image: /images/notes/2021/12/nush2/04.jpg
+  - image: /images/notes/2021/12/nush2/05.jpg
+  - image: /images/notes/2021/12/nush2/06.jpg
+  - image: /images/notes/2021/12/nush2/07.jpg
+  - image: /images/notes/2021/12/nush2/08.jpg
+  - image: /images/notes/2021/12/nush2/09.jpg
+  - image: /images/notes/2021/12/nush2/10.jpg
+  - image: /images/notes/2021/12/nush2/11.jpg
+  - image: /images/notes/2021/12/nush2/12.jpg
+  - image: /images/notes/2021/12/nush2/13.jpg
+  - image: /images/notes/2021/12/nush3/01.jpg
+  - image: /images/notes/2021/12/nush3/02.jpg
+  - image: /images/notes/2021/12/nush3/03.jpg
+  - image: /images/notes/2021/12/nush3/04.jpg
+  - image: /images/notes/2021/12/nush3/05.jpg
+  - image: /images/notes/2021/12/nush3/06.jpg
+  - image: /images/notes/2021/12/nush3/07.jpg
+  - image: /images/notes/2021/12/nush3/08.jpg
+  - image: /images/notes/2021/12/nush3/09.jpg
+  - image: /images/notes/2021/12/nush1/01.png
+  - image: /images/notes/2021/12/nush1/02.png
+  - image: /images/notes/2021/12/nush1/03.png
+  - image: /images/notes/2021/12/nush1/04.png
+  - image: /images/notes/2021/12/nush1/05.png
+  - image: /images/notes/2021/12/nush1/06.png
+  - image: /images/notes/2021/12/nush1/07.png
+  - image: /images/notes/2021/12/nush1/08.png
+  - image: /images/notes/2021/12/nush1/09.png
+  - image: /images/notes/2021/12/nush1/10.png
+  - image: /images/notes/2021/12/nush1/11.png
+  - image: /images/notes/2021/12/nush1/12.png
+  - image: /images/notes/2021/12/nush1/13.png
+  - image: /images/notes/2021/12/nush1/14.png
+  - image: /images/notes/2021/12/nush1/15.png
+  - image: /images/notes/2021/12/nush1/16.png
+  - image: /images/notes/2021/12/nush1/17.png
+  - image: /images/notes/2021/12/nush1/18.png
+  - image: /images/notes/2021/12/nush1/19.png
+  - image: /images/notes/2021/12/nush1/20.png
+  - image: /images/notes/2021/12/nush1/21.png
+  - image: /images/notes/2021/12/nush1/22.png
+  - image: /images/notes/2021/12/nush2/01.png
+  - image: /images/notes/2021/12/nush2/02.png
+  - image: /images/notes/2021/12/nush2/03.png
+  - image: /images/notes/2021/12/nush2/04.png
+  - image: /images/notes/2021/12/nush2/05.png
+  - image: /images/notes/2021/12/nush2/06.png
+  - image: /images/notes/2021/12/nush2/07.png
+  - image: /images/notes/2021/12/nush2/08.png
+  - image: /images/notes/2021/12/nush2/09.png
+  - image: /images/notes/2021/12/nush2/10.png
+  - image: /images/notes/2021/12/nush2/11.png
+  - image: /images/notes/2021/12/nush2/12.png
+  - image: /images/notes/2021/12/nush2/13.png
+  - image: /images/notes/2021/12/nush3/01.png
+  - image: /images/notes/2021/12/nush3/02.png
+  - image: /images/notes/2021/12/nush3/03.png
+  - image: /images/notes/2021/12/nush3/04.png
+  - image: /images/notes/2021/12/nush3/05.png
+  - image: /images/notes/2021/12/nush3/06.png
+  - image: /images/notes/2021/12/nush3/07.png
+  - image: /images/notes/2021/12/nush3/08.png
+  - image: /images/notes/2021/12/nush3/09.png
 ---
 
 Протягом листопада 2021 року педагогічні працівники закладів загальної середньої освіти Лубенської ТГ проходили тренінгові заняття за програмою підвищення кваліфікації учителів, які забезпечуватимуть реалізацію нового Державного стандарту базової середньої освіти "Нова українська школа: перехід на наступний рівень".
