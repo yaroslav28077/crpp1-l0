@@ -2,6 +2,166 @@
   "_comment": "Згенеровано scripts/generate-redirects.mjs — не редагувати вручну.",
   "rules": [
     {
+      "from": "/notes/Uchast%20u%20Mizhnarodnomu%20onlayn-vebinari.html",
+      "to": "/novyny/2020-10-12-uchast-u-mizhnarodnomu-onlain-vebinari"
+    },
+    {
+      "from": "/notes/Oblasniy%20seminar%20slovesnikiv.html",
+      "to": "/novyny/2020-10-30-oblasnyi-seminar-slovesnykiv"
+    },
+    {
+      "from": "/notes/Razom%20do%20naykraschogo%20Internetu.html",
+      "to": "/novyny/2021-02-12-razom-do-naikrashchoho-internetu"
+    },
+    {
+      "from": "/notes/Seminar%20uchiteliv%20angliyskoyi%20movi.html",
+      "to": "/novyny/2021-02-26-seminar-uchyteliv-anhliiskoi-movy"
+    },
+    {
+      "from": "/notes/Opituvannya%20pedagogichnih%20pracivnikiv.html",
+      "to": "/novyny/2021-03-01-opytuvannia-pedahohichnykh-pratsivnykiv"
+    },
+    {
+      "from": "/notes/Zasidannya%20profesiynih%20spilnot%20pedpracivnikiv.html",
+      "to": "/novyny/2021-04-08-zasidannia-profesiinykh-spilnot-pedpratsivnykiv"
+    },
+    {
+      "from": "/notes/Onlayn-narada%20zastupnikiv%20direktoriv%20shkil.html",
+      "to": "/novyny/2021-05-20-onlain-narada-zastupnykiv-dyrektoriv-shkil"
+    },
+    {
+      "from": "/notes/Chempionat%20Lubenskoyi%20TG%20zi%20sportivnogo%20orientuvannya.html",
+      "to": "/novyny/2021-06-03-chempionat-lubenskoi-th-zi-sportyvnoho-oriientuvannia"
+    },
+    {
+      "from": "/notes/Kuhta%20Valeriya%20-%20prizer%20oblasnogo%20konkursu.html",
+      "to": "/novyny/2021-06-08-kukhta-valeriia-pryzer-oblasnoho-konkursu"
+    },
+    {
+      "from": "/notes/Peremoga%20na%20oblasnomu%20konkursi.html",
+      "to": "/novyny/2021-06-12-peremoha-na-oblasnomu-konkursi"
+    },
+    {
+      "from": "/notes/Vidpochinok%20na%20mori.html",
+      "to": "/novyny/2021-07-02-vidpochynok-na-mori"
+    },
+    {
+      "from": "/notes/Vidznaka%20pedagogiv.html",
+      "to": "/novyny/2021-08-27-vidznaka-pedahohiv"
+    },
+    {
+      "from": "/notes/Prezentaciya%20vistupu%20Oleni%20TOKAR%2C%20golovnogo%20specialista%20DSYaO.html",
+      "to": "/novyny/2021-08-29-prezentatsiia-vystupu-oleny-tokar-holovnoho-spetsialista-dsiao"
+    },
+    {
+      "from": "/notes/Karpati-2021.html",
+      "to": "/novyny/2021-08-30-karpaty-2021"
+    },
+    {
+      "from": "/notes/Pedagogichna%20konferenciya%20osvityan%20Lubenskoyi%20teritorialnoyi%20gromadi.html",
+      "to": "/novyny/2021-08-30-pedahohichna-konferentsiia-osvitian-lubenskoi-terytorialnoi-hromady"
+    },
+    {
+      "from": "/notes/Peremoga%2C%20scho%20nadihae.html",
+      "to": "/novyny/2021-08-30-peremoha-shcho-nadykhaie"
+    },
+    {
+      "from": "/notes/Zasidannya%20profesiynih%20spilnot%20pedagogichnih%20pracivnikiv.html",
+      "to": "/novyny/2021-08-30-zasidannia-profesiinykh-spilnot-pedahohichnykh-pratsivnykiv"
+    },
+    {
+      "from": "/notes/Pro%20druge%20zasidannya%20((Shkoli%20novopriznachenih%20pracivnikiv%20psihologichnoyi%20sluzhbi%20sistemi%20osviti%20Poltavskoyi%20oblasti%20na%202021-2023%20roki)).html",
+      "to": "/novyny/2021-09-02-pro-druhe-zasidannia-shkoly-novopryznachenykh-pratsivnykiv-psykholohichnoi-sluzh"
+    },
+    {
+      "from": "/notes/Serpneve%20zasidannya%20asistentiv%20uchiteliv%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2021-09-02-serpneve-zasidannia-asystentiv-uchyteliv-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Pro%20provedennya%20Vseukrayinskogo%20konkursu%20avtorskih%20program%20praktichnih%20psihologiv%20i%20socialnih%20pedagogiv%20%60Novi%20tehnologiyi%20u%20noviy%20shkoli%60.html",
+      "to": "/novyny/2021-09-03-pro-provedennia-vseukrainskoho-konkursu-avtorskykh-prohram-praktychnykh-psykholo"
+    },
+    {
+      "from": "/notes/Zaproshuemo%20na%20%60Pedagogichniy%20startap%60.html",
+      "to": "/novyny/2021-09-03-zaproshuiemo-na-pedahohichnyi-startap"
+    },
+    {
+      "from": "/notes/Narada%20shkilnih%20bibliotekariv.html",
+      "to": "/novyny/2021-09-07-narada-shkilnykh-bibliotekariv"
+    },
+    {
+      "from": "/notes/Organizaciya%20diyalnosti%20zakladiv%20doshkilnoyi%20osviti%20Lubenskoyi%20TG%20na%202021-2022%20navchalniy%20rik.html",
+      "to": "/novyny/2021-09-08-orhanizatsiia-diialnosti-zakladiv-doshkilnoi-osvity-lubenskoi-th-na-2021-2022-na"
+    },
+    {
+      "from": "/notes/Organizaciya%20osvitnogo%20procesu%20z%20inklyuzivnim%20navchannyam%20u%20zakladah%20doshkilnoyi%20osviti%20Lubenskoyi%20teritorialnoyi%20gromadi.html",
+      "to": "/novyny/2021-09-09-orhanizatsiia-osvitnoho-protsesu-z-inkliuzyvnym-navchanniam-u-zakladakh-doshkiln"
+    },
+    {
+      "from": "/notes/Rozpochinaetsya%20bezkoshtovniy%20kurs%20((Upravlinnya%20yakistyu%20osviti%20v%20shkoli)).html",
+      "to": "/novyny/2021-09-13-rozpochynaietsia-bezkoshtovnyi-kurs-upravlinnia-iakistiu-osvity-v-shkoli"
+    },
+    {
+      "from": "/notes/Scho%20novogo%20v%20zabezpechenni%20yakosti%20osviti%20dityachogo%20sadochka.html",
+      "to": "/novyny/2021-09-13-shcho-novoho-v-zabezpechenni-iakosti-osvity-dytiachoho-sadochka"
+    },
+    {
+      "from": "/notes/Pro%20uchast%20v%20opituvanni.html",
+      "to": "/novyny/2021-09-24-pro-uchast-v-opytuvanni"
+    },
+    {
+      "from": "/notes/Vivchaemo%20dosvid%20koleg.html",
+      "to": "/novyny/2021-09-24-vyvchaiemo-dosvid-koleh"
+    },
+    {
+      "from": "/notes/Navchalniy%20trening.html",
+      "to": "/novyny/2021-09-27-navchalnyi-treninh"
+    },
+    {
+      "from": "/notes/Inklyuzivna%20osvita..%20rizni%20mozhlivosti%20-%20rivni%20prava.html",
+      "to": "/novyny/2021-10-04-inkliuzyvna-osvita-rizni-mozhlyvosti-rivni-prava"
+    },
+    {
+      "from": "/notes/Zasidannya%20kerivnikiv%20pedagogichnih%20spilnot%20zakladiv%20doshkilnoyi%20osviti%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2021-10-07-zasidannia-kerivnykiv-pedahohichnykh-spilnot-zakladiv-doshkilnoi-osvity-lubensko"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20shkilnih%20bibliotekariv%20zakladiv%20osviti%20Lubenskoyi%20teritorialnoyi%20gromadi.html",
+      "to": "/novyny/2021-10-21-seminar-praktykum-shkilnykh-bibliotekariv-zakladiv-osvity-lubenskoi-terytorialno"
+    },
+    {
+      "from": "/notes/STREAM-osvita%20v%20doshkilnomu%20zakladi.html",
+      "to": "/novyny/2021-10-22-stream-osvita-v-doshkilnomu-zakladi"
+    },
+    {
+      "from": "/notes/Pershiy%20etap%20navchannya%20rozpochato....html",
+      "to": "/novyny/2021-11-15-pershyi-etap-navchannia-rozpochato"
+    },
+    {
+      "from": "/notes/Pidsumki%20konkursu%20((Shkola%20maybutnogo)).html",
+      "to": "/novyny/2021-11-29-pidsumky-konkursu-shkola-maibutnoho"
+    },
+    {
+      "from": "/notes/Treningi%20dlya%20vchiteliv%20matematiki.html",
+      "to": "/novyny/2021-12-03-treninhy-dlia-vchyteliv-matematyky"
+    },
+    {
+      "from": "/notes/Peremoga%20na%20Vseukrayinskomu%20konkursi.html",
+      "to": "/novyny/2021-12-08-peremoha-na-vseukrainskomu-konkursi"
+    },
+    {
+      "from": "/notes/Prodovzhuemo%20realizaciyu%20Derzhavnogo%20standartu%20bazovoyi%20serednoyi%20osviti%20%60Nova%20ukrayinska%20shkola%20-%20perehid%20na%20nastupniy%20riven%60.html",
+      "to": "/novyny/2021-12-08-prodovzhuiemo-realizatsiiu-derzhavnoho-standartu-bazovoi-serednoi-osvity-nova-uk"
+    },
+    {
+      "from": "/notes/Narada%20shkilnih%20bibliotekariv%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2021-12-15-narada-shkilnykh-bibliotekariv-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Opracovuemo%20novi%20vimogi%20do%20oformlennya%20dokumentaciyi.html",
+      "to": "/novyny/2021-12-15-opratsovuiemo-novi-vymohy-do-oformlennia-dokumentatsii"
+    },
+    {
       "from": "/notes/Chergove%20zasidannya%20tvorchoyi%20grupi.html",
       "to": "/novyny/2021-12-16-cherhove-zasidannia-tvorchoi-hrupy"
     },
@@ -150,12 +310,88 @@
       "to": "/novyny/2022-08-01-uvaha-rozpochato-reiestratsiiu-vchyteliv-dlia-prokhodzhennia-sertyfikatsii-2022"
     },
     {
+      "from": "/notes/Blagodiyna%20diyalnist%20dityacho-yunackoyi%20sportivnoyi%20shkoli.html",
+      "to": "/novyny/2022-08-05-blahodiina-diialnist-dytiacho-iunatskoi-sportyvnoi-shkoly"
+    },
+    {
+      "from": "/notes/Blagodiyna%20dopomoga%20DNZ%20N5%20%60Zirochka%60.html",
+      "to": "/novyny/2022-08-05-blahodiina-dopomoha-dnz-n5-zirochka"
+    },
+    {
+      "from": "/notes/Volonterska%20diyalnist%20Orihivskogo%20ZDO.html",
+      "to": "/novyny/2022-08-05-volonterska-diialnist-orikhivskoho-zdo"
+    },
+    {
+      "from": "/notes/Volonterstvo%20u%20doshkilnomu%20navchalnomu%20zakladi%20N8%20%60Cheburashka%60.html",
+      "to": "/novyny/2022-08-05-volonterstvo-u-doshkilnomu-navchalnomu-zakladi-n8-cheburashka"
+    },
+    {
+      "from": "/notes/Blagodiyna%20diyalnist%20pedagogichnogo%20kolektivu%20ZDO%20N17.html",
+      "to": "/novyny/2022-08-15-blahodiina-diialnist-pedahohichnoho-kolektyvu-zdo-n17"
+    },
+    {
+      "from": "/notes/Blagodiyna%20diyalnist%20shkoli%20N3.html",
+      "to": "/novyny/2022-08-15-blahodiina-diialnist-shkoly-n3"
+    },
+    {
+      "from": "/notes/Razom%20idemo%20do%20PEREMOGI!.html",
+      "to": "/novyny/2022-08-15-razom-idemo-do-peremohy"
+    },
+    {
+      "from": "/notes/Volonterska%20diyalnist%20Lubenskogo%20ZZSO%20N4.html",
+      "to": "/novyny/2022-08-15-volonterska-diialnist-lubenskoho-zzso-n4"
+    },
+    {
+      "from": "/notes/Volonterstvo%20u%20shkoli%20N2.html",
+      "to": "/novyny/2022-08-16-volonterstvo-u-shkoli-n2"
+    },
+    {
+      "from": "/notes/Blagodiyna%20dopomoga%20miskoyi%20profspilki.html",
+      "to": "/novyny/2022-08-18-blahodiina-dopomoha-miskoi-profspilky"
+    },
+    {
+      "from": "/notes/Nablizhaemo%20PEREMOGU!.html",
+      "to": "/novyny/2022-08-18-nablyzhaiemo-peremohu"
+    },
+    {
       "from": "/notes/Onovleno%20zmist%20navchalnih%20program%20ZSO.html",
       "to": "/novyny/2022-08-18-onovleno-zmist-navchalnykh-prohram-zso"
     },
     {
+      "from": "/notes/Razom%20nablizhaemo%20peremogu.html",
+      "to": "/novyny/2022-08-19-razom-nablyzhaiemo-peremohu"
+    },
+    {
+      "from": "/notes/Dolaemo%20vikliki%20razom.html",
+      "to": "/novyny/2022-08-22-dolaiemo-vyklyky-razom"
+    },
+    {
+      "from": "/notes/Aktivna%20gromadyanska%20poziciya%20kolektivu.html",
+      "to": "/novyny/2022-08-23-aktyvna-hromadianska-pozytsiia-kolektyvu"
+    },
+    {
+      "from": "/notes/Doshkillya%20ne%20stoyit%20ostoron.html",
+      "to": "/novyny/2022-08-25-doshkillia-ne-stoit-ostoron"
+    },
+    {
+      "from": "/notes/Vazhliva%20storinka%20zhittya%20kolektivu.html",
+      "to": "/novyny/2022-08-25-vazhlyva-storinka-zhyttia-kolektyvu"
+    },
+    {
+      "from": "/notes/Volonterska%20diyalnist%20trudovogo%20kolektivu%20NVK%20N9.html",
+      "to": "/novyny/2022-08-25-volonterska-diialnist-trudovoho-kolektyvu-nvk-n9"
+    },
+    {
       "from": "/notes/Osvityani%20Lubenschini%20gotuyutsya%20do%20novogo%202022-2023%20navchalnogo%20roku.html",
       "to": "/novyny/2022-08-29-osvitiany-lubenshchyny-hotuiutsia-do-novoho-2022-2023-navchalnoho-roku"
+    },
+    {
+      "from": "/notes/Volonterska%20dopomoga%20pracivnikiv%20Zasulskogo%20ZDO%20((Kolosok)).html",
+      "to": "/novyny/2022-08-29-volonterska-dopomoha-pratsivnykiv-zasulskoho-zdo-kolosok"
+    },
+    {
+      "from": "/notes/Pedagogi%20liceyu%20trimayut%20osvityanskiy%20striy.html",
+      "to": "/novyny/2022-08-31-pedahohy-litseiu-trymaiut-osvitianskyi-strii"
     },
     {
       "from": "/notes/Mi%20-%20uchasniki%20Evropeyskogo%20marafonu.html",
@@ -1098,12 +1334,56 @@
       "to": "/doshkillia"
     },
     {
+      "from": "/notes/Distanciyne%20prohodzhennya%20kursiv%20pidvischennya%20kvalifikaciyi%20na%20bazi%20Ukrayinskogo%20vidkritogo%20universitetu%20pislyadiplomnoyi%20osviti.html",
+      "to": "/dystantsiine-prokhodzhennia-kursiv-pidvyshchennia-kvalifikatsii-na-bazi-ukrainsk"
+    },
+    {
+      "from": "/notes/Elektronna%20platforma%20%60MRIYa%60.html",
+      "to": "/elektronna-platforma-mriia"
+    },
+    {
+      "from": "/notes/Fizichna%20kultura%2C%20Zahist%20Ukrayini%2C%20trudove%20navchannya%2C%20tehnologiyi.html",
+      "to": "/fizychna-kultura-zakhyst-ukrainy-trudove-navchannia"
+    },
+    {
+      "from": "/notes/Fizichna%20kultura%2C%20ZU%2C%20trudove%20navchannya%2C%20tehnologiyi.html",
+      "to": "/fizychna-kultura-zu-trudove-navchannia-tekhnolohii"
+    },
+    {
+      "from": "/notes/Grant%20Class%20Pack%202021-2022.html",
+      "to": "/hrant-class-pack-2021-2022"
+    },
+    {
       "from": "/notes/Inklyuzivna%20osvita.html",
       "to": "/inkliuzyvna-osvita"
     },
     {
+      "from": "/notes/Interaktivna%20mapa%20zakladiv%20osviti.html",
+      "to": "/interaktyvna-mapa-zakladiv-osvity"
+    },
+    {
       "from": "/notes/Kerivniy%20sklad.html",
       "to": "/kerivnyi-sklad"
+    },
+    {
+      "from": "/notes/Kraschi%20praktiki%20NUSh%20(specializovana%20shkola%20N6).html",
+      "to": "/krashchi-praktyky-nush-spetsializovana-shkola-n6"
+    },
+    {
+      "from": "/notes/Kraschi%20praktiki%20NUSh%20(zagalnoosvitnya%20shkola%20N2).html",
+      "to": "/krashchi-praktyky-nush-zahalnoosvitnia-shkola-n2"
+    },
+    {
+      "from": "/notes/Kraschi%20praktiki%20NUSh%20(Zasulskiy%20licey).html",
+      "to": "/krashchi-praktyky-nush-zasulskyi-litsei"
+    },
+    {
+      "from": "/notes/Materiali%20festivalyu%20%60Kaleydoskop%20pedagogichnih%20idey%60.html",
+      "to": "/materialy-festyvaliu-kaleidoskop-pedahohichnykh-idei"
+    },
+    {
+      "from": "/notes/Mizhnarodniy%20konkurs%20%60Ukrayinoznavchi%20prioriteti%20osvitnogo%20procesu%60.html",
+      "to": "/mizhnarodnyi-konkurs-ukrainoznavchi-priorytety-osvitnoho-protsesu"
     },
     {
       "from": "/notes/Mi%20-%20komanda%20odnodumciv.html",
@@ -1114,6 +1394,22 @@
       "to": "/my-spivpratsiuiemo"
     },
     {
+      "from": "/notes/Na%20dopomogu%20klasnomu%20kerivniku.html",
+      "to": "/na-dopomohu-klasnomu-kerivnyku"
+    },
+    {
+      "from": "/notes/Nakaz%20%60Pro%20pidsumki%20pidvischennya%20kvalifikaciyi%20pedagogichnih%20pracivnikiv%20zakladiv%20osviti%20mista%20Luben%20u%202020%20roci%60.html",
+      "to": "/nakaz-pro-pidsumky-pidvyshchennia-kvalifikatsii-pedahohichnykh-pratsivnykiv-zakl"
+    },
+    {
+      "from": "/notes/Napracyuvannya%20chleniv%20tvorchoyi%20grupi%20vchiteliv%20matematiki.html",
+      "to": "/napratsiuvannia-chleniv-tvorchoi-hrupy-vchyteliv-matematyky"
+    },
+    {
+      "from": "/notes/Navchalna%20literatura%20ta%20navchalni%20programi%20z%20psihologiyi%20ta%20pedagogiki%2C%20rekomendovani%20MON%20Ukrayini%20dlya%20vikoristannya%20v%20osvitnomu%20procesi%20zakladiv%20osviti%20u%202021-2022%20n.r..html",
+      "to": "/navchalna-literatura-ta-navchalni-prohramy-z-psykholohii-ta-pedahohiky-rekomendo"
+    },
+    {
       "from": "/notes/Normativni%20dokumenti.html",
       "to": "/normatyvni-dokumenty"
     },
@@ -1122,12 +1418,32 @@
       "to": "/normatyvno-pravova-baza"
     },
     {
+      "from": "/notes/Oblasniy%20festival%20pedagogichnoyi%20maysternosti.html",
+      "to": "/oblasnyi-festyval-pedahohichnoi-maisternosti"
+    },
+    {
+      "from": "/notes/Oblasniy%20yarmarok%20metodichnih%20materialiv.html",
+      "to": "/oblasnyi-iarmarok-metodychnykh-materialiv"
+    },
+    {
       "from": "/notes/Oblik%20sertifikativ.html",
       "to": "/oblik-sertyfikativ"
     },
     {
+      "from": "/notes/Onlayn-kurs%20((Civilna%20bezpeka%20ta%20pidgotovka%20do%20nadzvichaynih%20situaciy)).html",
+      "to": "/onlain-kurs-tsyvilna-bezpeka-ta-pidhotovka-do-nadzvychainykh-sytuatsii"
+    },
+    {
       "from": "/notes/Osvitniy%20proces%20v%20umovah%20voennogo%20stanu.html",
       "to": "/osvitnii-protses-v-umovakh-voiennoho-stanu"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20postiyno%20diyuchogo%20seminaru-praktikumu%20direktoriv%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20teritorialnoyi%20gromadi%20na%202024-2025%20navchalniy%20rik.html",
+      "to": "/plan-roboty-postiino-diiuchoho-seminaru-praktykumu-dyrektoriv-zakladiv-zahalnoi"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20postiyno%20diyuchogo%20seminaru-praktikumu%20zastupnikiv%20direktoriv%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20teritorialnoyi%20gromadi%20na%202024-2025%20navchalniy%20rik.html",
+      "to": "/plan-roboty-postiino-diiuchoho-seminaru-praktykumu-zastupnykiv-dyrektoriv-zaklad"
     },
     {
       "from": "/notes/Plani%20roboti.html",
@@ -1142,8 +1458,32 @@
       "to": "/porady-psykholoha"
     },
     {
+      "from": "/notes/Poradi%20vchitelya%20ukrayinskoyi%20movi%20i%20literaturi%20Oksani%20Bilan%20-%20yak%20zrobiti%20uroki%20slovesnosti%20produktivnimi%20na%20distanciynomu%20navchanni.html",
+      "to": "/porady-vchytelia-ukrainskoi-movy-i-literatury-oksany-bilan-iak-zrobyty-uroky-slo"
+    },
+    {
       "from": "/notes/Pozashkilna%20osvita.html",
       "to": "/pozashkilna-osvita"
+    },
+    {
+      "from": "/notes/Pozaurochna%20robota%20(klasni%20kerivniki%2C%20pedagogi-organizatori).html",
+      "to": "/pozaurochna-robota"
+    },
+    {
+      "from": "/notes/Predmeti%20himiko-biologichnogo%20napryamku.html",
+      "to": "/predmety-khimiko-biolohichnoho-napriamku"
+    },
+    {
+      "from": "/notes/Predmeti%20hudozhno-estetichnogo%20napryamku.html",
+      "to": "/predmety-khudozhno-estetychnoho-napriamku"
+    },
+    {
+      "from": "/notes/Predmeti%20prirodnicho-matematichnogo%20napryamku.html",
+      "to": "/predmety-pryrodnycho-matematychnoho-napriamku"
+    },
+    {
+      "from": "/notes/Predmeti%20suspilno-gumanitarnogo%20napryamku.html",
+      "to": "/predmety-suspilno-humanitarnoho-napriamku"
     },
     {
       "from": "/notes/Prioritetni%20zavdannya%20Centru.html",
@@ -1164,6 +1504,10 @@
     {
       "from": "/notes/Publichna%20informaciya.html",
       "to": "/publichna-informatsiia"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20dlya%20vchiteliv%20fizichnoyi%20kulturi%20Lubenskoyi%20gromadi.html",
+      "to": "/seminar-praktykum-dlia-vchyteliv-fizychnoi-kultury-lubenskoi-hromady"
     },
     {
       "from": "/notes/Sertifikaciya%20pedagogichnih%20pracivnikiv.html",
@@ -1198,6 +1542,14 @@
       "to": "/traiektoriia-profesiinoho-rozvytku-pedahoha"
     },
     {
+      "from": "/notes/Trening%20dlya%20vchiteliv%20matematiki%20shkil%20mista%20Luben.html",
+      "to": "/treninh-dlia-vchyteliv-matematyky-shkil-mista-luben"
+    },
+    {
+      "from": "/notes/Tretiy%20etap%20sertifikaciyi.html",
+      "to": "/tretii-etap-sertyfikatsii"
+    },
+    {
       "from": "/notes/Tvorchi%20grupi.html",
       "to": "/tvorchi-hrupy"
     },
@@ -1206,20 +1558,640 @@
       "to": "/tyiak"
     },
     {
+      "from": "/notes/Uchitel%20roku-2021.html",
+      "to": "/uchytel-roku-2021"
+    },
+    {
+      "from": "/notes/Uchitel%20roku....html",
+      "to": "/uchytel-roku"
+    },
+    {
+      "from": "/notes/Udoskonalyuemo%20cifrovi%20kompetentnosti%20vchiteliv.html",
+      "to": "/udoskonaliuiemo-tsyfrovi-kompetentnosti-vchyteliv"
+    },
+    {
       "from": "/notes/Vazhlivo%20znati%20kozhnomu!.html",
       "to": "/vazhlyvo-znaty-kozhnomu"
+    },
+    {
+      "from": "/notes/Vebinar%20dlya%20vchiteliv%20zarubizhnoyi%20literaturi.html",
+      "to": "/vebinar-dlia-vchyteliv-zarubizhnoi-literatury"
+    },
+    {
+      "from": "/notes/Vebinar%20uchiteliv%20istoriyi%20Lubenskoyi%20TG.html",
+      "to": "/vebinar-uchyteliv-istorii-lubenskoi-th"
     },
     {
       "from": "/notes/Volonterska%20diyalnist%20osvityan%20Lubenschini.html",
       "to": "/volonterska-diialnist-osvitian-lubenshchyny"
     },
     {
+      "from": "/notes/Vseukrayinskiy%20eksperiment.html",
+      "to": "/vseukrainskyi-eksperyment"
+    },
+    {
       "from": "/notes/Zagalna%20serednya%20osvita.html",
       "to": "/zahalna-serednia-osvita"
     },
     {
+      "from": "/notes/Zasidannya%20tvorchoyi%20grupi%20vchiteliv%20matematiki.html",
+      "to": "/zasidannia-tvorchoi-hrupy-vchyteliv-matematyky"
+    },
+    {
+      "from": "/notes/Zonalniy%20tur%20konkursu%20%60Uchitel%20roku-2021%60.html",
+      "to": "/zonalnyi-tur-konkursu-uchytel-roku-2021"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20chlenam%20zhuri%20%20teritorialnogo%20konkursu%20((Innovaciyniy%20svit%20pedagoga)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-chlenam-zhuri-terytorialnoho-konkursu-innovatsiinyi"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20direktoram%20ta%20vihovatelyam%20zakladiv%20doshkilnoyi%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20%20%20uchasnikam%20seminaru-praktikumu%20((Doshkilna%20osvita%20v%20suchasnomu%20prostori..%20aktualni%20problemi%2C%20dosvid%2C%20innovaciyi)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-dyrektoram-ta-vykhovateliam-zakladiv-doshkilnoi-osvi"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20kerivnikam%20profesiynih%20pedagogichnih%20spilnot%20Lubenskoyi%20TG%20za%20pidsumkami%20naukovo-praktichnogo%20seminaru%20z%20temi%20((Vnutrishnya%20motivaciya%20pedagogichnogo%20pracivnika%20do%20profesiynogo%20rozvitku)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-kerivnykam-profesiinykh-pedahohichnykh-spilnot-luben"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogam%20zakladiv%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20%20uchasnikam%20ekspertnoyi%20grupi%20teritorialnogo%20festivalyu%20videofragmentiv%20((Rodzinka%20mogo%20uroku)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahoham-zakladiv-osvity-lubenskoi-miskoi-rady-lube"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20Akademichnogo%20liceyu%20((Evropeyskiy))%20Lubenskoyi%20miskoyi%20radi%2C%20moderatoram%20treningu%20%20((Mental%20Trek)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-akademichnoho-litseiu-iev"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20Akademichnogo%20liceyu%20imeni%20brativ%20Shemetiv%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20%20uchasnikam%20naukovo-praktichnoyi%20konferenciyi%20zakladiv%20osviti%20Lubenskoyi%20TG%20((Lubenschina..%20minule%20y%20sogodennya)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-akademichnoho-litseiu-ime"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20Gimnaziyi%20imeni%20Geroya%20Ukrayini%20Viri%20Royik%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti-uchasnikam%20postiyno%20diyuchogo%20seminaru-praktikumu%20direktoriv%20ZZSO%20((Vikoristannya%20kouching-tehnologiyi%20v%20osvitnomu%20procesi)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-himnazii-imeni-heroia-ukr"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20Gimnaziyi%20imeni%20Katerini%20Skarzhinskoyi%2Cuchasnikam%20seminaru-praktikumu%20((Nastupnist%20bez%20bar_eriv..%20vid%20doshkillya%20do%20Novoyi%20ukrayinskoyi%20shkoli)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-himnazii-imeni-kateryny-s"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20Lubenskoyi%20ZOSh%20N2%20za%20pidsumkami%20seminaru-praktikumu%20zastupnikiv%20direktoriv%20ZZSO.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-lubenskoi-zosh"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20Navchalno-vihovnogo%20kompleksu%20%60Gimnaziya-zaklad%20doshkilnoyi%20osviti%60%20imeni%20Katerini%20Skarzhinskoyi%2Cuchasnikam%20seminaru-praktikumu%20((Nastupnist%20bez%20bar_eriv..%20vid%20doshkillya%20do%20Novoyi%20ukrayinskoyi%20shkoli)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-navchalno-vykhovnoho-komp"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20Opornogo%20zakladu%20((Orihivskiy%20licey%20imeni%20M.V.Leontovicha))Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20uchasnikam%20seminaru-praktikumu%20direktoriv%20ZZSO%20((Kompleksniy%20pidhid%20kerivnika%20zakladu%20osviti%20do%20organizaciyi%20roboti%20z%20pedagogichnimi%20kadrami%20v%20suchasnih%20umovah)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-opornoho-zakladu-orikhivs"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20Opornogo%20zakladu%20((Zasulskiy%20licey%20Lubenskoyi%20miskoyi%20radi))%2C%20uchasnikam%20seminaru-praktikumu%20((Osvitnya%20sistema%20v%20realiyah%20sogodennya..vid%20zberezhennya%20do%20rozvitku%20osobistosti%20ditini)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-opornoho-zakladu-zasulsky"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20Pershoyi%20gimnaziyi%20imeni%20Matviya%20Nomisa%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20uchasnikam%20forumu%20((Vid%20liceyu%20do%20gimnaziyi)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-pershoi-himnazii-imeni-ma"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%2C%20uchasnikam%20III%20naukovo-praktichnoyi%20konferenciyi%20zakladiv%20osviti%20Lubenskoyi%20TG%20((Lubenschina..%20minule%20y%20sogodennya)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-uchasnykam-iii-naukovo-pr"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%2C%20uchasnikam%20seminaru-praktikumu%20((Nacionalno-patriotichne%20vihovannya%20-%20vazhliviy%20chinnik%20rozvitku%20uchniv%20yak%20svidomih%20gromadyan)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-uchasnykam-seminaru-prakt"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20Ukrayinskoyi%20klasichnoyi%20gimnaziyi%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20uchasnikam%20seminaru-praktikumu%20zastupnikiv%20direktoriv%20ZZSO%20((Formuvannya%20navichok%20mentalnogo%20zdorov_ya%20v%20umovah%20viklikiv%20Novoyi%20ukrayinskoyi%20shkoli)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-ukrainskoi-klasychnoi-him"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20Vovchickogo%20ZDO%20((Dzvinochok))%20Lubenskoyi%20%20TG%2Cuchasnika%20seminaru-praktikumu%20((Formuvannya%20osnov%20patriotichnih%20pochuttiv%20doshkilnikiv)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-vovchytskoho-zdo-dzvinoch"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20doshkilnoyi%20osviti%20Lubenskoyi%20TG%20za%20pidsumkami%20teritorialnogo%20konkursu%20((Innovaciyi%20v%20roboti%20vihovatelya%2C%20vihovatelya%20ZDO)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-doshki"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20uchasnikam%20seminaru%20direktoriv%20ZZSO%20((Instituciyniy%20audit%20yak%20dzerkalo%20zmin..%20refleksiya%20ta%20perspektiva%20rozvitku%20zakladu%20osviti)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-osvity-lubenskoi-2"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20uchasnikam%20seminaru%20-%20praktikumu%20zastupnikiv%20direktoriv%20ZZSO%20Lubenskoyi%20TG%20((Dzhura..%20keysi%20kraschih%20praktik)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-osvity-lubenskoi-3"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20uchasnikam%20teritorialnogo%20konkursu%20ese%20((Tvorchiy%20avtoportret%20uchitelya)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-osvity-lubenskoi-4"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20uchasnikam%20teritorialnogo%20festivalyu%20videofragmentiv%20((Rodzinka%20mogo%20uroku)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-osvity-lubenskoi-5"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20uchasnikam%20treningu%20((Resursniy%20vihovatel%20-%20zdorova%20ditina)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-osvity-lubenskoi-6"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20osviti%20Lubenskoyi%20TG-uchasnikam%20teritorialnogo%20konkursu%20((Innovaciyniy%20svit%20pedagoga)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-osvity-lubenskoi"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20osviti%20Lubenskoyi%20teritorialnoyi%20gromadi%20-%20uchasnikam%20pedagogichnih%20chitan%20((Pedagogika%20v%20osobistostyah)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-osvity"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20%20Lubenskoyi%20%20TG%2C%20spikeram%20navchannya%20((Formuvannya%20ta%20podannya%20zvitu%20u%20sistemi%20AIKOM2)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-zahalnoi-seredno-2"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20%20Lubenskoyi%20%20TG%2C%20uchasnikam%20zahodu%20((Kanikuli%20dlya%20idey..%20kovorking%20upravlinciv%20ta%20pedagogiv)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-zahalnoi-seredno-3"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20%20Lubenskoyi%20%20TG%2C%20uchasnikam%20osvitnogo%20kovorkingu((Lubenski%20Ideyi%20ta%20Praktiki)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-zahalnoi-seredno-4"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20%20%20uchasnikam%20tvorchoyi%20grupi%20uchiteliv%20pochatkovih%20klasiv%20Lubenskoyi%20TG%20((Formuvannya%20matematichnih%20kompetentnostey%20molodshih%20shkolyariv%20na%20osnovi%20diyalnisnogo%20pidhodu)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-zahalnoi-seredno-5"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20%20uchasnikam%20ekspertnoyi%20grupi%20teritorialnogo%20festivalyu%20videofragmentiv%20((Rodzinka%20mogo%20uroku)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-zahalnoi-seredno-6"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti%20-%20%20uchasnikam%20ekspertnoyi%20grupi%20teritorialnogo%20festivalyu%20vidoefragmentiv((Rodzinka%20mogo%20uroku)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-zahalnoi-seredno-7"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti-uchasnikam%20ekspertnoyi%20grupi%20teritorialnogo%20konkursu%20((Situaciya%20uspihu-shlyah%20do%20samovdoskonalennya%20pedagoga)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-zahalnoi-seredno-8"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti-uchasnikam%20teritorialnogo%20konkursu%20((Situaciya%20uspihu-shlyah%20do%20samovdoskonalennya%20pedagoga)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-zahalnoi-seredno-9"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%20-%20chlenam%20zhuri%20teritorialnogo%20konkursu%20ese%20((Tvorchiy%20avtoportret%20uchitelya)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladiv-zahalnoi-seredno"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20zakladu%20zagalnoyi%20serednoyi%20osviti%20%20Lubenskoyi%20%20TG%2C%20spikeram%20kovorkingu%20((Innovatika%20v%20biblioteci)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zakladu-zahalnoi-serednoi"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20ZDO%20Lubenskoyi%20%20TG%2C%20uchasnikam%20seminaru-praktikumu%20((Vihovannya%20doshkilnikiv%20na%20osnovi%20cinnostey%20ukrayinskogo%20narodu)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zdo-lubenskoi-th-uchasnyk"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%20ZZSO%20Lubenskoyi%20%20TG%2C%20uchasnikam%20seminaru-praktikumu%20((Kod%20naciyi%20v%20osvitnomu%20prostori)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedahohichnym-pratsivnykam-zzso-lubenskoi-th-uchasny"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedpracivnikam%20Lubenskoyi%20ZOSh%20I-III%20stupeniv%20N3%20-%20uchasnikam%20seminaru-praktikumu%20zastupnikiv%20direktoriv%20shkil%20%60Pedagogichna%20diyalnist%20pedpracivnikiv..%20osoblivosti%20samocinyuvannya%20napryamu%60.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedpratsivnykam-lubenskoi-zosh-i-iii-stupe"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedpracivnikam%20zakladiv%20ZSO%20Lubenskoyi%20TG%20-%20uchasnikam%20konkursu%20fahovoyi%20maysternosti%20((Prioriteti%20nacionalno-patriotichnogo%20vihovannya%20v%20osvitnomu%20ta%20vihovnomu%20procesi)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedpratsivnykam-zakladiv-zso-lubenskoi-th-2"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedpracivnikam%20zakladiv%20ZSO%20Lubenskoyi%20TG%20-%20chlenam%20ekspertnih%20grup%20konkursu%20fahovoyi%20maysternosti%20((Prioriteti%20nacionalno-patriotichnogo%20vihovannya%20v%20osvitnomu%20ta%20vihovnomu%20procesi)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedpratsivnykam-zakladiv-zso-lubenskoi-th"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedpracivnikam%20ZDO%20Lubenskoyi%20TG%2C%20uchasnikam%20seminaru-praktikumu%20%60Integrovana%20diyalnist%20v%20zakladi%20DO%2C%20suchasni%20pidhodi%20do%20organizaciyi%20socialno-igrovoyi%20vzaemodiyi%20ditey%20molodshogo%20ta%20serednogo%20doshkilnogo%20viku%60.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pedpratsivnykam-zdo-lubenskoi-th-uchasnyka"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20%20pracivnikam%20Akademichnogo%20liceyu%20((Evropeyskiy))%20%20-%20uchasnikam%20seminaru-praktikumu%20direktoriv%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%20((Strategichniy%20menedzhment%20osvitnogo%20zakladu.%20Vlasniy%20pocherk)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-pratsivnykam-akademichnoho-litseiu-ievropeiskyi-ucha"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20schodo%20pidvischennya%20kvalifikaciyi%20pedagogichnih%20pracivnikiv%20zakladiv%20osviti%20Lubenskoyi%20TG%20z%20temi%20%60Komandniy%20pidhid%20yak%20neobhidna%20umova%20zabezpechennya%20yakisnoyi%20osviti%20v%20inklyuzivnih%20klasah%60.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-shchodo-pidvyshchennia-kvalifikatsii-pedah"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20schodo%20pidvischennya%20kvalifikaciyi%20shkilnih%20bibliotekariv%20zakladiv%20osviti%20Lubenskoyi%20TG%20z%20temi%20%60Suchasni%20onlayn-servisi%20v%20praktichniy%20roboti%20shkilnih%20bibliotekariv%20zakladiv%20osviti%20Lubenskoyi%20TG%60.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-shchodo-pidvyshchennia-kvalifikatsii-shkil"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20schodo%20pidvischennya%20kvalifikaciyi%20uchiteliv%20matematiki%20zakladiv%20osviti%20Lubenskoyi%20TG.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-shchodo-pidvyshchennia-kvalifikatsii-uchyt"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20schodo%20pidvischennya%20kvalifikaciyi%20vchiteliv%20matematiki%20ZZSO%20Lubenskoyi%20TG%20z%20temi%20%60Zabezpechennya%20stiykogo%20innovaciynogo%20rozvitku%20matematichnoyi%20osviti%20i%20pidvischennya%20yiyi%20yakosti%60.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-shchodo-pidvyshchennia-kvalifikatsii-vchyt"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20schodo%20pidvischennya%20kvalifikaciyi%20vihovateliv%20zakladiv%20doshkilnoyi%20osviti%20Lubenskoyi%20TG%20z%20temi%20%60STREAM-osvita%20yak%20napryam%20integrovanogo%20navchannya%20ditey%20doshkilnogo%20viku%60.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-shchodo-pidvyshchennia-kvalifikatsii-vykho"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20schodo%20pidvischennya%20kvalifikaciyi.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-shchodo-pidvyshchennia-kvalifikatsii"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20shkilnim%20bibliotekaryam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%20za%20pidsumkami%20seminaru-praktikumu%20((Osoblivosti%20roboti%20shkilnogo%20bibliotekarya%20z%20bibliotechnim%20fondom)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-shkilnym-bibliotekariam-zakladiv-zahalnoi"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchasnikam%20treningu%20shkilnih%20bibliotekariv%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%20((Bibliotechna%20Innovatika%20((Promociya%20zdorovogo%20sposobu%20zhittya%20v%20biblioteci)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchasnykam-treninhu-shkilnykh-bibliotekari"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20fiz.%20kulturi%20zakladiv%20ZSO%20Lubenskoyi%20TG%2C%20uchasnikam%20navchannya%20((Zdorov_ya%20FEST.%20Uprovadzhennya%20novih%20moduliv%20dlya%20vchiteliv%20fiz.%20kulturi%20zakladiv%20ZSO%20Lubenskoyi%20TG)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-fiz-kultury-zakladiv-zso-lubens"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20fizichnoyi%20kulturi%2C%20uchasnikam%20seminaru-praktikumu%20%60Osoblivosti%20organizaciyi%20urokiv%20fizichnoyi%20kulturi%20z%20vikoristannyam%20cifrovih%20instrumentiv%60.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-fizychnoi-kultury-uchasnykam-se"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20fizichnoyi%20kulturi%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%20za%20pidsumkami%20seminaru-praktikumu%20z%20temi%20((Zaklad%20osviti%20-%20teritoriya%20zdorov_ya)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-fizychnoi-kultury-zakladiv-zaha"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20fizichnoyi%20kulturi%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20%20Lubenskoyi%20%20TG%2C%20uchasnikam%20flesh-seminaru%20((Kraschi%20praktiki%20vprovadzhennya%20novih%20moduliv%20na%20urokah%20fizichnoyi%20kulturi)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-fizychnoi-kultury-zakladiv-zahalnoi-sered"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20istoriyi%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20%20Lubenskoyi%20TG%2C%20uchasnikam%20seminaru-praktikumu%20((Vikliki%20shkilnoyi%20istorichnoyi%20osviti%20v%20umovah%20voennogo%20stanu)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-istorii-zakladiv-zahalnoi-sered"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20matematiki%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%20-%20uchasnikam%20kaskadu%20treningiv%20z%20matematiki.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-matematyky-zakladiv-zahalnoi-se"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20matematiki%20zakladiv%20ZSO%20Lubenskoyi%20TG%2C%20uchasnikam%20seminaru-praktikumu%20%60Zavdannya%20z%20parametrami%20yak%20zasib%20rozvitku%20logichnogo%20ta%20analitichnogo%20mislennya%20na%20urokah%20matematiki%60.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-matematyky-zakladiv-zso-lubensk"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20pochatkovih%20klasiv%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%2C%20uchasnikam%20vorkshopu%20((Vikoristannya%20diyalnisno-kompetentnisnogo%20pidhodu%20v%20osvitnomu%20procesi%20pochatkovoyi%20shkoli)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-pochatkovykh-klasiv-zakladiv-za-2"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20pochatkovih%20klasiv%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%20-%20laureatam%20festivalyu%20((Kaleydoskop%20pedagogichnih%20idey%20uchiteliv%20pochatkovih%20klasiv)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-pochatkovykh-klasiv-zakladiv-za"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20pochatkovih%20klasiv%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%20za%20pidsumkami%20kruglogo%20stolu%20z%20temi%20((Diyalnisniy%20pidhid%20yak%20sposib%20realizaciyi%20idey%20NUSh)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-pochatkovykh-klasiv-zakladiv-zahalnoi-ser"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20ukrayinskoyi%20movi%20i%20literaturi%20ta%20zarubizhnoyi%20literaturi%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%20za%20pidsumkami%20ciklu%20vebinariv%20((Mediagramotnist%20dlya%20osvityan..%20praktichni%20navichki)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-ukrainskoi-movy-i-literatury-ta"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%2C%20yaki%20pidgotuvali%20uchasnikiv%20naukovo-praktichnoyi%20konferenciyi%20zakladiv%20osviti%20Lubenskoyi%20TG%20((Lubenschina..%20minule%20y%20sogodennya)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-zakladiv-zahalnoi-serednoi-osvi-2-2"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20TG%20za%20pidsumkami%20ciklu%20vebinariv%20((Mediagramotnist%20dlya%20osvityan..%20praktichni%20navichki)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-zakladiv-zahalnoi-serednoi-osvi-2"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20uchitelyam%20zakladiv%20zagalnoyi%20serednoyi%20osviti%20Lubenskoyi%20%20TG%20za%20pidsumkami%20Festivalyu%20videourokiv%20((Osvityani%20Lubenschini%20prezentuyut)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-uchyteliam-zakladiv-zahalnoi-serednoi-osvi"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20upravlinskim%20ta%20pedagogichnim%20pracivnikam%20Pershoyi%20gimnaziyi%20imeni%20Matviya%20Nomisa%20Lubenskoyi%20miskoyi%20radi%20Lubenskogo%20rayonu%20Poltavskoyi%20oblasti.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-upravlinskym-ta-pedahohichnym-pratsivnykam-2"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20upravlinskim%20ta%20pedagogichnim%20pracivnikam%20Gimnaziyi%20imeni%20Volodimira%20Malika.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-upravlinskym-ta-pedahohichnym-pratsivnykam"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20za%202%20kvitnya%202021%20roku.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-zakhid-02-04-2021"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20za%203%20lyutogo%202021%20roku.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-zakhid-03-02-2021"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20za%204%20listopada%202022%20roku%2C%20oflayn%2C%204%20god.%20(0%2C13%20kreditu%20EKTS).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-zakhid-04-11-2022"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20za%206%20chervnya%202022%20roku.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-zakhid-06-06-2022"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20za%207%20travnya%202024%20roku%2C%20oflayn%2C%202god%2F0%2C07EKTS.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-zakhid-07-05-2024"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20za%2022%20bereznya%202024%20roku.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-zakhid-22-03-2024"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20za%20lyutiy%20-%20kviten%202024%20roku%2C%20onlayn%2Foflayn%2C%2030%20god.%20(1%20kredit%20EKTS).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-zakhid-30-04-2024-2"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20za%20lyutiy%20-%20kviten%202024%20roku%2C%20oflayn.html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-zakhid-30-04-2024"
+    },
+    {
+      "from": "/notes/Perelik%20vidanih%20dokumentiv%20pedagogichnim%20pracivnikam%2C%20uchasnikam%20seminaru-praktikumu%20((Nacionalno-patriotichne%20vihovannya)).html",
+      "to": "/oblik-sertyfikativ/perelik-vydanykh-dokumentiv-zakhid-30-05-2023"
+    },
+    {
       "from": "/notes/Narada%20zastupnikiv%20direktoriv%20ZZSO.html",
       "to": "/novyny/2024-10-24-narada-zastupnykiv-dyrektoriv-zzso"
+    },
+    {
+      "from": "/notes/Narada%20zastupnikiv%20direktoriv%20%20shkil.html",
+      "to": "/novyny/2023-02-02-narada-zastupnykiv-dyrektoriv-shkil"
+    },
+    {
+      "from": "/notes/Narada%20zastupnikiv%20direktoriv%20shkil.html",
+      "to": "/novyny/2023-02-02-narada-zastupnykiv-dyrektoriv-shkil"
+    },
+    {
+      "from": "/notes/Narada%20shkilnih%20bibliotekariv%20naperedodni%20Vseukrayinskogo%20dnya%20bibliotek%20-%202024.html",
+      "to": "/novyny/2024-09-30-narada-shkilnykh-bibliotekariv-naperedodni-vseukrainskoho-dnia-bibliotek-2024"
+    },
+    {
+      "from": "/notes/Nova%20ukrayinska%20shkola..%20vidpovidaemo%20na%20vikliki.html",
+      "to": "/novyny/2022-05-17-nova-ukrainska-shkola-vidpovidaiemo-na-vyklyky"
+    },
+    {
+      "from": "/notes/Novini.html",
+      "to": "/novyny"
+    },
+    {
+      "from": "/notes/Peremoga%20v%20konkursi%20ese.html",
+      "to": "/novyny/2022-12-14-peremoha-v-konkursi-ese"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20%20na%20%20lyutiy%20%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20%20veresen%20%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20%20na%20%20serpen%20%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20berezen%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20berezen%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20berezen%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20berezen%202026%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20veresen%202021%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20veresen%202022%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20veresen%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20veresen%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20veresen%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20gruden%202021%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20gruden%202022%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20gruden%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20gruden%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20gruden%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20zhovten%202021%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20zhovten%202022%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20zhovten%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20zhovten%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20zhovten%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20kviten%202022%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20kviten%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20kviten%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20kviten%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20kviten%202026%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20lipen%202021%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20lipen%202022%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20lipen%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20lipen%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20lipen%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20lipen%202026%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20listopad%202021%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20listopad%202022%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20listopad%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20listopad%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20listopad%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20lyutiy%202022%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20lyutiy%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20lyutiy%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20lyutiy%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20lyutiy%202026%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20serpen%202021%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20serpen%202022%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20serpen%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20serpen%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20serpen%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20sichen%202022%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20sichen%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20sichen%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20sichen%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20sichen%202026%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20traven%202021%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20traven%202022%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20traven%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20traven%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20traven%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20traven%202026%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20cherven%202021%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20cherven%202022%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20cherven%202023%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20cherven%202024%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20cherven%202025%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Plan%20roboti%20Centru%20profesiynogo%20rozvitku%20pedagogichnih%20pracivnikiv%20na%20cherven%202026%20roku.html",
+      "to": "/plany-roboty"
+    },
+    {
+      "from": "/notes/Seminar-praktikum%20zastupnikiv%20direktoriv%20shkil%20Lubenskoyi%20TG.html",
+      "to": "/novyny/2022-02-11-seminar-praktykum-zastupnykiv-dyrektoriv-shkil-lubenskoi-th"
     }
   ]
 }
