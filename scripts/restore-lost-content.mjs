@@ -286,7 +286,7 @@ function docIds(text) {
 function writeMd(dir, name, data, body = "") {
   const file = path.join(CONTENT, dir, name)
   fs.mkdirSync(path.dirname(file), { recursive: true })
-  const fm = yaml.dump(data, { lineWidth: 0, noRefs: true, quotingType: '"' })
+  const fm = yaml.dump(data, { lineWidth: -1, noRefs: true, quotingType: '"' })
   fs.writeFileSync(file, `---\n${fm}---\n\n${body}\n`)
   return file
 }

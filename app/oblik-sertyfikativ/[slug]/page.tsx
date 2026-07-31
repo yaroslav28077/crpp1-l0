@@ -8,6 +8,22 @@ import { plural } from '@/components/page-blocks'
 /** Сторінка-батько, на яку веде «Назад». Її адреса задана в контенті */
 const PARENT = 'oblik-sertyfikativ'
 
+/**
+ * Назви стовпців тепер задані в коді, а не в кожному файлі: у всіх 75 переліках
+ * вони були однакові з точністю до формулювання («Прізвище, ім'я слухача» /
+ * «…, по батькові слухача»), а редактор мусив тримати їх порядок синхронним із
+ * порядком клітинок. Тепер порядок гарантує код.
+ */
+const COLUMNS = [
+  '№ з/п',
+  'Прізвище, ім\u02bcя, по батькові слухача',
+  'Форма проходження курсу підвищення кваліфікації',
+  'Обсяг, кількість модулів (годин ЄКТС), тривалість',
+  'Обліковий запис документа',
+  'Дата видачі документа',
+  'Результат проходження курсу підвищення кваліфікації',
+]
+
 export function generateStaticParams() {
   return getAllCertificates().map((c) => ({ slug: c.slug }))
 }
@@ -51,7 +67,7 @@ export default async function CertificatePage({ params }: { params: Promise<{ sl
         <h1 className="font-heading text-2xl md:text-3xl font-bold text-balance leading-tight">{item.title}</h1>
         <p className="text-sm text-muted-foreground mt-3">
           {item.event ? `${item.event} · ` : ''}
-          {item.rows.length} {plural(item.rows.length, 'запис', 'записи', 'записів')}
+          {item.entries.length} {plural(item.entries.length, 'запис', 'записи', 'записів')}
         </p>
       </header>
 
@@ -70,25 +86,29 @@ export default async function CertificatePage({ params }: { params: Promise<{ sl
       <div className="overflow-x-auto rounded-xl border border-border">
         <table className="w-full min-w-[48rem] text-sm border-collapse">
           <caption className="sr-only">{item.title}</caption>
-          {item.columns.length > 0 && (
-            <thead>
-              <tr className="bg-card border-b border-border">
-                {item.columns.map((col, c) => (
-                  <th key={c} scope="col" className="text-left font-heading font-bold p-3 align-bottom">
-                    {col}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-          )}
+          <thead>
+            <tr className="bg-card border-b border-border">
+              {COLUMNS.map((col) => (
+                <th key={col} scope="col" className="text-left font-heading font-bold p-3 align-bottom">
+                  {col}
+                </th>
+              ))}
+            </tr>
+          </thead>
           <tbody>
-            {item.rows.map((row, r) => (
-              <tr key={r} className="border-b border-border last:border-0 align-top even:bg-card/50">
-                {row.cells.map((cell, c) => (
-                  <td key={c} className="p-3 leading-relaxed">
-                    {cell}
-                  </td>
-                ))}
+            {item.entries.map((entry, i) => (
+              <tr key={i} className="border-b border-border last:border-0 align-top even:bg-card/50">
+                {/*
+                  Номер у контенті не зберігається: рахуємо з позиції, щоб він не
+                  збивався, коли редактор вставляє або прибирає рядок посередині.
+                */}
+                <td className="p-3 leading-relaxed tabular-nums text-muted-foreground">{i + 1}.</td>
+                <td className="p-3 leading-relaxed font-medium">{entry.name}</td>
+                <td className="p-3 leading-relaxed">{entry.form}</td>
+                <td className="p-3 leading-relaxed">{entry.volume}</td>
+                <td className="p-3 leading-relaxed whitespace-nowrap">{entry.record}</td>
+                <td className="p-3 leading-relaxed whitespace-nowrap">{entry.issued}</td>
+                <td className="p-3 leading-relaxed">{entry.result}</td>
               </tr>
             ))}
           </tbody>
