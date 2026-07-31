@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { BadgeCheck, FileText, Megaphone, Download } from 'lucide-react'
+import { ArrowRight, BadgeCheck, ExternalLink, FileText, Megaphone, Download } from 'lucide-react'
 import {
   getAllCertificates,
   getAllNews,
@@ -71,6 +71,19 @@ function NewsLinks({ items }: { items: { slug: string; title: string; date: stri
  * обрана публікація не залежить від того, чи не переїхала адреса, і лише
  * потім іде вписана вручну адреса.
  */
+/*
+  Іконка мусить відповідати тому, що станеться при натисканні. Блок «документи»
+  редактори використовують і для файлів, і для посилань на власні сторінки чи
+  зовнішні сайти — зі зашитою стрілкою завантаження виходило, що посилання на
+  сторінку напрямку обіцяє завантажити файл.
+*/
+function docIcon(doc: DocumentItem, news: NewsItem[]) {
+  const href = docHref(doc, news)
+  if (!href) return FileText
+  if (doc.file || /\.(pdf|docx?|xlsx?|pptx?|zip|rtf|odt|ods)$/i.test(href)) return Download
+  return href.startsWith('/') ? ArrowRight : ExternalLink
+}
+
 function docHref(doc: DocumentItem, news: NewsItem[]): string {
   if (doc.file) return doc.file
   if (doc.news) {
@@ -142,12 +155,18 @@ function DocumentList({
           <DocLink doc={doc} news={news} />
           {doc.children && doc.children.filter(hasContent).length > 0 && (
             <ul className="flex flex-col gap-1.5 pl-4 border-l border-border ml-1">
-              {doc.children.filter(hasContent).map((child, c) => (
-                <li key={c} className="flex items-baseline gap-2">
-                  <FileText className="size-3.5 shrink-0 text-muted-foreground translate-y-0.5" aria-hidden="true" />
-                  <DocLink doc={child} news={news} />
-                </li>
-              ))}
+              {doc.children.filter(hasContent).map((child, c) => {
+                const ChildIcon = docIcon(child, news)
+                return (
+                  <li key={c} className="flex items-baseline gap-2">
+                    <ChildIcon
+                      className="size-3.5 shrink-0 text-muted-foreground translate-y-0.5"
+                      aria-hidden="true"
+                    />
+                    <DocLink doc={child} news={news} />
+                  </li>
+                )
+              })}
             </ul>
           )}
         </li>
@@ -162,10 +181,11 @@ function DocumentGrid({ items, news }: { items: DocumentItem[]; news: NewsItem[]
     <ul className="grid gap-3 sm:grid-cols-2">
       {items.map((doc, k) => {
         const children = doc.children?.filter(hasContent) ?? []
+        const Icon = docIcon(doc, news)
         return (
           <li key={k} className="rounded-xl border border-border bg-card p-4 flex flex-col gap-2">
             <p className="flex items-baseline gap-2 text-sm font-medium">
-              <Download className="size-4 shrink-0 text-muted-foreground translate-y-0.5" aria-hidden="true" />
+              <Icon className="size-4 shrink-0 text-muted-foreground translate-y-0.5" aria-hidden="true" />
               <DocLink doc={doc} news={news} />
             </p>
             {children.length > 0 && (
@@ -196,7 +216,7 @@ function resolveView(view: DocumentsView | undefined, collapsed: boolean | undef
 
 /**
  * Спільна оболонка розділу. Один і той самий вміст (перелік чи таблиця)
- * подається чотирма способами, тож обгортка вибирається тут, а не
+ * подається чотирма способами, тож обгортк�� вибирається тут, а не
  * дублюється в кожному блоці.
  */
 function Section({
@@ -349,24 +369,32 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
 
           case 'news_by_topic': {
             // Список збирається сам: усі публікації з цією темою, найновіші вгорі.
-            // Лишається згорнутим, як був акордеон, який він замінив.
+            // Типово згорнутий, як був акордеон, який він замінив, — крім
+            // сторінок, де редактор попросив показати одразу (`open`).
             const items = block.topic ? news.filter((n) => n.topics.includes(block.topic)) : []
             if (items.length === 0 && !block.extra) return null
-            return (
-              <div key={i} className="article-content">
-                <details>
-                  <summary>{block.title || 'Події'}</summary>
-                  <div>
-                    <NewsLinks items={items} />
-                    {block.extra && (
-                      <div
-                        className="mt-4 pt-3 border-t border-border"
-                        dangerouslySetInnerHTML={{ __html: html.get(i) ?? '' }}
-                      />
-                    )}
+            const body = (
+              <>
+                <NewsLinks items={items} />
+                {/*
+                  Ці назви лишилися без посилань: сторінки з ними не
+                  перенеслися зі старого сайту. Без підпису вони стоять поряд
+                  зі справжніми посиланнями однаковим списком, і виглядає
+                  так, ніби частина посилань просто не працює. Тому кажемо
+                  прямо, що це перелік без матеріалів.
+                */}
+                {block.extra && (
+                  <div className="mt-4 pt-3 border-t border-border text-muted-foreground">
+                    <p className="text-xs uppercase tracking-wide mb-2">Заходи, матеріали яких не опубліковані</p>
+                    <div className="text-sm" dangerouslySetInnerHTML={{ __html: html.get(i) ?? '' }} />
                   </div>
-                </details>
-              </div>
+                )}
+              </>
+            )
+            return (
+              <Section key={i} view={block.open ? 'open' : 'collapsed'} title={block.title} fallbackTitle="Події">
+                {body}
+              </Section>
             )
           }
 

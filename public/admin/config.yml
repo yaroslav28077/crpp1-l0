@@ -89,6 +89,13 @@ collections:
           - { label: Сторінка психолога, value: storinka-psykholoha }
           - { label: Супервізія, value: superviziia }
           - { label: Творчі групи, value: tvorchi-hrupy }
+          # Напрямки загальної середньої освіти: у кожного власна підсторінка
+          - { label: 'ЗСО: предмети суспільно-гуманітарного напрямку', value: predmety-suspilno-humanitarnoho-napriamku }
+          - { label: 'ЗСО: предмети природничо-математичного напрямку', value: predmety-pryrodnycho-matematychnoho-napriamku }
+          - { label: 'ЗСО: предмети хіміко-біологічного напрямку', value: predmety-khimiko-biolohichnoho-napriamku }
+          - { label: 'ЗСО: предмети художньо-естетичного напрямку', value: predmety-khudozhno-estetychnoho-napriamku }
+          - { label: 'ЗСО: фізична культура, Захист України, трудове навчання', value: fizychna-kultura-zakhyst-ukrainy-trudove-navchannia }
+          - { label: 'ЗСО: позаурочна робота', value: pozaurochna-robota }
       - name: description
         label: Короткий опис
         widget: text
@@ -159,6 +166,18 @@ collections:
           - Педагогічні спільноти
           - Професійний розвиток
           - Консалтингові послуги
+      # Підсторінки (напрямки ЗСО тощо) не мають пункту в меню, тож на них
+      # ставимо посилання «назад» до батьківського розділу. Обираємо зі
+      # списку наявних сторінок, щоб не вписувати адресу руками.
+      - name: parent
+        label: Це підсторінка розділу
+        widget: relation
+        required: false
+        collection: pages
+        search_fields: [title]
+        value_field: title
+        display_fields: [title]
+        hint: Лишіть порожнім для звичайної сторінки. Якщо вказати розділ, угорі з’явиться посилання «назад» до нього.
       - name: full_title
         label: Повна офіційна назва
         widget: string
@@ -224,11 +243,29 @@ collections:
                   - { label: Сторінка психолога, value: storinka-psykholoha }
                   - { label: Супервізія, value: superviziia }
                   - { label: Творчі групи, value: tvorchi-hrupy }
+                  # Напрямки загальної середньої освіти. Кожен має власну
+                  # підсторінку, куди цей список і збирає свої заходи.
+                  - { label: 'ЗСО: предмети суспільно-гуманітарного напрямку', value: predmety-suspilno-humanitarnoho-napriamku }
+                  - { label: 'ЗСО: предмети природничо-математичного напрямку', value: predmety-pryrodnycho-matematychnoho-napriamku }
+                  - { label: 'ЗСО: предмети хіміко-біологічного напрямку', value: predmety-khimiko-biolohichnoho-napriamku }
+                  - { label: 'ЗСО: предмети художньо-естетичного напрямку', value: predmety-khudozhno-estetychnoho-napriamku }
+                  - { label: 'ЗСО: фізична культура, Захист України, трудове навчання', value: fizychna-kultura-zakhyst-ukrainy-trudove-navchannia }
+                  - { label: 'ЗСО: позаурочна робота', value: pozaurochna-robota }
+              - name: open
+                label: Показувати список одразу
+                widget: boolean
+                required: false
+                default: false
+                hint: Якщо не позначено, список буде згорнутий і відкриється клацанням по заголовку. Позначайте на сторінках, де цей список — головний вміст.
               - name: extra
-                label: Додатковий текст під списком
+                label: Заходи без публікації на сайті
                 widget: markdown
                 required: false
-                hint: Заходи, у яких немає окремої публікації на сайті. Здебільшого це сліди матеріалів, які не перенеслися зі старого сайту.
+                hint: >-
+                  Назви заходів, матеріалів яких на сайті немає (не перенеслися зі старого сайту).
+                  Показуються сірим списком під посиланнями з підписом «Заходи, матеріали яких не опубліковані»,
+                  щоб не здавалося, ніби посилання не працюють. Якщо публікацію створено — приберіть звідси
+                  рядок і поставте новині відповідну тему.
 
           - name: certificates
             label: Переліки виданих документів (оновлюється сам)

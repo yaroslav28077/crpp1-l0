@@ -7,8 +7,9 @@ blocks:
   - type: news_by_topic
     title: Заходи напрямку
     topic: predmety-pryrodnycho-matematychnoho-napriamku
+    open: true
     extra: |-
-      Тренінг для вчителів математики шкіл міста Лубен
-      Тренінги для вчителів математики
+      - Тренінг для вчителів математики шкіл міста Лубен
+      - Тренінги для вчителів математики
 ---
 

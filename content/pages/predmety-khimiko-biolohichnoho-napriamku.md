@@ -7,5 +7,6 @@ blocks:
   - type: news_by_topic
     title: Заходи напрямку
     topic: predmety-khimiko-biolohichnoho-napriamku
+    open: true
 ---
 
