@@ -7,6 +7,7 @@ import {
   type DocumentsView,
   type NewsItem,
   type PageBlock,
+  type TableField,
 } from '@/lib/content'
 import { markdownToHtml } from '@/lib/markdown'
 import { slugify } from '@/lib/slug'
@@ -418,9 +419,26 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
 
           case 'table': {
             const columns = (block.columns ?? []).map((c) => String(c ?? ''))
-            const rows = (block.rows ?? [])
-              .map((r) => (r?.cells ?? []).map((c) => String(c ?? '')))
-              .filter((cells) => cells.some((c) => c.trim()))
+            /*
+              Новий формат: рядок — це іменовані поля, а `fields` каже, яке поле
+              стоїть у якому стовпці. Порядок стовпців і шапка лишаються ті самі,
+              що були в безіменних клітинках, тож сторінка виглядає так само.
+              № з/п не зберігаємо в даних — беремо з індексу, як у сертифікатах.
+            */
+            const fields = (block.fields ?? []) as TableField[]
+            const numbered = /^\s*№/.test(columns[0] ?? '')
+            let counter = 0
+            const fromEntries = (block.entries ?? []).map((e) => {
+              // Підпис під таблицею («Директор ЦПРПП …») нумерації не отримує
+              if (e?.note) return [e.note, ...Array(numbered ? fields.length : fields.length - 1).fill('')]
+              counter += 1
+              const values = fields.map((f) => String(e?.[f] ?? ''))
+              return numbered ? [String(counter), ...values] : values
+            })
+            const fromRows = (block.rows ?? []).map((r) => (r?.cells ?? []).map((c) => String(c ?? '')))
+            const rows = (fromEntries.length > 0 ? fromEntries : fromRows).filter((cells) =>
+              cells.some((c) => c.trim()),
+            )
             if (rows.length === 0) return null
             // Таблиці великі, тож без окремого вибору лишаються згорнутими —
             // такими вони й були, коли жили в акордеонах

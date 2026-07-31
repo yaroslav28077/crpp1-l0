@@ -107,7 +107,19 @@ export type PageBlock =
       view?: DocumentsView
       /** Назви стовпців. Порожній перший стовпець = нумерація рядків */
       columns: string[]
-      rows: { cells: string[] }[]
+      /**
+       * Які дані стоять у стовпцях. Задає і порядок стовпців, і те, як
+       * підписані поля в адмінці: замість «Клітинка» редактор бачить
+       * «Заклад освіти», «Прізвище, ім'я, по батькові», «Телефон».
+       */
+      fields?: TableField[]
+      /** Рядки з іменованими полями. Новий формат, має пріоритет над `rows` */
+      entries?: TableEntry[]
+      /**
+       * Безіменні клітинки. Старий формат, лишається для сторінок, які ще не
+       * перевели на `entries`: без нього адмінка стирала б їхні рядки.
+       */
+      rows?: { cells: string[] }[]
     }
   /** Фотогалерея */
   | { type: "gallery"; title?: string; images: GalleryItem[] }
@@ -238,6 +250,34 @@ export interface CertificateEntry {
   /** Дата видачі так, як її пишуть у документі: «11.02.2022р.» */
   issued?: string
   result?: string
+}
+
+/**
+ * Іменовані поля рядка таблиці. Один набір на всі таблиці сайту: у складі й
+ * контактах заповнені заклад/ПІБ/роль/телефон/пошта, у планах роботи —
+ * заходи/дата/відповідальний. `note` — рядок на всю ширину (підпис директора).
+ */
+export type TableField =
+  | "institution"
+  | "person"
+  | "role"
+  | "phone"
+  | "email"
+  | "event"
+  | "date"
+  | "responsible"
+  | "note"
+
+export interface TableEntry {
+  institution?: string
+  person?: string
+  role?: string
+  phone?: string
+  email?: string
+  event?: string
+  date?: string
+  responsible?: string
+  note?: string
 }
 
 export interface CertificateItem {
