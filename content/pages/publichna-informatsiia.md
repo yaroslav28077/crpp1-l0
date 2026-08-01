@@ -5,7 +5,7 @@ slug: publichna-informatsiia
 blocks:
   - type: documents
     title: Документи
-    collapsed: false
+    view: card
     items:
       - label: Графік прийому громадян
         url: https://drive.google.com/file/d/1ZIyQ0ggSau6MnScwmK9rGduEc7tiei9v/view?usp=sharing

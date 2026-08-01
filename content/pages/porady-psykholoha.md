@@ -5,7 +5,7 @@ slug: porady-psykholoha
 blocks:
   - type: documents
     title: Документи
-    collapsed: false
+    view: card
     items:
       - label: Що відбувається з учителями?
         url: https://znayshov.com/News/Details/shcho_vidbuvaietsia_z_uchyteliamy

@@ -5,7 +5,7 @@ slug: prohramy
 blocks:
   - type: documents
     title: 2026 рік
-    collapsed: false
+    view: card
     items:
       - label: 'Освітня програма ІІІ науково-практичної конференції закладів освіти Лубенської ТГ "Лубенщина: минуле й сьогодення"'
         url: https://drive.google.com/file/d/1g1j4xGRgm6sH96mtje7BiMIHxj9n5JWy/view?usp=sharing
@@ -27,7 +27,7 @@ blocks:
         url: https://drive.google.com/file/d/1TQNVq_g7AlDx_z3WEOht8Ad7mht9Lv58/view?usp=sharing
   - type: documents
     title: 2025 рік
-    collapsed: false
+    view: card
     items:
       - label: 'Програма тренінгу з елементами практики:"Точка опори: як бути стабільним у нестабільному світі"'
         url: https://drive.google.com/file/d/16jQx_96AtST5sHTiXaBeUnWEklw3HP-1/view?usp=sharing
@@ -57,7 +57,7 @@ blocks:
         url: https://docs.google.com/document/d/13hzM1AW6PT4nOoHjDbaKieV4InaERN4K/edit?usp=sharing&ouid=116379051625942282643&rtpof=true&sd=true
   - type: documents
     title: 2024 рік
-    collapsed: false
+    view: card
     items:
       - label: Програма семінару-практикуму заступників директорів закладів загальної середньої освіти
         url: https://drive.google.com/file/d/1Qg6e-QvrorN19Z1SRkM6zz5pRoLDRa5B/view?usp=sharing
@@ -73,7 +73,7 @@ blocks:
         url: https://drive.google.com/file/d/1NdSBpGItL_mpqI1vB_42e8i-0UcEpZsP/view?usp=sharing
   - type: documents
     title: 2023 рік
-    collapsed: false
+    view: card
     items:
       - label: Програма воркшопу "Використання діяльнісно-компетентнісного підходу в освітньому процесі початкової школи"
         url: https://drive.google.com/file/d/1yqkB7O3bAR1XDzbdrkruhnyLnnAZIOb9/view?usp=sharing
@@ -89,7 +89,7 @@ blocks:
         url: https://drive.google.com/file/d/1aeHchf5lPqUsHVvWwe9B9CKulau0_Gwn/view?usp=sharing
   - type: documents
     title: 2022 рік
-    collapsed: false
+    view: card
     items:
       - label: 'Програма циклу вебінарів «Медіаграмотність для освітян: практичні навички» для вчителів української мови і літератури та зарубіжної літератури'
         url: https://drive.google.com/file/d/14uOXwSP8U3zl09pXHg2ylyCFwyTQvfty/view?usp=sharing
@@ -107,7 +107,7 @@ blocks:
         url: https://drive.google.com/file/d/15CB-J6Opt2AD5JaEAezHQo-dmOO2biVw/view?usp=sharing
   - type: documents
     title: 2021 рік
-    collapsed: false
+    view: card
     items:
       - label: Програма тренінгу «Командний підхід як необхідна умова забезпечення якісної освіти в умовах інклюзії»
         url: https://drive.google.com/file/d/1NYJ0sLcfI2U_4_4RaCy9_io7SFpSNz1I/view?usp=sharing

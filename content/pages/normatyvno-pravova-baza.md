@@ -5,7 +5,7 @@ slug: normatyvno-pravova-baza
 blocks:
   - type: documents
     title: Документи
-    collapsed: false
+    view: card
     items:
       - label: Методичні рекомендації щодо організації освітнього процесу та викладання навчальних предметів у закладах освіти Полтавської області у 2025-2026 навчальному році
         url: https://docs.google.com/document/d/1HB-9Qp7KLDK-KKE-B1jtvt5adFd-OW0W/edit?usp=sharing&ouid=116379051625942282643&rtpof=true&sd=true

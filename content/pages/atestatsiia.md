@@ -14,7 +14,7 @@ blocks:
     topic: atestatsiia
   - type: documents
     title: Документи
-    collapsed: true
+    view: collapsed
     items:
       - label: Наказ №137 "Про підсумки атестації педагогічних працівників закладів освіти Лубенської територіальної громади у 2026 році"
         url: https://drive.google.com/file/d/1oogY7GdLMJgupYI7ps4nMEnV3zpvbSwD/view?usp=sharing

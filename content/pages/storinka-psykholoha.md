@@ -8,7 +8,7 @@ blocks:
     topic: storinka-psykholoha
   - type: documents
     title: Документи
-    collapsed: true
+    view: collapsed
     items:
       - label: Рекомендації щодо усунення ризиків торгівлі людьми у зв’язку з війною в Україні та гуманітарною кризою
         url: https://drive.google.com/file/d/1PVjWZq2Rg5gYvn72Xt2HWeXKkLcpm9SB/view?usp=sharing
