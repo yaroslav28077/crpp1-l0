@@ -9,7 +9,7 @@ blocks:
     extra: '- Інклюзивна освіта: різні можливості - рівні права'
   - type: documents
     title: Документи
-    collapsed: true
+    view: collapsed
     items:
       - label: Методичні рекомендації щодо організації безпечного інклюзивного освітнього процесу в закладах освіти у 2024-2025 навчальному році
         url: https://docs.google.com/document/d/1xWCevV311G-Hn3M52YHkGftl_KvYWrUw/edit?usp=sharing&ouid=116379051625942282643&rtpof=true&sd=true

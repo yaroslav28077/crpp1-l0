@@ -13,7 +13,7 @@ blocks:
       - [Положення про творчу групу педагогічних працівників](https://drive.google.com/file/d/1d15JjLrkT-ghFRho7x6dUD7Ud8KwUNEo/view?usp=sharing)
   - type: documents
     title: Творчі групи
-    collapsed: true
+    view: collapsed
     items:
       - label: Творча група вчителів іноземних мов
         url: https://docs.google.com/document/d/13w_IIBqKvASsV5JcDKohlXjqYdKFmFPX/edit?usp=sharing&ouid=105122741236082304027&rtpof=true&sd=true

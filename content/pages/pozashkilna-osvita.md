@@ -5,7 +5,7 @@ slug: pozashkilna-osvita
 blocks:
   - type: documents
     title: Документи
-    collapsed: false
+    view: card
     items:
       - label: Про деякі особливості позашкільної освіти у 2024-2025 навчальному році
         url: https://docs.google.com/document/d/1VHRI33u6796_BnZvOru_QHjWWv76YNgs/edit?usp=sharing&ouid=107389370386779649178&rtpof=true&sd=true

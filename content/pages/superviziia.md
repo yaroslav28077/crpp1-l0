@@ -8,7 +8,7 @@ blocks:
     topic: superviziia
   - type: documents
     title: Документи
-    collapsed: true
+    view: collapsed
     items:
       - label: Наказ МОН №1389
         url: https://drive.google.com/file/d/1G7J9V-L6BcX3CUwxE2ZFgpYkXwTyQB90/view?usp=sharing

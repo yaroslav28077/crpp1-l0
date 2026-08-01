@@ -5,7 +5,7 @@ slug: tyiak
 blocks:
   - type: documents
     title: Документи
-    collapsed: false
+    view: card
     items:
       - label: Місяць обізнаності про ментальне здоров’я
         url: /novyny/2024-05-31-misiats-obiznanosti-pro-mentalne-zdorovia

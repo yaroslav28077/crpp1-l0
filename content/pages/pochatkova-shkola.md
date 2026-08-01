@@ -11,7 +11,7 @@ blocks:
       - Матеріали фестивалю "Калейдоскоп педагогічних ідей"
   - type: documents
     title: Документи
-    collapsed: true
+    view: collapsed
     items:
       - label: Методичні рекомендації щодо організації освітнього процесу у початковій школі у 2025-2026 навчальному році
         url: https://docs.google.com/document/d/1i75LNgh-lmhUwJ1IA17UyAhb4fdDj1iz/edit?usp=sharing&ouid=116379051625942282643&rtpof=true&sd=true
