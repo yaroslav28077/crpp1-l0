@@ -149,6 +149,13 @@ export type PageBlock =
        */
       extra?: string
     }
+  /**
+   * Плани роботи по місяцях. Дані живуть у розділі CMS «Плани роботи»
+   * (content/plany), один запис — один місяць. Сторінка лише каже, де їх
+   * показати: раніше всі 62 місяці лежали блоками в одному файлі на 628 KB,
+   * і адмінка на ньому задихалась.
+   */
+  | { type: "plans"; intro?: string }
 
 /**
  * Як показувати розділ. Раніше вибір був двійковий (згорнутий чи ні), але
@@ -595,6 +602,81 @@ export function getAllCertificates(): CertificateItem[] {
 
 export function getCertificateBySlug(slug: string): CertificateItem | undefined {
   return getAllCertificates().find((c) => c.slug === slug)
+}
+
+/**
+ * Місяць плану роботи. Один запис колекції «Плани роботи» = один місяць.
+ *
+ * Назви стовпців і склад полів тут не зберігаються: вони однакові для всіх
+ * місяців, тож живуть у рендері (`PLAN_COLUMNS` / `PLAN_FIELDS`). № з/п теж
+ * не зберігаємо — він малюється з індексу, як у переліках сертифікатів.
+ */
+export interface PlanMonth {
+  slug: string
+  /** «лютий 2026 року» — так, як це бачить відвідувач */
+  title: string
+  /** ISO-дата першого числа місяця. Потрібна лише для впорядкування */
+  date?: string
+  entries: TableEntry[]
+}
+
+let planMonthsCache: PlanMonth[] | null = null
+
+/**
+ * Місяці планів у тому ж порядку, що був на сторінці до переїзду в колекцію:
+ * найновіший рік угорі, а всередині року — від січня до грудня. Саме так їх
+ * читає відвідувач: спершу поточний рік, далі архів.
+ */
+export function getAllPlanMonths(): PlanMonth[] {
+  if (isProd && planMonthsCache) return planMonthsCache
+  const str = (v: unknown) => String(v ?? "").trim()
+
+  const items = readMd("plany").map(({ file, data }) => {
+    const entries: TableEntry[] = (Array.isArray(data.entries) ? (data.entries as Record<string, unknown>[]) : [])
+      .map((e) => ({
+        event: str(e?.event) || undefined,
+        date: str(e?.date) || undefined,
+        responsible: str(e?.responsible) || undefined,
+        note: str(e?.note) || undefined,
+      }))
+      // Рядок без жодного заповненого поля нічого не показує — його не несемо далі
+      .filter((e) => e.event || e.date || e.responsible || e.note)
+
+    /*
+      Дата необов'язкова й свідомо не через parseDate: той у разі негодящого
+      значення підставляє 1970 рік, і місяць поїхав би в кінець списку.
+      Без дати місяць стає в кінець за назвою — це видно й легко полагодити.
+    */
+    let date: string | undefined
+    if (data.date) {
+      const d = new Date(data.date as string)
+      if (!Number.isNaN(d.getTime())) date = d.toISOString()
+      else console.warn(`[content] Нечитна дата у content/plany/${file}: ${JSON.stringify(data.date)}`)
+    }
+
+    return {
+      slug: slugify(file.replace(/\.md$/, "")),
+      title: String(data.title || file),
+      date,
+      entries,
+    }
+  })
+
+  items.sort((a, b) => {
+    if (a.date && b.date) {
+      const [ay, am] = [a.date.slice(0, 4), a.date.slice(5, 7)]
+      const [by, bm] = [b.date.slice(0, 4), b.date.slice(5, 7)]
+      // Рік — за спаданням, місяць усередині року — за зростанням
+      if (ay !== by) return ay < by ? 1 : -1
+      return am < bm ? -1 : am > bm ? 1 : 0
+    }
+    if (a.date) return -1
+    if (b.date) return 1
+    return a.title.localeCompare(b.title, "uk")
+  })
+
+  planMonthsCache = ensureUniqueSlugs(items, "content/plany")
+  return planMonthsCache
 }
 
 export function getTeam(): TeamMember[] {

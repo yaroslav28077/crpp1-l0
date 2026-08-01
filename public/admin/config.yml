@@ -300,6 +300,18 @@ collections:
                   По назві заходу на рядок. Показуються звичайним текстом, без посилань.
                   Коли створите перелік у розділі «Облік сертифікатів» — приберіть звідси цей рядок.
 
+          # Дані місяців лежать у розділі «Плани роботи», тут лише вказівка,
+          # де їх показати. Так само зроблено з переліками сертифікатів.
+          - name: plans
+            label: Плани роботи по місяцях (оновлюється сам)
+            summary: Плани роботи по місяцях
+            fields:
+              - name: intro
+                label: Пояснення над списком
+                widget: markdown
+                required: false
+                hint: Необов'язково. Місяці збираються самі з розділу «Плани роботи» — тут нічого вписувати не треба.
+
           - name: news_list
             label: Список новин (обираються вручну)
             summary: "{{fields.title | default('Список новин')}}"
@@ -660,6 +672,54 @@ collections:
             hint: Лишіть порожнім — візьметься результат заходу.
 
   # ─────────────── КОМАНДА ───────────────
+  - name: plany
+    label: Плани роботи
+    label_singular: План на місяць
+    # Лапки обов'язкові: у тексті є двокрапка, без них YAML ламається.
+    description: 'Один запис — один місяць. На сторінці «Плани роботи» місяці збираються самі: найновіший рік угорі, всередині року — від січня. № з/п сайт нумерує сам.'
+    folder: content/plany
+    create: true
+    slug: 'plan-{{year}}-{{month}}'
+    identifier_field: title
+    sortable_fields: [date, title]
+    summary: '{{title}}'
+    view_groups:
+      - { label: Рік, field: date, pattern: '\d{4}' }
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Місяць
+        widget: string
+        hint: 'Так, як побачить відвідувач: лютий 2026 року'
+      - name: date
+        label: Дата для впорядкування
+        widget: datetime
+        date_format: 'YYYY-MM-DD'
+        time_format: false
+        required: false
+        hint: Перше число цього місяця. За нею список стає в правильному порядку.
+      - name: entries
+        label: Заходи
+        label_singular: Захід
+        widget: list
+        required: false
+        summary: '{{fields.event}} — {{fields.date}}'
+        hint: Один рядок — один захід. Порядок змінюється перетягуванням, № з/п сайт малює сам.
+        fields:
+          - { name: event, label: Назва заходу, widget: text }
+          - name: date
+            label: Дата проведення
+            widget: string
+            required: false
+            hint: 'Як у плані: 01-09 лютого 2026 року або «Протягом місяця»'
+          - { name: responsible, label: Відповідальний, widget: string, required: false }
+          - name: note
+            label: Підпис на всю ширину рядка
+            widget: text
+            required: false
+            hint: Для підписів під таблицею («В.о.директора ЦПРПП …»). Такий рядок не нумерується.
+
   - name: team
     label: Команда
     label_singular: Працівник
