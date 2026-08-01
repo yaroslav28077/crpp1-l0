@@ -3,10 +3,12 @@ import { ArrowRight, BadgeCheck, ExternalLink, FileText, Megaphone, Download } f
 import {
   getAllCertificates,
   getAllNews,
+  getAllPlanMonths,
   type DocumentItem,
   type DocumentsView,
   type NewsItem,
   type PageBlock,
+  type TableEntry,
   type TableField,
 } from '@/lib/content'
 import { markdownToHtml } from '@/lib/markdown'
@@ -30,6 +32,8 @@ async function renderMarkdown(blocks: PageBlock[]): Promise<Map<number, string>>
       } else if (block.type === 'news_by_topic' && block.extra) {
         html.set(i, await markdownToHtml(block.extra))
       } else if (block.type === 'certificates' && block.intro) {
+        html.set(i, await markdownToHtml(block.intro))
+      } else if (block.type === 'plans' && block.intro) {
         html.set(i, await markdownToHtml(block.intro))
       }
     }),
@@ -311,12 +315,101 @@ function TableCell({ value }: { value: string }) {
   return <>{text}</>
 }
 
+/**
+ * Стовпці планів роботи. Раніше вони лежали в кожному з 62 блоків окремо, і
+ * редакторові доводилось тримати два списки (підписи й склад полів) у голові.
+ * Тепер це одне місце в коді: підписи однакові для всіх місяців.
+ */
+const PLAN_COLUMNS = ['№ з/п', 'Назва заходів', 'Дата проведення', 'Відповідальний']
+const PLAN_FIELDS: TableField[] = ['event', 'date', 'responsible']
+
+/**
+ * Таблиця розділу. Спільна для блока «Таблиця» і для планів роботи: інакше
+ * дві розмітки з часом розійшлися б, і плани почали б виглядати інакше за
+ * решту таблиць сайту.
+ */
+function TableSection({
+  title,
+  columns,
+  fields,
+  entries,
+  rows,
+  view,
+}: {
+  title?: string
+  columns: string[]
+  fields: TableField[]
+  entries?: TableEntry[]
+  rows?: { cells: string[] }[]
+  view: DocumentsView
+}) {
+  /*
+    Новий формат: рядок — це іменовані поля, а `fields` каже, яке поле
+    стоїть у якому стовпці. Порядок стовпців і шапка лишаються ті самі,
+    що були в безіменних клітинках, тож сторінка виглядає так само.
+    № з/п не зберігаємо в даних — беремо з індексу, як у сертифікатах.
+  */
+  const numbered = /^\s*№/.test(columns[0] ?? '')
+  let counter = 0
+  const fromEntries = (entries ?? []).map((e) => {
+    // Підпис під таблицею («Директор ЦПРПП …») нумерації не отримує
+    if (e?.note) return [e.note, ...Array(numbered ? fields.length : fields.length - 1).fill('')]
+    counter += 1
+    const values = fields.map((f) => String(e?.[f] ?? ''))
+    return numbered ? [String(counter), ...values] : values
+  })
+  const fromRows = (rows ?? []).map((r) => (r?.cells ?? []).map((c) => String(c ?? '')))
+  const tableRows = (fromEntries.length > 0 ? fromEntries : fromRows).filter((cells) =>
+    cells.some((c) => c.trim()),
+  )
+  if (tableRows.length === 0) return null
+
+  return (
+    <Section view={view} title={title} fallbackTitle="Таблиця">
+      {/* Таблиці контактів широкі, тож на телефоні гортаються збоку */}
+      <div className="overflow-x-auto">
+        {/*
+          min-w тут обов'язковий: з одним лише w-full таблиця
+          стискається до ширини екрана, назви закладів ламаються на
+          два-три символи, а overflow-x-auto не спрацьовує ніколи.
+        */}
+        <table className="w-full min-w-[36rem] text-sm border-collapse">
+          {columns.length > 0 && (
+            <thead>
+              <tr className="border-b border-border">
+                {columns.map((col, c) => (
+                  <th key={c} scope="col" className="text-left font-heading font-bold p-2 align-bottom">
+                    {col}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+          )}
+          <tbody>
+            {tableRows.map((cells, r) => (
+              <tr key={r} className="border-b border-border last:border-0 align-top">
+                {cells.map((cell, c) => (
+                  <td key={c} className="p-2 leading-relaxed">
+                    <TableCell value={cell} />
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </Section>
+  )
+}
+
 export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
   if (blocks.length === 0) return null
   const html = await renderMarkdown(blocks)
   const news = getAllNews()
   // Читаємо лише коли на сторінці справді є такий блок: переліки важкі
   const certificates = blocks.some((b) => b.type === 'certificates') ? getAllCertificates() : []
+  // Так само з планами: 62 місяці читаються лише там, де їх справді показують
+  const planMonths = blocks.some((b) => b.type === 'plans') ? getAllPlanMonths() : []
 
   return (
     <div className="flex flex-col gap-6">
@@ -417,67 +510,50 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
             )
           }
 
-          case 'table': {
-            const columns = (block.columns ?? []).map((c) => String(c ?? ''))
+          case 'table':
             /*
-              Новий формат: рядок — це іменовані поля, а `fields` каже, яке поле
-              стоїть у якому стовпці. Порядок стовпців і шапка лишаються ті самі,
-              що були в безіменних клітинках, тож сторінка виглядає так само.
-              № з/п не зберігаємо в даних — беремо з індексу, як у сертифікатах.
+              Розмітка спільна з планами роботи — див. TableSection. Таблиці
+              великі, тож без окремого вибору лишаються згорнутими: такими вони
+              й були, коли жили в акордеонах.
             */
-            const fields = (block.fields ?? []) as TableField[]
-            const numbered = /^\s*№/.test(columns[0] ?? '')
-            let counter = 0
-            const fromEntries = (block.entries ?? []).map((e) => {
-              // Підпис під таблицею («Директор ЦПРПП …») нумерації не отримує
-              if (e?.note) return [e.note, ...Array(numbered ? fields.length : fields.length - 1).fill('')]
-              counter += 1
-              const values = fields.map((f) => String(e?.[f] ?? ''))
-              return numbered ? [String(counter), ...values] : values
-            })
-            const fromRows = (block.rows ?? []).map((r) => (r?.cells ?? []).map((c) => String(c ?? '')))
-            const rows = (fromEntries.length > 0 ? fromEntries : fromRows).filter((cells) =>
-              cells.some((c) => c.trim()),
-            )
-            if (rows.length === 0) return null
-            // Таблиці великі, тож без окремого вибору лишаються згорнутими —
-            // такими вони й були, коли жили в акордеонах
-            const view = resolveView(block.view, true)
             return (
-              <Section key={i} view={view} title={block.title} fallbackTitle="Таблиця">
-                {/* Таблиці контактів широкі, тож на телефоні гортаються збоку */}
-                <div className="overflow-x-auto">
-                  {/*
-                    min-w тут обов'язковий: з одним лише w-full таблиця
-                    стискається до ширини екрана, назви закладів ламаються на
-                    два-три символи, а overflow-x-auto не спрацьовує ніколи.
-                  */}
-                  <table className="w-full min-w-[36rem] text-sm border-collapse">
-                    {columns.length > 0 && (
-                      <thead>
-                        <tr className="border-b border-border">
-                          {columns.map((col, c) => (
-                            <th key={c} scope="col" className="text-left font-heading font-bold p-2 align-bottom">
-                              {col}
-                            </th>
-                          ))}
-                        </tr>
-                      </thead>
-                    )}
-                    <tbody>
-                      {rows.map((cells, r) => (
-                        <tr key={r} className="border-b border-border last:border-0 align-top">
-                          {cells.map((cell, c) => (
-                            <td key={c} className="p-2 leading-relaxed">
-                              <TableCell value={cell} />
-                            </td>
-                          ))}
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </Section>
+              <TableSection
+                key={i}
+                title={block.title}
+                columns={(block.columns ?? []).map((c) => String(c ?? ''))}
+                fields={(block.fields ?? []) as TableField[]}
+                entries={block.entries}
+                rows={block.rows}
+                view={resolveView(block.view, true)}
+              />
+            )
+
+          case 'plans': {
+            if (planMonths.length === 0) return null
+            /*
+              Кожен місяць — окремий згорнутий розділ, як було до переїзду даних
+              у колекцію. Обгортка повторює відступи зовнішнього списку блоків,
+              щоб проміжки між місяцями не змінились.
+            */
+            return (
+              <div key={i} className="flex flex-col gap-6">
+                {block.intro && (
+                  <div
+                    className="article-content"
+                    dangerouslySetInnerHTML={{ __html: html.get(i) ?? '' }}
+                  />
+                )}
+                {planMonths.map((month) => (
+                  <TableSection
+                    key={month.slug}
+                    title={month.title}
+                    columns={PLAN_COLUMNS}
+                    fields={PLAN_FIELDS}
+                    entries={month.entries}
+                    view="collapsed"
+                  />
+                ))}
+              </div>
             )
           }
 
