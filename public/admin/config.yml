@@ -144,7 +144,10 @@ collections:
     description: Постійні сторінки сайту. Складаються з блоків, які можна додавати й переставляти.
     folder: content/pages
     create: true
-    slug: '{{slug}}'
+    # Імʼя файла = поле «Адреса сторінки», а не транслітерація назви: сайт будує
+    # адресу з імені файла (lib/content.ts -> slugify), тож інакше адреса в меню
+    # і адреса на сайті розходяться.
+    slug: '{{fields.slug}}'
     identifier_field: title
     sortable_fields: [title, section]
     summary: '{{title}} — {{section}}'
