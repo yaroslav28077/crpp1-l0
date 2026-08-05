@@ -679,6 +679,37 @@ export function getAllPlanMonths(): PlanMonth[] {
   return planMonthsCache
 }
 
+/**
+ * Рік місяця плану. Беремо з дати, а якщо її колись не буде — з імені файла
+ * (`plan-РРРР-ММ`), щоб місяць не зник зі сторінки року через одну порожню дату.
+ */
+export function planMonthYear(month: PlanMonth): string | undefined {
+  if (month.date) return month.date.slice(0, 4)
+  return /(\d{4})-\d{2}$/.exec(month.slug)?.[1]
+}
+
+/**
+ * Роки, за які є плани: найновіший угорі. Потрібні для покажчика на
+ * `/plany-roboty` і для generateStaticParams сторінок року.
+ */
+export function getPlanYears(): { year: string; months: number; entries: number }[] {
+  const byYear = new Map<string, { year: string; months: number; entries: number }>()
+  for (const month of getAllPlanMonths()) {
+    const year = planMonthYear(month)
+    if (!year) continue
+    const acc = byYear.get(year) ?? { year, months: 0, entries: 0 }
+    acc.months += 1
+    acc.entries += month.entries.length
+    byYear.set(year, acc)
+  }
+  return [...byYear.values()].sort((a, b) => (a.year < b.year ? 1 : -1))
+}
+
+/** Місяці одного року — у тому ж порядку, що був на спільній сторінці (від січня). */
+export function getPlanMonthsByYear(year: string): PlanMonth[] {
+  return getAllPlanMonths().filter((month) => planMonthYear(month) === year)
+}
+
 export function getTeam(): TeamMember[] {
   return readMd("team")
     .map(({ data, content }) => ({

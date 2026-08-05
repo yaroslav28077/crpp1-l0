@@ -3,11 +3,12 @@ import { ArrowRight, BadgeCheck, ExternalLink, FileText, Megaphone, Download } f
 import {
   getAllCertificates,
   getAllNews,
-  getAllPlanMonths,
+  getPlanYears,
   type DocumentItem,
   type DocumentsView,
   type NewsItem,
   type PageBlock,
+  type PlanMonth,
   type TableEntry,
   type TableField,
 } from '@/lib/content'
@@ -323,6 +324,38 @@ function TableCell({ value }: { value: string }) {
 const PLAN_COLUMNS = ['№ з/п', 'Назва заходів', 'Дата проведення', 'Відповідальний']
 const PLAN_FIELDS: TableField[] = ['event', 'date', 'responsible']
 
+/** «1 захід», «2 заходи», «5 заходів» — щоб покажчик років не писав «281 заходів». */
+function pluralUk(n: number, one: string, few: string, many: string): string {
+  const mod100 = n % 100
+  if (mod100 >= 11 && mod100 <= 14) return many
+  const mod10 = n % 10
+  if (mod10 === 1) return one
+  if (mod10 >= 2 && mod10 <= 4) return few
+  return many
+}
+
+/**
+ * Місяці плану одного року. Виділено окремо, бо тепер їх показує сторінка
+ * `/plany-roboty/<рік>`, а не спільна сторінка планів: 62 місяці в одному
+ * документі давали 1,88 МБ HTML і майже 1 900 рядків таблиць.
+ */
+export function PlanMonthTables({ months }: { months: PlanMonth[] }) {
+  return (
+    <div className="flex flex-col gap-6">
+      {months.map((month) => (
+        <TableSection
+          key={month.slug}
+          title={month.title}
+          columns={PLAN_COLUMNS}
+          fields={PLAN_FIELDS}
+          entries={month.entries}
+          view="collapsed"
+        />
+      ))}
+    </div>
+  )
+}
+
 /**
  * Таблиця розділу. Спільна для блока «Таблиця» і для планів роботи: інакше
  * дві розмітки з часом розійшлися б, і плани почали б виглядати інакше за
@@ -408,8 +441,8 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
   const news = getAllNews()
   // Читаємо лише коли на сторінці справді є такий блок: переліки важкі
   const certificates = blocks.some((b) => b.type === 'certificates') ? getAllCertificates() : []
-  // Так само з планами: 62 місяці читаються лише там, де їх справді показують
-  const planMonths = blocks.some((b) => b.type === 'plans') ? getAllPlanMonths() : []
+  // Так само з планами: тепер потрібні лише роки, а не 1 836 рядків усіх місяців
+  const planYears = blocks.some((b) => b.type === 'plans') ? getPlanYears() : []
 
   return (
     <div className="flex flex-col gap-6">
@@ -529,11 +562,12 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
             )
 
           case 'plans': {
-            if (planMonths.length === 0) return null
+            if (planYears.length === 0) return null
             /*
-              Кожен місяць — окремий згорнутий розділ, як було до переїзду даних
-              у колекцію. Обгортка повторює відступи зовнішнього списку блоків,
-              щоб проміжки між місяцями не змінились.
+              Раніше тут виводились усі 62 місяці одразу: 1,88 МБ HTML і 1 898
+              рядків таблиць в одному документі. Тепер це покажчик років, а самі
+              таблиці живуть на /plany-roboty/<рік>. Адреса сторінки не змінилась,
+              тож legacy-редиректи зі старого сайту працюють як раніше.
             */
             return (
               <div key={i} className="flex flex-col gap-6">
@@ -543,16 +577,27 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
                     dangerouslySetInnerHTML={{ __html: html.get(i) ?? '' }}
                   />
                 )}
-                {planMonths.map((month) => (
-                  <TableSection
-                    key={month.slug}
-                    title={month.title}
-                    columns={PLAN_COLUMNS}
-                    fields={PLAN_FIELDS}
-                    entries={month.entries}
-                    view="collapsed"
-                  />
-                ))}
+                <nav aria-label="Плани роботи за роками">
+                  <ul className="grid gap-3 sm:grid-cols-2">
+                    {planYears.map((y) => (
+                      <li key={y.year}>
+                        <Link
+                          href={`/plany-roboty/${y.year}`}
+                          className="flex items-center justify-between gap-3 rounded-xl border border-border bg-card p-4 hover:border-primary hover:bg-accent transition-colors"
+                        >
+                          <span className="flex flex-col">
+                            <span className="font-heading font-bold">{y.year} рік</span>
+                            <span className="text-sm text-muted-foreground">
+                              {y.months} {pluralUk(y.months, 'місяць', 'місяці', 'місяців')} ·{' '}
+                              {y.entries} {pluralUk(y.entries, 'захід', 'заходи', 'заходів')}
+                            </span>
+                          </span>
+                          <ArrowRight className="size-4 shrink-0 text-muted-foreground" aria-hidden="true" />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
               </div>
             )
           }
