@@ -6,9 +6,9 @@ default_volume: 3 год. (0,15 кредиту ЄКТС)
 default_result: Удосконалила цифрову компетентність
 entries:
   - name: Ірина Мацак
-    record: №~CPRPP2025/202
+    record: №CPRPP2025/202
     issued: 26.09.2025р.
   - name: Катерина Овраменко
-    record: №~CPRPP2025/203
+    record: №CPRPP2025/203
     issued: 26.09.2025р.
 ---

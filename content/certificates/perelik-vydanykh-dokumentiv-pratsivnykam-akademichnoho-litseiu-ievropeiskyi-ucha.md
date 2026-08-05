@@ -7,84 +7,84 @@ default_result: Удосконалення професійно-педагогі
 entries:
   - name: Деркач Лариса Анатоліївна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/4
+    record: №CPRPP2024/4
     issued: 22.03.2024р.
     result: Удосконалення управлінських компетентностей
   - name: Єфремова Світлана Миколаївна
-    record: №~CPRPP2024/5
+    record: №CPRPP2024/5
     issued: 22.03.2024р.
   - name: Кіріяк Леніна Миколаївна
-    record: №~CPRPP2024/6
+    record: №CPRPP2024/6
     issued: 22.03.2024р.
   - name: Клиша Ольга Сергіївна
-    record: №~CPRPP2024/7
+    record: №CPRPP2024/7
     issued: 22.03.2024р.
   - name: Когут Катерина Сергіївна
-    record: №~CPRPP2024/8
+    record: №CPRPP2024/8
     issued: 22.03.2024р.
   - name: Колесник Людмила Анатоліївна
-    record: №~CPRPP2024/9
+    record: №CPRPP2024/9
     issued: 22.03.2024р.
   - name: Коршак Тетяна Володимирівна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/10
+    record: №CPRPP2024/10
     issued: 22.03.2024р.
     result: Удосконалення управлінських компетентностей
   - name: Кочубей Світлана Василівна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/11
+    record: №CPRPP2024/11
     issued: 22.03.2024р.
   - name: Кравчук Віра Іванівна
     volume: 5 год. (0,19 кредиту ЄКТС)
-    record: №~CPRPP2024/12
+    record: №CPRPP2024/12
     issued: 22.03.2024р.
   - name: Латкіна Тетяна Віталіївна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/13
+    record: №CPRPP2024/13
     issued: 22.03.2024р.
   - name: Мокренко Євгенія Михайлівна
-    record: №~CPRPP2024/14
+    record: №CPRPP2024/14
     issued: 22.03.2024р.
   - name: Нікул Юлія Василівна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/15
+    record: №CPRPP2024/15
     issued: 22.03.2024р.
     result: Удосконалення управлінських компетентностей
   - name: Павлова Олена Вікторівна
-    record: №~CPRPP2024/16
+    record: №CPRPP2024/16
     issued: 22.03.2024р.
   - name: Панченко Наталія Вікторівна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/17
+    record: №CPRPP2024/17
     issued: 22.03.2024р.
   - name: Парнюк Лариса Аратоліївна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/18
+    record: №CPRPP2024/18
     issued: 22.03.2024р.
     result: Удосконалення управлінських компетентностей
   - name: Пода Юлія Миколаївна
-    record: №~CPRPP2024/19
+    record: №CPRPP2024/19
     issued: 22.03.2024р.
   - name: Похвала Інна Олександрівна
-    record: №~CPRPP2024/20
+    record: №CPRPP2024/20
     issued: 22.03.2024р.
   - name: Пруднікова Валентина Ігорівна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/21
+    record: №CPRPP2024/21
     issued: 22.03.2024р.
     result: Удосконалення управлінських компетентностей
   - name: Реута Роман Володимирович
-    record: №~CPRPP2024/22
+    record: №CPRPP2024/22
     issued: 22.03.2024р.
   - name: Соколовська Оксана Петрівна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/23
+    record: №CPRPP2024/23
     issued: 22.03.2024р.
     result: Удосконалення управлінських компетентностей
   - name: Яковенко Ірина Юріївна
-    record: №~CPRPP2024/24
+    record: №CPRPP2024/24
     issued: 22.03.2024р.
   - name: Ященко Тамара Львівна
-    record: №~CPRPP2024/25
+    record: №CPRPP2024/25
     issued: 22.03.2024р.
 ---

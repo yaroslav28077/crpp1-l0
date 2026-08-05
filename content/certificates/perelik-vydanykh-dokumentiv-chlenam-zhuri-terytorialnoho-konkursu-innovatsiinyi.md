@@ -6,141 +6,141 @@ default_volume: 8 год. (0,27 кредиту ЄКТС)
 default_result: Удосконалення професійно-педагогічних компетентностей
 entries:
   - name: Донець Надія Вікторівна
-    record: №~CPRPP2024/89
+    record: №CPRPP2024/89
     issued: 30.04.2024р.
   - name: Михайленко Володимир Васильович
-    record: №~CPRPP2024/90
+    record: №CPRPP2024/90
     issued: 30.04.2024р.
   - name: Тесленко Юрій Олексійович
-    record: №~CPRPP2024/91
+    record: №CPRPP2024/91
     issued: 30.04.2024р.
   - name: Одокієнко Валерій Олексійович
-    record: №~CPRPP2024/92
+    record: №CPRPP2024/92
     issued: 30.04.2024р.
   - name: Сесь Ірина Юріївна
-    record: №~CPRPP2024/93
+    record: №CPRPP2024/93
     issued: 30.04.2024р.
   - name: Шип Світлана Миколаївна
-    record: №~CPRPP2024/94
+    record: №CPRPP2024/94
     issued: 30.04.2024р.
   - name: Педоряка Оксана Іванівна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/95
+    record: №CPRPP2024/95
     issued: 30.04.2024р.
   - name: Рєпнікова Алла Миколаївна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/96
+    record: №CPRPP2024/96
     issued: 30.04.2024р.
   - name: Саєнко Аліна Олексіївна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/97
+    record: №CPRPP2024/97
     issued: 30.04.2024р.
   - name: Добреля Світлана Анатоліївна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/98
+    record: №CPRPP2024/98
     issued: 30.04.2024р.
   - name: Остапко Наталія Миколаївна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/99
+    record: №CPRPP2024/99
     issued: 30.04.2024р.
   - name: Царинна Лідія Іванівна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/100
+    record: №CPRPP2024/100
     issued: 30.04.2024р.
   - name: Кравчук Світлана Іванівна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/101
+    record: №CPRPP2024/101
     issued: 30.04.2024р.
   - name: Мішкова Наталія Анатоліївна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/102
+    record: №CPRPP2024/102
     issued: 30.04.2024р.
   - name: Рудяк Наталія Іванівна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/103
+    record: №CPRPP2024/103
     issued: 30.04.2024р.
   - name: Горбатенко Олександр Михайлович
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/104
+    record: №CPRPP2024/104
     issued: 30.04.2024р.
   - name: Лисак Андрій Михайлович
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/105
+    record: №CPRPP2024/105
     issued: 30.04.2024р.
   - name: Овдієнко Валерій Борисович
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/106
+    record: №CPRPP2024/106
     issued: 30.04.2024р.
   - name: Бабанко Тамара Василівна
-    record: №~CPRPP2024/107
+    record: №CPRPP2024/107
     issued: 30.04.2024р.
   - name: Семенова Ірина Василівна
-    record: №~CPRPP2024/108
+    record: №CPRPP2024/108
     issued: 30.04.2024р.
   - name: Шелег Олександр Володимирович
-    record: №~CPRPP2024/109
+    record: №CPRPP2024/109
     issued: 30.04.2024р.
   - name: Колісніченко Наталія Михайлівна
-    record: №~CPRPP2024/110
+    record: №CPRPP2024/110
     issued: 30.04.2024р.
   - name: Овдієнко Оксана Миколаївна
-    record: №~CPRPP2024/111
+    record: №CPRPP2024/111
     issued: 30.04.2024р.
   - name: Шуть Любов Василівна
-    record: №~CPRPP2024/112
+    record: №CPRPP2024/112
     issued: 30.04.2024р.
   - name: Білик Наталія Андріївна
-    record: №~CPRPP2024/113
+    record: №CPRPP2024/113
     issued: 30.04.2024р.
   - name: Гонтар Тетяна Миколаївна
-    record: №~CPRPP2024/114
+    record: №CPRPP2024/114
     issued: 30.04.2024р.
   - name: Паріста Світлана Василівна
-    record: №~CPRPP2024/115
+    record: №CPRPP2024/115
     issued: 30.04.2024р.
   - name: Соколовська Оксана Петрівна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/116
+    record: №CPRPP2024/116
     issued: 30.04.2024р.
   - name: Філенко Ірина Василівна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/117
+    record: №CPRPP2024/117
     issued: 30.04.2024р.
   - name: Яковенко Лариса Миколаївна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/118
+    record: №CPRPP2024/118
     issued: 30.04.2024р.
   - name: Манько Надія Олександрівна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/119
+    record: №CPRPP2024/119
     issued: 30.04.2024р.
   - name: Пасічник Ольга Вікторівна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/120
+    record: №CPRPP2024/120
     issued: 30.04.2024р.
   - name: Притула Валентина Володимирівна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2024/121
+    record: №CPRPP2024/121
     issued: 30.04.2024р.
   - name: Бибик Олена Миколаївна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/122
+    record: №CPRPP2024/122
     issued: 30.04.2024р.
   - name: Зикова Світлана Тихонівна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/123
+    record: №CPRPP2024/123
     issued: 30.04.2024р.
   - name: Мартиненко Ганна Василівна
     volume: 10 год. (0,33 кредиту ЄКТС)
-    record: №~CPRPP2024/124
+    record: №CPRPP2024/124
     issued: 30.04.2024р.
   - name: Гулега Світлана Андріївна
-    record: №~CPRPP2024/125
+    record: №CPRPP2024/125
     issued: 30.04.2024р.
   - name: Пилипенко Світлана Василівна
-    record: №~CPRPP2024/126
+    record: №CPRPP2024/126
     issued: 30.04.2024р.
   - name: Шелег Тетяна Василівна
-    record: №~CPRPP2024/127
+    record: №CPRPP2024/127
     issued: 30.04.2024р.
 ---

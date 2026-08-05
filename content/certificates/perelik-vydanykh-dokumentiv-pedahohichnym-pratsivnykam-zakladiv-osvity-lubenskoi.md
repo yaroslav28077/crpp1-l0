@@ -6,174 +6,174 @@ default_volume: 30 год. (1 кредит ЄКТС)
 default_result: Удосконалення професійно-педагогічних компетентностей
 entries:
   - name: Бєлоус Надія В’ячеславівна
-    record: №~CPRPP2024/33
+    record: №CPRPP2024/33
     issued: 30.04.2024р.
   - name: Василець Наталія Олексіївна
-    record: №~CPRPP2024/34
+    record: №CPRPP2024/34
     issued: 30.04.2024р.
   - name: Голобородько Тетяна Валеріївна
-    record: №~CPRPP2024/35
+    record: №CPRPP2024/35
     issued: 30.04.2024р.
   - name: Коваль Тетяна Володимирівна
-    record: №~CPRPP2024/36
+    record: №CPRPP2024/36
     issued: 30.04.2024р.
   - name: Омельченко Анюта Олександрівна
-    record: №~CPRPP2024/37
+    record: №CPRPP2024/37
     issued: 30.04.2024р.
   - name: Онікієнко Світлана Євгеніївна
-    record: №~CPRPP2024/38
+    record: №CPRPP2024/38
     issued: 30.04.2024р.
   - name: Прокопенко Ксенія Іванівна
-    record: №~CPRPP2024/39
+    record: №CPRPP2024/39
     issued: 30.04.2024р.
   - name: Ревяко Ірина Анатоліївна
-    record: №~CPRPP2024/40
+    record: №CPRPP2024/40
     issued: 30.04.2024р.
   - name: Світлішина Олена Миколаївна
-    record: №~CPRPP2024/41
+    record: №CPRPP2024/41
     issued: 30.04.2024р.
   - name: Семенець Тетяна Василівна
-    record: №~CPRPP2024/42
+    record: №CPRPP2024/42
     issued: 30.04.2024р.
   - name: Сугак Яна Іванівна
-    record: №~CPRPP2024/43
+    record: №CPRPP2024/43
     issued: 30.04.2024р.
   - name: Супрун Оксана Миколаївна
-    record: №~CPRPP2024/44
+    record: №CPRPP2024/44
     issued: 30.04.2024р.
   - name: Бган Світлана Григорівна
-    record: №~CPRPP2024/45
+    record: №CPRPP2024/45
     issued: 30.04.2024р.
   - name: Буторіна Олена Миколаївна
-    record: №~CPRPP2024/46
+    record: №CPRPP2024/46
     issued: 30.04.2024р.
   - name: Василенко Таміла Василівна
-    record: №~CPRPP2024/47
+    record: №CPRPP2024/47
     issued: 30.04.2024р.
   - name: Галич Марина Володимирівна
-    record: №~CPRPP2024/48
+    record: №CPRPP2024/48
     issued: 30.04.2024р.
   - name: Говденко Людмила Анатоліївна
-    record: №~CPRPP2024/49
+    record: №CPRPP2024/49
     issued: 30.04.2024р.
   - name: Дерев’янко Оксана Олександрівна
-    record: №~CPRPP2024/50
+    record: №CPRPP2024/50
     issued: 30.04.2024р.
   - name: Зінковська Інна В’ячеславівна
-    record: №~CPRPP2024/51
+    record: №CPRPP2024/51
     issued: 30.04.2024р.
   - name: Крістіян Тетяна Олександрівна
-    record: №~CPRPP2024/52
+    record: №CPRPP2024/52
     issued: 30.04.2024р.
   - name: Кропивка Інна Володимирівна
-    record: №~CPRPP2024/53
+    record: №CPRPP2024/53
     issued: 30.04.2024р.
   - name: Магомедова Наталія Володимирівна
-    record: №~CPRPP2024/54
+    record: №CPRPP2024/54
     issued: 30.04.2024р.
   - name: Павлова Олена Вікторівна
-    record: №~CPRPP2024/55
+    record: №CPRPP2024/55
     issued: 30.04.2024р.
   - name: Поліщук Лілія Сергіївна
-    record: №~CPRPP2024/56
+    record: №CPRPP2024/56
     issued: 30.04.2024р.
   - name: Березова Дарина Володимирівна
-    record: №~CPRPP2024/57
+    record: №CPRPP2024/57
     issued: 30.04.2024р.
   - name: Гринь Анна Володимирівна
-    record: №~CPRPP2024/58
+    record: №CPRPP2024/58
     issued: 30.04.2024р.
   - name: Дудник Світлана Анатоліївна
-    record: №~CPRPP2024/59
+    record: №CPRPP2024/59
     issued: 30.04.2024р.
   - name: Кузьменко Тетяна Петрівна
-    record: №~CPRPP2024/60
+    record: №CPRPP2024/60
     issued: 30.04.2024р.
   - name: Похвала Інна Олександрівна
-    record: №~CPRPP2024/61
+    record: №CPRPP2024/61
     issued: 30.04.2024р.
   - name: Свєтлова Наталія Олексіївна
-    record: №~CPRPP2024/62
+    record: №CPRPP2024/62
     issued: 30.04.2024р.
   - name: Фера Юлія Сергіївна
-    record: №~CPRPP2024/63
+    record: №CPRPP2024/63
     issued: 30.04.2024р.
   - name: Ярмош Алла Іванівна
-    record: №~CPRPP2024/63/а
+    record: №CPRPP2024/63/а
     issued: 30.04.2024р.
   - name: Сало Євгеній Станіславович
-    record: №~CPRPP2024/64
+    record: №CPRPP2024/64
     issued: 30.04.2024р.
   - name: Андрієвська Любов Миколаївна
-    record: №~CPRPP2024/65
+    record: №CPRPP2024/65
     issued: 30.04.2024р.
   - name: Гетьман Олена Борисівна
-    record: №~CPRPP2024/66
+    record: №CPRPP2024/66
     issued: 30.04.2024р.
   - name: Коробицька Світлана Едуардівна
-    record: №~CPRPP2024/67
+    record: №CPRPP2024/67
     issued: 30.04.2024р.
   - name: Кулаков Артем Миколайович
-    record: №~CPRPP2024/68
+    record: №CPRPP2024/68
     issued: 30.04.2024р.
   - name: Куліш Наталія Іванівна
-    record: №~CPRPP2024/69
+    record: №CPRPP2024/69
     issued: 30.04.2024р.
   - name: Бондаренко Артем Петрович
-    record: №~CPRPP2024/70
+    record: №CPRPP2024/70
     issued: 30.04.2024р.
   - name: Клиша Ольга Сергіївна
-    record: №~CPRPP2024/71
+    record: №CPRPP2024/71
     issued: 30.04.2024р.
   - name: Сиротюк Тетяна Володимирівна
-    record: №~CPRPP2024/72
+    record: №CPRPP2024/72
     issued: 30.04.2024р.
   - name: Демидчик Алла Миколаївна
-    record: №~CPRPP2024/73
+    record: №CPRPP2024/73
     issued: 30.04.2024р.
   - name: Мішкова Тетяна Анатоліївна
-    record: №~CPRPP2024/74
+    record: №CPRPP2024/74
     issued: 30.04.2024р.
   - name: Сімонькіна Галина Павлівна
-    record: №~CPRPP2024/75
+    record: №CPRPP2024/75
     issued: 30.04.2024р.
   - name: Склярова Лариса Леонідівна
-    record: №~CPRPP2024/76
+    record: №CPRPP2024/76
     issued: 30.04.2024р.
   - name: Мокренко Євгенія Михайлівна
-    record: №~CPRPP2024/77
+    record: №CPRPP2024/77
     issued: 30.04.2024р.
   - name: Грицай Тетяна Анатоліївна
-    record: №~CPRPP2024/78
+    record: №CPRPP2024/78
     issued: 30.04.2024р.
   - name: Кириченко Вікторія Миколаївна
-    record: №~CPRPP2024/79
+    record: №CPRPP2024/79
     issued: 30.04.2024р.
   - name: Ященко Тамара Львівна
-    record: №~CPRPP2024/80
+    record: №CPRPP2024/80
     issued: 30.04.2024р.
   - name: Корніяченко Людмила Іванівна
-    record: №~CPRPP2024/81
+    record: №CPRPP2024/81
     issued: 30.04.2024р.
   - name: Ріпка Юлія Миколаївна
-    record: №~CPRPP2024/82
+    record: №CPRPP2024/82
     issued: 30.04.2024р.
   - name: Цимбал Олена Іванівна
-    record: №~CPRPP2024/83
+    record: №CPRPP2024/83
     issued: 30.04.2024р.
   - name: Макаренко Ірина Миколаївна
-    record: №~CPRPP2024/84
+    record: №CPRPP2024/84
     issued: 30.04.2024р.
   - name: Скляренко Ірина Володимирівна
-    record: №~CPRPP2024/85
+    record: №CPRPP2024/85
     issued: 30.04.2024р.
   - name: Штепа Віктор Олексійович
-    record: №~CPRPP2024/86
+    record: №CPRPP2024/86
     issued: 30.04.2024р.
   - name: Ярошенко Оксана Василівна
-    record: №~CPRPP2024/87
+    record: №CPRPP2024/87
     issued: 30.04.2024р.
   - name: Лобода Віталій Вікторович
-    record: №~CPRPP2024/88
+    record: №CPRPP2024/88
     issued: 30.04.2024р.
 ---

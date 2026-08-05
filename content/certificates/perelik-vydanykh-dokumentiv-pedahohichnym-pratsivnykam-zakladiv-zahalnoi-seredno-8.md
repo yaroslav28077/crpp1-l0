@@ -6,48 +6,48 @@ default_volume: 5 год., 0,17 кредиту ЄКТС
 default_result: Удосконалила знання сучасних тенденцій розвитку освіти й підвищила професійно-педагогічні компетентності
 entries:
   - name: Фесенко Людмила Вікторівна
-    record: №~CPRPP2025/52
+    record: №CPRPP2025/52
     issued: 11.04.2025р.
   - name: Грибань Алла Володимирівна
-    record: №~CPRPP2025/53
+    record: №CPRPP2025/53
     issued: 11.04.2025р.
   - name: Дацюк Алла Миколаївна
-    record: №~CPRPP2025/54
+    record: №CPRPP2025/54
     issued: 11.04.2025р.
   - name: Жарова Марта Володимирівна
-    record: №~CPRPP2025/55
+    record: №CPRPP2025/55
     issued: 11.04.2025р.
   - name: Карпенко Юлія Василівна
-    record: №~CPRPP2025/56
+    record: №CPRPP2025/56
     issued: 11.04.2025р.
   - name: Кеда Наталія Іванівна
-    record: №~CPRPP2025/57
+    record: №CPRPP2025/57
     issued: 11.04.2025р.
   - name: Когут Катерина Сергіївна
-    record: №~CPRPP2025/58
+    record: №CPRPP2025/58
     issued: 11.04.2025р.
   - name: Кондратюк Юлія Валентинівна
-    record: №~CPRPP2025/59
+    record: №CPRPP2025/59
     issued: 11.04.2025р.
   - name: Корнієнко Тетяна Дмитрівна
-    record: №~CPRPP2025/60
+    record: №CPRPP2025/60
     issued: 11.04.2025р.
   - name: Мартиненко Ганна Василівна
-    record: №~CPRPP2025/61
+    record: №CPRPP2025/61
     issued: 11.04.2025р.
   - name: Ушкань Вікторія Іванівна
-    record: №~CPRPP2025/62
+    record: №CPRPP2025/62
     issued: 11.04.2025р.
   - name: Сіра Лідія Михайлівна
-    record: №~CPRPP2025/63
+    record: №CPRPP2025/63
     issued: 11.04.2025р.
   - name: Сластнікова Олена Григорівна
-    record: №~CPRPP2025/64
+    record: №CPRPP2025/64
     issued: 11.04.2025р.
   - name: Мисник Вікторія Борисівна
-    record: №~CPRPP2025/65
+    record: №CPRPP2025/65
     issued: 11.04.2025р.
   - name: Яцина Наталія Миколаївна
-    record: №~CPRPP2025/66
+    record: №CPRPP2025/66
     issued: 11.04.2025р.
 ---

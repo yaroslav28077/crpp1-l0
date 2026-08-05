@@ -6,188 +6,188 @@ default_volume: 15 год. (0,5 кредиту ЄКТС)
 default_result: Удосконалення професійно-педагогічних компетентностей
 entries:
   - name: Бабенко Віта Леонідівна
-    record: №~CPRPP2024/202
+    record: №CPRPP2024/202
     issued: 20.11.2024р.
   - name: Баран Людмила В’ячеславівна
-    record: №~CPRPP2024/203
+    record: №CPRPP2024/203
     issued: 20.11.2024р.
   - name: Березняк Карина Юріївна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/204
+    record: №CPRPP2024/204
     issued: 20.11.2024р.
   - name: Березова Дарина Володимирівна
-    record: №~CPRPP2024/205
+    record: №CPRPP2024/205
     issued: 20.11.2024р.
   - name: Волошина Ірина Василівна
-    record: №~CPRPP2024/206
+    record: №CPRPP2024/206
     issued: 20.11.2024р.
   - name: Гармаш Алла Анатоліївна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/207
+    record: №CPRPP2024/207
     issued: 20.11.2024р.
   - name: Голояд Марія Ярославівна
-    record: №~CPRPP2024/208
+    record: №CPRPP2024/208
     issued: 20.11.2024р.
   - name: Грибань Алла Володимирівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/209
+    record: №CPRPP2024/209
     issued: 20.11.2024р.
   - name: Грицай Тетяна Анатоліївна
-    record: №~CPRPP2024/210
+    record: №CPRPP2024/210
     issued: 20.11.2024р.
   - name: Гулак Антоніна Олександрівна
-    record: №~CPRPP2024/211
+    record: №CPRPP2024/211
     issued: 20.11.2024р.
   - name: Данілова Юлія Дмитрівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/212
+    record: №CPRPP2024/212
     issued: 20.11.2024р.
   - name: Дендеберя Віра Іванівна
-    record: №~CPRPP2024/213
+    record: №CPRPP2024/213
     issued: 20.11.2024р.
   - name: Джура Любов Іванівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/214
+    record: №CPRPP2024/214
     issued: 20.11.2024р.
   - name: Залата Інна Володимирівна
-    record: №~CPRPP2024/215
+    record: №CPRPP2024/215
     issued: 20.11.2024р.
   - name: Зикова Світлана Тихонівна
-    record: №~CPRPP2024/216
+    record: №CPRPP2024/216
     issued: 20.11.2024р.
   - name: Іванченко Тетяна Вікторівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/217
+    record: №CPRPP2024/217
     issued: 20.11.2024р.
   - name: Карнаух Анна Олександрівна
-    record: №~CPRPP2024/218
+    record: №CPRPP2024/218
     issued: 20.11.2024р.
   - name: Качур Любов Григорівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/219
+    record: №CPRPP2024/219
     issued: 20.11.2024р.
   - name: Кіріяк Леніна Миколаївна
-    record: №~CPRPP2024/220
+    record: №CPRPP2024/220
     issued: 20.11.2024р.
   - name: Коршак Лідія Миколаївна
-    record: №~CPRPP2024/221
+    record: №CPRPP2024/221
     issued: 20.11.2024р.
   - name: Кошова Світлана Петрівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/222
+    record: №CPRPP2024/222
     issued: 20.11.2024р.
   - name: Красношапка Вікторія Сергіївна
-    record: №~CPRPP2024/223
+    record: №CPRPP2024/223
     issued: 20.11.2024р.
   - name: Кропивка Ірина Володимирівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/224
+    record: №CPRPP2024/224
     issued: 20.11.2024р.
   - name: Кулик Юлія Едуардівна
-    record: №~CPRPP2024/225
+    record: №CPRPP2024/225
     issued: 20.11.2024р.
   - name: Лябах Наталія Василівна
-    record: №~CPRPP2024/226
+    record: №CPRPP2024/226
     issued: 20.11.2024р.
   - name: Мальована Маргарита Володимирівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/227
+    record: №CPRPP2024/227
     issued: 20.11.2024р.
   - name: Мартиненко Ганна Василівна
-    record: №~CPRPP2024/228
+    record: №CPRPP2024/228
     issued: 20.11.2024р.
   - name: Мельник Лілія Юріївна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/229
+    record: №CPRPP2024/229
     issued: 20.11.2024р.
   - name: Мушкаріна Наталія Анатоліївна
-    record: №~CPRPP2024/230
+    record: №CPRPP2024/230
     issued: 20.11.2024р.
   - name: Небеська Людмила Михайлівна
-    record: №~CPRPP2024/231
+    record: №CPRPP2024/231
     issued: 20.11.2024р.
   - name: Нікул Юлія Василівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/232
+    record: №CPRPP2024/232
     issued: 20.11.2024р.
   - name: Панченко Світлана Вікторівна
-    record: №~CPRPP2024/233
+    record: №CPRPP2024/233
     issued: 20.11.2024р.
   - name: Петренко Світлана Петрівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/234
+    record: №CPRPP2024/234
     issued: 20.11.2024р.
   - name: Полякова Олена Миколаївна
-    record: №~CPRPP2024/235
+    record: №CPRPP2024/235
     issued: 20.11.2024р.
   - name: Помаз Вікторія Григорівна
-    record: №~CPRPP2024/236
+    record: №CPRPP2024/236
     issued: 20.11.2024р.
   - name: РадченкоМарина В’ячеславівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/237
+    record: №CPRPP2024/237
     issued: 20.11.2024р.
   - name: Рєпіна Ірина Олексіївна
-    record: №~CPRPP2024/238
+    record: №CPRPP2024/238
     issued: 20.11.2024р.
   - name: Ріпка Юлія Миколаївна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/239
+    record: №CPRPP2024/239
     issued: 20.11.2024р.
   - name: Савицька Тетяна Василівна
-    record: №~CPRPP2024/240
+    record: №CPRPP2024/240
     issued: 20.11.2024р.
   - name: Свєтлова Наталія Олексіївна
-    record: №~CPRPP2024/241
+    record: №CPRPP2024/241
     issued: 20.11.2024р.
   - name: Семенова Ірина Василівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/242
+    record: №CPRPP2024/242
     issued: 20.11.2024р.
   - name: Сидоренко Тетяна Василівна
-    record: №~CPRPP2024/243
+    record: №CPRPP2024/243
     issued: 20.11.2024р.
   - name: Симоненко Наталія Володимирівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/244
+    record: №CPRPP2024/244
     issued: 20.11.2024р.
   - name: Склярова Лариса Леонідівна
-    record: №~CPRPP2024/245
+    record: №CPRPP2024/245
     issued: 20.11.2024р.
   - name: Теремецька Олена Ігорівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/246
+    record: №CPRPP2024/246
     issued: 20.11.2024р.
   - name: Терещенко Ніна Іванівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/247
+    record: №CPRPP2024/247
     issued: 20.11.2024р.
   - name: Третяк Любов Іванівна
-    record: №~CPRPP2024/248
+    record: №CPRPP2024/248
     issued: 20.11.2024р.
   - name: Турова Тетяна Петрівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/249
+    record: №CPRPP2024/249
     issued: 20.11.2024р.
   - name: Федченко Тетяна Володимирівна
-    record: №~CPRPP2024/250
+    record: №CPRPP2024/250
     issued: 20.11.2024р.
   - name: Фесенко Людмила Вікторівна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/251
+    record: №CPRPP2024/251
     issued: 20.11.2024р.
   - name: Хоменко Тетяна Миколаївна
-    record: №~CPRPP2024/252
+    record: №CPRPP2024/252
     issued: 20.11.2024р.
   - name: Шевелінда Юлія Юріївна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/253
+    record: №CPRPP2024/253
     issued: 20.11.2024р.
   - name: Шовкопляс Людмила Анатоліївна
-    record: №~CPRPP2024/254
+    record: №CPRPP2024/254
     issued: 20.11.2024р.
   - name: Ясько Алла Миколаївна
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2024/255
+    record: №CPRPP2024/255
     issued: 20.11.2024р.
 ---

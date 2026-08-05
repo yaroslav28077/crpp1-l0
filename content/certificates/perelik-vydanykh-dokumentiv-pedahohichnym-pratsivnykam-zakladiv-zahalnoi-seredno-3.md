@@ -6,9 +6,9 @@ default_volume: 10 год. (0,33 кредиту ЄКТС)
 default_result: Удосконалила навички стресостійкості та управління емоціями
 entries:
   - name: Оксана Лисенко
-    record: №~CPRPP2025/213
+    record: №CPRPP2025/213
     issued: 30.10.2025р.
   - name: Ірина Яковенко
-    record: №~CPRPP2025/214
+    record: №CPRPP2025/214
     issued: 30.10.2025р.
 ---

@@ -7,108 +7,108 @@ default_result: Удосконалення знань сучасних тенд�
 entries:
   - name: Жуль Олена Петрівна
     form: Офлайн
-    record: №~CPRPP2022/35
+    record: №CPRPP2022/35
     issued: 06.06.2022р.
   - name: Погрібна Алла Миколаївна
     form: Офлайн
-    record: №~CPRPP2022/36
+    record: №CPRPP2022/36
     issued: 06.06.2022р.
   - name: Сидоренко Тетяна Василівна
     form: Офлайн
-    record: №~CPRPP2022/37
+    record: №CPRPP2022/37
     issued: 06.06.2022р.
   - name: Павлова Олена Вікторівна
-    record: №~CPRPP2022/38
+    record: №CPRPP2022/38
     issued: 06.06.2022р.
   - name: Шевелінда Юлія Юріївна
     form: Офлайн
-    record: №~CPRPP2022/39
+    record: №CPRPP2022/39
     issued: 06.06.2022р.
   - name: Огарьова Людмила Михайлівна
-    record: №~CPRPP2022/40
+    record: №CPRPP2022/40
     issued: 06.06.2022р.
   - name: Ясько Алла Миколаївна
-    record: №~CPRPP2022/41
+    record: №CPRPP2022/41
     issued: 06.06.2022р.
   - name: Компанієць Віра Петрівна
-    record: №~CPRPP2022/42
+    record: №CPRPP2022/42
     issued: 06.06.2022р.
   - name: Деркач Лариса Анатоліївна
-    record: №~CPRPP2022/43
+    record: №CPRPP2022/43
     issued: 06.06.2022р.
   - name: Педоряка Оксана Іванівна
-    record: №~CPRPP2022/44
+    record: №CPRPP2022/44
     issued: 06.06.2022р.
   - name: Прозоровська Олена Федорівна
-    record: №~CPRPP2022/45
+    record: №CPRPP2022/45
     issued: 06.06.2022р.
   - name: Соколовська Оксана Петрівна
-    record: №~CPRPP2022/46
+    record: №CPRPP2022/46
     issued: 06.06.2022р.
   - name: Романенко Володимир Анатолійович
-    record: №~CPRPP2022/47
+    record: №CPRPP2022/47
     issued: 06.06.2022р.
   - name: Тягній Лариса Василівна
-    record: №~CPRPP2022/48
+    record: №CPRPP2022/48
     issued: 06.06.2022р.
   - name: Гетьман Олена Борисівна
-    record: №~CPRPP2022/49
+    record: №CPRPP2022/49
     issued: 06.06.2022р.
   - name: Мішкова Наталія Анатоліївна
-    record: №~CPRPP2022/50
+    record: №CPRPP2022/50
     issued: 06.06.2022р.
   - name: Лисак Андрій Михайлович
-    record: №~CPRPP2022/51
+    record: №CPRPP2022/51
     issued: 06.06.2022р.
   - name: Сметанко Аліна Анатоліївна
-    record: №~CPRPP2022/52
+    record: №CPRPP2022/52
     issued: 06.06.2022р.
   - name: Полигач Марина Олександрівна
-    record: №~CPRPP2022/53
+    record: №CPRPP2022/53
     issued: 06.06.2022р.
   - name: Донець Надія Вікторівна
-    record: №~CPRPP2022/54
+    record: №CPRPP2022/54
     issued: 06.06.2022р.
   - name: Химич Петро Степанович
-    record: №~CPRPP2022/55
+    record: №CPRPP2022/55
     issued: 06.06.2022р.
   - name: Ященко Тамара Львівна
-    record: №~CPRPP2022/56
+    record: №CPRPP2022/56
     issued: 06.06.2022р.
   - name: Притула Валентина Володимирівна
-    record: №~CPRPP2022/57
+    record: №CPRPP2022/57
     issued: 06.06.2022р.
   - name: Антоненко Наталія Геннадіївна
-    record: №~CPRPP2022/58
+    record: №CPRPP2022/58
     issued: 06.06.2022р.
   - name: ДаценкоЛюдмила Анатоліївна
-    record: №~CPRPP2022/59
+    record: №CPRPP2022/59
     issued: 06.06.2022р.
   - name: Семенець Тетяна Василівна
-    record: №~CPRPP2022/60
+    record: №CPRPP2022/60
     issued: 06.06.2022р.
   - name: Назаренко Тетяна Олександрівна
-    record: №~CPRPP2022/61
+    record: №CPRPP2022/61
     issued: 06.06.2022р.
   - name: Ковтун Тетяна Володимирівна
-    record: №~CPRPP2022/62
+    record: №CPRPP2022/62
     issued: 06.06.2022р.
   - name: Больбот Олена Миколаївна
-    record: №~CPRPP2022/63
+    record: №CPRPP2022/63
     issued: 06.06.2022р.
   - name: Андрієвська Любов Миколаївна
-    record: №~CPRPP2022/64
+    record: №CPRPP2022/64
     issued: 06.06.2022р.
   - name: Макаренко Світлана Михайлівна
-    record: №~CPRPP2022/65
+    record: №CPRPP2022/65
     issued: 06.06.2022р.
   - name: Гутовська Ольга Юріївна
-    record: №~CPRPP2022/66
+    record: №CPRPP2022/66
     issued: 06.06.2022р.
   - name: Хижняк Олена Євгеніївна
-    record: №~CPRPP2022/67
+    record: №CPRPP2022/67
     issued: 06.06.2022р.
   - name: Кілочик Наталія Василівна
-    record: №~CPRPP2022/68
+    record: №CPRPP2022/68
     issued: 06.06.2022р.
 ---

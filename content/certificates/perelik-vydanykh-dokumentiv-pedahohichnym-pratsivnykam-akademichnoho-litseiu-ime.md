@@ -7,137 +7,137 @@ default_result: Удосконалення професійно-педагогі
 entries:
   - name: Андрієвська Любов Миколаївна
     volume: 2год. (0,07 кредиту ЄКТС)
-    record: №~CPRPP2025/113
+    record: №CPRPP2025/113
     issued: 25.04.2025р.
   - name: Антоненко Наталія Геннадіївна
-    record: №~CPRPP2025/114
+    record: №CPRPP2025/114
     issued: 25.04.2025р.
   - name: Бала Ірина Володимирівна
-    record: №~CPRPP2025/115
+    record: №CPRPP2025/115
     issued: 25.04.2025р.
   - name: Баран Людмила В’ячеславівна
-    record: №~CPRPP2025/116
+    record: №CPRPP2025/116
     issued: 25.04.2025р.
   - name: Бедрик Людмила Іванівна
-    record: №~CPRPP2025/117
+    record: №CPRPP2025/117
     issued: 25.04.2025р.
   - name: Білан Оксана Григорівна
     volume: 2год. (0,07 кредиту ЄКТС)
-    record: №~CPRPP2025/118
+    record: №CPRPP2025/118
     issued: 25.04.2025р.
   - name: Білан Руслан Олексійович
-    record: №~CPRPP2025/119
+    record: №CPRPP2025/119
     issued: 25.04.2025р.
   - name: Больбот Олена Миколаївна
-    record: №~CPRPP2025/120
+    record: №CPRPP2025/120
     issued: 25.04.2025р.
   - name: Брекало Наталія Михайлівна
-    record: №~CPRPP2025/121
+    record: №CPRPP2025/121
     issued: 25.04.2025р.
   - name: Бурдим Ірина Анатоліївна
     volume: 2год. (0,07 кредиту ЄКТС)
-    record: №~CPRPP2025/122
+    record: №CPRPP2025/122
     issued: 25.04.2025р.
   - name: Глущенко Сергій Олександрович
-    record: №~CPRPP2025/123
+    record: №CPRPP2025/123
     issued: 25.04.2025р.
   - name: Гонтар Тетяна Миколаївна
-    record: №~CPRPP2025/124
+    record: №CPRPP2025/124
     issued: 25.04.2025р.
   - name: Демчук Ярослав Михайлович
-    record: №~CPRPP2025/125
+    record: №CPRPP2025/125
     issued: 25.04.2025р.
   - name: Єршова Аліна Володимирівна
     volume: 2год. (0,07 кредиту ЄКТС)
-    record: №~CPRPP2025/126
+    record: №CPRPP2025/126
     issued: 25.04.2025р.
   - name: Журавель Оксана Миколаївна
-    record: №~CPRPP2025/127
+    record: №CPRPP2025/127
     issued: 25.04.2025р.
   - name: Знайко Наталія Іванівна
-    record: №~CPRPP2025/128
+    record: №CPRPP2025/128
     issued: 25.04.2025р.
   - name: Іващенко Людмила Олександрівна
-    record: №~CPRPP2025/129
+    record: №CPRPP2025/129
     issued: 25.04.2025р.
   - name: Ільїна Євгенія Вікторівна
-    record: №~CPRPP2025/130
+    record: №CPRPP2025/130
     issued: 25.04.2025р.
   - name: Кочерга Тамара Юріївна
-    record: №~CPRPP2025/131
+    record: №CPRPP2025/131
     issued: 25.04.2025р.
   - name: Кулик Лідія Володимирівна
     volume: 2год. (0,07 кредиту ЄКТС)
-    record: №~CPRPP2025/132
+    record: №CPRPP2025/132
     issued: 25.04.2025р.
   - name: Куліш Наталія Іванівна
-    record: №~CPRPP2025/133
+    record: №CPRPP2025/133
     issued: 25.04.2025р.
   - name: Левченко Інна Григорівна
-    record: №~CPRPP2025/134
+    record: №CPRPP2025/134
     issued: 25.04.2025р.
   - name: Литвих Тетяна Володимирівна
-    record: №~CPRPP2025/135
+    record: №CPRPP2025/135
     issued: 25.04.2025р.
   - name: Ляшенко Світлана Михайлівна
-    record: №~CPRPP2025/136
+    record: №CPRPP2025/136
     issued: 25.04.2025р.
   - name: Маринич Світлана Карпівна
     volume: 2год. (0,07 кредиту ЄКТС)
-    record: №~CPRPP2025/137
+    record: №CPRPP2025/137
     issued: 25.04.2025р.
   - name: Мастаєва Оксана Василівна
-    record: №~CPRPP2025/138
+    record: №CPRPP2025/138
     issued: 25.04.2025р.
   - name: Омельченко Вікторія Володимирівна
-    record: №~CPRPP2025/139
+    record: №CPRPP2025/139
     issued: 25.04.2025р.
   - name: Прозоровська Олена Федорівна
-    record: №~CPRPP2025/140
+    record: №CPRPP2025/140
     issued: 25.04.2025р.
   - name: Рокало Маргарита Євгеніївна
-    record: №~CPRPP2025/141
+    record: №CPRPP2025/141
     issued: 25.04.2025р.
   - name: Самозвон Олена Анатоліївна
     volume: 2год. (0,07 кредиту ЄКТС)
-    record: №~CPRPP2025/142
+    record: №CPRPP2025/142
     issued: 25.04.2025р.
   - name: Сафронова Ірина Олександрівна
-    record: №~CPRPP2025/143
+    record: №CPRPP2025/143
     issued: 25.04.2025р.
   - name: Силаєва Марія Дмитрівна
-    record: №~CPRPP2025/144
+    record: №CPRPP2025/144
     issued: 25.04.2025р.
   - name: Смаль Любов Іванівна
-    record: №~CPRPP2025/145
+    record: №CPRPP2025/145
     issued: 25.04.2025р.
   - name: Теремецька Олена Ігорівна
-    record: №~CPRPP2025/146
+    record: №CPRPP2025/146
     issued: 25.04.2025р.
   - name: Ткачук Наталія Миколаївна
-    record: №~CPRPP2025/147
+    record: №CPRPP2025/147
     issued: 25.04.2025р.
   - name: Трактовенко Станіслав Анатолійович
     volume: 2год. (0,07 кредиту ЄКТС)
-    record: №~CPRPP2025/148
+    record: №CPRPP2025/148
     issued: 25.04.2025р.
   - name: Третяк Любов Іванівна
-    record: №~CPRPP2025/149
+    record: №CPRPP2025/149
     issued: 25.04.2025р.
   - name: Філенко Ірина Василівна
-    record: №~CPRPP2025/150
+    record: №CPRPP2025/150
     issued: 25.04.2025р.
   - name: Чечельницька Валентина Іванівна
-    record: №~CPRPP2025/151
+    record: №CPRPP2025/151
     issued: 25.04.2025р.
   - name: Чорнуха Вікторія Олександрівна
-    record: №~CPRPP2025/152
+    record: №CPRPP2025/152
     issued: 25.04.2025р.
   - name: Шовкопляс Людмила Анатоліївна
     volume: 2год. (0,07 кредиту ЄКТС)
-    record: №~CPRPP2025/153
+    record: №CPRPP2025/153
     issued: 25.04.2025р.
   - name: Яковенко Лариса Миколаївна
-    record: №~CPRPP2025/154
+    record: №CPRPP2025/154
     issued: 25.04.2025р.
 ---
