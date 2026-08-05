@@ -497,14 +497,27 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
 
           case 'news_list': {
             // Редактор обирає новини зі списку, а підпис і дата беруться
-            // з самої публікації — тож вони не розходяться з нею з часом
+            // з самої публікації — тож вони не розходяться з нею з часом.
+            //
+            // Decap для списку з одним полем пише прості рядки (`- slug`). Але якщо
+            // запис колись прийде обʼєктом (`- item: slug`) — правка руками, інша
+            // версія CMS — блок не повинен зникати зі сторінки без жодного слова.
             const items = (block.items ?? [])
-              .map((ref) => {
-                const key = slugify(String(ref).replace(/\.md$/, ''))
+              .map((ref: unknown) => {
+                const raw = typeof ref === 'string' ? ref : String((ref as { item?: unknown })?.item ?? '')
+                const key = slugify(raw.replace(/\.md$/, ''))
                 return news.find((n) => n.slug === key)
               })
               .filter((n): n is NonNullable<typeof n> => Boolean(n))
-            if (items.length === 0) return null
+            if (items.length === 0) {
+              const asked = (block.items ?? []).length
+              if (asked > 0) {
+                console.warn(
+                  `[blocks] Блок «Список новин»: жодної з ${asked} обраних публікацій не знайдено — блок не показано`,
+                )
+              }
+              return null
+            }
             return (
               <section key={i}>
                 {block.title && <h2 className="font-heading text-xl font-bold mb-3">{block.title}</h2>}
