@@ -357,6 +357,24 @@ export function PlanMonthTables({ months }: { months: PlanMonth[] }) {
 }
 
 /**
+ * Підписи стовпців за замовчуванням. Потрібні, коли редактор заповнив лише
+ * «Які дані в стовпцях» і не дублював їх у «Назвах стовпців»: раніше ці два
+ * списки треба було тримати синхронними вручну, і вони розходились.
+ * Явні `columns` мають вищий приоритет — усі наявні таблиці лишаються як є.
+ */
+const FIELD_LABELS: Record<TableField, string> = {
+  institution: 'Заклад освіти',
+  person: 'Прізвище, ім’я, по батькові',
+  role: 'Посада / напрям роботи',
+  phone: 'Телефон',
+  email: 'Електронна адреса',
+  event: 'Назва заходів',
+  date: 'Дата проведення',
+  responsible: 'Відповідальний',
+  note: 'Примітка',
+}
+
+/**
  * Таблиця розділу. Спільна для блока «Таблиця» і для планів роботи: інакше
  * дві розмітки з часом розійшлися б, і плани почали б виглядати інакше за
  * решту таблиць сайту.
@@ -382,7 +400,8 @@ function TableSection({
     що були в безіменних клітинках, тож сторінка виглядає так само.
     № з/п не зберігаємо в даних — беремо з індексу, як у сертифікатах.
   */
-  const numbered = /^\s*№/.test(columns[0] ?? '')
+  const headers = columns.length > 0 ? columns : ['№ з/п', ...fields.map((f) => FIELD_LABELS[f] ?? f)]
+  const numbered = /^\s*№/.test(headers[0] ?? '')
   let counter = 0
   const fromEntries = (entries ?? []).map((e) => {
     // Підпис під таблицею («Директор ЦПРПП …») нумерації не отримує
@@ -407,10 +426,10 @@ function TableSection({
           два-три символи, а overflow-x-auto не спрацьовує ніколи.
         */}
         <table className="w-full min-w-[36rem] text-sm border-collapse">
-          {columns.length > 0 && (
+          {headers.length > 0 && (
             <thead>
               <tr className="border-b border-border">
-                {columns.map((col, c) => (
+                {headers.map((col, c) => (
                   <th key={c} scope="col" className="text-left font-heading font-bold p-2 align-bottom">
                     {col}
                   </th>

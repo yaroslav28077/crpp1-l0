@@ -312,26 +312,6 @@ collections:
                 required: false
                 hint: Необов'язково. Місяці збираються самі з розділу «Плани роботи» — тут нічого вписувати не треба.
 
-          - name: news_list
-            label: Список новин (обираються вручну)
-            summary: "{{fields.title | default('Список новин')}}"
-            fields:
-              - { name: title, label: Заголовок, widget: string, required: false, default: Події }
-              - name: items
-                label: Новини
-                label_singular: Новина
-                widget: list
-                summary: '{{fields.item}}'
-                hint: Оберіть публікації зі списку — назва й дата підтягнуться самі й не розійдуться з новиною.
-                field:
-                  name: item
-                  label: Новина
-                  widget: relation
-                  collection: news
-                  search_fields: [title]
-                  value_field: '{{slug}}'
-                  display_fields: ['{{title}}']
-
           - name: documents
             label: Перелік документів і посилань
             summary: "{{fields.title | default('Перелік документів')}}"
@@ -423,13 +403,14 @@ collections:
                 label: Назви стовпців
                 label_singular: Стовпець
                 widget: list
+                required: false
                 # Без summary Decap підписує згорнутий рядок лейблом поля («Назва стовпця»),
                 # тож список виглядав як чотири порожні пункти. collapsed: false — щоб
                 # значення були видні відразу: стовпців завжди кілька, місця вони не з'їдають.
                 summary: '{{fields.column}}'
                 collapsed: false
                 field: { name: column, label: Назва стовпця, widget: string }
-                hint: 'Наприклад: № з/п, Назва закладу, Керівник, Телефон, Електронна адреса'
+                hint: 'Необов’язково. Якщо лишити порожнім, шапка складеться з «Які дані в стовпцях» нижче, а «№ з/п» додасться сам. Заповнюйте, лише коли потрібні свої формулювання, напр.: № з/п, Назва закладу, Керівник, Телефон, Електронна адреса'
               - name: fields
                 label: Які дані в стовпцях
                 label_singular: Стовпець
@@ -448,9 +429,6 @@ collections:
                     - { label: Посада / напрям роботи / спільнота, value: role }
                     - { label: Телефон, value: phone }
                     - { label: Електронна адреса, value: email }
-                    - { label: Назва заходу, value: event }
-                    - { label: Дата проведення, value: date }
-                    - { label: Відповідальний, value: responsible }
               - name: entries
                 label: Рядки
                 label_singular: Рядок
@@ -458,7 +436,7 @@ collections:
                 required: false
                 # Без summary Decap показує рядок сирим масивом ["1","Перша гімназія…"],
                 # а з ним у списку видно заклад і людину — рядок можна знайти очима.
-                summary: "{{fields.institution}} {{fields.person}}{{fields.event}} — {{fields.date}}{{fields.role}}{{fields.phone}}"
+                summary: "{{fields.institution}} {{fields.person}} {{fields.role}}{{fields.phone}}"
                 hint: Заповнюйте лише ті поля, які є в цій таблиці. Пошту й телефон пишіть звичайним текстом — посилання зробляться самі.
                 fields:
                   - { name: institution, label: Заклад освіти, widget: string, required: false }
@@ -466,9 +444,6 @@ collections:
                   - { name: role, label: Посада / напрям роботи / спільнота, widget: string, required: false }
                   - { name: phone, label: Телефон, widget: string, required: false }
                   - { name: email, label: Електронна адреса, widget: string, required: false }
-                  - { name: event, label: Назва заходу, widget: text, required: false }
-                  - { name: date, label: Дата проведення, widget: string, required: false }
-                  - { name: responsible, label: Відповідальний, widget: string, required: false }
                   - { name: note, label: Рядок на всю ширину (підпис), widget: string, required: false }
               # Старий формат безіменних клітинок. Лишається, поки не всі сторінки
               # переведені на «Рядки»: якщо забрати це поле, адмінка стерла б
