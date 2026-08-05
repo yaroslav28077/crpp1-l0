@@ -5,11 +5,4 @@ description: ''
 tags:
   - Лютий2021
   - '2021'
-gallery:
-  - image: /images/notes/2021/02/internet/001.jpg
-  - image: /images/notes/2021/02/internet/002.jpg
-  - image: /images/notes/2021/02/internet/001.png
-  - image: /images/notes/2021/02/internet/002.png
 ---
-
-[

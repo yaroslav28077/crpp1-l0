@@ -20,15 +20,12 @@ blocks:
     title: Фотогалерея
     images:
       - image: /images/notes/2021/11/nush2/001.jpg
-      - image: /images/notes/2021/11/nush2/002.jpg
-      - image: /images/notes/2021/11/nush2/003.jpg
       - image: /images/notes/2021/11/nush2/004.jpg
       - image: /images/notes/2021/11/nush2/005.jpg
       - image: /images/notes/2021/11/nush2/006.jpg
       - image: /images/notes/2021/11/nush2/007.jpg
       - image: /images/notes/2021/11/nush2/008.jpg
       - image: /images/notes/2021/11/nush2/009.jpg
-      - image: /images/notes/2021/11/nush2/010.jpg
       - image: /images/notes/2021/11/nush2/011.jpg
       - image: /images/notes/2021/11/nush2/012.jpg
       - image: /images/notes/2021/11/nush2/001.png
