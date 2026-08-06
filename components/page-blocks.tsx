@@ -32,6 +32,8 @@ async function renderMarkdown(blocks: PageBlock[]): Promise<Map<number, string>>
         html.set(i, await markdownToHtml(block.text ?? ''))
       } else if (block.type === 'news_by_topic' && block.extra) {
         html.set(i, await markdownToHtml(block.extra))
+      } else if (block.type === 'documents' && block.intro) {
+        html.set(i, await markdownToHtml(block.intro))
       } else if (block.type === 'certificates' && block.intro) {
         html.set(i, await markdownToHtml(block.intro))
       } else if (block.type === 'plans' && block.intro) {
@@ -566,6 +568,9 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
             const view = resolveView(block.view, block.collapsed)
             return (
               <Section key={i} view={view} title={block.title} fallbackTitle="Документи">
+                {block.intro && (
+                  <div className="article-content" dangerouslySetInnerHTML={{ __html: html.get(i) ?? '' }} />
+                )}
                 {view === 'grid' ? (
                   <DocumentGrid items={docs} news={news} />
                 ) : (
