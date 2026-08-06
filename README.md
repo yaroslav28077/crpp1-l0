@@ -175,14 +175,14 @@ scripts/            допоміжні скрипти (див. нижче)
 
 ```bash
 node scripts/generate-redirects.mjs    # оновити карту переходів зі старого сайту
-node scripts/fix-descriptions.mjs      # перевірити описи новин (--apply щоб записати)
-node scripts/fix-tiddly-leftovers.mjs  # прибрати залишки розмітки TiddlyWiki
 node scripts/compress-images.mjs       # стиснути зображення
+node scripts/make-icons.mjs            # перегенерувати favicon і apple-touch-icon
 ```
 
-`scripts/migrate.mjs` — одноразова міграція зі старого TiddlyWiki-сайту.
-Вона більше не запускається: старий сайт недоступний. Скрипт лишається
-як документація того, звідки взявся вміст; результат — у `migration-report.json`.
+Одноразові скрипти міграції зі старого TiddlyWiki-сайту (`migrate.mjs`, `pages-to-blocks.mjs`,
+`tables-to-entries.mjs` та інші) прибрані разом зі звітами `migration-report.json`
+і `restore-report.json`: старий сайт недоступний, повторно вони не запускаються.
+Код нікуди не зник — `git log --diff-filter=D -- scripts/`.
 
 ## Оновлення адмінки
 
