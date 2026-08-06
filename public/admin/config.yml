@@ -725,10 +725,17 @@ collections:
         label_singular: Захід
         widget: list
         required: false
-        summary: '{{fields.event}} — {{fields.date}}'
+        summary: "{{fields.event | default('Підпис під таблицею')}} — {{fields.date}}"
         hint: Один рядок — один захід. Порядок змінюється перетягуванням, № з/п сайт малює сам.
         fields:
-          - { name: event, label: Назва заходу, widget: text }
+          # Необов'язкове свідомо: 60 рядків у планах 2021-2022 — це підписи під
+          # таблицею («Директор ЦПРПП …»), де заповнено лише поле «Підпис».
+          # З required: true редактор не зберіг би такий місяць, не вигадавши назву заходу.
+          - name: event
+            label: Назва заходу
+            widget: text
+            required: false
+            hint: Порожнім лишають тільки для рядка-підпису під таблицею.
           - name: date
             label: Дата проведення
             widget: string
