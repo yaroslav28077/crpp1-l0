@@ -32,7 +32,6 @@ blocks:
       - label: Про деякі питання проведення чертифікації педагогічних працівників у 2021 році
         url: https://drive.google.com/file/d/1hqU4dTg6SiQbieghphmwD-6YqJXp0B-w/view?usp=sharing
       - label: Про затвердження професійного стандарту за професіями...
-        url: https://drive.google.com/file/d/1z301dCJ7G8PDGeuoXHrn48JoGn7CAApY/view?usp=sharing
       - label: Професійний стандарт за професіями...
         url: https://drive.google.com/file/d/18PX8VaXi9E5z3xj0NQFv9pQ2Fo5ELPNJ/view?usp=sharing
       - label: Лист щодо сприяння експертам
