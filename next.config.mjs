@@ -15,6 +15,28 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  /*
+    Заголовки безпеки. Спершу вони стояли лише в netlify.toml — і виявилось,
+    що там вони працюють тільки для файлів, які CDN віддає напряму (/admin/,
+    /images/*), а маршрути сайту йдуть через адаптер Next і заголовків не
+    отримували. Перевірено на проді: /admin/ мав x-frame-options, головна — ні.
+    Тому те саме оголошуємо тут: ці заголовки Next додає до власних відповідей.
+
+    CSP свідомо не додаємо: Netlify Identity й inline-стилі Next потребують
+    окремої перевірки, щоб не зламати адмінку.
+  */
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Permissions-Policy', value: 'geolocation=(), camera=(), microphone=()' },
+        ],
+      },
+    ]
+  },
   async rewrites() {
     return [
       // Next прибирає кінцевий слеш, тому /admin/ -> 308 -> /admin, а /admin
