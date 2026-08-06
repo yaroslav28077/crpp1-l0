@@ -50,13 +50,14 @@ function blocksToText(blocks: PageBlock[]): string {
     .map((b) => {
       switch (b.type) {
         case "notice":
-          return `${b.heading} ${b.text}`
+          return `${b.heading || ""} ${b.text || ""}`
         case "text":
-          return b.text
+          return b.text || ""
         case "accordion":
-          return `${b.title} ${b.text}`
+          return `${b.title || ""} ${b.text || ""}`
         case "documents":
-          return [b.title, ...b.items.map((i) => i.label)].filter(Boolean).join(" ")
+          // items може не бути: Decap зберігає блок без списку, і без ?? [] білд падає
+          return [b.title, ...(b.items ?? []).map((i) => i?.label)].filter(Boolean).join(" ")
         case "news_by_topic":
           // extra зберігає заходи, яких на сайті більше ніде немає —
           // без цього рядка вони випадали з пошуку
