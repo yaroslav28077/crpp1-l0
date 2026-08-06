@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { getAllCertificates, getAllNews, getAllPages } from '@/lib/content'
+import { getAllCertificates, getAllNews, getAllPages, getPlanYears } from '@/lib/content'
 import { archiveHref, archiveYears, countPages } from '@/lib/news-archive'
 import { SITE_URL } from '@/lib/site-url'
 
@@ -43,6 +43,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/${p.slug}`,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
+    })),
+    // Плани роботи за роками: окремі сторінки, тому в мапі мають бути обидва рівні
+    ...getPlanYears().map(({ year }) => ({
+      url: `${SITE_URL}/plany-roboty/${year}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
     })),
     ...certificates.map((c) => ({
       url: `${SITE_URL}/oblik-sertyfikativ/${c.slug}`,
