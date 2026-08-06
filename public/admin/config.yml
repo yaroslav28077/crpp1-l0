@@ -144,7 +144,10 @@ collections:
     description: Постійні сторінки сайту. Складаються з блоків, які можна додавати й переставляти.
     folder: content/pages
     create: true
-    slug: '{{slug}}'
+    # Імʼя файла = поле «Адреса сторінки», а не транслітерація назви: сайт будує
+    # адресу з імені файла (lib/content.ts -> slugify), тож інакше адреса в меню
+    # і адреса на сайті розходяться.
+    slug: '{{fields.slug}}'
     identifier_field: title
     sortable_fields: [title, section]
     summary: '{{title}} — {{section}}'
@@ -162,7 +165,18 @@ collections:
       # Адреса сторінки. Не показуємо (складається сама з назви), але поле
       # мусить бути оголошене: інакше Decap відкине його при збереженні
       # й адреси наявних сторінок могли б змінитися.
-      - { name: slug, label: Адреса, widget: hidden }
+      # Адреса сторінки задається вручну латинкою. Decap не вміє транслітерувати
+      # українську: з назви «Тестова сторінка» він назвав би файл «тестова-сторінка»,
+      # і адреса в меню (/тестова-сторінка) не збіглася б з адресою на сайті (/testova-storinka).
+      # Усі 69 наявних сторінок уже мають це поле, тож для них нічого не змінюється.
+      - name: slug
+        label: Адреса сторінки
+        widget: string
+        pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', 'Лише маленькі латинські літери, цифри й дефіси — напр. plany-roboty']
+        hint: >-
+          Латинкою, маленькими літерами, замість пробілів дефіси: напр. normatyvni-dokumenty.
+          Сторінка буде за адресою site/адреса. Саме це значення вставляється в меню.
+          У наявних сторінок НЕ змінюйте — зламаються посилання, які вже десь дали людям.
       - name: section
         label: Розділ меню
         widget: select
@@ -171,6 +185,7 @@ collections:
         options:
           - Про Центр
           - Головна сторінка
+          - Новини Центру
           - Освіта Лубенщини в умовах воєнного стану
           - Діяльність Центру
           - Педагогічні спільноти
@@ -312,6 +327,9 @@ collections:
                 required: false
                 hint: Необов'язково. Місяці збираються самі з розділу «Плани роботи» — тут нічого вписувати не треба.
 
+          # Ручний список новин. Лишається доступним, хоч на жодній сторінці зараз
+          # не використаний: рендер у коді є, і це єдиний спосіб зібрати добірку
+          # публікацій, які не мають спільної теми.
           - name: news_list
             label: Список новин (обираються вручну)
             summary: "{{fields.title | default('Список новин')}}"
@@ -322,7 +340,10 @@ collections:
                 label_singular: Новина
                 widget: list
                 summary: '{{fields.item}}'
-                hint: Оберіть публікації зі списку — назва й дата підтягнуться самі й не розійдуться з новиною.
+                hint: >-
+                  Оберіть публікації зі списку — назва й дата підтягнуться самі й не розійдуться
+                  з новиною. Якщо потрібні всі новини однієї теми, зручніше взяти блок
+                  «Список новин за темою»: він оновлюється сам.
                 field:
                   name: item
                   label: Новина
@@ -349,7 +370,7 @@ collections:
                   - { label: Плитки (для кількох бланків), value: grid }
               # Успадковане з імпорту поле. Рендер читає його як запасний варіант
               # для `view`; без оголошення Decap стирав би його при кожному save.
-              - { name: collapsed, widget: hidden }
+              - { name: collapsed, widget: hidden, required: false }
               - name: numbered
                 label: Нумерувати рядки
                 widget: boolean
@@ -370,7 +391,10 @@ collections:
                     label: Посилання
                     widget: string
                     required: false
-                    hint: Адреса на Google Диску або будь-яка інша. Якщо завантажуєте файл чи обираєте новину — лишіть порожнім.
+                    hint: >-
+                      Для сторінки сайту — коса риска й «Адреса сторінки» з її картки,
+                      напр. /normatyvni-dokumenty. Можна й зовнішню адресу (Google Диск).
+                      Якщо завантажуєте файл чи обираєте новину — лишіть порожнім.
                   - name: file
                     label: Або завантажити файл
                     widget: file
@@ -423,13 +447,14 @@ collections:
                 label: Назви стовпців
                 label_singular: Стовпець
                 widget: list
+                required: false
                 # Без summary Decap підписує згорнутий рядок лейблом поля («Назва стовпця»),
                 # тож список виглядав як чотири порожні пункти. collapsed: false — щоб
                 # значення були видні відразу: стовпців завжди кілька, місця вони не з'їдають.
                 summary: '{{fields.column}}'
                 collapsed: false
                 field: { name: column, label: Назва стовпця, widget: string }
-                hint: 'Наприклад: № з/п, Назва закладу, Керівник, Телефон, Електронна адреса'
+                hint: 'Необов’язково. Якщо лишити порожнім, шапка складеться з «Які дані в стовпцях» нижче, а «№ з/п» додасться сам. Заповнюйте, лише коли потрібні свої формулювання, напр.: № з/п, Назва закладу, Керівник, Телефон, Електронна адреса'
               - name: fields
                 label: Які дані в стовпцях
                 label_singular: Стовпець
@@ -448,9 +473,6 @@ collections:
                     - { label: Посада / напрям роботи / спільнота, value: role }
                     - { label: Телефон, value: phone }
                     - { label: Електронна адреса, value: email }
-                    - { label: Назва заходу, value: event }
-                    - { label: Дата проведення, value: date }
-                    - { label: Відповідальний, value: responsible }
               - name: entries
                 label: Рядки
                 label_singular: Рядок
@@ -458,7 +480,7 @@ collections:
                 required: false
                 # Без summary Decap показує рядок сирим масивом ["1","Перша гімназія…"],
                 # а з ним у списку видно заклад і людину — рядок можна знайти очима.
-                summary: "{{fields.institution}} {{fields.person}}{{fields.event}} — {{fields.date}}{{fields.role}}{{fields.phone}}"
+                summary: "{{fields.institution}} {{fields.person}} {{fields.role}}{{fields.phone}}"
                 hint: Заповнюйте лише ті поля, які є в цій таблиці. Пошту й телефон пишіть звичайним текстом — посилання зробляться самі.
                 fields:
                   - { name: institution, label: Заклад освіти, widget: string, required: false }
@@ -466,9 +488,6 @@ collections:
                   - { name: role, label: Посада / напрям роботи / спільнота, widget: string, required: false }
                   - { name: phone, label: Телефон, widget: string, required: false }
                   - { name: email, label: Електронна адреса, widget: string, required: false }
-                  - { name: event, label: Назва заходу, widget: text, required: false }
-                  - { name: date, label: Дата проведення, widget: string, required: false }
-                  - { name: responsible, label: Відповідальний, widget: string, required: false }
                   - { name: note, label: Рядок на всю ширину (підпис), widget: string, required: false }
               # Старий формат безіменних клітинок. Лишається, поки не всі сторінки
               # переведені на «Рядки»: якщо забрати це поле, адмінка стерла б
@@ -697,7 +716,9 @@ collections:
         widget: datetime
         date_format: 'YYYY-MM-DD'
         time_format: false
-        required: false
+        # Обов'язкова: з неї Decap будує ім'я файлу plan-РРРР-ММ, і за нею місяць
+        # потрапляє на сторінку свого року. Без дати файл став би «plan--».
+        required: true
         hint: Перше число цього місяця. За нею список стає в правильному порядку.
       - name: entries
         label: Заходи
