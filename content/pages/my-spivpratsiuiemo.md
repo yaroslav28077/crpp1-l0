@@ -10,7 +10,7 @@ blocks:
     items:
       - name: Міністерство освіти і науки України
         image: /images/pict/coop/mon.png
-        url: https://mon.gov.ua/ua
+        url: https://mon.gov.ua/
       - name: Департамент освіти і науки Полтавської ОДА
         image: /images/pict/coop/donpoda.png
         url: https://www.poltav-oblosvita.gov.ua/

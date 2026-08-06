@@ -50,7 +50,6 @@ blocks:
       - label: Професійний стандарт за професіями...
         url: https://drive.google.com/file/d/18PX8VaXi9E5z3xj0NQFv9pQ2Fo5ELPNJ/view?usp=sharing
       - label: Оновлено зміст навчальних програм ЗСО
-        url: https://mon.gov.ua/ua/news/onovleno-zmist-navchalnih-program-zso
       - label: Лист Міністерства освіти і науки України № 1/3872-22 від 04.04.2022 "Про методичні рекомендації “Перша психологічна допомога. Алгоритм дій”
         url: https://drive.google.com/file/d/1WJ6nQK2_vnUIDg7Dfcd43M1KQ85i_XF0/view?usp=sharing
       - label: Деякі питання організації виховного процесу у 2021-2022 н.р. щодо формування в дітей та учнів ціннісних життєвих навичок
@@ -66,7 +65,7 @@ blocks:
       - label: Методичні рекомендації щодо організації освітнього процесу в закладах дошкільної освіти Полтавської області у 2021-2022 навчальному році
         url: https://docs.google.com/document/d/1DlniXcH4fe_epO8Ug2QI9XBk-R2PCw5D/edit?usp=sharing&ouid=104895709143078317433&rtpof=true&sd=true
       - label: Наказ МОН від 13.07.2021 року № 813 «Про затвердження методичних рекомендацій щодо оцінювання результатів навчання учнів 1 – 4 класів  закладів загальної середньої освіти»
-        url: https://mon.gov.ua/ua/npa/pro-zatverdzhennya-metodichnih-rekomendacij-shodo-ocinyuvannya-rezultativ-navchannya-uchniv-1-4-klasiv-zakladiv-zagalnoyi-serednoyi-osviti
+        url: https://mon.gov.ua/npa/pro-zatverdzhennya-metodichnih-rekomendacij-shodo-ocinyuvannya-rezultativ-navchannya-uchniv-1-4-klasiv-zakladiv-zagalnoyi-serednoyi-osviti
       - label: Наказ МОЗ від  25.09.2020 року  № 2205 «Про затвердження Санітарного регламенту для закладів загальної середньої освіти»
         url: https://moz.gov.ua/article/ministry-mandates/nakaz-moz-ukraini-vid-25092020--2205-pro-zatverdzhennja-sanitarnogo-reglamentu-dlja-zakladiv-zagalnoi-serednoi-osviti
   - type: documents
@@ -88,7 +87,7 @@ blocks:
       - label: Наказ МОН України від 25.04.2013 № 466 (Про затвердження Положення про дистанційне навчання), зі змінами внесеними згідно Наказу МОН України № 1115 від 08.09.2020.
         url: https://zakon.rada.gov.ua/go/z0703-13
       - label: Наказ МОН України від 08.06.2018р. № 609 (Про затвердження примірного положення про команду психолого-педагогічного супроводу дитини з особливими освітніми потребами в закладі загальної середньої та дошкільної освіти).
-        url: https://mon.gov.ua/ua/npa/pro-zatverdzhennya-primirnogo-polozhennya-pro-komandu-psihologo-pedagogichnogo-suprovodu-ditini-z-osoblivimi-osvitnimi-potrebami-v-zakladi-zagalnoyi-serednoyi-ta-doshkilnoyi-osviti
+        url: https://mon.gov.ua/npa/pro-zatverdzhennya-primirnogo-polozhennya-pro-komandu-psihologo-pedagogichnogo-suprovodu-ditini-z-osoblivimi-osvitnimi-potrebami-v-zakladi-zagalnoyi-serednoyi-ta-doshkilnoyi-osviti
       - label: Наказ МОН України від 23.04.2018 № 414 (Про затвердження Типового переліку допоміжних засобів для навчання (спеціальних засобів корекції психофізичного розвитку) осіб з особливими освітніми потребами, які навчаються в закладах освіти), зі змінами, внесеними згідно з Наказом Міністерства освіти і науки № 1281 від 16.10.2020.
         url: https://zakon.rada.gov.ua/go/z0582-18
       - label: Наказ МОН України від 10.07.2019р. № 955 (Про внесення змін до наказу Міністерства освіти і науки України № 8 від 12 січня 2016 року).

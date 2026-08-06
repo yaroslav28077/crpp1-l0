@@ -173,7 +173,6 @@ blocks:
         url: https://docs.google.com/document/d/1JiQtrkbYBgfOrBf5LDRiofwR6YAmn4yU/edit?usp=sharing&ouid=105122741236082304027&rtpof=true&sd=true
       - label: Дистанційне проходження курсів підвищення кваліфікації на базі Українського відкритого університету післядипломної освіти
       - label: Положення про порядок визнання результатів підвищення кваліфікації педпрацівників ЗЗСО
-        url: https://drive.google.com/file/d/1NnIfPytr-1v1AYQXEuNJtrqvBN-FTu6s/view?usp=sharing
       - label: Наказ "Про підсумки підвищення кваліфікації педагогічних працівників закладів освіти міста Лубен у 2020 році"
   - type: documents
     title: Програми
