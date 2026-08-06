@@ -57,7 +57,7 @@ function blocksToText(blocks: PageBlock[]): string {
           return `${b.title || ""} ${b.text || ""}`
         case "documents":
           // items може не бути: Decap зберігає блок без списку, і без ?? [] білд падає
-          return [b.title, ...(b.items ?? []).map((i) => i?.label)].filter(Boolean).join(" ")
+          return [b.title, b.intro, ...(b.items ?? []).map((i) => i?.label)].filter(Boolean).join(" ")
         case "news_by_topic":
           // extra зберігає заходи, яких на сайті більше ніде немає —
           // без цього рядка вони випадали з пошуку
