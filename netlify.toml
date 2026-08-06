@@ -2,5 +2,28 @@
   command = "pnpm build"
   publish = ".next"
 
+# Версія Node для збірки. Без піна Netlify бере дефолтну, і її зміна
+# ламає деплой мовчки. 22 — поточний LTS, на ньому працює pnpm 11.
+[build.environment]
+  NODE_VERSION = "22"
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Зображення з public/images ніколи не змінюються під тим самим іменем
+# (архів нотаток старого сайту + нові завантаження з унікальними іменами),
+# тож віддаємо їх з довгим immutable-кешем. Раніше кожен перегляд
+# галереї (до 88 фото, 5+ МБ) робив повторну ревалідацію всіх файлів.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Базові заголовки безпеки для всього сайту. CSP свідомо не додаємо:
+# Netlify Identity + inline-стилі Next вимагають окремої перевірки.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=()"
