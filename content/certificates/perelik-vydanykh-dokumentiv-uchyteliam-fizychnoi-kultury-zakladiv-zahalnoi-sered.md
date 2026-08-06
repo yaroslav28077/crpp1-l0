@@ -6,37 +6,37 @@ default_volume: 15 год. (0,5 кредиту ЄКТС)
 default_result: Удосконалив професійні компетентності
 entries:
   - name: Андреєв Іван Іванович
-    record: №~CPRPP2025/175
+    record: №CPRPP2025/175
     issued: 05.06.2025р.
   - name: Василенко Олександр Михайлович
-    record: №~CPRPP2025/176
+    record: №CPRPP2025/176
     issued: 05.06.2025р.
   - name: Галіченко Віталій Юрійович
-    record: №~CPRPP2025/177
+    record: №CPRPP2025/177
     issued: 05.06.2025р.
   - name: Глібова Наталія Миколаівна
-    record: №~CPRPP2025/178
+    record: №CPRPP2025/178
     issued: 05.06.2025р.
     result: Удосконалила професійні компетентності
   - name: Глущенко Сергій Олександрович
-    record: №~CPRPP2025/179
+    record: №CPRPP2025/179
     issued: 05.06.2025р.
   - name: Карякін Ігор Борисович
-    record: №~CPRPP2025/180
+    record: №CPRPP2025/180
     issued: 05.06.2025р.
   - name: Лисак А ндрій Михайлович
-    record: №~CPRPP2025/181
+    record: №CPRPP2025/181
     issued: 05.06.2025р.
   - name: Сало Євгеній Станіславович
-    record: №~CPRPP2025/182
+    record: №CPRPP2025/182
     issued: 05.06.2025р.
   - name: Федорченко Максим Анатолійович
     volume: 8 год. (0,3 кредиту ЄКТС)
-    record: №~CPRPP2025/183
+    record: №CPRPP2025/183
     issued: 05.06.2025р.
   - name: Пильгук Наталія Юріївна
     volume: 8 год. (0,3 кредиту ЄКТС)
-    record: №~CPRPP2025/184
+    record: №CPRPP2025/184
     issued: 05.06.2025р.
     result: Удосконалила професійні компетентності
 ---

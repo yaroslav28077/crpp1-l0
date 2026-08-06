@@ -9,39 +9,39 @@ entries:
     record: №CPRPP/КВЕД 85.59/2025/214
     issued: 26.11.2025р.
   - name: Головань Ірина
-    record: №СPRPP/КВЕД 85.59/2025/215
+    record: №CPRPP/КВЕД 85.59/2025/215
     issued: 26.11.2025р.
   - name: Павлова Олена
-    record: №СPRPP/КВЕД 85.59/2025/216
+    record: №CPRPP/КВЕД 85.59/2025/216
     issued: 26.11.2025р.
   - name: Сай Лілія
-    record: №СPRPP/КВЕД 85.59/2025/217
+    record: №CPRPP/КВЕД 85.59/2025/217
     issued: 26.11.2025р.
   - name: Черевко Катерина
-    record: №СPRPP/КВЕД 85.59/2025/218
+    record: №CPRPP/КВЕД 85.59/2025/218
     issued: 26.11.2025р.
   - name: Кулаков Артем
-    record: №СPRPP/КВЕД 85.59/2025/219
+    record: №CPRPP/КВЕД 85.59/2025/219
     issued: 26.11.2025р.
   - name: Назаренко Алла
-    record: №СPRPP/КВЕД 85.59/2025/220
+    record: №CPRPP/КВЕД 85.59/2025/220
     issued: 26.11.2025р.
   - name: Радченко Ольга
-    record: №СPRPP/КВЕД 85.59/2025/221
+    record: №CPRPP/КВЕД 85.59/2025/221
     issued: 26.11.2025р.
   - name: Рудик Алла
-    record: №СPRPP/КВЕД 85.59/2025/222
+    record: №CPRPP/КВЕД 85.59/2025/222
     issued: 26.11.2025р.
   - name: Салівон Людмила
-    record: №СPRPP/КВЕД 85.59/2025/223
+    record: №CPRPP/КВЕД 85.59/2025/223
     issued: 26.11.2025р.
   - name: Тягній Лариса
-    record: №СPRPP/КВЕД 85.59/2025/224
+    record: №CPRPP/КВЕД 85.59/2025/224
     issued: 26.11.2025р.
   - name: Шелег Тетяна
-    record: №СPRPP/КВЕД 85.59/2025/225
+    record: №CPRPP/КВЕД 85.59/2025/225
     issued: 26.11.2025р.
   - name: Фролова Юлія
-    record: №СPRPP/КВЕД 85.59/2025/226
+    record: №CPRPP/КВЕД 85.59/2025/226
     issued: 26.11.2025р.
 ---

@@ -6,18 +6,18 @@ default_volume: 10 год. (0,33 кредиту ЄКТС)
 default_result: Удосконалила здатність до запровадження інновацій в освітньому просторі
 entries:
   - name: Наталія Ісакова
-    record: №~CPRPP2025/208
+    record: №CPRPP2025/208
     issued: 02.10.2025.
   - name: Вікторія Кривенко
-    record: №~CPRPP2025/209
+    record: №CPRPP2025/209
     issued: 02.10.2025.
   - name: Валентина Кочеткова
-    record: №~CPRPP2025/210
+    record: №CPRPP2025/210
     issued: 02.10.2025.
   - name: Марина Радько
-    record: №~CPRPP2025/211
+    record: №CPRPP2025/211
     issued: 02.10.2025.
   - name: Лариса Шапошник
-    record: №~CPRPP2025/212
+    record: №CPRPP2025/212
     issued: 02.10.2025.
 ---

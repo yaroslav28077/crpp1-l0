@@ -6,39 +6,39 @@ default_volume: 5 год. (0,17 кредиту ЄКТС)
 default_result: Удосконалення професійних компетентностей
 entries:
   - name: Білан Оксана Григорівна
-    record: №~CPRPP2024/190
+    record: №CPRPP2024/190
     issued: 06.11.2024р.
   - name: Ганага Наталія Миколаївна
-    record: №~CPRPP2024/191
+    record: №CPRPP2024/191
     issued: 06.11.2024р.
   - name: Даценко Людмила Анатоліївна
-    record: №~CPRPP2024/192
+    record: №CPRPP2024/192
     issued: 06.11.2024р.
   - name: Колісніченко Наталія Миколаївна
-    record: №~CPRPP2024/193
+    record: №CPRPP2024/193
     issued: 06.11.2024р.
   - name: Кононович Людмила Іванівна
-    record: №~CPRPP2024/194
+    record: №CPRPP2024/194
     issued: 06.11.2024р.
   - name: Марчак Ірина Василівна
-    record: №~CPRPP2024/195
+    record: №CPRPP2024/195
     issued: 06.11.2024р.
   - name: Мастаєва Оксана Василівна
-    record: №~CPRPP2024/196
+    record: №CPRPP2024/196
     issued: 06.11.2024р.
   - name: Носенко Лариса Василівна
-    record: №~CPRPP2024/197
+    record: №CPRPP2024/197
     issued: 06.11.2024р.
   - name: Овдієнко Оксана Миколаївна
-    record: №~CPRPP2024/198
+    record: №CPRPP2024/198
     issued: 06.11.2024р.
   - name: Огарьова Людмила Михайлівна
-    record: №~CPRPP2024/199
+    record: №CPRPP2024/199
     issued: 06.11.2024р.
   - name: Федоренко Наталія Василівна
-    record: №~CPRPP2024/200
+    record: №CPRPP2024/200
     issued: 06.11.2024р.
   - name: Шуть Любов Василівна
-    record: №~CPRPP2024/201
+    record: №CPRPP2024/201
     issued: 06.11.2024р.
 ---

@@ -6,21 +6,21 @@ default_volume: 10 год. (0,33 кредиту ЄКТС)
 default_result: Удосконалення професійно-педагогічної та математичної компетентностей
 entries:
   - name: Діхно Наталія Миколаївна
-    record: №~CPRPP2024/184
+    record: №CPRPP2024/184
     issued: 25.09.2024р.
   - name: Джура Любов Іванівна
-    record: №~CPRPP2024/185
+    record: №CPRPP2024/185
     issued: 25.09.2024р.
   - name: Мисник Тетяна Костянтинівна
-    record: №~CPRPP2024/186
+    record: №CPRPP2024/186
     issued: 25.09.2024р.
   - name: Неділько Тамара Михайлівна
-    record: №~CPRPP2024/187
+    record: №CPRPP2024/187
     issued: 25.09.2024р.
   - name: Сидоренко Тетяна Василівна
-    record: №~CPRPP2024/188
+    record: №CPRPP2024/188
     issued: 25.09.2024р.
   - name: Яриновська Наталія Євгеніївна
-    record: №~CPRPP2024/189
+    record: №CPRPP2024/189
     issued: 25.09.2024р.
 ---

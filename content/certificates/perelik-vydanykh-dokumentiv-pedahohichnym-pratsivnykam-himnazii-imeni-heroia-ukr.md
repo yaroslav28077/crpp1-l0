@@ -7,92 +7,92 @@ default_result: Удосконалення професійно-педагогі
 entries:
   - name: Брежнєва Олена Олегівна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2025/1
+    record: №CPRPP2025/1
     issued: 28.02.2025р.
   - name: Василенко Олександр Михайлович
-    record: №~CPRPP2025/2
+    record: №CPRPP2025/2
     issued: 28.02.2025р.
   - name: Гладишевич Наталія Миколаївна
-    record: №~CPRPP2025/3
+    record: №CPRPP2025/3
     issued: 28.02.2025р.
   - name: Гринь Ірина Миколаївна
-    record: №~CPRPP2025/4
+    record: №CPRPP2025/4
     issued: 28.02.2025р.
     result: Удосконалення управлінських компетентностей
   - name: Давиденко Лілія Анатоліївна
     volume: 8 год. (0,27 кредиту ЄКТС)
-    record: №~CPRPP2025/5
+    record: №CPRPP2025/5
     issued: 28.02.2025р.
   - name: Дмитренко Ольга Володимирівна
-    record: №~CPRPP2025/6
+    record: №CPRPP2025/6
     issued: 28.02.2025р.
     result: Удосконалення управлінських компетентностей
   - name: Дудка Світлана Анатоліївна
-    record: №~CPRPP2025/7
+    record: №CPRPP2025/7
     issued: 28.02.2025р.
   - name: Дубяга Світлана Олександрівна
     volume: 8 год. (0,27 кредиту ЄКТС)
-    record: №~CPRPP2025/8
+    record: №CPRPP2025/8
     issued: 28.02.2025р.
   - name: Євдокимова Валентина Василівна
-    record: №~CPRPP2025/9
+    record: №CPRPP2025/9
     issued: 28.02.2025р.
     result: Удосконалення управлінських компетентностей
   - name: Калайда Олена Василівна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2025/10
+    record: №CPRPP2025/10
     issued: 28.02.2025р.
   - name: Карякін Ігор Борисович
-    record: №~CPRPP2025/11
+    record: №CPRPP2025/11
     issued: 28.02.2025р.
   - name: Кононович Людмила Іванівна
-    record: №~CPRPP2025/12
+    record: №CPRPP2025/12
     issued: 28.02.2025р.
   - name: Кривчун Любов Віталіївна
     volume: 8 год. (0,27 кредиту ЄКТС)
-    record: №~CPRPP2025/13
+    record: №CPRPP2025/13
     issued: 28.02.2025р.
   - name: Кропивка Ірина Володимирівна
     volume: 8 год. (0,27 кредиту ЄКТС)
-    record: №~CPRPP2025/14
+    record: №CPRPP2025/14
     issued: 28.02.2025р.
   - name: Курильчук Галина Петрівна
-    record: №~CPRPP2025/15
+    record: №CPRPP2025/15
     issued: 28.02.2025р.
   - name: Лисенко Оксана Юріївна
-    record: №~CPRPP2025/16
+    record: №CPRPP2025/16
     issued: 28.02.2025р.
   - name: Лобода Віталій Вікторович
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2025/17
+    record: №CPRPP2025/17
     issued: 28.02.2025р.
   - name: Місюра Ірина Вікторівна
-    record: №~CPRPP2025/18
+    record: №CPRPP2025/18
     issued: 28.02.2025р.
   - name: Омельченко Любов Вікторівна
-    record: №~CPRPP2025/19
+    record: №CPRPP2025/19
     issued: 28.02.2025р.
   - name: Сабадаш Світлана Юріївна
-    record: №~CPRPP2025/20
+    record: №CPRPP2025/20
     issued: 28.02.2025р.
   - name: Сабадаш Тамара Іванівна
-    record: №~CPRPP2025/21
+    record: №CPRPP2025/21
     issued: 28.02.2025р.
   - name: Самозвон Олена Анатоліївна
     volume: 5 год. (0,17 кредиту ЄКТС)
-    record: №~CPRPP2025/22
+    record: №CPRPP2025/22
     issued: 28.02.2025р.
   - name: Тендітник Сергій Анатолійович
     volume: 05 год. (0,5 кредиту ЄКТС)
-    record: №~CPRPP2025/23
+    record: №CPRPP2025/23
     issued: 28.02.2025р.
   - name: Федорченко Ірина Борисівна
-    record: №~CPRPP2025/24
+    record: №CPRPP2025/24
     issued: 28.02.2025р.
   - name: Циганник Сергій Григорович
-    record: №~CPRPP2025/25
+    record: №CPRPP2025/25
     issued: 28.02.2025р.
   - name: Чорній Ісус Ігорович
-    record: №~CPRPP2025/26
+    record: №CPRPP2025/26
     issued: 28.02.2025р.
 ---

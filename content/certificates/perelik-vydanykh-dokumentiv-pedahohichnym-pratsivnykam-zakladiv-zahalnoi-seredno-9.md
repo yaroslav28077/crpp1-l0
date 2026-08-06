@@ -6,108 +6,108 @@ default_volume: 30 год. (1 кредит ЄКТС)
 default_result: Удосконалила знання сучасних тенденцій розвитку освіти й підвищила професійно-педагогічні компетентності
 entries:
   - name: Бабенко Вікторія Леонідівна
-    record: №~CPRPP2025/67
+    record: №CPRPP2025/67
     issued: 11.04.2025р.
   - name: Бган Світлана Григорівна
-    record: №~CPRPP2025/68
+    record: №CPRPP2025/68
     issued: 11.04.2025р.
   - name: Бибик Олена Миколаївна
-    record: №~CPRPP2025/69
+    record: №CPRPP2025/69
     issued: 11.04.2025р.
   - name: Білик Лідія Миколаївна
-    record: №~CPRPP2025/70
+    record: №CPRPP2025/70
     issued: 11.04.2025р.
   - name: Вінник Єлизавета Романівна
-    record: №~CPRPP2025/71
+    record: №CPRPP2025/71
     issued: 11.04.2025р.
   - name: Діхно Наталія Миколаївна
-    record: №~CPRPP2025/72
+    record: №CPRPP2025/72
     issued: 11.04.2025р.
   - name: Джура Любов Іванівна
-    record: №~CPRPP2025/73
+    record: №CPRPP2025/73
     issued: 11.04.2025р.
   - name: Зінковська Інна В’ячеславівна
-    record: №~CPRPP2025/74
+    record: №CPRPP2025/74
     issued: 11.04.2025р.
   - name: Зикова Світлана Тихонівна
-    record: №~CPRPP2025/75
+    record: №CPRPP2025/75
     issued: 11.04.2025р.
   - name: Калайда Олена Василівна
-    record: №~CPRPP2025/76
+    record: №CPRPP2025/76
     issued: 11.04.2025р.
   - name: Костенко Тетяна Володимирівна
-    record: №~CPRPP2025/77
+    record: №CPRPP2025/77
     issued: 11.04.2025р.
   - name: Крістіян Тетяна Олександрівна
-    record: №~CPRPP2025/78
+    record: №CPRPP2025/78
     issued: 11.04.2025р.
   - name: Кремінь Надія Анатоліївна
-    record: №~CPRPP2025/79
+    record: №CPRPP2025/79
     issued: 11.04.2025р.
   - name: Кропивка Ірина Володимирівна
-    record: №~CPRPP2025/80
+    record: №CPRPP2025/80
     issued: 11.04.2025р.
   - name: Кулик Юлія Едуардівна
-    record: №~CPRPP2025/81
+    record: №CPRPP2025/81
     issued: 11.04.2025р.
   - name: Любарець Людмила Миколаївна
-    record: №~CPRPP2025/82
+    record: №CPRPP2025/82
     issued: 11.04.2025р.
   - name: Місюра Ірина Вікторівна
-    record: №~CPRPP2025/83
+    record: №CPRPP2025/83
     issued: 11.04.2025р.
   - name: Парнюк Лариса Анатоліївна
-    record: №~CPRPP2025/84
+    record: №CPRPP2025/84
     issued: 11.04.2025р.
   - name: Парнюк Таміла
-    record: №~CPRPP2025/85
+    record: №CPRPP2025/85
     issued: 11.04.2025р.
   - name: Похвала Вікторія Олегівна
-    record: №~CPRPP2025/86
+    record: №CPRPP2025/86
     issued: 11.04.2025р.
   - name: Семенович Наталія Сергіївна
-    record: №~CPRPP2025/87
+    record: №CPRPP2025/87
     issued: 11.04.2025р.
   - name: Сивобородько Людмила Михайлівна
-    record: №~CPRPP2025/88
+    record: №CPRPP2025/88
     issued: 11.04.2025р.
   - name: Сидоренко Тетяна Василівна
-    record: №~CPRPP2025/89
+    record: №CPRPP2025/89
     issued: 11.04.2025р.
   - name: Семітко Таміла Олексіївна
-    record: №~CPRPP2025/90
+    record: №CPRPP2025/90
     issued: 11.04.2025р.
   - name: Симончук Тетяна Петрівна
-    record: №~CPRPP2025/91
+    record: №CPRPP2025/91
     issued: 11.04.2025р.
   - name: Стовповська Олена Миколаївна
-    record: №~CPRPP2025/92
+    record: №CPRPP2025/92
     issued: 11.04.2025р.
   - name: Томчук Мирослава Федорівна
-    record: №~CPRPP2025/93
+    record: №CPRPP2025/93
     issued: 11.04.2025р.
   - name: Турова Тетяна Петрівна
-    record: №~CPRPP2025/94
+    record: №CPRPP2025/94
     issued: 11.04.2025р.
   - name: Устименко Людмила Іванівна
-    record: №~CPRPP2025/95
+    record: №CPRPP2025/95
     issued: 11.04.2025р.
   - name: Федченко Тетяна Володимирівна
-    record: №~CPRPP2025/96
+    record: №CPRPP2025/96
     issued: 11.04.2025р.
   - name: Фролова Юлія Михайлівна
-    record: №~CPRPP2025/97
+    record: №CPRPP2025/97
     issued: 11.04.2025р.
   - name: Цуркан Анна Юріївна
-    record: №~CPRPP2025/98
+    record: №CPRPP2025/98
     issued: 11.04.2025р.
   - name: Шапаренко Надія григорівна
-    record: №~CPRPP2025/99
+    record: №CPRPP2025/99
     issued: 11.04.2025р.
   - name: Яриновська Наталія Євгеніївна
-    record: №~CPRPP2025/100
+    record: №CPRPP2025/100
     issued: 11.04.2025р.
   - name: Ярмоленко Тетяна Іванівна
-    record: №~CPRPP2025/101
+    record: №CPRPP2025/101
     issued: 11.04.2025р.
 ---

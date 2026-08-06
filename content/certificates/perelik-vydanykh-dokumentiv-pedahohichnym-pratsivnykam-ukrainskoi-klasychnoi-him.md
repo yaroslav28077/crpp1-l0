@@ -6,47 +6,47 @@ default_volume: 10 год. (0,33 кредиту ЄКТС)
 default_result: Удосконалення професійно-педагогічних компетентностей
 entries:
   - name: Бала Ірина Володимирівна
-    record: №~CPRPP2025/155
+    record: №CPRPP2025/155
     issued: 29.04.2025р.
   - name: Вербенець Юлія Володимирівна
-    record: №~CPRPP2025/156
+    record: №CPRPP2025/156
     issued: 29.04.2025р.
   - name: Грицай Тетяна Анатоліївна
-    record: №~CPRPP2025/157
+    record: №CPRPP2025/157
     issued: 29.04.2025р.
   - name: Кулик Юлія Едуардівна
-    record: №~CPRPP2025/158
+    record: №CPRPP2025/158
     issued: 29.04.2025р.
     result: Удосконалення професійно-педагогічних ккомпетентностей
   - name: Литвих Тетяна Володимирівна
-    record: №~CPRPP2025/159
+    record: №CPRPP2025/159
     issued: 29.04.2025р.
   - name: Манько Надія Олександрівна
-    record: №~CPRPP2025/160
+    record: №CPRPP2025/160
     issued: 29.04.2025р.
     result: Удосконалення управлінських компетентностей
   - name: Рєпіна Ірина Олексіївна
-    record: №~CPRPP2025/161
+    record: №CPRPP2025/161
     issued: 29.04.2025р.
   - name: Сидоренко Тетяна Василівна
-    record: №~CPRPP2025/162
+    record: №CPRPP2025/162
     issued: 29.04.2025р.
   - name: Симоненко Наталія Володимирівна
-    record: №~CPRPP2025/163
+    record: №CPRPP2025/163
     issued: 29.04.2025р.
   - name: Тарасенко Світлана Петрівна
-    record: №~CPRPP2025/164
+    record: №CPRPP2025/164
     issued: 29.04.2025р.
     result: Удосконалення управлінських компетентностей
   - name: Шовкопляс Людмила Анатоліївна
-    record: №~CPRPP2025/165
+    record: №CPRPP2025/165
     issued: 29.04.2025р.
   - name: Юрченко Аліна Сергіївна
-    record: №~CPRPP2025/166
+    record: №CPRPP2025/166
     issued: 29.04.2025р.
     result: Удосконалення управлінських компетентностей
   - name: Савченко Тетяна Іванівна
     volume: 8 год. (0,27 кредиту ЄКТС)
-    record: №~CPRPP2025/167
+    record: №CPRPP2025/167
     issued: 22.04.2025р.
 ---

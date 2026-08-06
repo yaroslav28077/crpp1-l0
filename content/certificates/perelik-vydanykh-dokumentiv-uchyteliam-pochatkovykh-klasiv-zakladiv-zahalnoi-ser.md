@@ -6,33 +6,33 @@ default_volume: 4 год. (0,13 кредиту ЄКТС)
 default_result: Удосконалення знань сучасних тенденцій розвитку освіти і вмінь організовувати педагогічну діяльність, забезпечуючи диференційований підхід у навчанні
 entries:
   - name: Говденко Людмила Анатоліївна
-    record: №~CPRPP2022/87
+    record: №CPRPP2022/87
     issued: 04.11.2022р.
   - name: Головань Ірина Анатоліївна
-    record: №~CPRPP2022/88
+    record: №CPRPP2022/88
     issued: 04.11.2022р.
   - name: Дацюк Алла Миколаївна
-    record: №~CPRPP2022/89
+    record: №CPRPP2022/89
     issued: 04.11.2022р.
   - name: Діхно Наталія Миколаївна
-    record: №~CPRPP2022/90
+    record: №CPRPP2022/90
     issued: 04.11.2022р.
   - name: Зикова Світлана Тихонівна
-    record: №~CPRPP2022/91
+    record: №CPRPP2022/91
     issued: 04.11.2022р.
   - name: Коршак Лідія Миколаївна
-    record: №~CPRPP2022/92
+    record: №CPRPP2022/92
     issued: 04.11.2022р.
   - name: Костенко Тетяна Володимирівна
-    record: №~CPRPP2022/93
+    record: №CPRPP2022/93
     issued: 04.11.2022р.
   - name: Лоташ Олена Анатоліївна
-    record: №~CPRPP2022/94
+    record: №CPRPP2022/94
     issued: 04.11.2022р.
   - name: Полякова Олена Миколаївна
-    record: №~CPRPP2022/95
+    record: №CPRPP2022/95
     issued: 04.11.2022р.
   - name: Сидоренко Тетяна Василівна
-    record: №~CPRPP2022/96
+    record: №CPRPP2022/96
     issued: 04.11.2022р.
 ---

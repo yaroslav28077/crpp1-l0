@@ -6,81 +6,81 @@ default_volume: 10 год. (0,33 кредиту ЄКТС)
 default_result: Удосконалення професійно-педагогічних компетентностей
 entries:
   - name: Булах Тетяна Петрівна
-    record: №~CPRPP2025/27
+    record: №CPRPP2025/27
     issued: 04.03.2025р.
   - name: Буторіна Олена Миколаївна
-    record: №~CPRPP2025/28
+    record: №CPRPP2025/28
     issued: 04.03.2025р.
   - name: Головань Ірина Анатоліївна
-    record: №~CPRPP2025/29
+    record: №CPRPP2025/29
     issued: 04.03.2025р.
   - name: Даценко Вілена Станіславівна
-    record: №~CPRPP2025/30
+    record: №CPRPP2025/30
     issued: 04.03.2025р.
     result: Удосконалення професійно-педагогічних ккомпетентностей
   - name: Даценко Людмила Анатоліївна
-    record: №~CPRPP2025/31
+    record: №CPRPP2025/31
     issued: 04.03.2025р.
     result: Удосконалення управлінських компетентностей
   - name: Захарченко Юлія Андріївна
-    record: №~CPRPP2025/32
+    record: №CPRPP2025/32
     issued: 04.03.2025р.
   - name: Знайко Наталія Іванівна
-    record: №~CPRPP2025/33
+    record: №CPRPP2025/33
     issued: 04.03.2025р.
   - name: Маліченко Валентина Юріївна
-    record: №~CPRPP2025/34
+    record: №CPRPP2025/34
     issued: 04.03.2025р.
   - name: Нестеренко Оксана Михайлівна
-    record: №~CPRPP2025/35
+    record: №CPRPP2025/35
     issued: 04.03.2025р.
   - name: Паріста Алла Миколаївна
-    record: №~CPRPP2025/36
+    record: №CPRPP2025/36
     issued: 04.03.2025р.
   - name: Педоряка Оксана Іванівна
-    record: №~CPRPP2025/37
+    record: №CPRPP2025/37
     issued: 04.03.2025р.
     result: Удосконалення управлінських компетентностей
   - name: Пестременко Оксана Володимирівна
-    record: №~CPRPP2025/38
+    record: №CPRPP2025/38
     issued: 04.03.2025р.
   - name: Петраш Світлана Михайлівна
-    record: №~CPRPP2025/39
+    record: №CPRPP2025/39
     issued: 04.03.2025р.
   - name: Поліщук Лілія Сергіївна
-    record: №~CPRPP2025/40
+    record: №CPRPP2025/40
     issued: 04.03.2025р.
   - name: Полигач Марина Олександрівна
-    record: №~CPRPP2025/41
+    record: №CPRPP2025/41
     issued: 04.03.2025р.
     result: Удосконалення управлінських компетентностей
   - name: Попільніченко Оксана Григорівна
-    record: №~CPRPP2025/42
+    record: №CPRPP2025/42
     issued: 04.03.2025р.
   - name: Пузиряка Ірина Миколаївна
-    record: №~CPRPP2025/43
+    record: №CPRPP2025/43
     issued: 04.03.2025р.
   - name: Ріпка Юлія Миколаївна
-    record: №~CPRPP2025/44
+    record: №CPRPP2025/44
     issued: 04.03.2025р.
   - name: Рудик Алла Анатоліївна
-    record: №~CPRPP2025/45
+    record: №CPRPP2025/45
     issued: 04.03.2025р.
   - name: Сергієнко Тетяна Григорівна
     volume: 30 год. (1 кредит ЄКТС)
-    record: №~CPRPP2025/46
+    record: №CPRPP2025/46
     issued: 04.03.2025р.
     result: Удосконалення управлінських компетентностей
   - name: Сіренко Людмила Леонідівна
-    record: №~CPRPP2025/47
+    record: №CPRPP2025/47
     issued: 04.03.2025р.
   - name: Турова Тетяна Петрівна
-    record: №~CPRPP2025/48
+    record: №CPRPP2025/48
     issued: 04.03.2025р.
   - name: Фролова Юлія михайлівна
-    record: №~CPRPP2025/49
+    record: №CPRPP2025/49
     issued: 04.03.2025р.
   - name: Ярмоленко Тетяна Іванівна
-    record: №~CPRPP2025/50
+    record: №CPRPP2025/50
     issued: 04.03.2025р.
 ---
