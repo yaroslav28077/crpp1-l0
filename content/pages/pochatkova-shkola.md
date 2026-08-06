@@ -26,7 +26,7 @@ blocks:
       - label: Особливості організації навчально-виховного процесу в початкових класах закладів загальної середньої освіти у 2021-2022 навчальному році
         url: https://docs.google.com/document/d/19V2P9bFTfcESte493JnxfYwUORJl7QRL/edit?usp=sharing&ouid=104895709143078317433&rtpof=true&sd=true
       - label: Наказ МОН від 13.07.2021 року № 813 «Про затвердження методичних рекомендацій щодо оцінювання результатів навчання учнів 1 – 4 класів  закладів загальної середньої освіти»
-        url: https://mon.gov.ua/ua/npa/pro-zatverdzhennya-metodichnih-rekomendacij-shodo-ocinyuvannya-rezultativ-navchannya-uchniv-1-4-klasiv-zakladiv-zagalnoyi-serednoyi-osviti
+        url: https://mon.gov.ua/npa/pro-zatverdzhennya-metodichnih-rekomendacij-shodo-ocinyuvannya-rezultativ-navchannya-uchniv-1-4-klasiv-zakladiv-zagalnoyi-serednoyi-osviti
       - label: Наказ МОЗ від  25.09.2020 року  № 2205 «Про затвердження Санітарного регламенту для закладів загальної середньої освіти»
         url: https://moz.gov.ua/article/ministry-mandates/nakaz-moz-ukraini-vid-25092020--2205-pro-zatverdzhennja-sanitarnogo-reglamentu-dlja-zakladiv-zagalnoi-serednoi-osviti
   - type: documents
@@ -34,7 +34,7 @@ blocks:
     view: collapsed
     items:
       - label: Наказ МОН від 13.07.2021 року № 813 «Про затвердження методичних рекомендацій щодо оцінювання результатів навчання учнів 1 – 4 класів  закладів загальної середньої освіти»
-        url: https://mon.gov.ua/ua/npa/pro-zatverdzhennya-metodichnih-rekomendacij-shodo-ocinyuvannya-rezultativ-navchannya-uchniv-1-4-klasiv-zakladiv-zagalnoyi-serednoyi-osviti
+        url: https://mon.gov.ua/npa/pro-zatverdzhennya-metodichnih-rekomendacij-shodo-ocinyuvannya-rezultativ-navchannya-uchniv-1-4-klasiv-zakladiv-zagalnoyi-serednoyi-osviti
       - label: Наказ МОЗ від  25.09.2020 року  № 2205 «Про затвердження Санітарного регламенту для закладів загальної середньої освіти»
         url: https://moz.gov.ua/article/ministry-mandates/nakaz-moz-ukraini-vid-25092020--2205-pro-zatverdzhennja-sanitarnogo-reglamentu-dlja-zakladiv-zagalnoi-serednoi-osviti
 ---

@@ -22,7 +22,7 @@ blocks:
       - label: Наказ МОН "Про затвердження методичних рекомендацій щодо окремих питань завершення 2021-2022 навчального року"
         url: https://drive.google.com/file/d/1s29LNxzcBjG2-1XN5W6VCkZE9Ti_e4Gz/view?usp=sharing
       - label: Рекомендації для працівників закладів дошкільної освіти на період дії воєнного стану в Україні
-        url: https://mon.gov.ua/ua/npa/pro-rekomendaciyi-dlya-pracivnikiv-zakladiv-doshkilnoyi-osviti-na-period-diyi-voyennogo-stanu-v-ukrayini
+        url: https://mon.gov.ua/npa/pro-rekomendaciyi-dlya-pracivnikiv-zakladiv-doshkilnoyi-osviti-na-period-diyi-voyennogo-stanu-v-ukrayini
       - label: Роз'яснення МОН України про правовий режим в умовах воєнного стану
         url: https://www.kmu.gov.ua/news/rozyasnennya-mon-shchodo-roboti-zakladiv-osviti-u-mezhah-pravovogo-rezhimu-voyennogo-stanu
       - label: Методичні рекомендації щодо організації освітнього процесу у 2021-2022 навчальному році в початковій школі в умовах воєнного часу

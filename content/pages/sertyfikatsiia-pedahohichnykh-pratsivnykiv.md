@@ -24,7 +24,7 @@ blocks:
           - label: Наказ
             url: https://drive.google.com/file/d/1-psQQmDD51icjBRQ3He-2wQ_7b1TDS35/view?usp=sharing
       - label: Наказ МОН «Про деякі питання проведення сертифікації педагогічних працівників у 2023 році»
-        url: https://mon.gov.ua/storage/app/uploads/public/63c/e74/6d2/63ce746d2e561145919333.pdf
+        url: https://mon.gov.ua/npa/pro-deyaki-pitannya-provedennya-sertifikaciyi-pedagogichnih-pracivnikiv-u-2023-roci
       - label: Наказ МОН "Про деякі питання проведення сертифікації у 2022 році"
         url: https://drive.google.com/file/d/1ysFPhrDigy_W8v932WZ-beuQ_XBI6p3Q/view?usp=sharing
       - label: Положення про сертифікацію педагогічних працівників
@@ -45,5 +45,5 @@ blocks:
     view: collapsed
     items:
       - label: Наказ МОН «Про деякі питання проведення сертифікації педагогічних працівників у 2023 році»
-        url: https://mon.gov.ua/storage/app/uploads/public/63c/e74/6d2/63ce746d2e561145919333.pdf
+        url: https://mon.gov.ua/npa/pro-deyaki-pitannya-provedennya-sertifikaciyi-pedagogichnih-pracivnikiv-u-2023-roci
 ---
