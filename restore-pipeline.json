@@ -1,9 +1,0 @@
-{
-  "_comment": "Позначка, що гілку оновлено скриптами відновлення. Див. scripts/restore-lost-content.mjs і scripts/certificates-to-entries.mjs",
-  "pipeline": [
-    "node scripts/restore-lost-content.mjs",
-    "node scripts/certificates-to-entries.mjs",
-    "node scripts/normalize-frontmatter.mjs",
-    "node scripts/generate-redirects.mjs"
-  ]
-}

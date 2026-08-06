@@ -358,6 +358,11 @@ collections:
             summary: "{{fields.title | default('Перелік документів')}}"
             fields:
               - { name: title, label: Заголовок, widget: string, required: false, default: Документи }
+              - name: intro
+                label: Вступний абзац
+                widget: markdown
+                required: false
+                hint: Необов'язково. Показується всередині розділу, над списком.
               - name: view
                 label: Як показувати
                 widget: select
