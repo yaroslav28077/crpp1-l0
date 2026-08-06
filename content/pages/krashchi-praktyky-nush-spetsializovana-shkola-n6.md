@@ -18,8 +18,6 @@ blocks:
     title: Фотогалерея
     images:
       - image: /images/notes/2021/11/nush6/001.jpg
-      - image: /images/notes/2021/11/nush6/002.jpg
-      - image: /images/notes/2021/11/nush6/003.jpg
       - image: /images/notes/2021/11/nush6/004.jpg
       - image: /images/notes/2021/11/nush6/005.jpg
       - image: /images/notes/2021/11/nush6/006.jpg
@@ -27,7 +25,6 @@ blocks:
       - image: /images/notes/2021/11/nush6/001.png
       - image: /images/notes/2021/11/nush6/002.png
       - image: /images/notes/2021/11/nush6/003.png
-      - image: /images/notes/2021/11/nush6/004.png
       - image: /images/notes/2021/11/nush6/005.png
       - image: /images/notes/2021/11/nush6/006.png
       - image: /images/notes/2021/11/nush6/007.png

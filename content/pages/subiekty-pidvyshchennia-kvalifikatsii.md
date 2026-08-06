@@ -16,16 +16,14 @@ blocks:
       - [Полтавський обласний інститут післядипломної педагогічної освіти ім. М.В.Остроградського](http://poippo.pl.ua/)
       - [На Урок. Освітній проект](https://naurok.com.ua/)
       - [Всеосвіта. Спільнота активних освітян](https://vseosvita.ua/)
-      - [Освіта3000](http://osvita3000.com.ua/)
       - [EdEra. Студія онлайн-освіти](https://www.ed-era.com/)
       - [Академія інноваційного розвитку освіти](http://www.airo.com.ua/)
       - [Prometheus. Онлайн-курси для педагогів України і світу](https://prometheus.org.ua/)
       - [Компанія B-Pro](https://b-pro.com.ua/)
       - [Академія цифрового розвитку](https://www.digitalacademy.in.ua/)
       - [Рух освіта](https://ruh.com.ua/)
-      - [Тренінговий центр Освіторії](https://osvitoria.org/project/treningovyj-tsentr-hab-osvitoriya/)
+      - [Тренінговий центр Освіторії](https://osvitoria.org/)
       - [УМІТИ. Освітня платформа](https://umity.in.ua/)
-      - [Learn LifeLong. Онлайн-платформа неформальної освіти](https://learnlifelong.net/)
       - [Ukrainian English Language Teacher Learning Platform](https://nus-english.com.ua/)
   - type: accordion
     title: Документи
@@ -124,8 +122,6 @@ blocks:
         url: https://naurok.com.ua/
       - label: Всеосвіта. Спільнота активних освітян
         url: https://vseosvita.ua/
-      - label: Освіта3000
-        url: http://osvita3000.com.ua/
       - label: EdEra. Студія онлайн-освіти
         url: https://www.ed-era.com/
       - label: Академія інноваційного розвитку освіти
@@ -139,11 +135,9 @@ blocks:
       - label: Рух освіта
         url: https://ruh.com.ua/
       - label: Тренінговий центр Освіторії
-        url: https://osvitoria.org/project/treningovyj-tsentr-hab-osvitoriya/
+        url: https://osvitoria.org/
       - label: УМІТИ. Освітня платформа
         url: https://umity.in.ua/
-      - label: Learn LifeLong. Онлайн-платформа неформальної освіти
-        url: https://learnlifelong.net/
       - label: Ukrainian English Language Teacher Learning Platform
         url: https://nus-english.com.ua/
 ---
