@@ -402,13 +402,13 @@ function TableSection({
   */
   const headers = columns.length > 0 ? columns : ['№ з/п', ...fields.map((f) => FIELD_LABELS[f] ?? f)]
   const numbered = /^\s*№/.test(headers[0] ?? '')
-  let counter = 0
-  const fromEntries = (entries ?? []).map((e) => {
+  const fromEntries = (entries ?? []).map((e, i, list) => {
     // Підпис під таблицею («Директор ЦПРПП …») нумерації не отримує
     if (e?.note) return [e.note, ...Array(numbered ? fields.length : fields.length - 1).fill('')]
-    counter += 1
     const values = fields.map((f) => String(e?.[f] ?? ''))
-    return numbered ? [String(counter), ...values] : values
+    if (!numbered) return values
+    // Номер = скільки змістовних рядків було включно з цим; підписи пропускаємо
+    return [String(list.slice(0, i + 1).filter((x) => !x?.note).length), ...values]
   })
   const fromRows = (rows ?? []).map((r) => (r?.cells ?? []).map((c) => String(c ?? '')))
   const tableRows = (fromEntries.length > 0 ? fromEntries : fromRows).filter((cells) =>
@@ -728,7 +728,7 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
                   <div className="partners-grid">
                     {partners.map((p, k) => {
                       const logo = p.image ? (
-                        // eslint-disable-next-line @next/next/no-img-element -- логотипи різних пропорцій, next/image тут обрізав би їх
+                        // Логотипи різних пропорцій, next/image тут обрізав би їх
                         <img src={p.image} alt={p.name || ''} loading="lazy" />
                       ) : (
                         <span className="text-sm text-center">{p.name}</span>
