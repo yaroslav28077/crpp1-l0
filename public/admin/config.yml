@@ -792,6 +792,11 @@ collections:
             widget: image
             required: false
             hint: Емблема з назвою та гаслом. Показується на головній сторінці та у футері
+          - name: team_photo
+            label: Спільне фото команди
+            widget: image
+            required: false
+            hint: Показується вгорі сторінки «Наша команда». Якщо фото немає — сторінка почнеться одразу з карток працівників.
           - name: tagline
             label: Гасло
             widget: list
