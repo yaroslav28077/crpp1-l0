@@ -1,6 +1,6 @@
 ---
-name: Лісна Світлана Григорівна
+name: Світлана Лісна
 position: Консультант
-photo: /images/pict/lisna.png
+photo: /images/team/lisna.jpg
 order: 2
 ---

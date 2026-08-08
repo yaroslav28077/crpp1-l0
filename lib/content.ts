@@ -330,6 +330,8 @@ export interface SiteSettings {
    * (див. components/brand.tsx).
    */
   logo_emblem?: string
+  /** Спільне фото колективу — показується вгорі сторінки «Наша команда» */
+  team_photo?: string
   /** Гасло з логотипа, по слову на елемент: «Натхнення», «Мудрість», «Успіх» */
   tagline: string[]
   address?: string
@@ -738,6 +740,7 @@ export function getSiteSettings(): SiteSettings {
     site_description: raw.site_description || "",
     logo: raw.logo,
     logo_emblem: raw.logo_emblem,
+    team_photo: raw.team_photo,
     tagline: raw.tagline || [],
     address: raw.address,
     map_url: raw.map_url,

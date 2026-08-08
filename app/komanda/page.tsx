@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Users } from 'lucide-react'
-import { getTeam } from '@/lib/content'
+import { getSiteSettings, getTeam } from '@/lib/content'
 
 export const metadata: Metadata = {
   title: 'Наша команда',
@@ -9,10 +9,22 @@ export const metadata: Metadata = {
 
 export default function TeamPage() {
   const team = getTeam()
+  const { team_photo } = getSiteSettings()
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
       <h1 className="font-heading text-3xl md:text-4xl font-bold mb-8">Наша команда</h1>
+      {team_photo && (
+        // Спільне фото вертикальне, тож обмежуємо висоту й тримаємо кадр по центру,
+        // інакше на десктопі воно займало б увесь перший екран.
+        <figure className="mb-10 overflow-hidden rounded-2xl border border-border bg-secondary">
+          <img
+            src={team_photo}
+            alt="Колектив Центру професійного розвитку педагогічних працівників"
+            className="w-full max-h-[30rem] object-cover object-center"
+          />
+        </figure>
+      )}
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {team.map((member) => (
           <div key={member.name} className="flex flex-col items-center text-center gap-4 rounded-xl border border-border bg-card p-6">

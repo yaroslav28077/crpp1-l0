@@ -1,6 +1,6 @@
 ---
-name: Іващенко Людмила Олександрівна
+name: Людмила Іващенко
 position: Психолог
-photo: /images/pict/ivaschenko.png
+photo: /images/team/ivashchenko.jpg
 order: 4
 ---

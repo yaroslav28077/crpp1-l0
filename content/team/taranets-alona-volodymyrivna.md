@@ -1,6 +1,6 @@
 ---
-name: Таранець Альона Володимирівна
+name: Альона Таранець
 position: Консультант
-photo: /images/pict/taranets.png
+photo: /images/team/taranets.jpg
 order: 3
 ---
