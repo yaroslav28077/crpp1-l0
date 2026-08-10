@@ -550,6 +550,82 @@ collections:
                     public_folder: /images/pict/coop
                   - { name: url, label: Посилання на сайт установи, widget: string, required: false }
 
+          - name: cards
+            label: Картки-посилання
+            summary: "{{fields.title | default('Картки-посилання')}}"
+            fields:
+              - { name: title, label: Заголовок, widget: string, required: false }
+              - name: items
+                label: Картки
+                label_singular: Картка
+                widget: list
+                summary: '{{fields.label}}'
+                hint: Стануть плиткою — по три в рядок на комп'ютері, по одній на телефоні.
+                fields:
+                  - { name: label, label: Назва, widget: string, hint: 'Наприклад: Дошкільна освіта' }
+                  - name: text
+                    label: Пояснення
+                    widget: string
+                    required: false
+                    hint: Один-два рядки під назвою. Звичайний текст, без розмітки.
+                  - name: url
+                    label: Посилання
+                    widget: string
+                    required: false
+                    hint: 'Сторінка сайту (/novyny) або зовнішня адреса (https://…). Без адреси картка лишиться без кліку.'
+                  - name: icon
+                    label: Піктограма
+                    widget: select
+                    required: false
+                    default: link
+                    options:
+                      - { label: Посилання, value: link }
+                      - { label: Документ, value: document }
+                      - { label: Люди, value: people }
+                      - { label: Календар, value: calendar }
+                      - { label: Книга, value: book }
+                      - { label: Телефон, value: phone }
+                      - { label: Лист, value: mail }
+                      - { label: Нагорода, value: award }
+
+          - name: video
+            label: Відео з YouTube
+            summary: "{{fields.title | default('Відео з YouTube')}}"
+            fields:
+              - { name: title, label: Заголовок, widget: string, required: false }
+              - name: url
+                label: Посилання на відео
+                widget: string
+                hint: 'Скопіюйте адресу з YouTube як є — підходять і youtu.be/…, і watch?v=…, і /shorts/….'
+              - { name: caption, label: Підпис під відео, widget: string, required: false }
+
+          - name: steps
+            label: Порядок дій (кроки)
+            summary: "{{fields.title | default('Порядок дій')}}"
+            fields:
+              - { name: title, label: Заголовок, widget: string, required: false, hint: 'Наприклад: Як записатися на консультацію' }
+              - name: items
+                label: Кроки
+                label_singular: Крок
+                widget: list
+                summary: '{{fields.label}}'
+                hint: Номери проставляються самі — переставляйте кроки вільно.
+                fields:
+                  - { name: label, label: Що зробити, widget: string }
+                  - { name: text, label: Пояснення, widget: string, required: false }
+
+          - name: cta
+            label: Смуга із кнопкою
+            summary: "{{fields.heading | default(fields.button_label)}}"
+            fields:
+              - { name: heading, label: Заголовок, widget: string, required: false, hint: 'Наприклад: Потрібна консультація?' }
+              - { name: text, label: Пояснення, widget: string, required: false }
+              - { name: button_label, label: Надпис на кнопці, widget: string, hint: 'Наприклад: Записатися' }
+              - name: url
+                label: Куди веде кнопка
+                widget: string
+                hint: 'Сторінка сайту (/kontakty), Google Форма (https://…) або tel:0536177416.'
+
       # Тіло сторінки у старому форматі, до переходу на блоки. Перевірено:
       # порожнє в усіх 32 сторінках, бо весь вміст переїхав у блоки.
       #

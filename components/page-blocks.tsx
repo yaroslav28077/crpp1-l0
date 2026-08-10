@@ -1,9 +1,25 @@
 import Link from 'next/link'
-import { ArrowRight, BadgeCheck, ExternalLink, FileText, Megaphone, Download } from 'lucide-react'
+import {
+  ArrowRight,
+  Award,
+  BadgeCheck,
+  BookOpen,
+  CalendarDays,
+  ExternalLink,
+  FileText,
+  Link2,
+  Mail,
+  Megaphone,
+  Download,
+  Phone,
+  Users,
+  type LucideIcon,
+} from 'lucide-react'
 import {
   getAllCertificates,
   getAllNews,
   getPlanYears,
+  type CardIcon,
   type DocumentItem,
   type DocumentsView,
   type NewsItem,
@@ -42,6 +58,39 @@ async function renderMarkdown(blocks: PageBlock[]): Promise<Map<number, string>>
     }),
   )
   return html
+}
+
+/** Словник піктограм карток: у Decap це `select`, тут — відповідні їм іконки. */
+const CARD_ICONS: Record<CardIcon, LucideIcon> = {
+  link: Link2,
+  document: FileText,
+  people: Users,
+  calendar: CalendarDays,
+  book: BookOpen,
+  phone: Phone,
+  mail: Mail,
+  award: Award,
+}
+
+/**
+ * Ідентифікатор відео з будь-якої форми посилання, яку редактор скопіює з
+ * YouTube: watch?v=, youtu.be/, /embed/, /shorts/, /live/. Якщо посилання не
+ * розпізнали — блок не рендериться, бо порожня рамка гірша за її відсутність.
+ */
+function youtubeId(url?: string): string | null {
+  const raw = (url ?? '').trim()
+  if (!raw) return null
+  const patterns = [/[?&]v=([\w-]{11})/, /youtu\.be\/([\w-]{11})/, /\/(?:embed|shorts|live|v)\/([\w-]{11})/]
+  for (const re of patterns) {
+    const match = raw.match(re)
+    if (match) return match[1]
+  }
+  return null
+}
+
+/** Зовнішнє посилання відкриваємо в новій вкладці й позначаємо піктограмою. */
+function isExternal(url?: string): boolean {
+  return /^https?:\/\//i.test(url ?? '')
 }
 
 /**
@@ -749,6 +798,142 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
                   </div>
                 </div>
               </section>
+            )
+          }
+
+          case 'cards': {
+            const cards = (block.items ?? []).filter((c) => c?.label)
+            if (cards.length === 0) return null
+            const cardClass = 'flex gap-3 rounded-xl border border-border bg-card p-5'
+            return (
+              <section key={i} aria-label={block.title || 'Розділи'}>
+                {block.title && <h2 className="font-heading font-bold text-xl mb-4">{block.title}</h2>}
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {cards.map((card, k) => {
+                    const Icon = CARD_ICONS[card.icon ?? 'link'] ?? Link2
+                    const external = isExternal(card.url)
+                    const inner = (
+                      <>
+                        <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-secondary">
+                          <Icon className="size-5" aria-hidden="true" />
+                        </span>
+                        <span className="min-w-0">
+                          <span className="font-heading font-bold flex items-center gap-1.5 text-pretty">
+                            {card.label}
+                            {external && (
+                              <ExternalLink className="size-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
+                            )}
+                          </span>
+                          {card.text && <span className="block text-sm text-muted-foreground mt-1">{card.text}</span>}
+                        </span>
+                      </>
+                    )
+                    // Картка без адреси лишається просто карткою: клац у нікуди дратує.
+                    if (!card.url) {
+                      return (
+                        <div key={k} className={cardClass}>
+                          {inner}
+                        </div>
+                      )
+                    }
+                    return external ? (
+                      <a
+                        key={k}
+                        href={card.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${cardClass} transition-colors hover:border-accent`}
+                      >
+                        {inner}
+                      </a>
+                    ) : (
+                      <Link key={k} href={card.url} className={`${cardClass} transition-colors hover:border-accent`}>
+                        {inner}
+                      </Link>
+                    )
+                  })}
+                </div>
+              </section>
+            )
+          }
+
+          case 'video': {
+            const id = youtubeId(block.url)
+            if (!id) return null
+            return (
+              <figure key={i} className="m-0">
+                {block.title && <h2 className="font-heading font-bold text-xl mb-4">{block.title}</h2>}
+                <div className="aspect-video overflow-hidden rounded-2xl border border-border bg-secondary">
+                  {/* nocookie-домен: без нього YouTube ставить рекламні cookie ще до відтворення */}
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${id}`}
+                    title={block.title || 'Відео'}
+                    loading="lazy"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="size-full border-0"
+                  />
+                </div>
+                {block.caption && (
+                  <figcaption className="text-sm text-muted-foreground mt-2">{block.caption}</figcaption>
+                )}
+              </figure>
+            )
+          }
+
+          case 'steps': {
+            const steps = (block.items ?? []).filter((s) => s?.label)
+            if (steps.length === 0) return null
+            return (
+              <section key={i} aria-label={block.title || 'Порядок дій'}>
+                {block.title && <h2 className="font-heading font-bold text-xl mb-4">{block.title}</h2>}
+                {/* Нумерація з `ol`, а не вписана руками: перестановка кроків не збиває номери */}
+                <ol className="m-0 flex list-none flex-col gap-3 p-0">
+                  {steps.map((step, k) => (
+                    <li key={k} className="flex gap-3 rounded-xl border border-border bg-card p-5">
+                      <span
+                        className="flex size-8 shrink-0 items-center justify-center rounded-full bg-accent/20 font-heading font-bold text-sm"
+                        aria-hidden="true"
+                      >
+                        {k + 1}
+                      </span>
+                      <span className="min-w-0">
+                        <span className="font-heading font-bold text-pretty">{step.label}</span>
+                        {step.text && <span className="block text-sm text-muted-foreground mt-1">{step.text}</span>}
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </section>
+            )
+          }
+
+          case 'cta': {
+            if (!block.button_label || !block.url) return null
+            const external = isExternal(block.url)
+            const buttonClass =
+              'inline-flex shrink-0 items-center gap-2 rounded-lg bg-accent px-5 py-2.5 font-heading font-bold text-accent-foreground transition-opacity hover:opacity-90'
+            return (
+              <aside
+                key={i}
+                className="flex flex-col gap-4 rounded-2xl border border-accent bg-accent/10 p-6 sm:flex-row sm:items-center sm:justify-between"
+              >
+                <div className="min-w-0">
+                  {block.heading && <p className="font-heading font-bold text-lg">{block.heading}</p>}
+                  {block.text && <p className="text-sm text-muted-foreground mt-1">{block.text}</p>}
+                </div>
+                {external ? (
+                  <a href={block.url} target="_blank" rel="noopener noreferrer" className={buttonClass}>
+                    {block.button_label}
+                    <ExternalLink className="size-4" aria-hidden="true" />
+                  </a>
+                ) : (
+                  <Link href={block.url} className={buttonClass}>
+                    {block.button_label}
+                    <ArrowRight className="size-4" aria-hidden="true" />
+                  </Link>
+                )}
+              </aside>
             )
           }
 
