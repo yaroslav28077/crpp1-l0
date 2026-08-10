@@ -638,6 +638,8 @@ collections:
                   Повне посилання з docs.google.com, drive.google.com, calendar.google.com, google.com/maps
                   або padlet.com. Коротке forms.gle НЕ підходить — Google не дозволяє показувати його в рамці:
                   у формі натисніть «Надіслати» → «< >» і скопіюйте адресу з поля src.
+                  Для мапи потрібен саме код із «Поділитися → Вбудувати карту» (адреса виду
+                  google.com/maps/embed?pb=…), звичайне посилання на мапу в рамці не відкривається.
               - name: height
                 label: Висота рамки
                 widget: select
