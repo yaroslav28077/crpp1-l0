@@ -158,6 +158,20 @@ export type PageBlock =
    * і адмінка на ньому задихалась.
    */
   | { type: "plans"; intro?: string }
+  /**
+   * Сітка карток-посилань: розділи сайту, спільноти, зовнішні сервіси. Досі такі
+   * набори жили списком посилань усередині Markdown і губилися серед тексту.
+   */
+  | { type: "cards"; title?: string; items: CardItem[] }
+  /**
+   * Відео з YouTube. Редактор вставляє посилання просто з адресного рядка —
+   * ідентифікатор дістаємо самі, бо пояснювати, де в адресі ID, марно.
+   */
+  | { type: "video"; title?: string; url: string; caption?: string }
+  /** Нумеровані кроки: як записатися на консультацію, порядок сертифікації */
+  | { type: "steps"; title?: string; items: StepItem[] }
+  /** Смуга із закликом до дії та однією кнопкою */
+  | { type: "cta"; heading?: string; text?: string; button_label: string; url: string }
 
 /**
  * Як показувати розділ. Раніше вибір був двійковий (згорнутий чи ні), але
@@ -199,6 +213,26 @@ export interface PartnerItem {
   name: string
   image?: string
   url?: string
+}
+
+/**
+ * Піктограма картки. Список закритий: у Decap це `select`, тож редактор обирає
+ * зі словника, а не вписує назву з бібліотеки іконок навмання.
+ */
+export type CardIcon = "link" | "document" | "people" | "calendar" | "book" | "phone" | "mail" | "award"
+
+export interface CardItem {
+  label: string
+  /** Один-два рядки пояснення. Звичайний текст, не Markdown */
+  text?: string
+  /** Внутрішня адреса (/novyny) або зовнішня (https://…) */
+  url?: string
+  icon?: CardIcon
+}
+
+export interface StepItem {
+  label: string
+  text?: string
 }
 
 export interface PageItem {
