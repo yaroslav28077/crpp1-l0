@@ -626,6 +626,33 @@ collections:
                 widget: string
                 hint: 'Сторінка сайту (/kontakty), Google Форма (https://…) або tel:0536177416.'
 
+          - name: embed
+            label: Форма або мапа на сторінці
+            summary: "{{fields.title | default('Форма або мапа')}}"
+            fields:
+              - { name: title, label: Заголовок, widget: string, required: false, hint: 'Наприклад: Запис на консультацію' }
+              - name: url
+                label: Посилання
+                widget: string
+                hint: >-
+                  Повне посилання з docs.google.com, drive.google.com, calendar.google.com, google.com/maps
+                  або padlet.com. Коротке forms.gle НЕ підходить — Google не дозволяє показувати його в рамці:
+                  у формі натисніть «Надіслати» → «< >» і скопіюйте адресу з поля src.
+              - name: height
+                label: Висота рамки
+                widget: select
+                required: false
+                default: medium
+                options:
+                  - { label: Невисока (мапа, календар), value: short }
+                  - { label: Середня (звичайна форма), value: medium }
+                  - { label: Велика (довга форма), value: tall }
+              - name: note
+                label: Підпис під рамкою
+                widget: string
+                required: false
+                hint: 'Наприклад: якщо форма не відкривається — заповніть її за посиланням.'
+
       # Тіло сторінки у старому форматі, до переходу на блоки. Перевірено:
       # порожнє в усіх 32 сторінках, бо весь вміст переїхав у блоки.
       #
@@ -898,6 +925,16 @@ collections:
             widget: string
             required: false
             hint: Кнопка у шапці сайту. Якщо лишити порожнім — кнопки не буде.
+          - name: announcement
+            label: Оголошення на всьому сайті
+            widget: string
+            required: false
+            hint: 'Смуга вгорі кожної сторінки. Наприклад: 14 серпня Центр не працює. Щоб прибрати смугу — очистіть це поле.'
+          - name: announcement_url
+            label: Посилання в оголошенні
+            widget: string
+            required: false
+            hint: Необов'язкове. Якщо вказати — текст оголошення стане посиланням (наприклад на новину з деталями).
           - name: schedule
             label: Графік роботи
             widget: list

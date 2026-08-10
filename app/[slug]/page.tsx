@@ -15,10 +15,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   const page = getPageBySlug(slug)
   if (!page) return {}
+  const description = page.seo_description || page.full_title || undefined
   return {
     // У <title> лишається короткий ярлик: повна назва не влазить у вкладку і видачу
     title: page.seo_title || page.title,
-    description: page.seo_description || page.full_title || undefined,
+    description,
+    /*
+      Заголовок картки для месенджерів беремо повний: у Viber видно рядок цілком,
+      і «Положення про Центр професійного розвитку…» зрозуміліше за ярлик «Положення».
+    */
+    openGraph: {
+      type: 'article',
+      title: page.full_title || page.seo_title || page.title,
+      description,
+      url: `/${page.slug}`,
+    },
   }
 }
 

@@ -335,3 +335,85 @@ html {
   max-width: 10rem;
   height: auto;
 }
+
+/*
+  Друк. Секретар щодня друкує плани роботи й переліки сертифікатів, а на аркуш
+  досі лізли меню, футер, кнопки й підказка «таблиця гортається вбік». Тут
+  прибираємо все службове, розкриваємо згорнуті розділи (інакше друкувався б
+  лише заголовок), знімаємо кольорові плашки й тіні та не даємо рядкам таблиці
+  розриватися між сторінками.
+*/
+@media print {
+  header[class*="sticky"],
+  body > header,
+  body > footer,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  /* Розділи зберігаються згорнутими, але на папері мусить бути весь текст */
+  details > *:not(summary) {
+    display: revert !important;
+  }
+  details summary {
+    list-style: none;
+    font-weight: 700;
+  }
+  details summary::marker,
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Рамки лишаємо лише таблицям: решта на друку тільки з'їдає тонер */
+  *:not(table):not(thead):not(tbody):not(tr):not(th):not(td) {
+    box-shadow: none !important;
+    border-color: #999 !important;
+  }
+
+  table {
+    width: 100% !important;
+    min-width: 0 !important;
+    border-collapse: collapse;
+    font-size: 10pt;
+  }
+  th,
+  td {
+    border: 1px solid #999 !important;
+    padding: 4pt !important;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img,
+  figure {
+    break-inside: avoid;
+  }
+
+  /* Горизонтальна прокрутка на папері неможлива — розгортаємо контейнер */
+  .overflow-x-auto {
+    overflow: visible !important;
+  }
+
+  h1 {
+    font-size: 16pt;
+  }
+  h2 {
+    font-size: 13pt;
+  }
+  a {
+    text-decoration: none;
+    color: #000 !important;
+  }
+
+  @page {
+    margin: 12mm;
+  }
+}
