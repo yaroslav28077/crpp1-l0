@@ -15,13 +15,14 @@ export default function TeamPage() {
     <main className="mx-auto max-w-6xl px-4 py-10">
       <h1 className="font-heading text-3xl md:text-4xl font-bold mb-8">Наша команда</h1>
       {team_photo && (
-        // Спільне фото вертикальне, тож обмежуємо висоту й тримаємо кадр по центру,
-        // інакше на десктопі воно займало б увесь перший екран.
-        <figure className="mb-10 overflow-hidden rounded-2xl border border-border bg-secondary">
+        // Знімок вертикальний (3:4). Раніше він розтягувався на всю ширину сторінки
+        // і обрізався по висоті — у тих, хто стоїть позаду, зникали голови. Тому
+        // показуємо його цілим, у власній ширині, по центру.
+        <figure className="mx-auto mb-12 w-full max-w-md overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
           <img
             src={team_photo}
             alt="Колектив Центру професійного розвитку педагогічних працівників"
-            className="w-full max-h-[30rem] object-cover object-center"
+            className="w-full h-auto"
           />
         </figure>
       )}
