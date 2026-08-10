@@ -3,6 +3,7 @@ import { Inter, Manrope } from 'next/font/google'
 import { getSiteSettings, getNavigation } from '@/lib/content'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
+import { SiteAnnouncement } from '@/components/site-announcement'
 import { NetlifyIdentityRedirect } from '@/components/netlify-identity-redirect'
 import { SITE_URL } from '@/lib/site-url'
 import './globals.css'
@@ -20,6 +21,18 @@ export const metadata: Metadata = {
   },
   description:
     'Комунальна установа «Центр професійного розвитку педагогічних працівників Лубенської міської ради» Лубенського району Полтавської області',
+  /*
+    Картка для Viber, Facebook і Telegram. Досі її мали лише новини з обкладинкою,
+    а решта сторінок поширювалась голим посиланням. Емблема Центру — розумний
+    типовий варіант: вона є завжди й одразу пояснює, чий це сайт.
+  */
+  openGraph: {
+    type: 'website',
+    locale: 'uk_UA',
+    siteName: 'ЦПРПП м. Лубни',
+    images: [{ url: '/brand/logo-emblem.png' }],
+  },
+  twitter: { card: 'summary_large_image' },
 }
 
 export const viewport: Viewport = {
@@ -39,6 +52,7 @@ export default function RootLayout({
     <html lang="uk" className={`light bg-background ${inter.variable} ${manrope.variable}`}>
       <body className="antialiased font-sans flex min-h-svh flex-col">
         <NetlifyIdentityRedirect />
+        <SiteAnnouncement text={settings.announcement} url={settings.announcement_url} />
         <SiteHeader settings={settings} navigation={navigation} />
         <div className="flex-1">{children}</div>
         <SiteFooter settings={settings} navigation={navigation} />

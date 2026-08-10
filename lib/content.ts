@@ -172,6 +172,12 @@ export type PageBlock =
   | { type: "steps"; title?: string; items: StepItem[] }
   /** Смуга із закликом до дії та однією кнопкою */
   | { type: "cta"; heading?: string; text?: string; button_label: string; url: string }
+  /**
+   * Google Форма, календар або мапа просто на сторінці. Джерела обмежені
+   * списком у `components/page-blocks.tsx`: вільний iframe в адмінці означав би,
+   * що будь-хто з доступом до CMS може вставити на сайт чужий скрипт.
+   */
+  | { type: "embed"; title?: string; url: string; height?: EmbedHeight; note?: string }
 
 /**
  * Як показувати розділ. Раніше вибір був двійковий (згорнутий чи ні), але
@@ -220,6 +226,9 @@ export interface PartnerItem {
  * зі словника, а не вписує назву з бібліотеки іконок навмання.
  */
 export type CardIcon = "link" | "document" | "people" | "calendar" | "book" | "phone" | "mail" | "award"
+
+/** Висота вбудованої рамки. Словник замість числа: редактор не міряє пікселі. */
+export type EmbedHeight = "short" | "medium" | "tall"
 
 export interface CardItem {
   label: string
@@ -373,6 +382,14 @@ export interface SiteSettings {
   phones: string[]
   email?: string
   consultation_url?: string
+  /**
+   * Смуга-оголошення вгорі кожної сторінки: змінений графік, вимкнення світла,
+   * перенесення заходу. Порожнє поле — смуги немає, тож редактор прибирає її
+   * очищенням тексту, а не правкою коду.
+   */
+  announcement?: string
+  /** Куди веде оголошення, якщо є деталі (новина, наказ). Необов'язкове */
+  announcement_url?: string
   schedule: { days: string; hours: string }[]
   partners: { name: string; image?: string; url?: string }[]
 }
@@ -781,6 +798,8 @@ export function getSiteSettings(): SiteSettings {
     phones: raw.phones || [],
     email: raw.email,
     consultation_url: raw.consultation_url,
+    announcement: raw.announcement,
+    announcement_url: raw.announcement_url,
     schedule: raw.schedule || [],
     partners: raw.partners || [],
   }

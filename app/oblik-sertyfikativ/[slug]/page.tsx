@@ -1,28 +1,13 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ArrowLeft, BadgeCheck } from 'lucide-react'
+import { ArrowLeft, BadgeCheck, Download } from 'lucide-react'
 import { getAllCertificates, getCertificateBySlug, getPageBySlug } from '@/lib/content'
+import { CERTIFICATE_COLUMNS } from '@/lib/certificates-csv'
 import { plural } from '@/components/page-blocks'
 
 /** Сторінка-батько, на яку веде «Назад». Її адреса задана в контенті */
 const PARENT = 'oblik-sertyfikativ'
-
-/**
- * Назви стовпців тепер задані в коді, а не в кожному файлі: у всіх 75 переліках
- * вони були однакові з точністю до формулювання («Прізвище, ім'я слухача» /
- * «…, по батькові слухача»), а редактор мусив тримати їх порядок синхронним із
- * порядком клітинок. Тепер порядок гарантує код.
- */
-const COLUMNS = [
-  '№ з/п',
-  'Прізвище, ім\u02bcя, по батькові слухача',
-  'Форма проходження курсу підвищення кваліфікації',
-  'Обсяг, кількість модулів (годин ЄКТС), тривалість',
-  'Обліковий запис документа',
-  'Дата видачі документа',
-  'Результат проходження курсу підвищення кваліфікації',
-]
 
 export function generateStaticParams() {
   return getAllCertificates().map((c) => ({ slug: c.slug }))
@@ -69,6 +54,20 @@ export default async function CertificatePage({ params }: { params: Promise<{ sl
           {item.event ? `${item.event} · ` : ''}
           {item.entries.length} {plural(item.entries.length, 'запис', 'записи', 'записів')}
         </p>
+
+        {/*
+          Файл для звіту. Раніше перелік переписували в Excel руками, тому тут
+          готовий CSV із тими самими стовпцями — його збирає білд, окремої
+          кнопки «зачекайте» не потрібно. no-print: на папері вона недоречна.
+        */}
+        <a
+          href={`/oblik-sertyfikativ/${item.slug}/perelik.csv`}
+          download
+          className="no-print mt-4 inline-flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2 text-sm font-medium transition-colors hover:border-primary"
+        >
+          <Download className="size-4" aria-hidden="true" />
+          Завантажити перелік (Excel)
+        </a>
       </header>
 
       {/*
@@ -88,7 +87,7 @@ export default async function CertificatePage({ params }: { params: Promise<{ sl
           <caption className="sr-only">{item.title}</caption>
           <thead>
             <tr className="bg-card border-b border-border">
-              {COLUMNS.map((col) => (
+              {CERTIFICATE_COLUMNS.map((col) => (
                 <th key={col} scope="col" className="text-left font-heading font-bold p-3 align-bottom">
                   {col}
                 </th>

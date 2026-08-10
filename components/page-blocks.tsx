@@ -22,6 +22,7 @@ import {
   type CardIcon,
   type DocumentItem,
   type DocumentsView,
+  type EmbedHeight,
   type NewsItem,
   type PageBlock,
   type PlanMonth,
@@ -91,6 +92,42 @@ function youtubeId(url?: string): string | null {
 /** Зовнішнє посилання відкриваємо в новій вкладці й позначаємо піктограмою. */
 function isExternal(url?: string): boolean {
   return /^https?:\/\//i.test(url ?? '')
+}
+
+/**
+ * Кому дозволено з'являтися в рамці на сторінці. Список закритий свідомо:
+ * вільний iframe у CMS — це можливість вставити на сайт чужий скрипт, а прав
+ * редактора для цього не мало б вистачати.
+ */
+const EMBED_HOSTS = ['docs.google.com', 'drive.google.com', 'calendar.google.com', 'www.google.com', 'padlet.com']
+
+/** Висоті рамки відповідає клас: у Google Форми і мапи різні потреби. */
+const EMBED_HEIGHTS: Record<EmbedHeight, string> = {
+  short: 'h-[26rem]',
+  medium: 'h-[50rem]',
+  tall: 'h-[75rem]',
+}
+
+/**
+ * Адреса для рамки або null, якщо джерело не дозволене. Коротке посилання
+ * `forms.gle` тут не годиться — Google забороняє показувати його в рамці, тому
+ * потрібне повне з `docs.google.com`; про це сказано в підказці до поля.
+ */
+function embedSrc(url?: string): string | null {
+  const raw = (url ?? '').trim()
+  if (!raw) return null
+  let parsed: URL
+  try {
+    parsed = new URL(raw)
+  } catch {
+    return null
+  }
+  if (parsed.protocol !== 'https:' || !EMBED_HOSTS.includes(parsed.hostname)) return null
+  // Без embedded=true форма приходить із власною шапкою Google і подвійною прокруткою
+  if (parsed.hostname === 'docs.google.com' && parsed.pathname.includes('/forms/')) {
+    parsed.searchParams.set('embedded', 'true')
+  }
+  return parsed.toString()
 }
 
 /**
@@ -934,6 +971,25 @@ export async function PageBlocks({ blocks }: { blocks: PageBlock[] }) {
                   </Link>
                 )}
               </aside>
+            )
+          }
+
+          case 'embed': {
+            const src = embedSrc(block.url)
+            if (!src) return null
+            return (
+              <section key={i} aria-label={block.title || 'Форма'}>
+                {block.title && <h2 className="font-heading font-bold text-xl mb-4">{block.title}</h2>}
+                <div className="overflow-hidden rounded-2xl border border-border bg-secondary">
+                  <iframe
+                    src={src}
+                    title={block.title || 'Вбудована форма'}
+                    loading="lazy"
+                    className={`block w-full border-0 ${EMBED_HEIGHTS[block.height ?? 'medium']}`}
+                  />
+                </div>
+                {block.note && <p className="text-sm text-muted-foreground mt-2">{block.note}</p>}
+              </section>
             )
           }
 
