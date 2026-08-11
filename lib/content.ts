@@ -375,6 +375,13 @@ export interface SiteSettings {
   logo_emblem?: string
   /** Спільне фото колективу — показується вгорі сторінки «Наша команда» */
   team_photo?: string
+  /**
+   * Підпис під спільним фото: короткий текст про команду. Порожнє поле —
+   * підпису немає, тож редактор прибирає його очищенням, а не правкою коду.
+   */
+  team_caption?: string
+  /** Заголовок підпису (необов'язковий) */
+  team_caption_heading?: string
   /** Гасло з логотипа, по слову на елемент: «Натхнення», «Мудрість», «Успіх» */
   tagline: string[]
   address?: string
@@ -792,6 +799,8 @@ export function getSiteSettings(): SiteSettings {
     logo: raw.logo,
     logo_emblem: raw.logo_emblem,
     team_photo: raw.team_photo,
+    team_caption: raw.team_caption,
+    team_caption_heading: raw.team_caption_heading,
     tagline: raw.tagline || [],
     address: raw.address,
     map_url: raw.map_url,
