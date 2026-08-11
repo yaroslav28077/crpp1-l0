@@ -226,7 +226,13 @@ collections:
             label: Текст
             summary: "{{fields.text | truncate(70)}}"
             fields:
-              - { name: text, label: Текст, widget: markdown }
+              - name: text
+                label: Текст
+                widget: markdown
+                hint: >-
+                  Один блок — один розділ, а не один абзац. Заголовок, абзаци і списки під ним
+                  пишіть в одному блоці: так у списку блоків видно назву розділу, а не десяток
+                  однакових карток.
 
           - name: notice
             label: Оголошення
