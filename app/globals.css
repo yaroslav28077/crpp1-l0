@@ -27,6 +27,7 @@
   --color-surface-foreground: var(--surface-foreground);
   --color-surface-muted: var(--surface-muted);
   --color-surface-border: var(--surface-border);
+  --color-surface-nav: var(--surface-nav);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -58,11 +59,25 @@
   --input: oklch(0.91 0.01 255);
   --ring: oklch(0.42 0.13 258);
   --radius: 0.625rem;
-  /* Темні поверхні для шапки, герой-блоку та футера */
-  --surface: oklch(0.22 0.035 262);
-  --surface-foreground: oklch(0.96 0.005 250);
-  --surface-muted: oklch(0.27 0.04 260);
-  --surface-border: oklch(0.34 0.04 260);
+  /*
+    Темні поверхні для шапки, герой-блоку та футера. Палітра бірюзова —
+    за референсом замовника; відтінки підібрані так, щоб текст усюди лишався
+    читабельним (перевірено за WCAG AA, потрібно від 4.5:1):
+
+      смуга меню #0f5a6e  — білий 7.4:1, жовтий активний пункт 4.6:1
+      підменю    #0f4d63  — білий 8.8:1
+      шапка      #0b2333  — білий 15.4:1
+
+    Світліший відтінок смуги (#126b82) давав жовтому активному пункту лише
+    3.6:1, тому взято на пів тону темніший.
+  */
+  --surface: #0b2333;
+  --surface-foreground: #f2fbfd;
+  /* Смуга головного меню — світліша за шапку, як просив замовник */
+  --surface-nav: #0f5a6e;
+  /* Випадаючі підменю й наведення: темніші за смугу, щоб не зливатися з нею */
+  --surface-muted: #0f4d63;
+  --surface-border: #17607a;
 }
 
 @layer base {
