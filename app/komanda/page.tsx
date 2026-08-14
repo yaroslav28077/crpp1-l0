@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function TeamPage() {
   const team = getTeam()
-  const { team_photo } = getSiteSettings()
+  const { team_photo, team_caption, team_caption_heading } = getSiteSettings()
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
@@ -25,6 +25,27 @@ export default function TeamPage() {
             className="w-full h-auto"
           />
         </figure>
+      )}
+      {/*
+        Підпис під спільним фото — текст про команду від замовника. Порожнє поле
+        в налаштуваннях = підпису немає, тож редактор прибирає його очищенням.
+        Абзаци розділені порожнім рядком, як у будь-якому текстовому полі.
+      */}
+      {team_caption && (
+        <section className="mx-auto mb-12 max-w-2xl text-center">
+          {team_caption_heading && (
+            <h2 className="font-heading text-2xl font-bold mb-4">{team_caption_heading}</h2>
+          )}
+          <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
+            {team_caption
+              .split(/\n{2,}/)
+              .map((p) => p.trim())
+              .filter(Boolean)
+              .map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+          </div>
+        </section>
       )}
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {team.map((member) => (

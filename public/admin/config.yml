@@ -912,6 +912,16 @@ collections:
             widget: image
             required: false
             hint: Показується вгорі сторінки «Наша команда». Якщо фото немає — сторінка почнеться одразу з карток працівників.
+          - name: team_caption
+            label: Підпис під спільним фото
+            widget: text
+            required: false
+            hint: 'Короткий текст про команду. Показується під спільним фото на сторінці «Наша команда». Абзаци розділяйте порожнім рядком. Щоб прибрати підпис — очистіть поле.'
+          - name: team_caption_heading
+            label: Заголовок підпису
+            widget: string
+            required: false
+            hint: "Необов'язковий. Наприклад: Ми — ваші партнери, ментори та однодумці."
           - name: tagline
             label: Гасло
             widget: list
