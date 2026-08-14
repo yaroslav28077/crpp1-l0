@@ -115,7 +115,15 @@ export function SiteHeader({
       </div>
 
       {/* Десктопна навігація */}
-      <nav ref={navRef} className="hidden lg:block border-t border-surface-border" aria-label="Головна навігація">
+      {/*
+        Смуга меню світліша за шапку — так головна навігація читається як окремий
+        рівень, а не зливається з логотипом (кольори за референсом замовника).
+      */}
+      <nav
+        ref={navRef}
+        className="hidden lg:block bg-surface-nav border-t border-surface-border"
+        aria-label="Головна навігація"
+      >
         <div className="mx-auto max-w-6xl px-4 flex items-center">
           <Link
             href="/"
@@ -183,7 +191,7 @@ export function SiteHeader({
       {/* Мобільна навігація */}
       {mobileOpen && (
         <nav
-          className="lg:hidden border-t border-surface-border max-h-[70svh] overflow-y-auto"
+          className="lg:hidden bg-surface-nav border-t border-surface-border max-h-[70svh] overflow-y-auto"
           aria-label="Мобільна навігація"
         >
           <div className="px-4 py-2 flex flex-col">
