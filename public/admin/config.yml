@@ -226,7 +226,13 @@ collections:
             label: Текст
             summary: "{{fields.text | truncate(70)}}"
             fields:
-              - { name: text, label: Текст, widget: markdown }
+              - name: text
+                label: Текст
+                widget: markdown
+                hint: >-
+                  Один блок — один розділ, а не один абзац. Заголовок, абзаци і списки під ним
+                  пишіть в одному блоці: так у списку блоків видно назву розділу, а не десяток
+                  однакових карток.
 
           - name: notice
             label: Оголошення
@@ -356,6 +362,10 @@ collections:
           - name: documents
             label: Перелік документів і посилань
             summary: "{{fields.title | default('Перелік документів')}}"
+            hint: >-
+              Для файлів, сторінок і новин, на які треба клацнути. Якщо посилань немає —
+              це звичайний список: пишіть його в блоці «Текст», інакше в переліку блоків
+              буде кілька однакових карток «Перелік документів».
             fields:
               - { name: title, label: Заголовок, widget: string, required: false, default: Документи }
               - name: intro
