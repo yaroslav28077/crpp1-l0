@@ -5,6 +5,8 @@ description: Протягом 19 -27 березня 2025 року Центром
 tags:
   - Березень2025
   - '2025'
+topics:
+  - atestatsiia
 gallery:
   - image: /images/notes/2025/03/ves/01.jpg
   - image: /images/notes/2025/03/ves/02.jpg

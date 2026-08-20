@@ -5,6 +5,8 @@ description: Атестація педагогічних працівників 
 tags:
   - Квітень2023
   - '2023'
+topics:
+  - atestatsiia
 gallery:
   - image: /images/notes/2023/04/att/01.jpg
   - image: /images/notes/2023/04/att/02.jpg

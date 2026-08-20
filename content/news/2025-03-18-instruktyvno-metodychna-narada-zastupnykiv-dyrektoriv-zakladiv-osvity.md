@@ -5,6 +5,8 @@ description: 17 березня 2025 року в онлайн - форматі п
 tags:
   - Березень2025
   - '2025'
+topics:
+  - atestatsiia
 gallery:
   - image: /images/notes/2025/03/zas/01.jpg
   - image: /images/notes/2025/03/zas/02.jpg

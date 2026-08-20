@@ -5,6 +5,8 @@ description: У 2022 році в загальноосвітніх, позашк�
 tags:
   - Травень2022
   - '2022'
+topics:
+  - atestatsiia
 gallery:
   - image: /images/notes/2022/05/att/01.jpg
   - image: /images/notes/2022/05/att/02.jpg

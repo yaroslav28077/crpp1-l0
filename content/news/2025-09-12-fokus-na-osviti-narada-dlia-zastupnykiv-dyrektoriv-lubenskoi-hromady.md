@@ -5,6 +5,8 @@ description: Сьогодні, 12 вересня 2025 року, в актові�
 tags:
   - Вересень2025
   - '2025'
+topics:
+  - atestatsiia
 gallery:
   - image: /images/notes/2025/09/nar/01.jpg
   - image: /images/notes/2025/09/nar/02.jpg
