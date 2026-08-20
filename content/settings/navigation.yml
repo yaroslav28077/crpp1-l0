@@ -69,13 +69,13 @@ sections:
         url: /subiekty-pidvyshchennia-kvalifikatsii
       - label: Простір творчих ідей
         url: /prostir-tvorchykh-idei
+      - label: Супервізія
+        url: /superviziia
       - label: Облік сертифікатів
         url: /oblik-sertyfikativ
   - title: Консалтингові послуги
     items:
       - label: Сертифікація педагогічних працівників
         url: /sertyfikatsiia-pedahohichnykh-pratsivnykiv
-      - label: Супервізія
-        url: /superviziia
       - label: Траєкторія професійного розвитку педагога
         url: /traiektoriia-profesiinoho-rozvytku-pedahoha
