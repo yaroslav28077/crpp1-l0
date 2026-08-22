@@ -3,6 +3,14 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 import type { NavSection, SiteSettings } from '@/lib/content'
 import { BrandEmblem, BrandTagline } from '@/components/brand'
 
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8Z" />
+    </svg>
+  )
+}
+
 export function SiteFooter({
   settings,
   navigation,
@@ -47,6 +55,17 @@ export function SiteFooter({
             <a href={`mailto:${settings.email}`} className="flex items-center gap-2 hover:underline">
               <Mail className="size-4 shrink-0" aria-hidden="true" />
               {settings.email}
+            </a>
+          )}
+          {settings.facebook_url && (
+            <a
+              href={settings.facebook_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 hover:underline"
+            >
+              <FacebookIcon className="size-4 shrink-0" />
+              Ми у Facebook
             </a>
           )}
         </div>

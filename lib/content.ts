@@ -389,6 +389,8 @@ export interface SiteSettings {
   phones: string[]
   email?: string
   consultation_url?: string
+  /** Група Центру у Facebook — іконка в футері біля контактів. Необов'язкове */
+  facebook_url?: string
   /**
    * Смуга-оголошення вгорі кожної сторінки: змінений графік, вимкнення світла,
    * перенесення заходу. Порожнє поле — смуги немає, тож редактор прибирає її
@@ -807,6 +809,7 @@ export function getSiteSettings(): SiteSettings {
     phones: raw.phones || [],
     email: raw.email,
     consultation_url: raw.consultation_url,
+    facebook_url: raw.facebook_url,
     announcement: raw.announcement,
     announcement_url: raw.announcement_url,
     schedule: raw.schedule || [],

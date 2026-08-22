@@ -947,6 +947,11 @@ collections:
             widget: string
             required: false
             hint: Кнопка у шапці сайту. Якщо лишити порожнім — кнопки не буде.
+          - name: facebook_url
+            label: Посилання на Фейсбук
+            widget: string
+            required: false
+            hint: Група Центру у Facebook. Показується у футері біля контактів. Щоб прибрати — очистіть поле.
           - name: announcement
             label: Оголошення на всьому сайті
             widget: string
