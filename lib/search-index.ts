@@ -1,4 +1,4 @@
-import { getAllCertificates, getAllNews, getAllPages, type PageBlock } from "@/lib/content"
+import { getAllCertificates, getAllNews, getPublicPages, type PageBlock } from "@/lib/content"
 
 /**
  * Індекс для пошуку. Збирається під час збірки й віддається одним статичним
@@ -94,7 +94,7 @@ export function buildSearchIndex(): SearchDoc[] {
     b: toSearchWords(stripMarkup(`${n.title} ${n.description || ""} ${n.body}`)),
   }))
 
-  const pages: SearchDoc[] = getAllPages().map((p) => ({
+  const pages: SearchDoc[] = getPublicPages().map((p) => ({
     t: "p",
     u: `/${p.slug}`,
     h: p.full_title || p.title,
