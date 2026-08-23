@@ -634,7 +634,7 @@ collections:
               - name: url
                 label: Куди веде кнопка
                 widget: string
-                hint: 'Сторінка сайту (/kontakty), Google Форма (https://…) або tel:0536177416.'
+                hint: 'Сторінка сайту (/novyny), Google Форма (https://…) або tel:0536177416.'
 
           - name: embed
             label: Форма або мапа на сторінці

@@ -1,11 +1,10 @@
 import type { MetadataRoute } from 'next'
-import { getAllCertificates, getAllNews, getAllPages, getPlanYears } from '@/lib/content'
+import { getAllCertificates, getAllNews, getPlanYears, getPublicPages } from '@/lib/content'
 import { archiveHref, archiveYears, countPages } from '@/lib/news-archive'
 import { SITE_URL } from '@/lib/site-url'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const news = getAllNews()
-  const pages = getAllPages()
   const certificates = getAllCertificates()
 
   // Сторінки архіву: розрізи за роками плюс пагінація
@@ -39,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
       priority: 0.4,
     })),
-    ...pages.map((p) => ({
+    ...getPublicPages().map((p) => ({
       url: `${SITE_URL}/${p.slug}`,
       changeFrequency: 'monthly' as const,
       priority: 0.7,

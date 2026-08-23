@@ -576,6 +576,19 @@ export function getPageBySlug(slug: string): PageItem | undefined {
   return getAllPages().find((p) => p.slug === slug)
 }
 
+/**
+ * Службові сторінки, які не мають потрапляти в sitemap і пошук: «Тестова
+ * сторінка» — шпаргалка вигляду блоків для редакторів, відвідувачам вона
+ * не потрібна. З сайту не прибираємо — прямим посиланням /test вона
+ * досі відкривається для звірки сторінок у CMS.
+ */
+const SERVICE_PAGE_SLUGS = new Set(["test"])
+
+/** Сторінки для sitemap і пошукового індексу — усе, крім службових */
+export function getPublicPages(): PageItem[] {
+  return getAllPages().filter((p) => !SERVICE_PAGE_SLUGS.has(p.slug))
+}
+
 let certificatesCache: CertificateItem[] | null = null
 
 export function getAllCertificates(): CertificateItem[] {

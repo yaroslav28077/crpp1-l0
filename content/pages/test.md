@@ -68,7 +68,8 @@ blocks:
     heading: Блок «Смуга із кнопкою»
     text: Використовується для запису, реєстрації чи переходу на форму.
     button_label: Записатися
-    url: /kontakty
+    # Справжня форма запису Центру — заодно показано варіант зовнішнього посилання.
+    url: https://forms.gle/FmyWyvGzqoBEPBwq6
   - type: video
     title: Блок «Відео з YouTube»
     url: https://www.youtube.com/watch?v=aqz-KE-bpKQ
