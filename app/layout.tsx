@@ -37,7 +37,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#2b4a8b',
+  // Колір смуги браузера на мобільних — під темну шапку (--surface у globals.css).
+  themeColor: '#0b2333',
 }
 
 export default function RootLayout({
