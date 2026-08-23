@@ -71,16 +71,26 @@ export function SiteHeader({
               </a>
             )}
           </div>
-          {settings.consultation_url && (
-            <a
-              href={settings.consultation_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full bg-accent text-accent-foreground px-3 py-0.5 font-medium whitespace-nowrap hover:opacity-90"
-            >
-              Запис на консультацію
-            </a>
-          )}
+          {settings.consultation_url &&
+            /* Внутрішня адреса (/zapis) — через Link без нової вкладки;
+               зовнішня (Google Форма) — як була */
+            (settings.consultation_url.startsWith('/') ? (
+              <Link
+                href={settings.consultation_url}
+                className="rounded-full bg-accent text-accent-foreground px-3 py-0.5 font-medium whitespace-nowrap hover:opacity-90"
+              >
+                Запис на консультацію
+              </Link>
+            ) : (
+              <a
+                href={settings.consultation_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-accent text-accent-foreground px-3 py-0.5 font-medium whitespace-nowrap hover:opacity-90"
+              >
+                Запис на консультацію
+              </a>
+            ))}
         </div>
       </div>
 

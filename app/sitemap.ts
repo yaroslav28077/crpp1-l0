@@ -33,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.6,
     },
+    {
+      // Сторінка запису — цільова для запитів на кшталт «запис до психолога Лубни»
+      url: `${SITE_URL}/zapis`,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     ...archive.map((href) => ({
       url: `${SITE_URL}${href}`,
       changeFrequency: 'weekly' as const,

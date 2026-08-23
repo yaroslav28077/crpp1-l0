@@ -40,17 +40,26 @@ export default function HomePage() {
                 <Newspaper className="size-4" aria-hidden="true" />
                 Останні новини
               </Link>
-              {settings.consultation_url && (
-                <a
-                  href={settings.consultation_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-surface-border px-5 py-2.5 font-semibold hover:bg-surface-muted"
-                >
-                  <HeartHandshake className="size-4" aria-hidden="true" />
-                  Запис на консультацію
-                </a>
-              )}
+              {settings.consultation_url &&
+                (settings.consultation_url.startsWith('/') ? (
+                  <Link
+                    href={settings.consultation_url}
+                    className="inline-flex items-center gap-2 rounded-lg border border-surface-border px-5 py-2.5 font-semibold hover:bg-surface-muted"
+                  >
+                    <HeartHandshake className="size-4" aria-hidden="true" />
+                    Запис на консультацію
+                  </Link>
+                ) : (
+                  <a
+                    href={settings.consultation_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-surface-border px-5 py-2.5 font-semibold hover:bg-surface-muted"
+                  >
+                    <HeartHandshake className="size-4" aria-hidden="true" />
+                    Запис на консультацію
+                  </a>
+                ))}
             </div>
           </div>
           {settings.logo_emblem && (
