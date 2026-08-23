@@ -12,11 +12,15 @@ import {
 } from 'lucide-react'
 
 /**
- * Форма запису (Netlify Forms). Сторінка пререндериться, тож Netlify бачить
- * поля прямо в її статичному HTML — окремий прихований шаблон не потрібен.
- * Відправлення — звичайний POST: заявку кладе в дашборд Netlify, а він
- * (після підключення) дублює її на пошту. JS нижче — лише вибір напрямку,
- * відправлення через fetch і локальний стан «надіслано».
+ * Форма запису (Netlify Forms + OpenNext-адаптер).
+ *
+ * Особливість платформи: Next-сторінки не стають статичними HTML-файлами,
+ * тож Netlify їх не сканує і форму з них не реєструє. Тому:
+ *  1) поля форми оголошені у статичному public/__forms.html — його Netlify
+ *     бачить при деплої;
+ *  2) POST іде саме на /__forms.html (action нижче), а не на сторінку.
+ *
+ * JS тут — лише вибір напрямку, fetch-відправлення й стан «надіслано».
  */
 
 type Kind = 'psykholoh' | 'konsultatsiia'
@@ -93,18 +97,28 @@ export function BookingForm() {
         <form
           name="zapis"
           method="POST"
-          data-netlify="true"
-          netlify-honeypot="company"
-          action="/dyakuiemo"
+          action="/__forms.html"
           onSubmit={(e) => {
-            // Сторінка подяки статична, тож переходимо на неї без перезавантаження форми
+            // Netlify Forms на Next (OpenNext): POST іде на статичний
+            // public/__forms.html — саме його сканує Netlify при деплої,
+            // і саме він є цільовою адресою форми.
             e.preventDefault()
             const form = e.currentTarget
-            fetch('/', {
+            const body = new URLSearchParams(new FormData(form) as unknown as Record<string, string>).toString()
+            fetch('/__forms.html', {
               method: 'POST',
               headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-              body: new URLSearchParams(new FormData(form) as unknown as Record<string, string>).toString(),
-            }).then(() => setSent(true))
+              body,
+            })
+              .then((res) => {
+                if (!res.ok) throw new Error(`Netlify відповів ${res.status}`)
+                setSent(true)
+              })
+              .catch(() => {
+                // Форма зберігає дані навіть якщо щось пішло не так:
+                // даємо користувачу запасний вихід замість мовчки зникнення
+                form.submit()
+              })
           }}
         >
           <input type="hidden" name="form-name" value="zapis" />

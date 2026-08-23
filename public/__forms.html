@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="uk">
+  <head><meta charset="utf-8"></head>
+  <body>
+    <!--
+      Файл реєстрації форми в Netlify Forms. Сторінки Next пререндеряться
+      у кеш адаптера, а не у статичні HTML-файли, тож Netlify їх не сканує
+      і без цього файла форму не зареєструє (збірка падає з помилкою
+      "requires migration steps to support Netlify Forms").
+
+      Тут лише мінімум для детекції полів; відвідувачі цю сторінку не бачать.
+      Сама форма живе на /zapis (components/booking-form.tsx) і шле POST
+      сюди, на статичний файл — як вимагає Netlify Forms.
+    -->
+    <form name="zapis" data-netlify="true" netlify-honeypot="company" hidden>
+      <input type="hidden" name="form-name" value="zapis" />
+      <input type="hidden" name="napriamok" />
+      <input name="imia" type="text" />
+      <input name="telefon" type="tel" />
+      <input name="email" type="email" />
+      <input name="prychyna" type="text" />
+      <input name="chas_dzvinka" type="text" />
+      <!-- пастка для ботів -->
+      <input name="company" type="text" />
+    </form>
+  </body>
+</html>
