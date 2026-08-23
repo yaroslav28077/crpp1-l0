@@ -582,7 +582,7 @@ export function getPageBySlug(slug: string): PageItem | undefined {
  * не потрібна. З сайту не прибираємо — прямим посиланням /test вона
  * досі відкривається для звірки сторінок у CMS.
  */
-const SERVICE_PAGE_SLUGS = new Set(["test"])
+const SERVICE_PAGE_SLUGS = new Set(["test", "dyakuiemo"])
 
 /** Сторінки для sitemap і пошукового індексу — усе, крім службових */
 export function getPublicPages(): PageItem[] {
