@@ -8,7 +8,7 @@
 ## Координати
 
 - Репозиторій: https://github.com/yaroslav28077/crpp1-l0 (owner `yaroslav28077`, гілка `main`)
-- Production: https://effervescent-mandazi-b49b28.netlify.app/
+- Production: https://lubny-cprpp.netlify.app/ (сайт перейменовано 24.08.2026; стара адреса effervescent-mandazi-b49b28.netlify.app більше не працює)
 - Стек: Next.js 16 App Router + TS 5 + Tailwind 4, React 19, Decap CMS 3.15.1, Netlify
 - Пакет: `lubny-cprpp`, packageManager `pnpm@11.17.0`, Node 22
 - Старий сайт (джерело міграції): https://lubny-cprpp.ho.ua
