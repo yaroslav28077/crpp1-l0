@@ -30,6 +30,17 @@ const KIND_LABELS: Record<Kind, string> = {
   konsultatsiia: 'Консультація фахівця Центру',
 }
 
+/*
+  Лист-нотифікація Netlify збирається без UTF-8: кирилиця в ньому виглядає
+  як ◆◆◆ (у дашборді Netlify вона читна — спотворює саме лист). Тому:
+  назви полів і значення напрямку — англійською/латиницею, вони потрапляють
+  у лист; кирилиця лишається лише в імені та причині звернення.
+*/
+const KIND_EMAIL_VALUES: Record<Kind, string> = {
+  psykholoh: 'Psychologist',
+  konsultatsiia: 'Consultation',
+}
+
 const inputBase =
   'w-full rounded-xl border border-border bg-card px-4 py-3 text-base leading-relaxed ' +
   'placeholder:text-muted-foreground/60 transition-colors duration-150 ' +
@@ -122,12 +133,13 @@ export function BookingForm() {
           }}
         >
           <input type="hidden" name="form-name" value="zapis" />
-          <input type="hidden" name="napriamok" value={kind} />
           <p className="hidden">
             <label>
               Не заповнюйте це поле: <input name="company" tabIndex={-1} autoComplete="off" />
             </label>
           </p>
+          {/* Перше поле даних — напрямок: у листі-нотифікації він піде першим рядком */}
+          <input type="hidden" name="direction" value={KIND_EMAIL_VALUES[kind]} />
 
           <div className="flex flex-col gap-5">
             <div>
@@ -141,7 +153,7 @@ export function BookingForm() {
                 />
                 <input
                   id="name"
-                  name="imia"
+                  name="name"
                   type="text"
                   required
                   minLength={2}
@@ -163,7 +175,7 @@ export function BookingForm() {
                 />
                 <input
                   id="phone"
-                  name="telefon"
+                  name="phone"
                   type="tel"
                   required
                   pattern="[0-9+()\-\s]{10,19}"
@@ -203,7 +215,7 @@ export function BookingForm() {
               </label>
               <textarea
                 id="reason"
-                name="prychyna"
+                name="reason"
                 rows={4}
                 maxLength={1000}
                 placeholder="Декілька слів, щоб ми могли підготуватися до розмови…"
@@ -218,7 +230,7 @@ export function BookingForm() {
               <div className="px-4 pb-4">
                 <textarea
                   id="call-time"
-                  name="chas_dzvinka"
+                  name="call_time"
                   rows={2}
                   maxLength={300}
                   placeholder="Наприклад: у будні після 15:00"
