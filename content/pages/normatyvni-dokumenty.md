@@ -87,6 +87,8 @@ blocks:
       - label: Наказ МОЗ від  25.09.2020 року  № 2205 «Про затвердження Санітарного
           регламенту для закладів загальної середньої освіти»
         url: https://moz.gov.ua/article/ministry-mandates/nakaz-moz-ukraini-vid-25092020--2205-pro-zatverdzhennja-sanitarnogo-reglamentu-dlja-zakladiv-zagalnoi-serednoi-osviti
+      - label: 1 січня набув чинності Закон України "Про дошкільну освіту"
+        file: https://www.rada.gov.ua/news/razom/257175.html
   - type: documents
     title: Інклюзивна освіта
     intro: "Педагогічні працівники, які займаються організацією освітнього процесу в
