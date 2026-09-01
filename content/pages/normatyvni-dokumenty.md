@@ -73,6 +73,9 @@ blocks:
           педагогічної освіти ім. М.В.Остроградського щодо організації
           освітнього процесу у 2021-2022 навчальному році
         url: https://docs.google.com/document/d/16NdlR_gVcXJme9EO4zphKJv1YiKq95zv/edit?usp=sharing&ouid=104895709143078317433&rtpof=true&sd=true
+      - label: Про внесення змін до типової освітньої програми для 5-9 класів закладів
+          загальної середньої освіти
+        file: /documents/6a831e0105578088903060.pdf
   - type: documents
     title: Для ЗДО
     view: collapsed
@@ -87,6 +90,8 @@ blocks:
       - label: Наказ МОЗ від  25.09.2020 року  № 2205 «Про затвердження Санітарного
           регламенту для закладів загальної середньої освіти»
         url: https://moz.gov.ua/article/ministry-mandates/nakaz-moz-ukraini-vid-25092020--2205-pro-zatverdzhennja-sanitarnogo-reglamentu-dlja-zakladiv-zagalnoi-serednoi-osviti
+      - label: 1 січня набув чинності Закон України "Про дошкільну освіту"
+        file: https://www.rada.gov.ua/news/razom/257175.html
   - type: documents
     title: Інклюзивна освіта
     intro: "Педагогічні працівники, які займаються організацією освітнього процесу в
