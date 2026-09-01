@@ -73,6 +73,9 @@ blocks:
           педагогічної освіти ім. М.В.Остроградського щодо організації
           освітнього процесу у 2021-2022 навчальному році
         url: https://docs.google.com/document/d/16NdlR_gVcXJme9EO4zphKJv1YiKq95zv/edit?usp=sharing&ouid=104895709143078317433&rtpof=true&sd=true
+      - label: Про внесення змін до типової освітньої програми для 5-9 класів закладів
+          загальної середньої освіти
+        file: /documents/6a831e0105578088903060.pdf
   - type: documents
     title: Для ЗДО
     view: collapsed
