@@ -2,6 +2,8 @@
 title: Сертифікація педагогічних працівників
 section: Консалтингові послуги
 slug: sertyfikatsiia-pedahohichnykh-pratsivnykiv
+seo_description: >-
+  Сертифікація педагогічних працівників Лубенської громади: етапи, строки, документи та новини від ЦПРПП м. Лубни.
 blocks:
   - type: news_by_topic
     title: Події
