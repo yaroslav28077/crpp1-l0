@@ -13,7 +13,7 @@
     <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
     <!--
       Скрипти лежать локально в public/admin/vendor/, а не тягнуться з CDN.
-      Раніше тут був unpkg із плаваючим діапазоном decap-cms@^3.0.0 без
+      Раніше тут був unpkg з плаваючим діапазоном decap-cms@^3.0.0 без
       integrity — тобто будь-яке оновлення пакета або компрометація CDN
       автоматично отримували б повний доступ до репозиторію сайту.
 
@@ -23,6 +23,8 @@
   </head>
   <body>
     <script src="/admin/vendor/decap-cms-3.15.1.js"></script>
+    <!-- Віджет-сітка для табличних блоків: реєструється після завантаження Decap -->
+    <script src="/admin/table-grid-widget.js"></script>
     <script>
       // Після виходу з CMS повертаємо на сторінку логіну
       if (window.netlifyIdentity) {
