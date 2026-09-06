@@ -34,12 +34,11 @@ export const metadata: Metadata = {
   },
   twitter: { card: 'summary_large_image' },
   /*
-    Структуровані дані для Google: організація з адресою, телефонами, графіком
-    і посиланням на сайт. Це один із сигналів, за яким Google пов'язує сайт
-    з організацією в локальній видачі (поруч із карткою Google Business Profile).
+    Верифікація Google Search Console (метод «HTML-тег»).
+    Токен виданий у Search Console для ресурсу-префікса https://lubny-cprpp.netlify.app
   */
-  other: {
-    // Вставляється як <script type="application/ld+json"> через компонент нижче
+  verification: {
+    google: 'xf3gLB1g6IOswpvCaaKfJ9tFyKn6X1cKgtWmQbnTAHY',
   },
 }
 
