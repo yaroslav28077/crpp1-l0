@@ -20,6 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     // У <title> лишається короткий ярлик: повна назва не влазить у вкладку і видачу
     title: page.seo_title || page.title,
     description,
+    // Canonical на кожній сторінці — щоб Google не плутав URL з query-параметрами
+    alternates: { canonical: `/${page.slug}` },
     /*
       Заголовок картки для месенджерів беремо повний: у Viber видно рядок цілком,
       і «Положення про Центр професійного розвитку…» зрозуміліше за ярлик «Положення».

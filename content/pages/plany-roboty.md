@@ -2,6 +2,8 @@
 title: Плани роботи
 section: Діяльність Центру
 slug: plany-roboty
+seo_description: >-
+  Плани роботи ЦПРПП м. Лубни за роками: річні плани Центру та плани роботи за місяцями 2024-2026 років.
 blocks:
   - type: documents
     view: open

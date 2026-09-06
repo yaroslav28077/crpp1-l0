@@ -33,6 +33,14 @@ export const metadata: Metadata = {
     images: [{ url: '/brand/logo-emblem.png' }],
   },
   twitter: { card: 'summary_large_image' },
+  /*
+    Структуровані дані для Google: організація з адресою, телефонами, графіком
+    і посиланням на сайт. Це один із сигналів, за яким Google пов'язує сайт
+    з організацією в локальній видачі (поруч із карткою Google Business Profile).
+  */
+  other: {
+    // Вставляється як <script type="application/ld+json"> через компонент нижче
+  },
 }
 
 export const viewport: Viewport = {
@@ -51,6 +59,34 @@ export default function RootLayout({
 
   return (
     <html lang="uk" className={`light bg-background ${inter.variable} ${manrope.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          // Структуровані дані організації для Google (локальна видача, знання
+          // про установу). Дані — з content/settings/site.yml, тож правяться в CMS.
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'EducationalOrganization',
+              name: 'Центр професійного розвитку педагогічних працівників',
+              alternateName: 'ЦПРПП м. Лубни',
+              url: SITE_URL,
+              logo: `${SITE_URL}/brand/logo-emblem.png`,
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'вул. Григора Тютюнника 19А',
+                addressLocality: 'Лубни',
+                addressRegion: 'Полтавська область',
+                postalCode: '37500',
+                addressCountry: 'UA',
+              },
+              telephone: ['+380536177416', '+380536177421'],
+              email: 'lubny.cprpp@ukr.net',
+              sameAs: [settings.facebook_url].filter(Boolean),
+            }),
+          }}
+        />
+      </head>
       <body className="antialiased font-sans flex min-h-svh flex-col">
         <NetlifyIdentityRedirect />
         <SiteAnnouncement text={settings.announcement} url={settings.announcement_url} />
