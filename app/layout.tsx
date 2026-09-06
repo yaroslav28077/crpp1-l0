@@ -33,13 +33,6 @@ export const metadata: Metadata = {
     images: [{ url: '/brand/logo-emblem.png' }],
   },
   twitter: { card: 'summary_large_image' },
-  /*
-    Верифікація Google Search Console (метод «HTML-тег»).
-    Токен виданий у Search Console для ресурсу-префікса https://lubny-cprpp.netlify.app
-  */
-  verification: {
-    google: 'xf3gLB1g6IOswpvCaaKfJ9tFyKn6X1cKgtWmQbnTAHY',
-  },
 }
 
 export const viewport: Viewport = {
