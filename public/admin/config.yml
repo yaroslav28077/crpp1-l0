@@ -506,24 +506,6 @@ collections:
                   - { name: email, label: Електронна адреса, widget: string, required: false }
                   - { name: consultant, label: Закріплені консультанти, widget: string, required: false }
                   - { name: note, label: Рядок на всю ширину (підпис), widget: string, required: false }
-              # Старий формат безіменних клітинок. Лишається, поки не всі сторінки
-              # переведені на «Рядки»: якщо забрати це поле, адмінка стерла б
-              # рядки таких таблиць під час першого ж збереження сторінки.
-              - name: rows
-                label: Рядки (старий формат)
-                label_singular: Рядок
-                widget: list
-                required: false
-                summary: '{{fields.cells}}'
-                hint: Не заповнюйте вручну. Тут лишились таблиці, які ще не переведені на іменовані поля.
-                fields:
-                  - name: cells
-                    label: Клітинки
-                    label_singular: Клітинка
-                    widget: list
-                    summary: '{{fields.cell}}'
-                    field: { name: cell, label: Значення, widget: string }
-
           - name: gallery
             label: Фотогалерея
             summary: "{{fields.title | default('Фотогалерея')}}"
