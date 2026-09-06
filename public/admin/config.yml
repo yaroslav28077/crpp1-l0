@@ -488,6 +488,7 @@ collections:
                     - { label: Посада / напрям роботи / спільнота, value: role }
                     - { label: Телефон, value: phone }
                     - { label: Електронна адреса, value: email }
+                    - { label: Закріплені консультанти, value: consultant }
               - name: entries
                 label: Рядки
                 label_singular: Рядок
@@ -503,6 +504,7 @@ collections:
                   - { name: role, label: Посада / напрям роботи / спільнота, widget: string, required: false }
                   - { name: phone, label: Телефон, widget: string, required: false }
                   - { name: email, label: Електронна адреса, widget: string, required: false }
+                  - { name: consultant, label: Закріплені консультанти, widget: string, required: false }
                   - { name: note, label: Рядок на всю ширину (підпис), widget: string, required: false }
               # Старий формат безіменних клітинок. Лишається, поки не всі сторінки
               # переведені на «Рядки»: якщо забрати це поле, адмінка стерла б
