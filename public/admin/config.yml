@@ -492,7 +492,7 @@ collections:
               - name: entries
                 label: Рядки
                 label_singular: Рядок
-                widget: list
+                widget: table_grid
                 required: false
                 # Без summary Decap показує рядок сирим масивом ["1","Перша гімназія…"],
                 # а з ним у списку видно заклад і людину — рядок можна знайти очима.
