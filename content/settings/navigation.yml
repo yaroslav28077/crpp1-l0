@@ -74,7 +74,7 @@ sections:
       - label: Облік сертифікатів
         url: /oblik-sertyfikativ
       - label: ВЕКТОР_освітня платформа
-        url: /oblik-sertyfikativ
+        url: /vector-osvita
   - title: Консалтингові послуги
     items:
       - label: Сертифікація педагогічних працівників
