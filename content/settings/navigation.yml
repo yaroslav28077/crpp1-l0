@@ -73,6 +73,8 @@ sections:
         url: /superviziia
       - label: Облік сертифікатів
         url: /oblik-sertyfikativ
+      - label: ВЕКТОР_освітня платформа
+        url: /oblik-sertyfikativ
   - title: Консалтингові послуги
     items:
       - label: Сертифікація педагогічних працівників
