@@ -19,13 +19,15 @@ blocks:
     title: Документи
     view: collapsed
     items:
-      - label: Наказ №137 "Про підсумки атестації педагогічних працівників закладів
-          освіти Лубенської територіальної громади у 2026 році"
-        url: https://drive.google.com/file/d/1oogY7GdLMJgupYI7ps4nMEnV3zpvbSwD/view?usp=sharing
+      - label: Списки педагогічних працівників, які атестуються у 2026/2027 н.р.
+        url: https://docs.google.com/document/d/1Hu25cWroay6T8Wi641sNt2WTkAJPyBc-/edit?usp=sharing&ouid=103932438428349597379&rtpof=true&sd=true
       - label: "Про створення атестаційної комісії ІІ рівня з організації та проведення
           атестації  педагогічних працівників  закладів освіти Лубенської
           територіальної громади у 2026 – 2027  навчальному році»    "
         url: https://docs.google.com/document/d/1a-YvUdQr1yjZi-ixPUxA0seacTJhd3S5/edit?usp=sharing&ouid=103932438428349597379&rtpof=true&sd=true
+      - label: Наказ №137 "Про підсумки атестації педагогічних працівників закладів
+          освіти Лубенської територіальної громади у 2026 році"
+        url: https://drive.google.com/file/d/1oogY7GdLMJgupYI7ps4nMEnV3zpvbSwD/view?usp=sharing
       - label: Наказ № 717 "Про затвердження списків педагогічних працівників закладів
           освіти Лубенської територіальної громади, які підлягають позачерговій
           атестації атестаційною комісією ІІ рівня у 2025-2026 навчальному році"
@@ -108,8 +110,6 @@ blocks:
           Лубенської ТГ атестаційною комісією ІІ рівня у 2023-2024 навчальному
           році
         url: https://docs.google.com/document/d/1UhTXRXcr8lZo-8J9Z8thdw51Pjr8VlsU/edit?usp=sharing&ouid=105122741236082304027&rtpof=true&sd=true
-      - label: Списки педагогічних працівників, які атестуються у 2026/2027 н.р.
-        url: https://docs.google.com/document/d/1Hu25cWroay6T8Wi641sNt2WTkAJPyBc-/edit?usp=sharing&ouid=103932438428349597379&rtpof=true&sd=true
 seo_description: "Атестація педагогічних працівників Лубенської громади:
   порядок, строки, подання матеріалів у електронному форматі. Організовує ЦПРПП
   м. Лубни."
