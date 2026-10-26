@@ -19,6 +19,15 @@ blocks:
     title: Документи
     view: collapsed
     items:
+      - label: План заходів щодо організації та проведення атестації педагогічних
+          працівників атестаційною комісією ІІ рівня Лубенської міської
+          територіальної громади у 2026/2027 навчальному році
+        url: https://docs.google.com/document/d/1Y4hk8J9Z18yZsyWbNGU5WMtdKjI8ddDL/edit?usp=sharing&ouid=116379051625942282643&rtpof=true&sd=true
+      - url: https://drive.google.com/file/d/1QRlpr_NSXCkdm2b4Y0cuYs-XZrVeItj4/view?usp=sharing
+        label: Наказ № 522 "Про затвердження списку педагогічних працівників  закладів
+          освіти Лубенської міської територіальної громади,  які підлягають
+          черговій атестації атестаційною комісією ІІ рівня у 2026/2027
+          навчальному році"
       - label: Списки педагогічних працівників, які атестуються у 2026/2027 н.р.
         url: https://docs.google.com/document/d/1Hu25cWroay6T8Wi641sNt2WTkAJPyBc-/edit?usp=sharing&ouid=103932438428349597379&rtpof=true&sd=true
       - label: "Про створення атестаційної комісії ІІ рівня з організації та проведення
@@ -110,14 +119,6 @@ blocks:
           Лубенської ТГ атестаційною комісією ІІ рівня у 2023-2024 навчальному
           році
         url: https://docs.google.com/document/d/1UhTXRXcr8lZo-8J9Z8thdw51Pjr8VlsU/edit?usp=sharing&ouid=105122741236082304027&rtpof=true&sd=true
-      - url: https://drive.google.com/file/d/1QRlpr_NSXCkdm2b4Y0cuYs-XZrVeItj4/view?usp=sharing
-        label: Про затвердження списку педагогічних працівників  закладів освіти
-          Лубенської міської територіальної громади,  які підлягають черговій
-          атестації атестаційною комісією ІІ рівня у 2026/2027 навчальному році
-      - label: План заходів щодо організації та проведення атестації педагогічних
-          працівників атестаційною комісією ІІ рівня Лубенської міської
-          територіальної громади у 2026/2027 навчальному році
-        url: https://docs.google.com/document/d/1Y4hk8J9Z18yZsyWbNGU5WMtdKjI8ddDL/edit?usp=sharing&ouid=116379051625942282643&rtpof=true&sd=true
 seo_description: "Атестація педагогічних працівників Лубенської громади:
   порядок, строки, подання матеріалів у електронному форматі. Організовує ЦПРПП
   м. Лубни."
