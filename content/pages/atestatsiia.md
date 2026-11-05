@@ -43,8 +43,8 @@ blocks:
           працівників, які підлягають черговій атестації у 2027 р."
         url: https://drive.google.com/file/d/1IWI-2PCJS5wk3u0viPuodJwX2dl08NEF/view?usp=sharing
   - type: documents
-    title: " Атестація 2026 р."
-    view: card
+    title: " Атестація 2026 "
+    view: collapsed
     items:
       - label: Наказ № 134 від 07.04.2026 " Про затвердження результатів атестації"
         url: https://drive.google.com/file/d/1EwO5CooUvEWf5ux3ZgghhaRvSQd7b1yD/view?usp=sharing
