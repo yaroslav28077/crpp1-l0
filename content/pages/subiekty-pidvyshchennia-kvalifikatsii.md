@@ -77,6 +77,11 @@ blocks:
             url: https://drive.google.com/file/d/1DG4RK2o8vpExCM7a3tNhXTlJoH-10z7y/view?usp=sharing
           - label: вересень
             file: /documents/наказ-№-61-курси-вересень-2026.pdf
+          - url: https://drive.google.com/file/d/1U8ZgxgnXZUoOeZoVpgHCuGsME98L4Ve3/view?usp=sharing
+            label: жовтень
+          - label: листопад
+            url: https://drive.google.com/file/d/1BlMctFk3W9hcgvfD5Ff1_1LYFjBUA_LQ/view?usp=sharing
+        url: ""
       - label: "2025"
         children:
           - label: січень
