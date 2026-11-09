@@ -7,6 +7,12 @@ blocks:
     title: 2026 рік
     view: card
     items:
+      - url: https://drive.google.com/file/d/1zMnw6hruKm41ccfN4SEb3lZnEmFaiGvD/view?usp=sharing
+        label: Програма тренінгу "Архітектура спільної взаємодії"
+      - url: https://drive.google.com/file/d/1jMf8o-c0L_GG4SrJG3jLlvXSpnk7kT53/view?usp=sharing
+        label: "Програма семінару-практикуму «Ресурсний урок фізкультури: збереження та
+          відновлення ментального здоров’я учнів і вчителя засобами рухової
+          активності»"
       - label: 'Освітня програма ІІІ науково-практичної конференції закладів освіти
           Лубенської ТГ "Лубенщина: минуле й сьогодення"'
         url: https://drive.google.com/file/d/1g1j4xGRgm6sH96mtje7BiMIHxj9n5JWy/view?usp=sharing
@@ -36,12 +42,6 @@ blocks:
       - label: "Програма семінару директорів ЗЗСО Лубенської ТГ «Інституційний аудит як
           дзеркало змін: рефлексія та перспективи розвитку закладу освіти»"
         url: https://drive.google.com/file/d/1TQNVq_g7AlDx_z3WEOht8Ad7mht9Lv58/view?usp=sharing
-      - url: https://drive.google.com/file/d/1jMf8o-c0L_GG4SrJG3jLlvXSpnk7kT53/view?usp=sharing
-        label: "Програма семінару-практикуму «Ресурсний урок фізкультури: збереження та
-          відновлення ментального здоров’я учнів і вчителя засобами рухової
-          активності»"
-      - url: https://drive.google.com/file/d/1zMnw6hruKm41ccfN4SEb3lZnEmFaiGvD/view?usp=sharing
-        label: Програма тренінгу "Архітектура спільної взаємодії"
   - type: documents
     title: 2025 рік
     view: card
