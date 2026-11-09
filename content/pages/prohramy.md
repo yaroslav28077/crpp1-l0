@@ -40,6 +40,8 @@ blocks:
         label: "Програма семінару-практикуму «Ресурсний урок фізкультури: збереження та
           відновлення ментального здоров’я учнів і вчителя засобами рухової
           активності»"
+      - url: https://drive.google.com/file/d/1zMnw6hruKm41ccfN4SEb3lZnEmFaiGvD/view?usp=sharing
+        label: Програма тренінгу "Архітектура спільної взаємодії"
   - type: documents
     title: 2025 рік
     view: card
