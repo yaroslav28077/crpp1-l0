@@ -688,9 +688,20 @@ collections:
       і знаходяться пошуком по сайту за прізвищем або обліковим номером.
     folder: content/certificates
     create: true
-    slug: '{{slug}}'
+    # Назва файлу береться з назви переліку, а з неї ж — назва гілки чернетки
+    # (cms/certificates/<назва>). Кирилиця в git важить 2 байти на літеру, і довга
+    # назва («…закладів освіти Лубенської міської ради Лубенського району…»)
+    # перевищувала ліміт 255 байт на ім'я гілки — GitHub відповідав
+    # «API_ERROR: Reference update failed», і чернетка не зберігалася.
+    # Обрізаємо до 80 символів (≈160 байт); адресу на сайті все одно будує
+    # lib/content.ts -> slugify з імені файлу, тож на сайті нічого не змінюється.
+    slug: '{{slug | truncate(80)}}'
     identifier_field: title
-    sortable_fields: [date, title]
+    # default_sort: у списку й у групуванні «Рік» найновіші роки йдуть першими
+    # (групи стають у тому порядку, у якому відсортовані записи).
+    sortable_fields:
+      - { field: date, default_sort: desc }
+      - title
     summary: '{{title}}'
     view_groups:
       - { label: Рік, field: date, pattern: '\d{4}' }
