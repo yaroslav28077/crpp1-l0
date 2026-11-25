@@ -7,6 +7,10 @@ blocks:
     title: 2026 рік
     view: card
     items:
+      - url: https://drive.google.com/file/d/1y8XshvzqZ2FJ8calsWuHld_aXmLZLfgQ/view?usp=sharing
+        label: Програма семінару-практикуму для директорів ЗЗСО Лубенської
+          ТГ  «Екосистема здорового харчування. Баланс вимог, смаку та
+          партнерства»
       - url: https://drive.google.com/file/d/1zMnw6hruKm41ccfN4SEb3lZnEmFaiGvD/view?usp=sharing
         label: Програма тренінгу "Архітектура спільної взаємодії"
       - url: https://drive.google.com/file/d/1jMf8o-c0L_GG4SrJG3jLlvXSpnk7kT53/view?usp=sharing
