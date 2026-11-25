@@ -42,6 +42,10 @@ blocks:
       - label: "Програма семінару директорів ЗЗСО Лубенської ТГ «Інституційний аудит як
           дзеркало змін: рефлексія та перспективи розвитку закладу освіти»"
         url: https://drive.google.com/file/d/1TQNVq_g7AlDx_z3WEOht8Ad7mht9Lv58/view?usp=sharing
+      - url: https://drive.google.com/file/d/1y8XshvzqZ2FJ8calsWuHld_aXmLZLfgQ/view?usp=sharing
+        label: ПРОГРАМА ПІДВИЩЕННЯ КВАЛІФІКАЦІЇ ПЕДАГОГІЧНИХ ПРАЦІВНИКІВ
+          семінар-практикум для керівників ЗЗСО Лубенської ТГ  «Екосистема
+          здорового харчування. Баланс вимог, смаку та партнерства»
   - type: documents
     title: 2025 рік
     view: card
