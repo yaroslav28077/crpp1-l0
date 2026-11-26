@@ -81,6 +81,8 @@ blocks:
             label: жовтень
           - label: листопад
             url: https://drive.google.com/file/d/1BlMctFk3W9hcgvfD5Ff1_1LYFjBUA_LQ/view?usp=sharing
+          - url: https://drive.google.com/file/d/1jhZZvm-hiVo_x6k_AjqZou6PXWM0K6kG/view?usp=sharing
+            label: грудень
         url: ""
       - label: "2025"
         children:
